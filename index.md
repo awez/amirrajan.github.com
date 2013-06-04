@@ -1,6 +1,6 @@
 ---
 layout: page
-title: code blog foo
+title:
 tagline: tag line bar
 ---
 {% include JB/setup %}
