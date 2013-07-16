@@ -1,0 +1,149 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	
+    
+    Code Blog Foo: code-katas-mancala
+
+</title><link href="../Content/base.css" rel="stylesheet" type="text/css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    
+    <script src="../../Scripts/shAll.js" type="text/javascript"></script>
+    <link href="../../Content/SyntaxHighlighter.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<strong>This is an archive of blog posts from a "long time ago".  If you find this useful, let me know and I'll revive it.</strong>
+    <div class="wrap">
+        
+        <div id="top group">
+            <header>
+                <h1>code blog foo - tag line bar</h1>
+            </header>
+            <div style="padding: 5px; border-bottom: 1px solid silver; border-top: 1px solid silver;">
+                <nav>
+                    <a href="/" style="margin-left: 15px; border-style: solid; border-width: 1px;">home</a>
+                    <span class="sep"></span>
+                    <a href="/Blog/Posts" style="margin-left: 15px; border-style: solid; border-width: 1px;">blog</a>
+                    <a href="/Home/About" style="margin-left: 15px; border-style: solid; border-width: 1px;">about</a>
+                    <a href="/Home/Portfolio" style="margin-left: 15px; border-style: solid; border-width: 1px;">projects/open source</a>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="content">
+            
+    
+    
+    <script type="text/javascript">
+        window.onload = function () {
+            SyntaxHighlighter.config.clipboardSwf = '/Scripts/clipboard.swf';
+            SyntaxHighlighter.all();
+            dp.SyntaxHighlighter.HighlightAll('code');
+        };
+
+     </script>
+    <h2>Awesome Code Katas</h2>
+<p>
+   I've been doing quite a few Code Katas, especially at <a href="http://dallashackclub.com/" target="_blank">Dallas Hack Club</a>.  Here is a list of code katas that you may want to try out.  I recommend tackling them in the order they are listed :-).
+</p>
+<ul>
+<li>
+<a href="code-katas">TOC</a>
+</li>
+<li>
+<a href="code-katas-prime-factors">Prime Factors - Rite of Passage</a>
+</li>
+<li>
+<a href="code-katas-bowling-kata">Bowling Kata - Reinforcement</a>
+</li>
+<li>
+<a href="code-katas-mars-rover">Mars Rover - The Transition</a>
+</li>
+<li>
+<a href="code-katas-poker">Poker Kata - Picking the Right Test</a>
+</li>
+<li>
+<a href="code-katas-vending-machine">Vending Machine Kata - Exploring Behaviors</a>
+</li>
+<li>
+<a href="code-katas-map-kata">Map Kata - En Passe</a>
+</li>
+<li>
+<a href="code-katas-conways-game-of-life">Conway's Game of Life</a>
+</li>
+<li>
+<a href="code-katas-mancala">Mancala</a>
+</li>
+</ul>
+
+<h2>Mancala Kata</h2>
+<p>
+Another fun kata.  Rules follow:
+</p>
+
+<article class="markdown-body entry-content" itemprop="mainContentOfPage"><p>Basic Mancala</p>
+
+<ol>
+<li>Mancala is a two player game where each person takes turns "sowing" seeds from well to well.</li>
+<p>Here is an example of a mancala playing field: 
+<a target="_blank" href="http://i.imgur.com/OBn8Y.png">http://i.imgur.com/OBn8Y.png</a></p>
+
+<p>Two people playing Mancala: <a href="http://www.youtube.com/watch?v=tDiGhVVgZiM" target="_blank">http://www.youtube.com/watch?v=tDiGhVVgZiM</a></p>
+
+
+<li><p>Each player has 6 wells and a well that is considered a goal, each well starts off with 4 seeds.  Goal wells do not have any seeds.</p></li>
+<li><p>Each player sows seeds counter clockwise from well to well, 
+picking up all seeds from the source well and dropping one seed into each well after.<br>
+The player's goal well is included in the sowing process.<br>
+The opponent's wells are also included in the sowing processes.<br>
+The opponent's goal well is NOT included in the sowing process.
+(here is the image link again: <a href="http://i.imgur.com/OBn8Y.png" target="_blank">http://i.imgur.com/OBn8Y.png</a>)</p></li>
+<li><p>The game ends when any one player has no seeds to sow from his wells on his turn (players cannot sow from their goal well).</p></li>
+<li><p>The winner is determined by how may seeds exist in each player's goal well 
+and how many seeds exist in the sowing wells on each player's side.<br>
+The player with the most seeds in his wells PLUS his goal well wins.</p></li>
+</ol><p>Egyptian Mancala</p>
+
+<ol>
+<li><p>All the rules of basic mancala apply.</p></li>
+<li><p>When sowing seeds, if the LAST seed in the sowing process lands in his goal well, the player gets another turn.</p></li>
+<li><p>When sowing seeds, if the LAST seed lands in an EMPTY well, 
+he gets to take all the seeds from the opponent's well directly opposite 
+of that well and place all seeds into his goal well,
+along with the single seed that caused the capture).</p></li>
+</ol><p>Ethiopian Mancala</p>
+
+<ol>
+<li><p>All the rules of Egyptian Mancala apply.....BUT....</p></li>
+<li><p>Seeds can be sowed clockwise or counter clockwise.</p></li>
+<li><p>You cannot sow from a well that only has one seed.</p></li>
+</ol></article>
+
+<h2>Mixing It Up</h2>
+<p>
+  At code retreats, this kata is worked on multiple times.  Here are some things that you should try when solving this kata (these rules can be used with any kata):<br/>
+- Don't use any primitive types<br/>
+- Don't use any if/else statements<br/>
+- No method can have more than 4 lines<br/>
+</p>
+    <hr />
+    <span style="color: Silver; font-size: small;">Written: 6/2/2012</span>
+    
+    <script>
+        var idcomments_acct = '6ed8d3f7f3b269a55fc308e535627d11';
+        var idcomments_post_url;
+
+        var  idcomments_post_id;// = 'http%3A%2F%2Famirrajan.net%2FBlogs%2F' + 'code-katas-mancala';
+
+    </script>
+    <span id="IDCommentsPostTitle" style="display:none">Comments</span>
+    <script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+    <script>$("#body").append('<div></div>').html(idcomments_post_id);</script>
+
+        </div>
+    </div>
+</body>
+</html>

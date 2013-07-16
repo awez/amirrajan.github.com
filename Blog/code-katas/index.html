@@ -1,0 +1,134 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	
+    
+    Code Blog Foo: code-katas
+
+</title><link href="../Content/base.css" rel="stylesheet" type="text/css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    
+    <script src="../../Scripts/shAll.js" type="text/javascript"></script>
+    <link href="../../Content/SyntaxHighlighter.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<strong>This is an archive of blog posts from a "long time ago".  If you find this useful, let me know and I'll revive it.</strong>
+    <div class="wrap">
+        
+        <div id="top group">
+            <header>
+                <h1>code blog foo - tag line bar</h1>
+            </header>
+            <div style="padding: 5px; border-bottom: 1px solid silver; border-top: 1px solid silver;">
+                <nav>
+                    <a href="/" style="margin-left: 15px; border-style: solid; border-width: 1px;">home</a>
+                    <span class="sep"></span>
+                    <a href="/Blog/Posts" style="margin-left: 15px; border-style: solid; border-width: 1px;">blog</a>
+                    <a href="/Home/About" style="margin-left: 15px; border-style: solid; border-width: 1px;">about</a>
+                    <a href="/Home/Portfolio" style="margin-left: 15px; border-style: solid; border-width: 1px;">projects/open source</a>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="content">
+            
+    
+    
+    <script type="text/javascript">
+        window.onload = function () {
+            SyntaxHighlighter.config.clipboardSwf = '/Scripts/clipboard.swf';
+            SyntaxHighlighter.all();
+            dp.SyntaxHighlighter.HighlightAll('code');
+        };
+
+     </script>
+    <h2>Awesome Code Katas</h2>
+<p>
+   I've been doing quite a few code katas, especially at <a href="http://dallashackclub.com/" target="_blank">Dallas Hack Club</a>.  Here is a list of code katas that you may want to try out.  I recommend tackling them in the order they are listed :-).
+</p>
+
+<h2>Perfect Code</h2>
+<p>
+    It's important that throughout the implementation of any kata <b>your code should be perfect</b>. A kata will help you find your perception of perfect code.  The journey is more important than the destination.  Take your time with the kata and at any point through the kata make sure the code you have written is perfect by your standards (even if the implementation is naive).
+</p>
+
+<ul>
+<li>
+<a href="code-katas">TOC</a>
+</li>
+<li>
+<a href="code-katas-prime-factors">Prime Factors - Rite of Passage</a>
+</li>
+<li>
+<a href="code-katas-bowling-kata">Bowling Kata - Reinforcement</a>
+</li>
+<li>
+<a href="code-katas-mars-rover">Mars Rover - The Transition</a>
+</li>
+<li>
+<a href="code-katas-poker">Poker Kata - Picking the Right Test</a>
+</li>
+<li>
+<a href="code-katas-vending-machine">Vending Machine Kata - Exploring Behaviors</a>
+</li>
+<li>
+<a href="code-katas-map-kata">Map Kata - En Passe</a>
+</li>
+<li>
+<a href="code-katas-conways-game-of-life">Conway's Game of Life</a>
+</li>
+<li>
+<a href="code-katas-mancala">Mancala</a>
+</li>
+</ul>
+
+<h2>What Makes a Good Kata?</h2>
+<p>
+    The links above are what I consider good katas.  What follows are some characteristics of a good kata, you don't have to read the rest of this page to get started with code katas.  If you want the motivation behind the katas above, you'll find the explanation below helpful.
+</p>
+
+<h2>Experience</h2>
+<p>
+I've been doing code katas for over a year now, and can honestly say that they have made me a better developer.  Here are a few characteristics I've noticed about good code katas.  Also keep in mind that good code katas emphasize only a few things on this list at a time (i.e. a code kata that tries to touch on all these things at once  may not be that great).
+</p>
+
+<h2>The Toy Kata - Easy Test Progression</h2>
+<p>
+A good introductory kata for people new to TDD should have the characteristic of easy test progression. After giving a hint for the first test, the next tests should come naturally. <a href="code-katas-prime-factors">[The Prime Factors Kata]</a> is a good example of this. The first test is easy to specify and subsequent tests follow the same mold. The intro katas serve to help developers figure out their test environment and present problems that aren't intimidating. They serve to lay down some good practices: start with the failing test, write just enough code to make it pass, don't over think the problem, avoid the impulse to just immediately solve it.  Other katas that fall into this category: <a href="http://codekata.pragprog.com/2007/01/kata_nine_back_.html" target="_blank">[Check Out Kata]</a>, <a href="code-katas-bowling-kata">[Bowling Kata]</a>, <a href="http://codingdojo.org/cgi-bin/wiki.pl?KataRomanNumerals" target="_blank">[Roman Numeral Kata]</a>, <a href="http://codingdojo.org/cgi-bin/wiki.pl?KataWordWrap" target="_blank">[Word Wrap Kata]</a>, <a href="code-katas-mars-rover">[The Mars Rover Kata]</a>. You'll eventually <b>outgrow</b> toy katas, but they are a very important part of learning TDD. 
+</p>
+
+<h2>The Naive</h2>
+<p>
+A valuable lesson a kata teaches you is how to keep things simple. We as developers have preconceived notions on how a given problem should be solved.  It's really great when you come across a kata that shows you how far you can take a "naive" solution (what you really learn is what you consider naive is actually just simple and sublime).  The Vending Machine Kata exhibits this characteristic. Stick with the naive and you'll be surprised how far it takes you. 
+</p>
+
+<h2>The En-Passé</h2>
+<p>
+There are katas out there that teach you how to deal with unexpected/new requirements.  There is a fine line between simple/sublime and hackish/haphazard.  Katas that exhibit this quality will let you get away with the naive implementation for a long time, but at the end they throw you a curve ball that may have you rewriting the entire thing. The "oh crap, I have to rewite this thing" moment is called an en-passe.  You are meant to hit the en-passe and have to figure out how to work through it, The Map Kata exhibits this characteristic.
+</p>
+
+<h2>Picking the Right First Test, and the Right Next Test</h2>
+<p>
+Approaching a complex problem requires some thought on which test to write first. Katas that emphasis the right test teach the developer to break a problem apart and incrementally introduce more complex behaviors. The Conways Game of Life Kata, <a href="code-katas-poker">[Poker Kata]</a> and Mancala Kata (to a much greater extent) exhibit this behavior.  These kinds of katas are not meant to be finished in one session, the goal is to show how a complex problem can be broken into little pieces. 
+</p>
+    <hr />
+    <span style="color: Silver; font-size: small;">Written: 3/9/2012</span>
+    
+    <script>
+        var idcomments_acct = '6ed8d3f7f3b269a55fc308e535627d11';
+        var idcomments_post_url;
+
+        var  idcomments_post_id;// = 'http%3A%2F%2Famirrajan.net%2FBlogs%2F' + 'code-katas';
+
+    </script>
+    <span id="IDCommentsPostTitle" style="display:none">Comments</span>
+    <script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+    <script>$("#body").append('<div></div>').html(idcomments_post_id);</script>
+
+        </div>
+    </div>
+</body>
+</html>

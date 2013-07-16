@@ -1,0 +1,238 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	
+    
+    Code Blog Foo: asp-mvc-and-the-facebook-request-form
+
+</title><link href="../Content/base.css" rel="stylesheet" type="text/css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    
+    <script src="../../Scripts/shAll.js" type="text/javascript"></script>
+    <link href="../../Content/SyntaxHighlighter.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<strong>This is an archive of blog posts from a "long time ago".  If you find this useful, let me know and I'll revive it.</strong>
+    <div class="wrap">
+        
+        <div id="top group">
+            <header>
+                <h1>code blog foo - tag line bar</h1>
+            </header>
+            <div style="padding: 5px; border-bottom: 1px solid silver; border-top: 1px solid silver;">
+                <nav>
+                    <a href="/" style="margin-left: 15px; border-style: solid; border-width: 1px;">home</a>
+                    <span class="sep"></span>
+                    <a href="/Blog/Posts" style="margin-left: 15px; border-style: solid; border-width: 1px;">blog</a>
+                    <a href="/Home/About" style="margin-left: 15px; border-style: solid; border-width: 1px;">about</a>
+                    <a href="/Home/Portfolio" style="margin-left: 15px; border-style: solid; border-width: 1px;">projects/open source</a>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="content">
+            
+    
+    
+    <script type="text/javascript">
+        window.onload = function () {
+            SyntaxHighlighter.config.clipboardSwf = '/Scripts/clipboard.swf';
+            SyntaxHighlighter.all();
+            dp.SyntaxHighlighter.HighlightAll('code');
+        };
+
+     </script>
+    <h2>Integrating Facebook's fb:request-form with your ASP.NET MVC Application</h2>
+<p>
+    In this blog post.  I'll show you how to integrate Facebook's fb:request-form into ASP.NET MVC Application.  If you've tried using the Facebook documentation on how to integrate this control into your website, you'll find that it's not entirely correct.  Hopefully I can shed some light on how to get this thing working....so read this blog post before you decide to throw your dev box out of the window and take up basket weaving.
+</p>
+
+<h3>Why Leverage fb:request-form?</h3>
+<p>
+    Integrating your application with the Facebook community is a sure fire way to bring traffic to your site.  <strong>The &lt;fb:request-form /&gt; control gives loyal users of your website the ability to invite their Facebook friends.</strong> Here are some screen shots:
+</p>
+
+<image src="../../Content/images/facebookfriends.png" style="border: solid 1px silver; padding: 3px;" />
+<br/>
+<small>&lt;fb:request-form /&gt; when visiting http://www.examplegames.com</small>
+<br/>
+<br/>
+<image src="../../Content/images/facebookfriendscondensed.png" style="border: solid 1px silver; padding: 3px;" /><br/>
+<small>&lt;fb:request-form /&gt; condensed shows when visiting http://apps.facebook.com/examplegames</small>
+<br/>
+<br/>
+<image src="../../Content/images/facebookinvite.png" style="border: solid 1px silver; padding: 3px;" /><br/>
+<small>screen shot of pop-up when user clicks the submit button</small>
+
+<h3>Prerequisites</h3>
+<p>
+    In order to do any kind of Facebook integration, you need to register your app with Facebook and you need to provide a way for users to authenticate using their Facebook log in.  <a href="asp-mvc-and-facebook-single-sign-on">This blog post shows you how to register your site and integrate Facebook's login mechanism with your ASP.NET MVC web site</a>.
+</p>
+
+<h3>Html for fb:request-form</h3>
+<p>
+    This is the code for your view that is needed to show the fb:request-form with a full sized friend selector.
+</p>
+
+<pre name="code" class="html">
+&lt;!-- pull down Facebook's Javascript SDK --&gt;
+&lt;script src="http://connect.facebook.net/en_US/all.js"&gt;&lt;/script&gt;
+
+&lt;!-- the Facebook's Javascript SDK looks for this div when attempting to parse FMBL --&gt;
+&lt;div id="fb-root"&gt;
+    &lt;fb:serverfbml width="750px"&gt;
+        &lt;script type="text/fbml"&gt;
+            &lt;fb:fbml&gt;
+            	&lt;fb:request-form
+                    action="http://www.examplegames.com/Friends/AddFacebookFriend/" 
+                    method="post" 
+                    type="Invite" 
+                    content="I wanted to add you as a friend on example Games.  We can use this network to borrow games from each other and keep track of our video game library. &lt;fb:req-choice label='example Games' url='http://apps.facebook.com/examplegames/' /&gt;"&gt;
+          			&lt;fb:multi-friend-selector max="10" showborder="false" actiontext="Invite Friends to example Games" email_invite="true" bypass="cancel" /&gt;
+            	&lt;/fb:request-form&gt; 
+            &lt;/fb:fbml&gt;
+        &lt;/script&gt;
+    &lt;/fb:serverfbml&gt;
+&lt;/div&gt;
+        
+&lt;script type="text/javascript"&gt;
+    FB.init({
+        apiKey: 'f3ff8e4ed6becc81176d0b2517c9c44c',
+        status: true, // check login status
+        cookie: true, // enable cookies to allow the server to access the session
+        xfbml: false  // parse XFBML 
+    });
+
+    //retrieving the log in status gets things going
+    FB.getLoginStatus(handleSessionResponse);
+
+    function handleSessionResponse(response) {
+        FB.XFBML.parse();
+    }
+&lt;/script&gt;
+</pre>
+
+<h3>Html for fb:request-form condensed</h3>
+<p>
+    This is the code for your view that is needed to show the fb:request-form in a condensed form.
+</p>
+<pre name="code" class="html">
+&lt;!-- pull down Facebook's Javascript SDK --&gt;
+&lt;script src="http://connect.facebook.net/en_US/all.js"&gt;&lt;/script&gt;
+
+&lt;div id="fb-root"&gt;
+    &lt;fb:serverfbml width="650px"&gt;
+        &lt;script type="text/fbml"&gt;
+            &lt;fb:fbml&gt;
+            	&lt;fb:request-form
+                    action="http://www.examplegames.com/Friends/AddFacebookFriend/" 
+                    method="post" type="Invite" content="I wanted to add you as a friend on example Games.  We can use this network to borrow games from each other and keep track of our video game library. &lt;fb:req-choice label='example Games' url='http://apps.facebook.com/examplegames/' /&gt;"&gt;
+          			&lt;fb:multi-friend-selector condensed="true" style="width: 650px" max="10" showborder="false" actiontext="Invite Friends to example Games" email_invite="true" bypass="cancel" /&gt;
+                    &lt;fb:request-form-submit label="Send Invite" /&gt;
+            	&lt;/fb:request-form&gt; 
+            &lt;/fb:fbml&gt;
+        &lt;/script&gt;
+    &lt;/fb:serverfbml&gt;
+&lt;/div&gt;
+        
+&lt;script type="text/javascript"&gt;
+    FB.init({
+        apiKey: 'f3ff8e4ed6becc81176d0b2517c9c44c',
+        status: true, // check login status
+        cookie: true, // enable cookies to allow the server to access the session
+        xfbml: false  // parse XFBML 
+    });
+
+    //retrieving the log in status gets things going
+    FB.getLoginStatus(handleSessionResponse);
+
+    function handleSessionResponse(response) {
+        FB.XFBML.parse();
+    }
+
+&lt;/script&gt;
+</pre>
+
+<h3>After the form submits to Facebook</h3>
+<p>
+  The fb:request-form takes in an action and method parameter.  After Facebook does its thing, the fb:request-form will perform the HTTP POST against the method URI.  Here is a snippet:
+</p>
+
+<pre name="code" class="html">
+&lt;!-- in this particular example an HTTP Post would be performed against the AddFacebookFriend controller action will be called --&gt;
+&lt;fb:request-form
+    action="http://www.examplegames.com/Friends/AddFacebookFriend/"
+    method="post"
+</pre>
+
+<p>
+This is the AddFacebookFriend controller action:
+</p>
+
+<pre name="code" class="c#">
+[ActionName("AddFacebookFriend")]
+[AcceptVerbs(HttpVerbs.Post)]
+public ActionResult AddFacebookFriend(FormCollection formCollection)
+{
+    //from the form collection, create a key value pair (just easier to work with for me, you dont have to do this)
+    List&lt;KeyValuePair&lt;string, string&gt;&gt; results = new List&lt;KeyValuePair&lt;string, string&gt;&gt;();
+    foreach (string key in formCollection.AllKeys)
+    {
+        results.Add(new KeyValuePair&lt;string, string&gt;(key, formCollection[key]));
+    }
+
+    string[] tokens;
+    
+    //in the uncondensed fb:form-request, there will be a form collection key called "emails[]" which will contain a comma delimited list of emails
+    if (results.Any(s =&gt; s.Key == "emails[]"))
+    {
+        string emails = results.SingleOrDefault(s =&gt; s.Key == "emails[]").Value;
+        tokens = emails.Split(',');
+        foreach (string token in tokens)
+        {
+            //after the emails have been split, you can do whatever you want with the emails
+        }
+    }
+
+    //both the uncondensed and condensed fb:form-request will contain a key called "id[]" which will contain a list of facebook id's
+    if (results.Any(s =&gt; s.Key == "ids[]"))
+    {
+        string facebookUserIds = results.SingleOrDefault(s =&gt; s.Key == "ids[]").Value;
+        tokens = facebookUserIds.Split(',');
+        foreach (string token in tokens)
+        {
+            //after the id's have been split, you can do whatever you want with them
+            //keep in mind that Facebook has already taken care of sending the request on its end
+            //also keep in mind that the facebook user id's are of type System.Int64 (long), NOT int/System.Int32
+        }
+    }
+
+    return RedirectToAction("Index", "Friends", new { invitationsSent = true });
+}
+</pre>
+
+<h3>Wrapping up</h3>
+<p>
+   I think that's everything.  You have your view code for creating both a condensed and uncondensed fb:request-form.  And you have the controller action that handles the request.  You can always send me an email if you have any additional questions (email is located on the about page).
+</p>
+    <hr />
+    <span style="color: Silver; font-size: small;">Written: 6/11/2010</span>
+    
+    <script>
+        var idcomments_acct = '6ed8d3f7f3b269a55fc308e535627d11';
+        var idcomments_post_url;
+
+        var  idcomments_post_id;// = 'http%3A%2F%2Famirrajan.net%2FBlogs%2F' + 'asp-mvc-and-the-facebook-request-form';
+
+    </script>
+    <span id="IDCommentsPostTitle" style="display:none">Comments</span>
+    <script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+    <script>$("#body").append('<div></div>').html(idcomments_post_id);</script>
+
+        </div>
+    </div>
+</body>
+</html>

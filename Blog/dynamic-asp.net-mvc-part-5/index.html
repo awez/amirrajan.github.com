@@ -1,0 +1,207 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	
+    
+    Code Blog Foo: dynamic-asp.net-mvc-part-5
+
+</title><link href="../Content/base.css" rel="stylesheet" type="text/css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    
+    <script src="../../Scripts/shAll.js" type="text/javascript"></script>
+    <link href="../../Content/SyntaxHighlighter.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<strong>This is an archive of blog posts from a "long time ago".  If you find this useful, let me know and I'll revive it.</strong>
+    <div class="wrap">
+        
+        <div id="top group">
+            <header>
+                <h1>code blog foo - tag line bar</h1>
+            </header>
+            <div style="padding: 5px; border-bottom: 1px solid silver; border-top: 1px solid silver;">
+                <nav>
+                    <a href="/" style="margin-left: 15px; border-style: solid; border-width: 1px;">home</a>
+                    <span class="sep"></span>
+                    <a href="/Blog/Posts" style="margin-left: 15px; border-style: solid; border-width: 1px;">blog</a>
+                    <a href="/Home/About" style="margin-left: 15px; border-style: solid; border-width: 1px;">about</a>
+                    <a href="/Home/Portfolio" style="margin-left: 15px; border-style: solid; border-width: 1px;">projects/open source</a>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="content">
+            
+    
+    
+    <script type="text/javascript">
+        window.onload = function () {
+            SyntaxHighlighter.config.clipboardSwf = '/Scripts/clipboard.swf';
+            SyntaxHighlighter.all();
+            dp.SyntaxHighlighter.HighlightAll('code');
+        };
+
+     </script>
+    <script type="text/javascript">
+   window.onload = function() {
+       SyntaxHighlighter.config.clipboardSwf = '/Scripts/clipboard.swf';
+       SyntaxHighlighter.all();
+       dp.SyntaxHighlighter.HighlightAll('code');
+   };
+</script>
+
+
+<h2>Dynamic ASP.NET MVC - Part 5, Dynamic Data to Views</h2>
+
+<ul>
+<li>
+<a href="dynamic-asp.net-mvc">TOC</a>
+</li>
+<li>
+<a href="dynamic-asp.net-mvc-part-1">Part 1, Setting Up Your Environment</a>
+</li>
+<li>
+<a href="dynamic-asp.net-mvc-part-2">Part 2, Creating a Better "Compiler"</a>
+</li>
+<li>
+<a href="dynamic-asp.net-mvc-part-3">Part 3, Your First Failing Test</a>
+</li>
+<li>
+<a href="dynamic-asp.net-mvc-part-4">Part 4, Dynamic Data Access</a>
+</li>
+<li>
+<a href="dynamic-asp.net-mvc-part-5">Part 5, Dynamic Data to Views</a>
+</li>
+<li>
+<a href="dynamic-asp.net-mvc-part-6">Part 6, Mixing in Behavior</a>
+</li>
+<li>
+<a href="dynamic-asp.net-mvc-part-7">Part 7, Oak Projections in Massive</a>
+</li>
+</ul>
+
+<h2>Adding Blogs to the View</h2>
+<p>
+    Now that all of our tests pass, we can concentrate on getting blogs showing on the main page.  Specwatchr and oak will help assist us in the development cycle for this view:
+</p>
+<ul>
+    <li>if iisexpress isn't already started up, execute the following command in the ruby command prompt: <strong>rake server</strong></li>
+    <li>after iis express is started, start specwatchr: <strong>sidekick.bat</strong></li>
+    <li>to ensure everything is working: go to index.cshtml and make a change to it (whatever visual change you want to make) and save the file</li>
+    <li>specwatchr should notify you that the website as been redeployed</li>
+    <li>refresh http://localhost:3000/ (your change should be there)</li>
+    <li>
+        add the following markup to Index.cshtml and save:
+<pre name="code" class="html">
+@{
+    ViewBag.Title = "Blogs";
+}
+
+&lt;h2&gt;Blogs&lt;/h2&gt;
+@foreach (var blog in ViewBag.Blogs)
+{
+    @blog.Title&lt;br /&gt;
+}
+</pre>
+    </li>
+    <li>specwatchr will notify you that the website has been redeployed</li>
+</ul>
+
+<h2>Adding Sample Data</h2>
+<p>
+  We really have no way of adding blogs to our application through the views (cause those haven't been built yet).  It may feel natural to just go to the database and insert some records into the blog table.  But let's try something different:
+</p>
+
+<ul>
+<li>
+  You should have the following connection string to your <strong>web.config</strong>:
+<pre name="code" class="xml">
+&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;configuration&gt;
+  &lt;connectionStrings&gt;
+    &lt;add name="DynamicBlog" 
+         connectionString="Data Source=(local);
+                           Initial Catalog=DynamicBlog;
+                           Integrated Security=true"/&gt;
+  &lt;/connectionStrings&gt;
+&lt;/configuration&gt;
+</pre>
+</li>
+    <li>go to SeedController.cs and update the SampleEntires() method: 
+<pre name="code" class="c#">
+//inside public class Schema
+public void SampleEntries() 
+{
+    var blogPosts =
+        new[] 
+        { 
+            new { Title = "My First Blog Post" },
+            new { Title = "Another Blog Post" } ,
+            new { Title = "Sample" } ,
+            new { Title = "Yet Another One" }
+        };
+
+    foreach (var blog in blogPosts)
+    {
+        new 
+        {
+            Title = blog.Title 
+        }.InsertInto("Blogs");
+    }
+}
+</pre>
+    </li>
+    <li>save the file, specwatchr will respond with deploying the website and running tests (there aren't any for this file, so you should just get a green light)</li>
+    <li>we don't want to stop specwatchr, open up another command prompt that supports ruby</li>
+    <li>in the new command prompt, navigate to the solution directory</li>
+    <li>execute the following command: <strong>rake sample</strong></li>
+    <li>a task defined in Rakefile.rb will get executed...the rake task will perform an HTTP/POST to the seed controller that purges the database, recreates the schema, and adds the sample data provided in the seed controller</li>
+    <li>refresh http://localhost:3000/ (you should see your sample data)</li>
+    <li>taking this approach to creating sample data <strong>makes it repeatable and useful to other developers on your team</strong></li>
+</ul>
+
+<h2>Another Dialog With Myself</h2>
+<blockquote>
+    <strong>So we got blogs displaying on the front page.  That was really a lot of work just to get that going....</strong>
+</blockquote>
+<p>
+    Relative to what?  Dragging and dropping a database table onto an .edmx file and returning it to the view?  That seems a bit short sighted don't you think?
+</p>
+<ul>
+   <li>Where is my tests suite?</li>
+   <li>How do I ensure that other developers can get up and running as quickly as possible?</li>
+   <li>With a drag and drop solution, I can't tell another developer to "Hey, just get latest, run rake, rake tests, rake server, rake sample, and you're website is deployed and ready to view."</li>
+</ul>
+<blockquote>
+    <strong>Okay, okay, we didn't just create a website that shows blogs on the front page.  We provided the ground work for a sustainable development life cycle that incorporates build automation, deployment automation, schema creation, and overall developer assistance.</strong>
+</blockquote>
+<p>
+   Yes.  That and the solution thus far is fully tested.  Every line of code we wrote was written for a reason.  We had a failing test that told us that functionality was missing, and then (and only then) did we write the implementation code.  We were able to take this approach because our development rhythm wasn't broken by having to debug, or build, or deploy or run manual sql scripts.
+</p>
+<blockquote>
+   <strong>I completely agree.  But at some point, our application will be more than a simple crud app.  Returning data directly from the database isn't going to cut it.</strong>
+</blockquote>
+<p>
+    You're absolutely right.  We're going to cover that in part 6.
+</p>
+    <hr />
+    <span style="color: Silver; font-size: small;">Written: 6/26/2011</span>
+    
+    <script>
+        var idcomments_acct = '6ed8d3f7f3b269a55fc308e535627d11';
+        var idcomments_post_url;
+
+        var  idcomments_post_id;// = 'http%3A%2F%2Famirrajan.net%2FBlogs%2F' + 'dynamic-asp.net-mvc-part-5';
+
+    </script>
+    <span id="IDCommentsPostTitle" style="display:none">Comments</span>
+    <script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+    <script>$("#body").append('<div></div>').html(idcomments_post_id);</script>
+
+        </div>
+    </div>
+</body>
+</html>

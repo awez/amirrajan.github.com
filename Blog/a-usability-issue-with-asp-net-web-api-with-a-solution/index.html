@@ -1,0 +1,359 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	
+    
+    Code Blog Foo: a-usability-issue-with-asp-net-web-api-with-a-solution
+
+</title><link href="../Content/base.css" rel="stylesheet" type="text/css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    
+    <script src="../../Scripts/shAll.js" type="text/javascript"></script>
+    <link href="../../Content/SyntaxHighlighter.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<strong>This is an archive of blog posts from a "long time ago".  If you find this useful, let me know and I'll revive it.</strong>
+    <div class="wrap">
+        
+        <div id="top group">
+            <header>
+                <h1>code blog foo - tag line bar</h1>
+            </header>
+            <div style="padding: 5px; border-bottom: 1px solid silver; border-top: 1px solid silver;">
+                <nav>
+                    <a href="/" style="margin-left: 15px; border-style: solid; border-width: 1px;">home</a>
+                    <span class="sep"></span>
+                    <a href="/Blog/Posts" style="margin-left: 15px; border-style: solid; border-width: 1px;">blog</a>
+                    <a href="/Home/About" style="margin-left: 15px; border-style: solid; border-width: 1px;">about</a>
+                    <a href="/Home/Portfolio" style="margin-left: 15px; border-style: solid; border-width: 1px;">projects/open source</a>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="content">
+            
+    
+    
+    <script type="text/javascript">
+        window.onload = function () {
+            SyntaxHighlighter.config.clipboardSwf = '/Scripts/clipboard.swf';
+            SyntaxHighlighter.all();
+            dp.SyntaxHighlighter.HighlightAll('code');
+        };
+
+     </script>
+    <h2>A Usability Issue with ASP.NET Web Api with A Solution</h2>
+<h3>Blog Battle!</h3>
+<p>
+   One of my buddies <a href="http://www.thecodinghumanist.com/blog/archives/2012/9/10/a-usability-issue-with-asp-net-web-api-with-a-solution" target="_blank">Eric Sowell, did a blog post on Web API</a>.  The blog post is <b>excellent</b> and will help a lot of developers struggling with this framework.  I've mentioned *many* times that I have my reservations about ASP.NET Web Api, and promised Eric that I'd put a blog post up that talks about alternatives for building REST architectures.  Well Eric (and company), here it is! :-)
+</p>
+
+<h3>TL;DR: My Solution to the Usability Issues in ASP.NET Web Api</h3>
+<p>
+  <b>So here is my solution to the issues Eric brought up in his blog post: <span style="font-size: 20px">considering using something other than ASP.NET Web Api.</span></b>  Apparently, ASP.NET Web Api was built so you could author Http Api's, <b>NOT</b> necessarily Rest Api's.  <b>I am a complete newb when it comes to ASP.NET Web API, I do however consider myself an expert in Rest and am well versed in ASP.NET MVC, Nancy and ServiceStack</b>. When I see statements such as "ASP.NET Web Api wasn't developed as a Rest framework", that pretty much translates to <i>I</i> have to build the plumbing for a Rest Api implementation. I think that you'll be much happier if you just use ASP.NET MVC's existing constructs or use <a href="http://www.servicestack.net/" target="_blank">ServiceStack</a> (highly recommended).  The rest of the blog post will compare ServiceStack and ASP.NET MVC to the helpful code Eric provided for creating ASP.NET Web Api plumbing (I would definitely recommend you read his blog entry, a lot of valuable information for those stuck using Web Api).
+</p>
+
+<h3>Some Basics</h3>
+<p>Here is how you return an error status in:</p>
+<pre name="code" class="c#">
+//ASP.NET Web Api
+public HttpResponseMessage Get()
+{
+    return new HttpResponseMessage(HttpStatusCode.BadGateway);
+}
+
+//ASP.NET MVC
+public ActionResult Get()
+{
+    return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+}
+
+//ServiceStack
+public override object OnGet(Thingy thingy)
+{
+    return new HttpResult { StatusCode = HttpStatusCode.BadRequest };
+}
+</pre>
+<h3>Comments</h3>
+<p>
+Pretttyyy much the same in each one of the implementations.  Each one has its flavor of how to return a status code.  In the ServiceStack implementation, your class will inherit from RestServiceBase&lt;T&gt; (which will give you the OnGet override).</p>
+<p>
+Here is how you return a status code with a message attached to it:
+</p>
+<pre name="code" class="c#">
+//WCF Web API
+var error = new HttpError("You have failed.");
+return Request.CreateErrorResponse(HttpStatusCode.BadRequest, error);
+
+//ASP.NET MVC
+return new HttpStatusCodeResult(HttpStatusCode.BadRequest, "You failed.");
+
+//ServiceStack
+return new HttpResult(HttpStatusCode.BadRequest, "You failed.");
+</pre>
+<h3>Start Building Plumbing...</h3>
+<p>
+   Here is where my concerns begin. <b>Web Api, in the simplest of cases, makes things harder to test by introducing the Request object, now I have to do ninja-like mock backflips to assert the behavior of the method</b>.  I'm afraid the pain points continue. Let's take a look at HttpResponseMessage and Payloads.
+</p>
+<h3>Edit:</h3>
+<p>
+<a href="https://twitter.com/frystyk" target="_blank">Henrik F. Nielsen (@frystyk)</a> has referred me to a blog post that shows how to run an in memory instance of Web Api so you can run tests against it.  <a href="http://www.strathweb.com/2012/06/asp-net-web-api-integration-testing-with-in-memory-hosting/" target="_blank">Very cool blog post.</a>  They certainly don't make it obvious, but the fact that you can do this kind of testing is a huge step in the right direction.
+</p>
+
+<h3>HttpResponseMessage and Payloads</h3>
+<p>As Eric has demonstrated in his blog post, here is how you would conditionally return one payload over another inside of ASP.NET Web Api:
+<pre name="code" class="c#">
+public HttpResponseMessage Get(string stuff)
+{
+    if (String.IsNullOrEmpty(stuff))
+    {
+        var error = new HttpError("You have failed.");
+        return Request.CreateErrorResponse(HttpStatusCode.BadRequest, error);
+    }
+ 
+    var thingy = new Thingy
+    {
+        Name = "mabob"
+    };
+ 
+    return Request.CreateResponse(HttpStatusCode.Accepted, thingy);
+}
+</pre>
+<p>
+And here is the same thing in ASP.NET MVC:
+</p>
+<pre name="code" class="c#">
+public ActionResult Get(string stuff)
+{
+    if (String.IsNullOrEmpty(stuff))
+    {
+        return new HttpStatusCodeResult(502, "You failed.");
+    }
+
+    return Json(new Thingy { Name = "Mabob" });
+}
+</pre>
+<p>
+Last, but definitely not least, here is ServiceStack:
+</p>
+<pre name="code" class="c#">
+public override object OnGet(Thingy thingy)
+{
+    if(string.IsNullOrEmpty(thingy.Content))
+    {
+        return new HttpResult(HttpStatusCode.BadRequest, "You failed.");
+    }
+
+    return new Thingy { Content = "hi" };
+}
+</pre>
+<h3>Comments</h3>
+<p>
+    With Web Api, a whole lot of the same issues.  I agree with Eric, not intuitive at all and harder to bring under test.
+</p>
+<p>
+ASP.NET MVC is clean and simple.  I know what you are going to say: "But you're returning Json!! What about Xml?!"  Accept it.  <b>XML is dead.</b>  As much as I dislike referring to other "authorities" about this kind of stuff, <a href="https://dev.twitter.com/docs/api/1.1/overview" target="_blank">Twitter has discontinued their XML api (read Json Support only section)</a>.
+</p>
+
+<p>
+    ServiceStack is looking prettyyy good, it's kind of weird with having to pass in a specific object as opposed to a simple string.  On the plus side, it supports XML (even though I don't consider that too useful).  It's worth mentioning that full blown Rest API's will benefit from the same object being passed in.
+</p>
+
+<h3>Edit:</h3>
+<p>
+Steven (see comments), mentioned the need to support content types such as application/json+hal (ie hypermedia control).  Here is how you can do hypermedia control in ASP.NET MVC (yes, I've had to create the plumbing and am giving it to you): <a href="http://nuget.org/packages/restful-mvc" target="_blank">[install-package restful-mvc]</a>.  <b>BTW, hypermedia control implementation is NOT available out of the box in ASP.NET Web API (or ServiceStack for that matter), so you'll have to build your own using custom media types...have fun :-(.</b>
+</p>
+
+<h3>Adding More Plumbing</h3>
+<p>To be fair, WCF Web API has a similar approach to ASP.NET MVC. With this approach, you lose content negotiation (see Eric's blog post for a full explanation).
+<p>
+
+<pre name="code" class="c#">
+public HttpResponseMessage Get(string stuff)
+{
+    if (String.IsNullOrEmpty(stuff))
+    {
+        var error = new HttpError("You have failed.");
+        return Request.CreateErrorResponse(HttpStatusCode.BadRequest, error);
+    }
+ 
+    var thingy = new Thingy
+    {
+        Name = "mabob"
+    };
+ 
+    return new HttpResponseMessage(HttpStatusCode.Accepted)
+    {
+        Content = new ObjectContent&lt;Thingy&gt;(thingy, new System.Net.Http.Formatting.JsonMediaTypeFormatter())
+    };
+}
+</pre>
+
+
+<p>
+  Still way <b>too much code to do something so simple</b>.  The ASP.NET MVC version and the ServiceStack version do a better job.  The last thing Eric talked about in his blog post is custom error responses.  Let's do a compare and contrast of that.
+</p>
+<h3>Another Thing Eric (and I) Want to Do: Custom Error Response</h3>
+<p>
+Taking from Eric's blog, it would be so nice if you could support custom error payload in WCF Web API by doing this:
+</p>
+<pre name="code" class="c#">
+//Don’t do this. It won’t work.
+public HttpResponseMessage Get(string stuff)
+{
+    if (String.IsNullOrEmpty(stuff))
+    {
+        return new HttpResponseMessage(HttpStatusCode.BadRequest,
+            new Error { Code = 76543, Description = "Please supply stuff" });
+    }
+    //Other stuff left out
+}
+</pre>
+<p>
+  Surprise, surprise.  As the comments state, it doesn't work.  At this point I would be throwing my computer out of the window.  But unlike me, Eric is calm and cool.  He figured out a good solution.  Here is the solution to this problem (I'm placing it here to compare and contrast it with ASP.NET MVC and ServiceStack).  He had to code THIS:
+</p>
+<pre name="code" class="c#">
+//for explanation of the code below, go to Eric's blog. 
+//I'm just putting the code here for comparison
+public class ExtendedHttpResponseMessage: HttpResponseMessage
+{
+    public ExtendedHttpResponseMessage(HttpStatusCode statusCode)
+        : base(statusCode) { }
+ 
+    public object Payload { get; set; }
+}
+ 
+public class ExtendedHttpResponseMessage&lt;T&gt; : ExtendedHttpResponseMessage
+{
+    public ExtendedHttpResponseMessage(T payload)
+        : this(payload, HttpStatusCode.Accepted) { }
+ 
+    public ExtendedHttpResponseMessage(T payload, HttpStatusCode statusCode)
+        : base(statusCode)
+    {
+        Payload = payload;
+    }
+}
+
+//and this code
+public class ExtendedHttpResponseMessageHandler : DelegatingHandler
+{
+    protected async override Task&lt;HttpResponseMessage&gt; SendAsync(HttpRequestMessage request, System.Threading.CancellationToken cancellationToken)
+    {
+        var result = await base.SendAsync(request, cancellationToken);
+ 
+        var customMessage = result as ExtendedHttpResponseMessage;
+        if (customMessage == null)
+            return result;
+ 
+        var config = request.GetConfiguration();
+        var contentNegotiator = config.Services.GetContentNegotiator();
+        var connegResult = contentNegotiator.Negotiate(
+            customMessage.Payload.GetType(), request, config.Formatters
+        );
+ 
+        var objectContent = new ObjectContent(
+            customMessage.Payload.GetType(), customMessage.Payload, connegResult.Formatter);
+ 
+        result.Content = objectContent;
+ 
+        return result;
+    }
+}
+
+//which allows you to do this:
+public HttpResponseMessage Get(string stuff)
+{
+    if (String.IsNullOrEmpty(stuff))
+    {
+        return new ExtendedHttpResponseMessage&lt;Error&gt;(new Error 
+            { Code = 76543, Description = "Please supply stuff" }, 
+            HttpStatusCode.BadRequest);
+    }
+
+    //other stuff
+}
+</pre>
+<p>
+   Gosh be daRnit ASP.NET Web Api...can't you make this stuff easy for us?  Here is how you would do custom error payloads in ASP.NET MVC:
+</p>
+<pre name="code" class="c#">
+//only JSON supported, remember what I said about XML being dead?
+public class CustomErrorResult : ActionResult
+{
+    public object Model { get; set; }
+    public int StatusCode { get; set; }
+    public override void ExecuteResult(ControllerContext context)
+    {
+        context.HttpContext.Response.ContentType = "application/json";
+        context.HttpContext.Response.Output
+            .Write(JsonConvert.SerializeObject(Model)); //JSON.Net FTW
+        context.HttpContext.Response.StatusCode = StatusCode;
+        context.HttpContext.Response.Output.Flush();
+    }
+}
+
+public ActionResult Get(string stuff)
+{
+    if(string.IsNullOrEmpty(stuff))
+    {
+        return new CustomErrorResult
+        {
+            StatusCode = HttpStatusCode.BadRequest,
+            Model = new Error
+            {
+                Code = 76543,
+                Description = "Please supply stuff."
+            }
+        };
+
+        //other stuff
+    }
+}
+</pre>
+<p>
+   I personally think this is pretty straight forward.  <b>However, the ServiceStack implementation crushes both of these.  Check it yo:</b>
+</p>
+<pre name="code" class="c#">
+public override object OnGet(Thingy request)
+{
+    return new HttpResult(
+        new Error 
+        { 
+            Code = 76543, 
+            Description = "Please supply stuff" 
+        })
+        {
+            StatusCode = HttpStatusCode.BadRequest
+        };
+}
+</pre>
+<p>
+   <i>That's it. </i><strong>Imagine that. Useful stuff available right out of the ServiceStack box.</strong> This here is a testament to a mature framework that is actually used for real world problems.  ASP.NET Web Api makes the simplest things painful to do, what does that say about the framework?  As Eric put it and I quote: "I can haz easy api??? So it’s not that hard to accomplish this???" 
+</p>
+<h3>And the Winner is....</h3>
+<p>
+<span style="font-size: 25px">Not ASP.NET Web API. Consider using something else.</span> If you are using ASP.NET MVC currently, you'll be very happy to know that it can do everything you need it to.  Infact, <a href="https://github.com/amirrajan/Restful/blob/master/sample-usage-mvc.txt" target="_blank">here is a lean Rest Api layer that you can bolt on to ASP.NET MVC</a> (just install the nuget package "restful-mvc" and follow the instructions).  <strong>Honestly though, if I could do it all over again, I would just use <a href="http://www.servicestack.net/" target="_blank">ServiceStack</a></strong>.  Thanks for reading this rant, hope you found it helpful :-).
+</p>
+<h3>
+    <hr />
+    <span style="color: Silver; font-size: small;">Written: 9/10/2012</span>
+    
+    <script>
+        var idcomments_acct = '6ed8d3f7f3b269a55fc308e535627d11';
+        var idcomments_post_url;
+
+        var  idcomments_post_id = 'http%3A%2F%2Famirrajan.net%2FBlogs%2F' + 'a-usability-issue-with-asp-net-web-api-with-a-solution%2F';
+
+    </script>
+    <span id="IDCommentsPostTitle" style="display:none">Comments</span>
+    <script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+    <script>$("#body").append('<div></div>').html(idcomments_post_id);</script>
+
+        </div>
+    </div>
+</body>
+</html>

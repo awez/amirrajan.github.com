@@ -1,0 +1,461 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	
+    
+    Code Blog Foo: dynamic-asp.net-mvc-part-4
+
+</title><link href="../Content/base.css" rel="stylesheet" type="text/css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    
+    <script src="../../Scripts/shAll.js" type="text/javascript"></script>
+    <link href="../../Content/SyntaxHighlighter.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<strong>This is an archive of blog posts from a "long time ago".  If you find this useful, let me know and I'll revive it.</strong>
+    <div class="wrap">
+        
+        <div id="top group">
+            <header>
+                <h1>code blog foo - tag line bar</h1>
+            </header>
+            <div style="padding: 5px; border-bottom: 1px solid silver; border-top: 1px solid silver;">
+                <nav>
+                    <a href="/" style="margin-left: 15px; border-style: solid; border-width: 1px;">home</a>
+                    <span class="sep"></span>
+                    <a href="/Blog/Posts" style="margin-left: 15px; border-style: solid; border-width: 1px;">blog</a>
+                    <a href="/Home/About" style="margin-left: 15px; border-style: solid; border-width: 1px;">about</a>
+                    <a href="/Home/Portfolio" style="margin-left: 15px; border-style: solid; border-width: 1px;">projects/open source</a>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="content">
+            
+    
+    
+    <script type="text/javascript">
+        window.onload = function () {
+            SyntaxHighlighter.config.clipboardSwf = '/Scripts/clipboard.swf';
+            SyntaxHighlighter.all();
+            dp.SyntaxHighlighter.HighlightAll('code');
+        };
+
+     </script>
+    <script type="text/javascript">
+   window.onload = function() {
+       SyntaxHighlighter.config.clipboardSwf = '/Scripts/clipboard.swf';
+       SyntaxHighlighter.all();
+       dp.SyntaxHighlighter.HighlightAll('code');
+   };
+</script>
+
+
+<h2>Dynamic ASP.NET MVC - Part 4, Dynamic Data Access</h2>
+
+<ul>
+<li>
+<a href="dynamic-asp.net-mvc">TOC</a>
+</li>
+<li>
+<a href="dynamic-asp.net-mvc-part-1">Part 1, Setting Up Your Environment</a>
+</li>
+<li>
+<a href="dynamic-asp.net-mvc-part-2">Part 2, Creating a Better "Compiler"</a>
+</li>
+<li>
+<a href="dynamic-asp.net-mvc-part-3">Part 3, Your First Failing Test</a>
+</li>
+<li>
+<a href="dynamic-asp.net-mvc-part-4">Part 4, Dynamic Data Access</a>
+</li>
+<li>
+<a href="dynamic-asp.net-mvc-part-5">Part 5, Dynamic Data to Views</a>
+</li>
+<li>
+<a href="dynamic-asp.net-mvc-part-6">Part 6, Mixing in Behavior</a>
+</li>
+<li>
+<a href="dynamic-asp.net-mvc-part-7">Part 7, Oak Projections in Massive</a>
+</li>
+</ul>
+
+<h2>Dynamic Data Access Using Massive, Schema Creation Using Oak</h2>
+<p>
+   Now that our HomeController has the correct interactions with our Blogs model, we can start looking at making Blogs retrieve the correct data from the database.  We'll work with MSSQL (it doesn't matter if you are using SQLExpress or SQLServer, your choice). <strong>Create a database called DynamicBlog (just the database do not worry about creating any tables).</strong>
+</p>
+
+<h2>Re-writing the First Failing Test, Querying All() with Massive</h2>
+<p>
+   As stated in Part 3, we are going to back out the mocking and dependency injection to create the "real world" test. If you don't have specwatchr running, go ahead and start it now.  Time to create the real failing test:
+</p>
+<ul>
+   <li>start up specwatchr</li>
+   <li>alter describe_HomeController.cs to be the following:
+       <pre name="code" class="c#">
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using NSpec;
+using DynamicBlog.Controllers;
+using System.Web.Mvc;
+using Oak;
+using Oak.Controllers;
+
+//inherit from nspec
+class describe_HomeController : nspec
+{
+    HomeController homeController;
+    dynamic actionResult;
+    
+    //this is a "method level before" which gets executed before each test
+    void before_each()
+    {
+        homeController = new HomeController();
+    }
+
+    void navigating_to_the_home_page()
+    {
+        //this is our "act" which gets 
+        //executed AFTER all "before's" 
+        //and BEFORE all "it's" (crystal clear huh?)
+        act = () =&gt;
+        {
+            actionResult = homeController.Index();
+        };
+
+        //this is a bdd style called context/specification
+        //we are defining a nested context stating that
+        //a blog exists in our database
+        context["given a blog with title 'Hello'"] = () =&gt;
+        {
+            //insert a blog into the database
+            //remember this actually executes BEFORE the "act" defined
+            //at the top of this method
+            before = () =&gt; new { Title = "Hello" }.InsertInto("Blogs");
+
+            //this is our new assertion
+            //remember this assert occurs AFTER the "act" defined
+            //at the top of this method
+            //and look! no more mocking.  now this test has real value.
+            it["gives blogs containing a blog named 'Hello'"] = () =&gt;
+            {
+                var first = (actionResult.ViewBag.Blogs as IEnumerable&lt;dynamic&gt;).First();
+                (first.Title as string).should_be("Hello");
+            };
+        };
+    }
+}
+       </pre>
+   </li>
+   <li>
+   Now that we have removed the mocks from Part 3, we can clean up our implementation code for both the controller and model.  Here are the updated pieces:
+
+<pre name="code" class="c#">
+//HomeController.cs
+public class HomeController : Controller
+{
+    Blogs blogs;
+
+    public HomeController()
+    {
+        this.blogs = new Blogs();
+    }
+
+    public ActionResult Index()
+    {
+        ViewBag.Blogs = blogs.All();
+
+        return View();
+    }
+}
+
+//Blogs.cs
+public class Blogs : DynamicRepository
+{
+}
+</pre>
+   </li>
+   <li>Save All after the updates have been made</li>
+   <li><strong>Saving describe_HomeController.cs will cause specwatchr to run tests, growl will notify you of a failure: The ConnectionString property has not been initialized..</strong></li>
+   <li>NOTE: you wont get the failure above if you used the warmup command to create the solution, the connection string is already set to (local) db with integrated security</li> 
+   <li>
+        To fix this error, add an App.config to your test project with the following content:
+<pre name="code" class="xml">
+&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;configuration&gt;
+  &lt;connectionStrings&gt;
+    &lt;add name="DynamicBlog" 
+         connectionString="Data Source=(local);
+                           Initial Catalog=DynamicBlog;
+                           Integrated Security=true"/&gt;
+  &lt;/connectionStrings&gt;
+&lt;/configuration&gt;
+</pre>
+   <strong>Add the same connection string to the web.config of your MVC application.</strong><br/>
+   NOTE: again, this friction has been removed by using the warmup script :-)
+   </li>
+   <li>Save All, specwatchr will notify you that it has been reloaded</li>
+   <li>Go to describe_HomeController.cs and save the file</li>
+   <li><strong>You will be given the following test failure: Invalid object name 'Blogs'.</strong></li>
+</ul>
+
+<p>
+  Now we have our failing test stating that there needs to be a table in the database called Blogs.  <strong>We are going to use oak to create the table</strong>.
+</p>
+
+<h2>Making the Test Pass, Creating the Blogs Table Using oak</h2>
+<p>
+  Oak was one of the NuGet packages we installed in Part 2.  Oak is a C# to SQL DSL that will help you generate the schema. We are going to use this to manage our database schema.  When you installed oak, a controller was created in you web application called SeedController.cs.  Open the file and replace what's there inside SeedController with the following code:
+</p>
+
+<pre name="code" class="c#">
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using Oak;
+
+namespace Oak.Controllers
+{
+    public class Schema
+    {
+        //this is your scripts method that gives all scripts
+        //for your database
+        public IEnumerable&lt;Func&lt;dynamic&gt;&gt; Scripts()
+        {
+            yield return CreateBlogsTable;
+        }
+
+        //this is a script to create the blogs table
+        public string CreateBlogsTable()
+        {
+            return Seed.CreateTable(
+                //the table
+                "Blogs", 
+                //the column
+                new { Id = "int", PrimaryKey = true, Identity = true }
+            );
+        }
+
+        public void SampleEntries()
+        {
+            new
+            {
+                Title = "Hello World",
+                Body = "Lorem Ipsum"
+            }.InsertInto("Blogs");
+        }
+
+        public Seed Seed { get; set; }
+
+        public Schema(Seed seed) { Seed = seed; }
+    }
+
+    [LocalOnly]
+    public class SeedController : Controller
+    {
+        public Seed Seed { get; set; }
+
+        public Schema Schema { get; set; }
+
+        public SeedController()
+        {
+            Seed = new Seed();
+
+            Schema = new Schema(Seed);
+        }
+
+        [HttpPost]
+        public ActionResult PurgeDb()
+        {
+            Seed.PurgeDb();
+
+            return new EmptyResult();
+        }
+
+        [HttpPost]
+        public ActionResult Export()
+        {
+            var exportPath = Server.MapPath("~");
+
+            Seed.Export(exportPath, Schema.Scripts());
+
+            return Content("Scripts executed to: " + exportPath);
+        }
+
+        [HttpPost]
+        public ActionResult All()
+        {
+            Schema.Scripts().ForEach<dynamic>(s => Seed.ExecuteNonQuery(s()));
+
+            return new EmptyResult();
+        }
+
+        [HttpPost]
+        public ActionResult SampleEntries()
+        {
+            Schema.SampleEntries();
+
+            return new EmptyResult();
+        }
+
+        protected override void OnException(ExceptionContext filterContext)
+        {
+            filterContext.Result = Content(filterContext.Exception.Message);
+            filterContext.ExceptionHandled = true;
+        }
+    }
+
+    public class LocalOnly : ActionFilterAttribute
+    {
+        public override void OnActionExecuting(ActionExecutingContext filterContext)
+        {
+            if (!RunningLocally(filterContext)) filterContext.Result = new HttpNotFoundResult();
+        }
+
+        public bool RunningLocally(ActionExecutingContext filterContext)
+        {
+            return filterContext.RequestContext.HttpContext.Request.IsLocal;
+        }
+    }
+}
+//you'll have to delete this rouge markup, silly html...
+</pre>
+
+<p>
+  Now that the SeedController is updated we can use it to create our schema and make the test fail for the next reason.  Update describe_HomeController.cs.
+</p>
+
+<pre name="code" class="c#">
+//inherit from nspec
+class describe_HomeController : nspec
+{
+    HomeController homeController;
+    //declare seed controller
+    SeedController seedController;
+    dynamic actionResult;
+    
+    //this is a "method level before" which gets executed before each test
+    void before_each()
+    {
+        homeController = new HomeController();
+        //new it up and reset the database using purgedb, and all methods
+        seedController = new SeedController();
+        seedController.PurgeDb();
+        seedController.All();
+    }
+
+    void navigating_to_the_home_page()
+    {
+        act = () =&gt;
+        {
+            actionResult = homeController.Index();
+        };
+
+        context["given a blog with title 'Hello'"] = () =&gt;
+        {
+            before = () =&gt; new { Title = "Hello" }.InsertInto("Blogs");
+
+            it["gives blogs containing a blog named 'Hello'"] = () =&gt;
+            {
+                var first = (actionResult.ViewBag.Blogs as IEnumerable&lt;dynamic&gt;).First();
+                (first.Title as string).should_be("Hello");
+            };
+        };
+    }
+}
+</pre>
+
+<p>
+    When you save describe_HomeController.cs, specwatchr will notify you that the Titles column doesn't exist.  If you look in the database, you'll also see that the Blogs table has been created with an Id column.
+</p>
+
+<h2>Add a Title Column</h2>
+<p>
+  Update Seed to also include the Title column.
+</p>
+<ul>
+   <li>
+      <pre name="code" class="c#">
+public string CreateBlogsTable()
+{
+    //use seed to create a sql command
+    return Seed.CreateTable(
+        "Blogs", //the table
+            new { Id = "int", PrimaryKey = true, Identity = true },
+            new { Title = "nvarchar(255)" }
+        );
+}
+      </pre>
+   </li>
+   <li>
+     After adding the column definition, save.  Go back to describe_HomeController.cs and save that file, specwatchr will notify you that your test passes.
+   </li>
+</ul>
+
+<h2>Seed Controller</h2>
+
+<blockquote>
+    <strong>So why create a seed controller for oak??</strong>
+</blockquote>
+
+<p>
+    The seed controller can be used within the tests and can also be used as independent actions by the developer. For example:
+</p>
+<ul>
+    <li>start Command Prompt With Ruby</li>
+    <li>navigate to the solution directory</li>
+    <li>execute the following command: <strong>rake</strong></li>
+    <li>the solution will get built and deployed to the iis express directory you specified in dev.yml</li>
+    <li>execute the following command: <strong>rake server</strong></li>
+    <li>iisexpress.exe will be started on the port you specified in dev.yml</li>
+    <li>execute the following command: <strong>rake reset</strong></li>
+    <li>if you are curious about the script that is generated use the command: <strong>rake export</strong></li>
+    <li>the database has now been purged and the schema has been recreated (it makes it really easy for other developers on the team to get latest, and run reset...no sql scripts to run!)</li>
+    <li>you can also run all tests (you don't need to have IISExpress started for this command): <strong>rake tests</strong></li>
+    <li>
+        this will run all nspec tests that have been written:
+        <pre name="code" class="c#">
+describe HomeController
+  when browsing to home page
+    given a blog exists
+      returns a blog
+
+1 Examples, 0 Failed, 0 Pending
+        </pre>
+    </li>
+</ul>
+
+<h2>Things to Reflect on</h2>
+<p>
+   Think about what we've done so far.  We are on our way of using a whole lot of stuff the compiler won't complain about.  Some questions to ask yourself:
+</p>
+<ul>
+    <li>Do you miss the compiler thus far?</li>
+    <li>What are your thoughts on the work flow (how many times have you hit build, rebuild, clean solution, run all tests or any other bits of ceremony we are all used to)?</li>
+    <li>Does it seem like a lot of work writing all the tests?</li>
+    <li>Do you think with more practice, this rhythm well become second nature? (it will)</li>
+</ul>
+    <hr />
+    <span style="color: Silver; font-size: small;">Written: 6/18/2011</span>
+    
+    <script>
+        var idcomments_acct = '6ed8d3f7f3b269a55fc308e535627d11';
+        var idcomments_post_url;
+
+        var  idcomments_post_id;// = 'http%3A%2F%2Famirrajan.net%2FBlogs%2F' + 'dynamic-asp.net-mvc-part-4';
+
+    </script>
+    <span id="IDCommentsPostTitle" style="display:none">Comments</span>
+    <script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+    <script>$("#body").append('<div></div>').html(idcomments_post_id);</script>
+
+        </div>
+    </div>
+</body>
+</html>

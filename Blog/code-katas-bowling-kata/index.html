@@ -1,0 +1,134 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	
+    
+    Code Blog Foo: code-katas-bowling-kata
+
+</title><link href="../Content/base.css" rel="stylesheet" type="text/css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    
+    <script src="../../Scripts/shAll.js" type="text/javascript"></script>
+    <link href="../../Content/SyntaxHighlighter.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<strong>This is an archive of blog posts from a "long time ago".  If you find this useful, let me know and I'll revive it.</strong>
+    <div class="wrap">
+        
+        <div id="top group">
+            <header>
+                <h1>code blog foo - tag line bar</h1>
+            </header>
+            <div style="padding: 5px; border-bottom: 1px solid silver; border-top: 1px solid silver;">
+                <nav>
+                    <a href="/" style="margin-left: 15px; border-style: solid; border-width: 1px;">home</a>
+                    <span class="sep"></span>
+                    <a href="/Blog/Posts" style="margin-left: 15px; border-style: solid; border-width: 1px;">blog</a>
+                    <a href="/Home/About" style="margin-left: 15px; border-style: solid; border-width: 1px;">about</a>
+                    <a href="/Home/Portfolio" style="margin-left: 15px; border-style: solid; border-width: 1px;">projects/open source</a>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="content">
+            
+    
+    
+    <script type="text/javascript">
+        window.onload = function () {
+            SyntaxHighlighter.config.clipboardSwf = '/Scripts/clipboard.swf';
+            SyntaxHighlighter.all();
+            dp.SyntaxHighlighter.HighlightAll('code');
+        };
+
+     </script>
+    <h2>Awesome Code Katas</h2>
+<p>
+   I've been doing quite a few Code Katas, especially at <a href="http://dallashackclub.com/" target="_blank">Dallas Hack Club</a>.  Here is a list of code katas that you may want to try out.  I recommend tackling them in the order they are listed :-).
+</p>
+<ul>
+<li>
+<a href="code-katas">TOC</a>
+</li>
+<li>
+<a href="code-katas-prime-factors">Prime Factors - Rite of Passage</a>
+</li>
+<li>
+<a href="code-katas-bowling-kata">Bowling Kata - Reinforcement</a>
+</li>
+<li>
+<a href="code-katas-mars-rover">Mars Rover - The Transition</a>
+</li>
+<li>
+<a href="code-katas-poker">Poker Kata - Picking the Right Test</a>
+</li>
+<li>
+<a href="code-katas-vending-machine">Vending Machine Kata - Exploring Behaviors</a>
+</li>
+<li>
+<a href="code-katas-map-kata">Map Kata - En Passe</a>
+</li>
+<li>
+<a href="code-katas-conways-game-of-life">Conway's Game of Life</a>
+</li>
+<li>
+<a href="code-katas-mancala">Mancala</a>
+</li>
+</ul>
+
+<h2>Bowling Kata - Reinforcement</h2>
+<p>
+    Now that you've gone through the <a href="code-katas-prime-factors">[Prime Factors Kata]</a>, reinforce what you've learned with the Bowling Kata.  Keep the same things in mind.  Write a failing test, write just enough code to make that specific test pass, keep things dry, keep things simple.
+</p>
+
+<h2>Explanation</h2>
+<p>
+   Develop a function - not a complicated class structure ;-) - that when given a string representing a bowling score, it returns a number representing the bowling score.  This is another kata I'll walk you through. 
+</p>
+
+<h2>The First Test</h2>
+<p>
+  In bowling, the bowler gets two attempts to clear the pins in a frame.  If the player never rolls a spare or a strike, then the score is simply summed up.
+</p>
+<p>
+Start with this test.  If you are given these 10 frames: "31415390107133238009" the score is the sum of each digit, in this case the answer is 3+1+4+1...+8+0+0+9=63
+</p>
+
+<h2>The Next Test - Spares</h2>
+<p>
+Let's introduce the concept of a spare.  If a bowler gets a spare (meaning he knocks down all 10 pins in two attempts, in a single frame), his score is doubled for the next roll.  If you are given these 10 frames: "91415390107133238009", then the sum looks like the following 9+1(spare detected)+2*(4)+1+5+3+.....+8+0+0+9=73.  Keep in mind that a value is considered a spare only if the pins belong to the same frame.
+</p>
+
+<h2>The Next Next Test - Strikes</h2>
+<p>
+Let's introduce the concept of a strike.  If a bowler gets a strike (meaning he knocks down all 10 pins in one attempt in a single frame), his score is doubled for the next two rolls.  If you are given these 10 frames: "X-415390107133238009" (the "-" is not considered a roll), then the sum looks like the following 10+0(the strike X-)+2*(4)+2*(1)+5+3+.....+8+0+0+9=74
+</p>
+
+<h2>You're on Your Own Now</h2>
+<p>
+Make sure your implementation works for any combination of strikes and spares.  Chain strikes together and make sure the score is correct.  
+</p>
+<p>
+If the last frame ends up being a spare, you get one extra roll (which will be doubled).  If the roll on the last frame is a strike, then you get two extra rolls (each of which are doubled).
+</p>
+    <hr />
+    <span style="color: Silver; font-size: small;">Written: 3/10/2012</span>
+    
+    <script>
+        var idcomments_acct = '6ed8d3f7f3b269a55fc308e535627d11';
+        var idcomments_post_url;
+
+        var  idcomments_post_id;// = 'http%3A%2F%2Famirrajan.net%2FBlogs%2F' + 'code-katas-bowling-kata';
+
+    </script>
+    <span id="IDCommentsPostTitle" style="display:none">Comments</span>
+    <script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+    <script>$("#body").append('<div></div>').html(idcomments_post_id);</script>
+
+        </div>
+    </div>
+</body>
+</html>

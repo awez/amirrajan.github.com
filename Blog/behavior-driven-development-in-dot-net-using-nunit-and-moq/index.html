@@ -1,0 +1,652 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	
+    
+    Code Blog Foo: behavior-driven-development-in-dot-net-using-nunit-and-moq
+
+</title><link href="../Content/base.css" rel="stylesheet" type="text/css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    
+    <script src="../../Scripts/shAll.js" type="text/javascript"></script>
+    <link href="../../Content/SyntaxHighlighter.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<strong>This is an archive of blog posts from a "long time ago".  If you find this useful, let me know and I'll revive it.</strong>
+    <div class="wrap">
+        
+        <div id="top group">
+            <header>
+                <h1>code blog foo - tag line bar</h1>
+            </header>
+            <div style="padding: 5px; border-bottom: 1px solid silver; border-top: 1px solid silver;">
+                <nav>
+                    <a href="/" style="margin-left: 15px; border-style: solid; border-width: 1px;">home</a>
+                    <span class="sep"></span>
+                    <a href="/Blog/Posts" style="margin-left: 15px; border-style: solid; border-width: 1px;">blog</a>
+                    <a href="/Home/About" style="margin-left: 15px; border-style: solid; border-width: 1px;">about</a>
+                    <a href="/Home/Portfolio" style="margin-left: 15px; border-style: solid; border-width: 1px;">projects/open source</a>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="content">
+            
+    
+    
+    <script type="text/javascript">
+        window.onload = function () {
+            SyntaxHighlighter.config.clipboardSwf = '/Scripts/clipboard.swf';
+            SyntaxHighlighter.all();
+            dp.SyntaxHighlighter.HighlightAll('code');
+        };
+
+     </script>
+    <h2>Behavior Driven Development in .Net - NUnit and Moq</h2>
+<p>
+
+<image src="../../Content/images/mock.gif" style="float: right; margin-left: 10px; border: solid 1px silver; padding: 3px;" />Time for a deep dive into unit testing with Moq.  This blog post builds upon my previous post called "Effective Unit Testing Using BDD Concepts".  If you are new to unit testing (or haven't read the previous blog post), I would <strong>STRONGLY</strong> recommend reading: <a href="introduction-to-behavior-driven-development-and-mocking">Effective Unit Testing Using BDD Concepts</a>.  Code speaks louder than words for this topic.  So here is the code.  Enjoy!  Again, <strong>STRONGLY</strong> recommending that you read my previous blog post on BDD Testing before trying to tackle this topic.
+</p>
+
+<h3>The Behavior for the Thing We're Testing</h3>
+<p>
+	The method we are trying to test is called NotifyTrackedUserAddsGame().  This method is used in <a href="http://www.borrowedgames.com/Authentication/Faq" target="_blank">Borrowed Games</a> to notify users that one of their friends has added a game.  It's a pretty simple method, but behaviorally, there are some things that need to be considered.
+	<br/>
+	<br/>
+	Users should only recieve an email if:
+	<br/>
+	1. They have that user on their friend's list<br/>
+	2. They have email notifications enabled for the "User Added Game" action
+	<br/>
+	<br/>
+	Also:<br/>
+	1.  An audit record needs to be inserted to ensure that the people receiving the emails dont get spammed if their friend decides to go on a shopping spree and buy 10 games at once.  Subsequent "User Added Game" actions within the same day should be disregarded.
+</p>
+
+<h3>The Code for the Thing We're Testing</h3>
+<p>
+	This is the method that supposedly does what was explained above.  Read the code.  Read the comments.  Understand what's going on.
+</p>
+
+<pre name="code" class="c#">
+public class NotificationSender : INotificationSender
+{
+    / Responsible for sending emails.
+    private IEmailSender _emailSender;
+
+    // Responsible for inserting notification history/audit records so that spamming doesn't occur.
+    private INotificationHistoryRepository _notificationHistoryRepository;
+
+    // Facilitates the retrieval of games from a user's want list.
+    private IWantListRetriever _wantListRetriever;
+
+    // Facilitates the retrival of user specific information.
+    private IUserRetriever _userRetriever;
+
+    // Facilitates the retrival of game information.
+    private IGameSearcher _gameSearcher;
+
+    // Facilitates the retrieval of games that are currently being borrowed.
+    private ITradeRetriever _tradeRetriever;
+
+    // Facilitates the retrieval of friends.
+    private IUserToUserTrackingRetriever _userToUserTrackingRetriever;
+
+    // Facilitates the retrieval of friend information.
+    private IUserProfileRetriever _userProfileRetriever;
+
+    // Constructor takes in all of the dependencies.
+    public NotificationSender(IEmailSender emailSender,
+        INotificationHistoryRepository notificationHistoryRepository,
+        IWantListRetriever wantListRetriever,
+        IUserRetriever userRetriever,
+        IGameSearcher gameSearcher,
+        ITradeRetriever tradeRetriever,
+        IUserToUserTrackingRetriever userToUserTrackingRetriever,
+        IUserProfileRetriever userProfileRetriever)
+    {
+        _emailSender = emailSender;
+        _notificationHistoryRepository = notificationHistoryRepository;
+        _wantListRetriever = wantListRetriever;
+        _userRetriever = userRetriever;
+        _gameSearcher = gameSearcher;
+        _tradeRetriever = tradeRetriever;
+        _userToUserTrackingRetriever = userToUserTrackingRetriever;
+        _userProfileRetriever = userProfileRetriever;
+    }
+
+    void INotificationSender.NotifyTrackedUserAddsGame(Guid userId, DateTime eventDate, string link)
+    {
+        //if a record already exists for this action, for this day, for this, user..then dont send out the
+        //emails because the friends have already got one for the day.
+        if (_notificationHistoryRepository.NotificationHistoryExists(
+                NotificationType.TrackedUserAddsGame, 
+                userId, 
+                null, 
+                null, 
+                eventDate) != false)
+        {
+            return;
+        }
+
+        //from the repository...retrieve all of user's email address who have marked this person as a friend
+        List&lt;string&gt; recipients =
+            _userToUserTrackingRetriever.
+                GetEmailAddressesForUsersWhoAreTracking(userId);
+
+        if (recipients.Count &lt;= 0)
+        {
+            return; //return if no user has no friends
+        }
+
+        //get the user's name to include int he email and construct the subject and body
+        string name = _userRetriever.GetUser(userId).Name;
+        string subject = name + " has added games";
+        string body = name + " has added games to his/her inventory.  Check it out using the following link: " + link;
+
+        foreach (string recipient in recipients)
+        {
+            //for each recipient, get the user's profile and see if that person wants to receive an email
+            //about friends adding games
+            if (_userProfileRetriever.GetUserProfile(
+                    _userRetriever.GetUser(recipient).UserId)
+                        .NotifyFriendGameActivity == true)
+            {
+                //send the email if NotifyFriendGameActivity is true
+                _emailSender.SendEmail(recipient, subject, body);
+            }
+        }
+
+        //after all the emails have been sent, insert a record into the audit history so that subsequent calls in the same
+        //day are disregarded
+        _notificationHistoryRepository.InsertNotificationHistory(
+            NotificationType.TrackedUserAddsGame, 
+            userId, 
+            null, 
+            null, 
+            eventDate);
+    }
+}
+</pre>
+
+<h3>The Unit Tests</h3>
+<p>
+    Time to drink from the fire hose.  Here are the unit tests for testing the method above.  The unit tests use Moq heavily.  Read the comments.  Read the code.  Take it in.  Hopefully you'll gain some insight on how to use Moq when unit testing.
+</p>
+<pre name="code" class="c#">
+[TestClass]
+public class when_sending_notification_to_users_of_added_games
+{
+    private INotificationSender _notificationSender;
+    private Mock&lt;IEmailSender&gt; _emailSender;
+    private Mock&lt;INotificationHistoryRepository&gt; _notificationHistoryRepository;
+    private Mock&lt;IWantListRetriever&gt; _wantListRetriever;
+    private Mock&lt;IUserRetriever&gt; _userRetriever;
+    private Mock&lt;IGameSearcher&gt; _gameSearcher;
+    private Mock&lt;ITradeRetriever&gt; _tradeRetriever;
+    private Mock&lt;IUserToUserTrackingRetriever&gt; _userToUserTrackingRetriever;
+    private Mock&lt;IUserProfileRetriever&gt; _userProfileRetriever;
+
+    public when_sending_notification_to_users_of_added_games()
+    {
+        _emailSender = new Mock&lt;IEmailSender&gt;();
+        _notificationHistoryRepository = new Mock&lt;INotificationHistoryRepository&gt;();
+        _wantListRetriever = new Mock&lt;IWantListRetriever&gt;();
+        _userRetriever = new Mock&lt;IUserRetriever&gt;();
+        _gameSearcher = new Mock&lt;IGameSearcher&gt;();
+        _userToUserTrackingRetriever = new Mock&lt;IUserToUserTrackingRetriever&gt;();
+        _userProfileRetriever = new Mock&lt;IUserProfileRetriever&gt;();
+        _tradeRetriever = new Mock&lt;ITradeRetriever&gt;();
+
+        _notificationSender = new NotificationSender(_emailSender.Object,
+            _notificationHistoryRepository.Object,
+            _wantListRetriever.Object,
+            _userRetriever.Object,
+            _gameSearcher.Object,
+            _tradeRetriever.Object,
+            _userToUserTrackingRetriever.Object,
+            _userProfileRetriever.Object);
+    }
+
+    [TestMethod]
+    public void should_disregard_sending_out
+                _notification_if_one_has_already_been_sent_out()
+    {
+        Guid userId = Guid.NewGuid();
+
+        //set up Moq to return true when NotificationHistoryExists is called
+        //returning true for this methods signifies that a notification was already sent
+        _notificationHistoryRepository.Setup(s =&gt; s.NotificationHistoryExists(NotificationType.TrackedUserAddsGame,
+                                                      userId,
+                                                      null,
+                                                      null,
+                                                      DateTime.Today))
+                                                      .Returns(true)
+                                                      .Verifiable();
+
+        //call the NotifyTrackedUserAddsGame method
+        _notificationSender.NotifyTrackedUserAddsGame(userId, DateTime.Today, "http://www.borrowedgames.com");
+
+        //ensure that the audit was indeed executed given the parameters
+        //specified in the Setup
+        _notificationHistoryRepository.Verify();
+
+        //ensure that the EmailSender's SendEmail method was never called
+        _emailSender.Verify(s =&gt; s.SendEmail(It.IsAny&lt;string&gt;(), It.IsAny&lt;string&gt;(), It.IsAny&lt;string&gt;()), Times.Never());
+    }
+
+    [TestMethod]
+    public void should_disregard_sending_email_if
+                _noone_has_tracked_user_who_added_game()
+    {
+        Guid userId = Guid.NewGuid();
+
+        List&lt;string&gt; emails = new List&lt;string&gt;();
+ 
+        //set up Moq to return an empty list of strings/emails
+        //if GetEmailAddressesForUsersWhoAreTracking() is called
+        _userToUserTrackingRetriever.Setup(s =&gt; s.GetEmailAddressesForUsersWhoAreTracking(userId)).Returns(emails);
+
+        //execute NotifyTrackedUserAddsGame
+        _notificationSender.NotifyTrackedUserAddsGame(userId, DateTime.Today, "http://www.borrowedgames.com");
+
+        //ensure that the EmailSender's SendEmail method was never called
+        _emailSender.Verify(s =&gt; s.SendEmail(It.IsAny&lt;string&gt;(), It.IsAny&lt;string&gt;(), It.IsAny&lt;string&gt;()), Times.Never());
+    }
+
+    [TestMethod]
+    public void should_send_email_to_each_person_who
+                _has_tracked_the_user_who_added_the_game()
+    {
+        //userId for user
+        Guid userId = Guid.NewGuid();
+
+        //prepare email/friends list 
+        List&lt;string&gt; emails = new List&lt;string&gt;();
+        emails.Add("user1@example.com");
+        emails.Add("user2@example.com");
+        emails.Add("user3@example.com");
+
+        //setup Moq to return the list of email addresses
+        //if GetEmailAddressesForUsersWhoAreTracking is called given
+        //the exact userId
+        _userToUserTrackingRetriever.Setup(s =&gt; s.GetEmailAddressesForUsersWhoAreTracking(userId)).Returns(emails);
+
+        //setup Moq to return a mock user with a name of "John Doe" when given 
+        //the exact userId
+        Mock&lt;IUser&gt; user = new Mock&lt;IUser&gt;();
+        user.Setup(s =&gt; s.Name).Returns("John Doe");
+        _userRetriever.Setup(s =&gt; s.GetUser(userId)).Returns(user.Object);
+
+        //setup a mock user that represents each friend
+        Mock&lt;IUser&gt; friend = new Mock&lt;IUser&gt;();
+        Guid friendId = Guid.NewGuid();
+        friend.Setup(s =&gt; s.UserId).Returns(friendId);
+
+        //ensure that the profile entry for NotifyFriendGameActivity returns
+        //true for each friend
+        Mock&lt;IUserProfile&gt; userProfile = new Mock&lt;IUserProfile&gt;();
+        userProfile.Setup(s =&gt; s.NotifyFriendGameActivity).Returns(true);
+
+        //setup GetUser to return the mock user for each friend request
+        _userRetriever.Setup(s =&gt; s.GetUser("user1@example.com")).Returns(friend.Object);
+        _userRetriever.Setup(s =&gt; s.GetUser("user2@example.com")).Returns(friend.Object);
+        _userRetriever.Setup(s =&gt; s.GetUser("user3@example.com")).Returns(friend.Object);
+
+        //setup GetUserProfile to return the mock user profile when given the friendId from the
+        //statements above
+        _userProfileRetriever.Setup(s =&gt; s.GetUserProfile(friendId)).Returns(userProfile.Object);
+
+        //call the notify method
+        _notificationSender.NotifyTrackedUserAddsGame(userId, DateTime.Today, "http://www.borrowedgames.com");
+
+        //verify that send email was called 3 times
+        _emailSender.Verify(s =&gt; s.SendEmail(It.IsAny&lt;string&gt;(), It.IsAny&lt;string&gt;(), It.IsAny&lt;string&gt;()), Times.Exactly(3));
+
+        //verify that each individual person was emailed
+        _emailSender.Verify(s =&gt; s.SendEmail("user1@example.com", 
+                                     "John Doe has added games", 
+                                     "John Doe has added games to his/her inventory.  Check it out using the following link: http://www.borrowedgames.com"), 
+                            Times.Exactly(1));
+
+        _emailSender.Verify(s =&gt; s.SendEmail("user2@example.com", 
+                                     "John Doe has added games", 
+                                     "John Doe has added games to his/her inventory.  Check it out using the following link: http://www.borrowedgames.com"), 
+                            Times.Exactly(1));
+
+        _emailSender.Verify(s =&gt; s.SendEmail("user3@example.com", 
+                                     "John Doe has added games", 
+                                     "John Doe has added games to his/her inventory.  Check it out using the following link: http://www.borrowedgames.com"), 
+                            Times.Exactly(1));
+    }
+
+    [TestMethod]
+    public void should_insert_record_into_notification_history_so
+                _that_subsquent_emails_are_not_sent_for_the_same_event_date()
+    {
+        Guid userId = Guid.NewGuid();
+
+        List&lt;string&gt; emails = new List&lt;string&gt;();
+        emails.Add("user1@example.com");
+        emails.Add("user2@example.com");
+        emails.Add("user3@example.com");
+
+        _userToUserTrackingRetriever.Setup(s =&gt; s.GetEmailAddressesForUsersWhoAreTracking(userId)).Returns(emails);
+
+        Mock&lt;IUser&gt; user = new Mock&lt;IUser&gt;();
+        user.Setup(s =&gt; s.Name).Returns("John Doe");
+        _userRetriever.Setup(s =&gt; s.GetUser(userId)).Returns(user.Object);
+
+        Mock&lt;IUser&gt; friend = new Mock&lt;IUser&gt;();
+        Guid friendId = Guid.NewGuid();
+        friend.Setup(s =&gt; s.Name).Returns("John Doe");
+        friend.Setup(s =&gt; s.UserId).Returns(friendId);
+
+        Mock&lt;IUserProfile&gt; userProfile = new Mock&lt;IUserProfile&gt;();
+        userProfile.Setup(s =&gt; s.NotifyFriendGameActivity).Returns(true);
+
+        _userRetriever.Setup(s =&gt; s.GetUser("user1@example.com")).Returns(friend.Object);
+        _userRetriever.Setup(s =&gt; s.GetUser("user2@example.com")).Returns(friend.Object);
+        _userRetriever.Setup(s =&gt; s.GetUser("user3@example.com")).Returns(friend.Object);
+        _userProfileRetriever.Setup(s =&gt; s.GetUserProfile(friendId)).Returns(userProfile.Object);
+
+        _notificationSender.NotifyTrackedUserAddsGame(userId, DateTime.Today, "http://www.borrowedgames.com");
+
+        //ensure that the InsertNotificationHistory method was called after notifications
+        //have been sent
+        _notificationHistoryRepository.Verify(s =&gt; s.InsertNotificationHistory(NotificationType.TrackedUserAddsGame, 
+                                                       userId, 
+                                                       null, 
+                                                       null, 
+                                                       DateTime.Today));
+    }
+
+    [TestMethod]
+    public void should_disregard_sending
+                _email_if_friends_do_not_want_to_receive_notifications()
+    {
+        Guid userId = Guid.NewGuid();
+
+        List&lt;string&gt; emails = new List&lt;string&gt;();
+        emails.Add("user1@example.com");
+        emails.Add("user2@example.com");
+        emails.Add("user3@example.com");
+
+        _userToUserTrackingRetriever.Setup(s =&gt; s.GetEmailAddressesForUsersWhoAreTracking(userId)).Returns(emails);
+
+        Mock&lt;IUser&gt; user = new Mock&lt;IUser&gt;();
+        user.Setup(s =&gt; s.Name).Returns("John Doe");
+        _userRetriever.Setup(s =&gt; s.GetUser(userId)).Returns(user.Object);
+
+        Mock&lt;IUser&gt; friend = new Mock&lt;IUser&gt;();
+        Guid friendId = Guid.NewGuid();
+        friend.Setup(s =&gt; s.Name).Returns("John Doe");
+        friend.Setup(s =&gt; s.UserId).Returns(friendId);
+
+        //for each friend return false for NotifyFriendGameActivity
+        Mock&lt;IUserProfile&gt; userProfile = new Mock&lt;IUserProfile&gt;();
+        userProfile.Setup(s =&gt; s.NotifyFriendGameActivity).Returns(false);
+
+        _userRetriever.Setup(s =&gt; s.GetUser("user1@example.com")).Returns(friend.Object);
+        _userRetriever.Setup(s =&gt; s.GetUser("user2@example.com")).Returns(friend.Object);
+        _userRetriever.Setup(s =&gt; s.GetUser("user3@example.com")).Returns(friend.Object);
+        _userProfileRetriever.Setup(s =&gt; s.GetUserProfile(friendId)).Returns(userProfile.Object);
+
+        _notificationSender.NotifyTrackedUserAddsGame(userId, DateTime.Today, "http://www.borrowedgames.com");
+       
+        //ensure that no email have been sent since each person has specified
+        //that they dotn want emails
+        _emailSender.Verify(s =&gt; s.SendEmail(It.IsAny&lt;string&gt;(), It.IsAny&lt;string&gt;(), It.IsAny&lt;string&gt;()), Times.Never());
+    }
+}
+</pre>
+
+<h3>Making Things More Readable</h3>
+<p>
+    This may be the toughest pill to swallow.  But it's <strong>VERY IMPORTANT</strong> that your unit tests are readable.  Our test names have a BDD mentality, and so should the code within the test.  This approach takes a little bit more time to write.  But once it's written, the tests are much easier to read (and fix when they fail).  Take in the code.  Read read read.
+</p>
+<pre name="code" class="c#">
+[TestClass]
+public class when_sending_notification_to_users_of_added_games
+{
+    private INotificationSender _notificationSender;
+    private Mock&lt;IEmailSender&gt; _emailSender;
+    private Mock&lt;INotificationHistoryRepository&gt; _notificationHistoryRepository;
+    private Mock&lt;IWantListRetriever&gt; _wantListRetriever;
+    private Mock&lt;IUserRetriever&gt; _userRetriever;
+    private Mock&lt;IGameSearcher&gt; _gameSearcher;
+    private Mock&lt;ITradeRetriever&gt; _tradeRetriever;
+    private Mock&lt;IFriendRetriever&gt; _userToUserTrackingRetriever;
+    private Mock&lt;IUserProfileRetriever&gt; _userProfileRetriever;
+    private Guid _userId;
+
+    public when_sending_notification_to_users_of_added_games()
+    {
+            
+    }
+
+    [TestInitialize]
+    public void TestInitialize()
+    {
+        _emailSender = new Mock&lt;IEmailSender&gt;();
+        _notificationHistoryRepository = new Mock&lt;INotificationHistoryRepository&gt;();
+        _wantListRetriever = new Mock&lt;IWantListRetriever&gt;();
+        _userRetriever = new Mock&lt;IUserRetriever&gt;();
+        _gameSearcher = new Mock&lt;IGameSearcher&gt;();
+        _userToUserTrackingRetriever = new Mock&lt;IFriendRetriever&gt;();
+        _userProfileRetriever = new Mock&lt;IUserProfileRetriever&gt;();
+        _tradeRetriever = new Mock&lt;ITradeRetriever&gt;();
+        _userId = Guid.NewGuid();
+
+        _notificationSender = new NotificationSender(_emailSender.Object,
+            _notificationHistoryRepository.Object,
+            _wantListRetriever.Object,
+            _userRetriever.Object,
+            _gameSearcher.Object,
+            _tradeRetriever.Object,
+            _userToUserTrackingRetriever.Object,
+            _userProfileRetriever.Object);
+
+        GivenUserWhoAddedGames();
+    }
+
+    [TestCleanup]
+    public void TestCleanUp()
+    {
+        _emailSender.Verify();
+        _notificationHistoryRepository.Verify();
+        _wantListRetriever.Verify();
+        _userRetriever.Verify();
+        _gameSearcher.Verify();
+        _userToUserTrackingRetriever.Verify();
+        _userProfileRetriever.Verify();
+        _tradeRetriever.Verify();
+    }
+
+    [TestMethod]
+    public void should_disregard_sending_out_notification_
+                if_one_has_already_been_sent_out()
+    {
+        GivenNotificationHasBeenSent();
+
+        SendTheNotificationsThatGamesHaveBeenAdded();
+
+        0.EmailsShouldHaveBeenSent(inMock: _emailSender);
+    }
+
+    [TestMethod]
+    public void should_disgregard_sending_email_
+                if_noone_has_tracked_user_who_added_game()
+    {
+        GivenUserIsTrackedBy(/* empty */);
+
+        SendTheNotificationsThatGamesHaveBeenAdded();
+
+        0.EmailsShouldHaveBeenSent(inMock: _emailSender);
+    }
+
+    [TestMethod]
+    public void should_send_email_to_each_person_
+                who_has_tracked_the_user_who_added_the_game()
+    {
+        GivenUserIsTrackedBy("user1@example.com", "user2@example.com", "user3@example.com");
+
+        GivenUser("user1@example.com").WithNotificationPreference(
+            wantsToBeNotified: true, inMock: _userProfileRetriever);
+
+        GivenUser("user2@example.com").WithNotificationPreference(
+            wantsToBeNotified: true, inMock: _userProfileRetriever);
+
+        GivenUser("user3@example.com").WithNotificationPreference(
+            wantsToBeNotified: true, inMock: _userProfileRetriever);
+
+        SendTheNotificationsThatGamesHaveBeenAdded();
+
+        3.EmailsShouldHaveBeenSent(inMock: _emailSender);
+
+        EmailShouldHaveSentTo("user1@example.com", "user2@example.com", "user3@example.com");
+
+        SubjectShouldBe("John Doe has added games", emailCount: 3);
+        BodyShouldBe("John Doe has added games to his/her inventory.  Check it out using the following link: http://www.borrowedgames.com", emailCount: 3);
+    }
+
+    [TestMethod]
+    public void should_insert_record_into_notification_history_
+                so_that_subsquent_emails_are_not_sent_for_the_same_event_date()
+    {
+        GivenUserIsTrackedBy("user1@example.com");
+        GivenUser("user1@example.com").WithNotificationPreference(wantsToBeNotified: true, inMock: _userProfileRetriever);
+
+        SendTheNotificationsThatGamesHaveBeenAdded();
+
+        ShouldHaveAddedRecordThatEmailWasSentForToday();
+    }
+
+    [TestMethod]
+    public void should_disregard_sending_email_
+                if_friends_do_not_want_to_receive_notifications()
+    {
+        GivenUserIsTrackedBy("user1@example.com", "user2@example.com", "user3@example.com");
+
+        GivenUser("user1@example.com").WithNotificationPreference(
+            wantsToBeNotified: true, inMock: _userProfileRetriever);
+
+        GivenUser("user2@example.com").WithNotificationPreference(
+            wantsToBeNotified: true, inMock: _userProfileRetriever);
+
+        GivenUser("user3@example.com").WithNotificationPreference(
+            wantsToBeNotified: false, inMock: _userProfileRetriever);
+
+        SendTheNotificationsThatGamesHaveBeenAdded();
+
+        2.EmailsShouldHaveBeenSent(inMock: _emailSender);
+
+        EmailShouldHaveSentTo("user1@example.com", "user2@example.com");
+    }
+
+    private void BodyShouldBe(string body, int emailCount)
+    {
+        _emailSender.Verify(s =&gt; s.SendEmail(It.IsAny&lt;string&gt;(), It.IsAny&lt;string&gt;(), body), Times.Exactly(emailCount));
+    }
+
+    private void SubjectShouldBe(string subject, int emailCount)
+    {
+        _emailSender.Verify(s =&gt; s.SendEmail(It.IsAny&lt;string&gt;(), subject, It.IsAny&lt;string&gt;()), Times.Exactly(emailCount));
+    }
+
+    private void EmailShouldHaveSentTo(params string[] emails)
+    {
+        foreach (string email in emails)
+        {
+            _emailSender.Verify(s =&gt; s.SendEmail(email, It.IsAny&lt;string&gt;(), It.IsAny&lt;string&gt;()), Times.Exactly(1));    
+        }
+    }
+
+    private void GivenNotificationHasBeenSent()
+    {
+        _notificationHistoryRepository.Setup(s =&gt; s.NotificationHistoryExists(NotificationType.TrackedUserAddsGame,
+                                                                    _userId,
+                                                                    null,
+                                                                    null,
+                                                                    DateTime.Today))
+                                                                    .Returns(true)
+                                                                    .Verifiable();
+    }
+
+    private void SendTheNotificationsThatGamesHaveBeenAdded()
+    {
+        _notificationSender.NotifyTrackedUserAddsGame(_userId, DateTime.Today, "http://www.borrowedgames.com");
+    }
+
+    private void GivenUserIsTrackedBy(params string[] emails)
+    {
+        _userToUserTrackingRetriever.Setup(s =&gt; s.GetEmailAddressesForFriends(_userId)).Returns(emails.ToList());
+    }
+
+    private IUser GivenUser(string email)
+    {
+        Mock&lt;IUser&gt; user = new Mock&lt;IUser&gt;();
+        Guid userId = Guid.NewGuid();
+        user.SetupGet(s =&gt; s.UserId).Returns(userId);
+
+        _userRetriever.Setup(s =&gt; s.GetUser(email)).Returns(user.Object);
+
+        return user.Object;
+    }
+
+    private void ShouldHaveAddedRecordThatEmailWasSentForToday()
+    {
+        _notificationHistoryRepository.Verify(s =&gt; s.InsertNotificationHistory(NotificationType.TrackedUserAddsGame,
+                                                        _userId,
+                                                        null,
+                                                        null,
+                                                        DateTime.Today));
+    }
+
+    private void GivenUserWhoAddedGames()
+    {
+        Mock&lt;IUser&gt; user = new Mock&lt;IUser&gt;();
+        user.Setup(s =&gt; s.Name).Returns("John Doe");
+        _userRetriever.Setup(s =&gt; s.GetUser(_userId)).Returns(user.Object);
+    }
+}
+
+public static class test_extension
+{
+    public static void WithNotificationPreference(this IUser user, bool wantsToBeNotified, Mock&lt;IUserProfileRetriever&gt; inMock)
+    {
+        Mock&lt;IUserProfile&gt; profile = new Mock&lt;IUserProfile&gt;();
+        profile.SetupGet(s =&gt; s.NotifyFriendGameActivity).Returns(wantsToBeNotified);
+        inMock.Setup(s =&gt; s.GetUserProfile(user.UserId)).Returns(profile.Object);
+    }
+
+    public static void EmailsShouldHaveBeenSent(this int count, Mock&lt;IEmailSender&gt; inMock)
+    {
+        inMock.Verify(s =&gt; s.SendEmail(It.IsAny&lt;string&gt;(), It.IsAny&lt;string&gt;(), It.IsAny&lt;string&gt;()), Times.Exactly(count), count.ToString() + " emails were not sent.");
+    }
+}
+</pre>
+<p>
+  Not to have this go unsaid: Testing takes a lot of work, but will pay dividends many times over as your code base begins to grow.  Write tests early. Write tests well...and when the day comes when you get an exception in production (and it will), you'll be able to fix the issue quickly and your unit tests will make sure you didn't break anything else.
+</p>
+    <hr />
+    <span style="color: Silver; font-size: small;">Written: 5/5/2010</span>
+    
+    <script>
+        var idcomments_acct = '6ed8d3f7f3b269a55fc308e535627d11';
+        var idcomments_post_url;
+
+        var  idcomments_post_id;// = 'http%3A%2F%2Famirrajan.net%2FBlogs%2F' + 'behavior-driven-development-in-dot-net-using-nunit-and-moq';
+
+    </script>
+    <span id="IDCommentsPostTitle" style="display:none">Comments</span>
+    <script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+    <script>$("#body").append('<div></div>').html(idcomments_post_id);</script>
+
+        </div>
+    </div>
+</body>
+</html>

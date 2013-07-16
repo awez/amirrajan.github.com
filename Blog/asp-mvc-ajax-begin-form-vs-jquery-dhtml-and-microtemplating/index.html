@@ -1,0 +1,491 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	
+    
+    Code Blog Foo: asp-mvc-ajax-begin-form-vs-jquery-dhtml-and-microtemplating
+
+</title><link href="../Content/base.css" rel="stylesheet" type="text/css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    
+    <script src="../../Scripts/shAll.js" type="text/javascript"></script>
+    <link href="../../Content/SyntaxHighlighter.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<strong>This is an archive of blog posts from a "long time ago".  If you find this useful, let me know and I'll revive it.</strong>
+    <div class="wrap">
+        
+        <div id="top group">
+            <header>
+                <h1>code blog foo - tag line bar</h1>
+            </header>
+            <div style="padding: 5px; border-bottom: 1px solid silver; border-top: 1px solid silver;">
+                <nav>
+                    <a href="/" style="margin-left: 15px; border-style: solid; border-width: 1px;">home</a>
+                    <span class="sep"></span>
+                    <a href="/Blog/Posts" style="margin-left: 15px; border-style: solid; border-width: 1px;">blog</a>
+                    <a href="/Home/About" style="margin-left: 15px; border-style: solid; border-width: 1px;">about</a>
+                    <a href="/Home/Portfolio" style="margin-left: 15px; border-style: solid; border-width: 1px;">projects/open source</a>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="content">
+            
+    
+    
+    <script type="text/javascript">
+        window.onload = function () {
+            SyntaxHighlighter.config.clipboardSwf = '/Scripts/clipboard.swf';
+            SyntaxHighlighter.all();
+            dp.SyntaxHighlighter.HighlightAll('code');
+        };
+
+     </script>
+    <h2>Ajax.BeginForm vs $.Post</h2>
+<a href="../Files/AjaxBeginFormVsjQuery.zip">click here to download source</a>
+
+<h3>About the Source</h3>
+
+<p>
+This was written using the MVC 1.0 project template (I will update this to MVC 2.0 shortly).  If you have difficulty opening the project in Visual Studio, chances are you have ASP.NET MVC 2.0 installed.  Refer to this link for instructions on how to change over the project: <a href="http://www.asp.net/learn/whitepapers/aspnet-mvc2-upgrade-notes/">Convert an MVC 1.0 Project to MVC 2.0</a>.
+</p>
+
+<p>
+Also in MVC 2, returning JSON via an HTTP/GET Controller action will throw an exception if you do:
+</p>
+
+<pre name="code" class="c#">
+public ActionResult Search(string searchString)
+{
+    //populate search results
+    List&lt;KeyValuePair&lt;string,string&gt;&gt; searchResults = ...;     
+
+    //this will throw an exception in ASP.NET MVC 2
+    return Json(searchResults);  
+}
+</pre>
+
+<p>
+ <strong>Again, the code above will throw an exception and must be changed to the following if you plan on upgrading the source code for this post to ASP.NET MVC 2:</strong>
+</p>
+
+<pre name="code" class="c#">
+public ActionResult Search(string searchString)
+{
+    //populate search results 
+    List&lt;KeyValuePair&lt;string,string&gt;&gt; searchResults = ...;     
+
+    //this will fix the exception
+    return Json(searchResults, JsonRequestBehavior.AllowGet);
+}
+</pre>
+
+
+<p>
+ASP.NET MVC 1.0 and 2.0 have this really interesting HtmlHelper (or AjaxHelper) called <strong>Ajax.BeginForm</strong>.  At first glance, this looks like a lot of voodoo...and it kinda is.  But let's see if we can bring light to what actually occurs when you use Ajax.BeginForm and how it compares to using good ol' jQuery and DHTML.
+</p>
+
+<h3>Cutting to the Chase</h3>
+<p>
+I really like jQuery and it's a light weight, right against the metal, yet so simple approach to async communication...and I use it heavily in my ASP.NET MVC development.  But, Ajax.BeginForm is definitely something that you shouldn't pass up.  You can call Ajax.BeginForm the UpdatePanel for ASP.NET MVC (except that it doesn't suck).  It's not as light weight with they async communication like jQuery is, but being able to use strongly typed partial views is extremely valuable (to reiterate: extremely valuable).  For full blown explanation, read on.  If you want to just get right into the code, just use the link at the top of this post.
+</p>
+
+<h3>Scenario</h3>
+<p>
+  In this scenario, we are going to save a customer asynchronously and replace the editable form with a read-only representation.  The source code is available for download at the top of this post by the way...
+</p>
+
+<p>
+This editable form:
+<br/>
+<br/>
+<img src="../../Content/images/savecustomeredit.jpg" />
+<br/>
+<br/>
+Will be converted into a readonly Customer when the save button is clicked:
+<br/>
+<br/>
+<img src="../../Content/images/savecustomerreadonly.jpg" />
+<br/>
+</p>
+
+<h3>Ajax.BeginForm Version</h3>
+<p>
+Step 1: You need to reference MicrosoftAjax.js and MicrosoftMvcAjax.js.
+</p>
+
+<pre name="code" class="html">
+&lt;!-- consider using Url.Content("") as opposed to ../ relative paths -->
+&lt;script src="../../Scripts/MicrosoftAjax.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script src="../../Scripts/MicrosoftMvcAjax.js" type="text/javascript"&gt;&lt;/script&gt;
+</pre>
+
+<p>
+Step 2: Create a <strong>partial view</strong> that represents the readonly version of the customer.
+</p>
+
+<pre name="code" class="html">
+&lt;!-- this partial view is named CustomerReadOnly.ascx --&gt;
+&lt;%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl&lt;Customer&gt;" %&gt;
+&lt;%@ Import Namespace="AjaxBeginForm.Models" %&gt;
+
+Id: &lt;%= ViewData.Model.Id.ToString() %&gt;&lt;br /&gt;
+First Name: &lt;%= ViewData.Model.FirstName %&gt;&lt;br /&gt;
+Last Name:  &lt;%= ViewData.Model.LastName %&gt;&lt;br /&gt;
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis erat.&lt;br /&gt;
+</pre>
+
+<p>
+Step 3: Create a controller action that saves the customer and returns the partial view.
+</p>
+
+<pre name="code" class="c#">
+[ActionName("Customer")]
+[AcceptVerbs(HttpVerbs.Post)]
+public ActionResult Customer(Customer customer)
+{
+    //save customer to database
+    //then return partial view
+    return PartialView("CustomerReadOnly", customer);
+}
+</pre>
+
+<p>
+Step 4: Create the form page for saving the customer (leveraging Ajax.BeginForm).
+</p>
+
+<pre name="code" class="c#">
+&lt;%
+    string saveCustomerUrl = Url.RouteUrl(new { controller = "Home", action = "Customer" });         
+%&gt;
+&lt;div id="divCustomer"&gt;
+    &lt;% using (Ajax.BeginForm("Customer", //controller action name
+       "Home", //controller name
+       new AjaxOptions //ajax options that tell mvc how to perform the replacement
+       {
+           UpdateTargetId = "divCustomer", //id of div to update
+           InsertionMode = InsertionMode.Replace, //how the div will be updated
+           HttpMethod = "Post" //how to call the controller action
+       }))
+       { %&gt;
+    
+    &lt;!-- Id for customer --&gt;
+    &lt;input type="hidden" value="&lt;%= Guid.NewGuid().ToString() %&gt;" name="Id" /&gt;
+    
+    &lt;!-- First Name for customer --&gt;
+    First Name:
+    &lt;input type="text" name="FirstName" /&gt;&lt;br /&gt;
+    
+    &lt;!-- Last Name for customer --&gt;
+    Last Name
+    &lt;input type="text" name="LastName" /&gt;&lt;br /&gt;
+    
+    &lt;!-- submit button --&gt;
+    &lt;input type="submit" value="save" /&gt;
+    &lt;% } %&gt;
+&lt;/div&gt;
+</pre>
+
+<h4>Fiddler Output for Ajax.BeginForm</h4>
+<p>
+Here is the request and response when clicking the save button.
+</p>
+
+<pre name="code" class="c#">
+Request:
+Id=1a0358e8-8931-4b0e-a7b9-3df910729fc2
+&FirstName=John&LastName=Doe
+&X-Requested-With=XMLHttpRequest
+
+Response:
+Id: 1a0358e8-8931-4b0e-a7b9-3df910729fc2&lt;br/&gt;
+First Name: John&lt;br /&gt;
+Last Name:  Doe&lt;br /&gt;
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis erat.
+</pre>
+
+<h4>Html Output for Ajax.BeginForm</h4>
+<p>
+Here is the html that get's generated with Ajax.BeginForm.
+</p>
+
+<pre name="code" class="html">
+&lt;div id="divCustomer"&gt;
+    &lt;form action="/Home/Customer" 
+          method="post" 
+          onsubmit="Sys.Mvc.AsyncForm.handleSubmit(this, new Sys.UI.DomEvent(event), { insertionMode: Sys.Mvc.InsertionMode.replace, httpMethod: 'Post', updateTargetId: 'divCustomer' });"&gt;
+        &lt;input type="hidden" value="1a0358e8-8931-4b0e-a7b9-3df910729fc2" name="Id" /&gt;
+        First Name: &lt;input type="text" name="FirstName" /&gt;&lt;br /&gt;
+        Last Name &lt;input type="text" name="LastName" /&gt;&lt;br /&gt;        
+        &lt;input type="submit" value="go" /&gt;
+    &lt;/form&gt;
+&lt;/div&gt;
+</pre>
+
+<p>
+Keep in mind that more html is returned in the asynchronous response.
+</p>
+
+<h3>jQuery and DHTML Version</h3>
+<p>
+Now let's try the same thing using good ol' jQuery HTML.
+</p>
+
+<p>
+Step 1: You need to reference jQuery.
+</p>
+
+<pre name="code" class="html">
+&lt;script src="../../Scripts/jquery-1.3.2.js" type="text/javascript"&gt;&lt;/script&gt;
+</pre>
+
+<p>
+Step 2: Create a controller action that saves the customer and returns a JSONResult.
+</p>
+
+<pre name="code" class="c#">
+public ActionResult Customer(Customer customer)
+{
+    //save to the database
+
+    //if you are using MVC 1.0 you would do this:
+    return Json(customer);
+
+    //if you are using MVC 2.0 you would do this:
+    return Json(customer, JsonRequestBehavior.AllowGet);
+}
+</pre>
+
+<p>
+Step 3: Create the view page to call the SaveCustomer javascript method.
+</p>
+<pre name="code" class="html">
+&lt;!-- the form --&gt;
+&lt;div id="divCustomer"&gt;
+    &lt;input type="hidden" value="&lt;%= Guid.NewGuid().ToString() %&gt;" id="id" /&gt;
+    First Name: &lt;input type="text" id="firstName" /&gt;&lt;br /&gt;
+    Last Name &lt;input type="text" id="lastName" /&gt;&lt;br /&gt;        
+    
+    &lt;!-- the submit button will call the SaveCustomer() javascript method --&gt;
+    &lt;input type="submit" value="save" onclick="javascript:SaveCustomer();" /&gt;
+&lt;/div&gt;
+</pre>
+
+<p>
+Step 4: Create the javascript code to call the controller action.
+</p>
+
+<pre name="code" class="javascript">
+&lt;%
+    string saveCustomerUrl = Url.RouteUrl(new { controller = "Home", action = "Customer" });         
+%&gt;
+
+&lt;script type="text/javascript"&gt;
+    function SaveCustomer() {
+        $.post(
+            //controller action to call
+            '&lt;%= saveCustomerUrl %&gt;', 
+            //post parameters
+            { id: $('#id').val(), 
+              firstName: $('#firstName').val(), 
+              lastName: $('#lastName').val() },
+            //function  call when the save method returns successfully
+            function(data) {
+                //replace the div with the following html
+                $('#divCustomer').html('Id: ' + 
+                                       $('#id').val() + 
+                                       '&lt;br/&gt;' +
+                                       'First Name: ' + 
+                                       $('#firstName').val() + 
+                                       '&lt;br/&gt;' +
+                                       'Last Name: ' + 
+                                       $('#lastName').val() + 
+                                       '&lt;br/&gt;' +
+                                       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis erat.&lt;br /&gt;');
+            },
+            //data parameter will be a JSON serialization
+            'json');
+
+        return false;
+    }
+&lt;/script&gt;
+</pre>
+
+<h4>Fiddler Output for $.post</h4>
+<p>
+Here is the request and response when clicking the save button.
+</p>
+
+<pre name="code" class="c#">
+Request:
+id=c7b2e44a-8042-4812-9a1f-5de288846046&firstName=John&lastName=Doe
+
+Response:
+{"Id":"c7b2e44a-8042-4812-9a1f-5de288846046","FirstName":"John","LastName":"Doe"}
+</pre>
+
+<h4>Html Output for $.post</h4>
+<p>
+The html is verbatim from Step 3 and Step 4.
+</p>
+
+<h3>Analysis....</h3>
+<p>
+So you've seen both approaches to saving a customer...now for the pros and cons...
+<p>
+
+<h4>Ajax.BeginForm Pros/Cons</h4>
+<ul>
+    <li>Pro: We have a strongly typed partial view at our disposal...as opposed to having to do string concatenation in javascript for the readonly version of the customer (this is a <strong>really good</strong> thing btw).</li>
+    <li>Pro: All the javascript for performing the asynchronous call is generated automagically for us.</li>
+    <li>Con: We are <strong>required</strong> to have a submit button in our form that <strong>must be clicked</strong> (by the user or through javascript), otherwise this approach will not perform the async action.</li>
+    <li>Con: The html payload from the partial view will be returned every single time the asynchronous postback is executed.</li>
+    <li>Con: It may smell bad to some that a controller is returning a partial view...
+</ul>
+
+<h4>jQuery $.post Pros/Cons</h4>
+<ul>
+    <li>Pro: It's super light (take a look at the payload from fiddler).</li>
+    <li>Pro: Fine grained control over how things get updated and what goes over the wire and when.</li>
+    <li>Con: We have to do our own javascript.  Nothing is automagically generated for us.
+    <li>Con: We have to do string concatenations for the html as opposed to relying on a strongly typed view (this is a <strong>really bad</strong> thing btw).</li>
+</ul>
+
+<h4>Getting Around String Concatenation in Javascript Using Microtemplating</h4>
+<p>
+One of the major cons with using $.post is that we'll have to perform string concatenations for any html we want to generate (either that or we manually have to append items to the DOM..which isn't fun either).  The solution is to create a microtemplate that can be applied to the html:
+</p>
+
+<p>
+Here is the save customer form with a microtemplate:
+</p>
+
+<pre name="code" class="html">
+&lt;div id="divCustomer"&gt;
+    &lt;input type="hidden" value="&lt;%= Guid.NewGuid().ToString() %&gt;" id="id" /&gt;
+    First Name: &lt;input type="text" id="firstName" /&gt;&lt;br /&gt;
+    Last Name &lt;input type="text" id="lastName" /&gt;&lt;br /&gt;        
+    &lt;input type="submit" value="go" onclick="javascript:SaveCustomer();" /&gt;
+&lt;/div&gt;
+
+&lt;!-- 
+The $Id, $FirstName, and $LastName are the microtemplate place holders for the Id, FirstName, LastName of the customer 
+--&gt;
+&lt;div id="customerMicroTemplate" class="microtemplate"&gt;
+    Id: $Id&lt;br /&gt; 
+    First Name: $FirstName&lt;br /&gt;
+    Last Name: $LastName&lt;br /&gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis erat.&lt;br /&gt;
+&lt;/div&gt;
+</pre>
+
+<p>
+And here is the new and improved javascript code that takes advantage of the microtemplate.
+</p>
+
+<pre name="code" class="javascript">
+&lt;script type="text/javascript"&gt;
+    $(InitializeComponents);
+    
+    function InitializeComponents() {
+        //register all of the micro templates on the page
+        $('.microtemplate').microtemplate('register');
+    }
+
+    function SaveCustomer() {
+        $.post(
+            //uri to post to
+            '&lt;%= saveCustomerUrl %&gt;',
+            //parameters to send
+            { id: $('#id').val(), 
+              firstName: $('#firstName').val(), 
+              lastName: $('#lastName').val() },
+            //method to call when JSON object representing the customer is returned
+            function(data) {
+                //apply the micro template given a key and the object
+                $('#divCustomer').microtemplate('apply', 'customerMicroTemplate', data);
+            },
+            'json');
+
+        return false;
+    }
+&lt;/script&gt;
+</pre>
+
+<p>
+Given microtemplating, we don't have to do any kind of string concatenations and at the same time we can take advantage of the lighter payload that goes over the wire.  woot.
+</p>
+
+<h4>Microtemplate jQuery Plug-In Source Code</h4>
+<p>
+Here is the source code (the really really crude source code) for the microtemplate jquery plugin I conjured up.  All this is available as a download at the top of this post.
+</p>
+
+<pre name="code" class="javascript">
+(function($) {
+    $.fn.microtemplate = function(args, templateKey, data) {
+        if (jQuery.templates == null) {
+            jQuery.templates = new Array();
+        }
+
+        if (args == 'register') {
+            this.each(function() {
+                jQuery.templates[$(this).attr('id')] = $(this).html();
+                $(this).hide();
+            });
+        }
+        else if (args == 'apply') {
+            this.each(function() {
+                var templateFormat = jQuery.templates[templateKey];
+                var properties = templateFormat.match(/[$]\w*/g);
+                var finalHtml = "";
+                var rowToWrite = templateFormat; //take the template
+                var dataItem = data;
+
+                for (j = 0; j &lt; properties.length; j++) {
+                    var propertyName = properties[j];
+
+                    if (propertyName.length != 0) {
+                        var propertyWithoutPrefix = propertyName.replace('$', '');
+                        var propertyValue = dataItem[propertyWithoutPrefix];
+                        if (dataItem[propertyWithoutPrefix] != null) {
+                            rowToWrite = rowToWrite.replace(propertyName, propertyValue);
+                        }
+                    }
+                }
+
+                finalHtml += rowToWrite; 
+
+                $(this).html(finalHtml);
+            });
+        }
+
+        return this;
+    };
+
+})(jQuery);
+</pre>
+
+
+    <hr />
+    <span style="color: Silver; font-size: small;">Written: 4/8/2010</span>
+    
+    <script>
+        var idcomments_acct = '6ed8d3f7f3b269a55fc308e535627d11';
+        var idcomments_post_url;
+
+        var  idcomments_post_id;// = 'http%3A%2F%2Famirrajan.net%2FBlogs%2F' + 'asp-mvc-ajax-begin-form-vs-jquery-dhtml-and-microtemplating';
+
+    </script>
+    <span id="IDCommentsPostTitle" style="display:none">Comments</span>
+    <script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+    <script>$("#body").append('<div></div>').html(idcomments_post_id);</script>
+
+        </div>
+    </div>
+</body>
+</html>

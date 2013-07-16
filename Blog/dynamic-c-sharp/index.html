@@ -1,0 +1,587 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	
+    
+    Code Blog Foo: dynamic-c-sharp
+
+</title><link href="../Content/base.css" rel="stylesheet" type="text/css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    
+    <script src="../../Scripts/shAll.js" type="text/javascript"></script>
+    <link href="../../Content/SyntaxHighlighter.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<strong>This is an archive of blog posts from a "long time ago".  If you find this useful, let me know and I'll revive it.</strong>
+    <div class="wrap">
+        
+        <div id="top group">
+            <header>
+                <h1>code blog foo - tag line bar</h1>
+            </header>
+            <div style="padding: 5px; border-bottom: 1px solid silver; border-top: 1px solid silver;">
+                <nav>
+                    <a href="/" style="margin-left: 15px; border-style: solid; border-width: 1px;">home</a>
+                    <span class="sep"></span>
+                    <a href="/Blog/Posts" style="margin-left: 15px; border-style: solid; border-width: 1px;">blog</a>
+                    <a href="/Home/About" style="margin-left: 15px; border-style: solid; border-width: 1px;">about</a>
+                    <a href="/Home/Portfolio" style="margin-left: 15px; border-style: solid; border-width: 1px;">projects/open source</a>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="content">
+            
+    
+    
+    <script type="text/javascript">
+        window.onload = function () {
+            SyntaxHighlighter.config.clipboardSwf = '/Scripts/clipboard.swf';
+            SyntaxHighlighter.all();
+            dp.SyntaxHighlighter.HighlightAll('code');
+        };
+
+     </script>
+    <h1>
+<a name="dynamic-c" class="anchor" href="#dynamic-c"><span class="mini-icon mini-icon-link"></span></a>dynamic C#</h1>
+
+<p>One of the most underutilized and useful features in C# 4.0+ is the dynamic keyword.  There is some serious power that can be leveraged and I hope to shed some light on this neglected little feature.</p>
+
+<h1>
+<a name="tldr" class="anchor" href="#tldr"><span class="mini-icon mini-icon-link"></span></a>TL;DR;</h1>
+
+<p>I've created a nuget package called <a href="http://nuget.org/packages/gemini">gemini</a> that you can use to kickstart dynamic work that you want to do.  If you want to create your own dynamic runtime objects, take a look at System.DynamicObject and study its API.</p>
+
+<h1>
+<a name="introducing-expandoobject" class="anchor" href="#introducing-expandoobject"><span class="mini-icon mini-icon-link"></span></a>Introducing ExpandoObject</h1>
+
+<p>The .Net Framework comes with a dynamic object called ExpandoObject.  This class that implements System.Dynamic.IDynamicMetaObjectProvider which gives it some interesting capabilities.  Here is an example:</p>
+
+<pre name="code" class="c#">//instantiate an instance of ExpandoObject
+//but use the dynamic keyword
+dynamic person = new ExpandoObject();
+
+//add properties on the fly. cool
+person.FirstName = "Jane";
+person.LastName = "Doe";
+
+//add methods on the fly. also cool
+person.SayHello = new Func&lt;string&gt;(() =&gt;
+{
+    return person.FirstName + " " + person.LastName + " says hello";
+});
+
+//call dynamic methods using dynamic properties
+//this would print out "Jane Doe says hello";
+Console.WriteLine(person.SayHello());
+</pre>
+
+<p>It's a pretty nifty little class.  Wouldn't it be cool if you could inherit from ExpandoObject and add the ability to take on properties and methods to your own class?  <strong>Well...you cant.</strong>  Keep in mind that ExpandoObject doesn't contain any compile time properties, which is why you have to use the dynamic keyword.  If you used the typed version of ExpandoObject, you would get compiler errors when setting the FirstName, LastName and SayHello members.</p>
+
+<h1>
+<a name="enter-gemini-" class="anchor" href="#enter-gemini-"><span class="mini-icon mini-icon-link"></span></a>Enter Gemini </h1>
+
+<p>Surely there are some benefits to attaching methods and properties to your own classes dynamically.  Let's use a class that I've created and explore the dynamic capabilities of C#.  We'll start with saying hello and build up to some very interesting examples:</p>
+
+<pre name="code" class="c#">//class inerhits from gemini, a construct
+//that gives you dynamic awesomeness
+public class Person : Gemini 
+{
+    //base constructors for setting initial values
+    //these constructors are optional constructors
+    //you can use in your own objects to 
+    public Person(object dto) : base(dto) { }
+    public Person() : this(new { }) { }
+
+    //dynamic method 1 (no access modifier)
+    dynamic SayHello()
+    {
+        return _.FirstName + " " + _.LastName + " says hello";
+    }
+
+    //dynamic method 2 (no access modifier)
+    dynamic SayHelloTo(dynamic otherPerson)
+    {
+        return _.FirstName + " " + _.LastName +
+               " says hello to " + otherPerson.FirstName +
+               " " + otherPerson.LastName;
+    }
+}
+
+//initialize instances
+dynamic person1 = new Person(new { FirstName = "Jane", LastName = "Doe" });
+dynamic person2 = new Person(new { FirstName = "John", LastName = "Doe" });
+
+//call dynamic methods
+//prints "Jane Doe says hello"
+Console.WriteLine(person1.SayHello());
+
+//prints "Jane Doe says hello to John Doe"
+//you can pass in another object that responds to
+//the properties FirstName, LastName
+Console.WriteLine(person1.SayHello(person2));
+
+//prints "Jane Doe says hello to Name Parameter Person"
+//you can pass in named parameters which gets turned
+//into a dynamic object for you
+Console.WriteLine(person1.SayHello(
+    FirstName: "Named Parameter",
+    LastName: "Person"));
+
+//also returns "Jane Doe says hello to Anonymous Person"
+//you can pass in an anonymous type too
+Console.WriteLine(person1.SayHello(new
+{
+    FirstName = "Anonymous",
+    LastName = "Person"
+}));
+</pre>
+
+<p>Some subtle things to note:</p>
+
+<ul>
+<li>inherit from Gemini (it's the class that implements dynamic features exposed via System.DynamicObject...which implements IDynamicMetaObjectProvider)</li>
+<li>methods that adhere to a certain signature are implicitly public (no need for access modifiers)</li>
+<li>no need to create auto-properties, any dynamic member on a class can be accessed via the _ property</li>
+<li>the SayHelloTo method can take in parameters in many different forms, you'll notice that all the variations work because the objects passed in all respond the FirstName and LastName properties</li>
+</ul><p>We are again using the dynamic keyword.  The Person class doesn't have any compile time properties defined (or public methods for that matter).  We use the dynamic keyword to bypass the compiler (otherwise we would get compiler errors).  This allows us to create properties and methods on the fly during runtime.</p>
+
+<h1>
+<a name="adding-members-on-the-fly" class="anchor" href="#adding-members-on-the-fly"><span class="mini-icon mini-icon-link"></span></a>Adding Members on the Fly</h1>
+
+<p>Now that you have an understanding of the general mechanics of Gemini (how to access properties, how to call dynamic methods). Let's do something crazy. We'll redefine what SayHelloTo does, ninja style.  We can add this line to some entry point to our application:</p>
+
+<pre name="code" class="c#">//some entry point to our application such as
+//the first line of static void Main() or
+//the application start of a global.asax.cs
+
+//for all instances of Person
+Gemini.Extend&lt;Person&gt;(person =&gt;
+{
+    //redefine the SayHelloTo method to "casually" say
+    //hello to another person as opposed to its default
+    //behavior
+    person.SayHelloTo = new DynamicFunctionWithParam(otherPerson =&gt; 
+    {
+        return person.FirstName + " says a casual hello to " + otherPerson.LastName;
+    });
+});
+</pre>
+
+<p>With the line above. All instances of Person now have a SayHelloTo method that "casually" says hello as opposed to its original behavior. <strong>The ability to surgically replace and add methods gives you a lot of power.</strong> </p>
+
+<p>You can also change the implementation on the fly for a single instance, it's useful when isolating components under test. Here is an example:</p>
+
+<pre name="code" class="c#">dynamic person = new Person(new { FirstName = "Jane", LastName = "Doe" });
+
+//redefine a method without the need of a mocking framework
+//as long as the method was defined with out an access modifier
+//and returns/takes in a dynamic parameter it is automatically
+//redefinable
+person.SayHelloTo = new DynamicFunctionWithParam(otherPerson =&gt; 
+{
+    return "Mock hello to " + otherPerson.LastName;
+});
+
+//prints "Mock hello to Jane Doe"
+Console.WriteLine(person.SayHello(FirstName: "Jane", LastName: "Doe"));
+</pre>
+
+<p>Gemini is a construct that inherits from DynamicObject, a class in the .Net 4.0 Base Common Library.  DynamicObject paired up with the dynamic keyword gives us the ability to intercept pretty much any call made to an object.  Gemini uses this interception capability to hook up and execute runtime bound methods like the ones defined above.  Here are just a few of the methods you have at your disposal if you inherit from System.DynamicObject:</p>
+
+<ul>
+<li>TryGetMember: this method is invoked if an object is attempting to access a property or public field that doesn't exist</li>
+<li>TrySetMember: this method is invoked if an object is attempting to set a property that doesn't exist</li>
+<li>TryInvokeMember: this method is invoked if an object is attempting to execute a method that doesn't exist</li>
+</ul><h1>
+<a name="do-something-useful" class="anchor" href="#do-something-useful"><span class="mini-icon mini-icon-link"></span></a>Do Something Useful</h1>
+
+<p>All the examples so far have been trivial (I wanted to ease you into this new paradigm). Here is an example where we surgically add a method that does HTML formatting: </p>
+
+<pre name="code" class="c#">//for all instances of Person
+Gemini.Extend&lt;Person&gt;(instance =&gt;
+{
+    //get a list of all properties through one of Gemini's introspection methods
+    var members =
+        (instance.HashOfProperties() as IDictionary&lt;string, object&gt;).ToList();
+
+    //foreach property, add a method on the fly that
+    //ends in the word Html and returns the Html encoded property
+    members.ForEach(kvp =&gt;
+    {
+        //add the method to this instance using Gemini's SetMember method
+        instance.SetMember(
+            kvp.Key + "Html",
+            new DynamicFunction(() =&gt;
+            {
+                return HttpUtility.HtmlEncode(instance.GetMember(kvp.Key));
+            });
+    });
+});
+
+dynamic person = new Person(new { FirstName = "Jane&lt;&gt;", LastName = "Doe&lt;&gt;" });
+
+//this would print Jane&amp;lt;&amp;gt;
+Console.WriteLine(person.FirstNameHtml());
+
+//this would print Doe&amp;lt;gt;
+Console.WriteLine(person.LastNameHtml());
+</pre>
+
+<p>Now, any instance of Person will automatically get an Html method for each property. Any class that inherits from Person would also get this capability.</p>
+
+<p>I hope you are starting to see some of the benefits of using the dynamic keyword in conjunction with classes that inherit from DynamicObject. If you were to create this kind of capability with strict static typing, you would have to define a method for <strong>every</strong> property on <strong>every</strong> class.  Because we have bypassed the compiler, we can use a convention based approach and dynamically invoke these methods instead.</p>
+
+<h1>
+<a name="modules" class="anchor" href="#modules"><span class="mini-icon mini-icon-link"></span></a>Modules</h1>
+
+<p>Gemini's Extend method can take in a delegate to do some light changes to objects. You can create modules to do more of the heavy lifting. Here is the same HTML capability but as a module:</p>
+
+<pre name="code" class="c#">//module definition
+public class HtmlFormatting
+{
+    dynamic instance;
+
+    //modules are defined by create a class that takes in
+    //one constructor argument (the dynamic entity to attach
+    //behavior to)
+    public HtmlFormatting(dynamic gemini)
+    {
+        //store gemini for later use in the module if needed
+        instance = gemini;
+
+        //get a list of all properties on the dynamic instance
+        var members =
+            (gemini.HashOfProperties() as IDictionary&lt;string, object&gt;)
+            .ToList();
+
+        //add the Html method for each property
+        members.ForEach(kvp =&gt;
+        {
+            gemini.SetMember(kvp.Key + "Html",
+              new DynamicFunction(() =&gt; HtmlEncode(kvp.Key)));
+        });
+    }
+
+    dynamic HtmlEncode(string key)
+    {
+        return HttpUtility.HtmlEncode(instance.GetMember(key));
+    }
+}
+
+//at some entry point of the application,
+//extend all instances of Person with HtmlFormatting
+Gemini.Extend&lt;Person, HtmlFormatting&gt;()
+
+//Extra Credit:
+//if you have other modules defined,
+//you can extend an object with those also (a form of multiple inheritence)
+Gemini.Extend&lt;Person, ModuleA&gt;()
+Gemini.Extend&lt;Person, ModuleB&gt;()
+</pre>
+
+<p>There are some inherit benefits to using modules like this. During design time, you can independently test each module and then "mix" them all together during run time.  It leads to a very component based approach where an object gains capabilities at different layers. jQuery is a perfect example of a module based approach, you download a plug-in, which get's mixed into all jQuery object...instant awesomeness!</p>
+
+<p>Being able to mix in different modules gives you a form of multiple inheritence. You can have independent components that all perform a specific task and then mix these capabilities into your objects at runtime.  With static C#, you are limited to extension methods and interfaces (and the contraints of the compiler).</p>
+
+<h1>
+<a name="lazy-" class="anchor" href="#lazy-"><span class="mini-icon mini-icon-link"></span></a>Lazy </h1>
+
+<p>With dynamic typing, you can lazily add methods to a class.  Here is another way you can add HTML capabilities to a class on demand.</p>
+
+<pre name="code" class="c#">public class Person : Gemini
+{
+    //define a method called MethodMissing taking in one parameter
+    dynamic MethodMissing(dynamic callInfo)
+    {
+        //check to see if the method being called ends in Html
+        if(callInfo.Name.EndsWith("Html"))
+        {
+            //if it does, add a method on the fly that returns
+            //the html encoded version of the parsed property
+            var member = callInfo.Name.Replace("Html", "");
+            SetMember(callInfo.Name,
+                new DynamicFunction(() =&gt;
+                {
+                    return System.Web.HttpUtility.HtmlEncode(GetMember(member));
+                });
+
+            //return the value of the method
+            return GetMember(callInfo.Name)();
+        }
+
+        //if the pattern isn't there, throw an exception defined in Gemini
+        throw (Exception)MemberDoesntExistException(callInfo.Name);
+    }
+}
+</pre>
+
+<p>And here is the usage:</p>
+
+<pre name="code" class="c#">dynamic person = new Person();
+
+person.FirstName = "Jane&lt;&gt;"; //set the FirstName Property
+person.FirstName; //this would return Jane&lt;&gt;
+
+/*
+attempt to call FirstNameHtml()
+calling this the first time will execute the 
+method missing block with the following callInfo
+this (Gemini)
+  Name (String): FirstNameHtml
+    Parameters (IEnumerable&lt;dynamic&gt;)
+    ParameterNames (IEnumerable&lt;dynamic&gt;)
+  Instance (Person)
+    MethodMissing (DynamicFunctionWithParam)
+    SetMembers (DynamicFunctionWithParam)
+    FirstName (String): Jane&lt;&gt;
+  Parameter (Gemini)
+    SetMembers (DynamicFunctionWithParam)
+  SetMembers (DynamicFunctionWithParam)
+*/
+//this would print Jane&amp;lt;&amp;gt;
+Console.WriteLine(person.FirstNameHtml());
+
+//method missing will not get called again because now the method exists :-)
+//this would print Jane&amp;lt;&amp;gt;
+Console.WriteLine(person.FirstNameHtml());
+</pre>
+
+<p>Keep in mind that dynamic objects just need to have a method before invocation. The method missing on Person could have also been defined like this:</p>
+
+<pre name="code" class="c#">//an empty Person class
+public class Person : Gemini
+{
+}
+
+//at some entry point in the application such as static void main
+//or global.cs.asax
+Gemini.Extend&lt;Person&gt;(person =&gt;
+{
+    person.MethodMissing = new DynamicFunctionWithParam(callInfo =&gt;
+    {
+        if (callInfo.Name.EndsWith("Html"))
+        {
+            var member = callInfo.Name.Replace("Html", "");
+            callInfo.Instance.SetMember(callInfo.Name,
+                new DynamicFunction(() =&gt;
+                {
+                    return System.Web.HttpUtility.HtmlEncode(
+                        callInfo.Instance.GetMember(member)))
+                });
+            return callInfo.Instance.GetMember(callInfo.Name)();
+        }
+
+        throw (Exception)callInfo.Instance.MemberDoesntExistException(callInfo.Name);
+    });
+});
+</pre>
+
+<p>I can't stress enough how many incredible things can be done with the ability to manipulate objects on the fly.  Now we can have classes that create methods <strong>only when the need them</strong>...the dynamic keyword has afforded us this capability :-)</p>
+
+<h1>
+<a name="show-me-moar" class="anchor" href="#show-me-moar"><span class="mini-icon mini-icon-link"></span></a>Show me MOAR</h1>
+
+<p>Let's take this module pattern for a test drive and see how a class can quickly gain some powerful capabilities.  Let's say I have a module called Validations.  We'll take a UserRegistration class and see how the object morphs as this module is mixed in:</p>
+
+<pre name="code" class="c#">//a plain jane class opting into dynamic awesomeness
+public class UserRegistration : Gemini
+{
+    public UserRegistration(object dto) : base(dto) { }
+    public UserRegistration() : this(new { }) { }
+}
+
+dynamic userRegistration = new UserRegistration(new
+{
+    Email = "user@example.com",
+    Password = "Secret"
+});
+</pre>
+
+<p>No modules have been mixed in at this point. Performing a ToString() on this object will print this out:</p>
+
+<pre>this (UserRegistration)
+  Email (String): user@example.com 
+  Password (String): Secret
+</pre>
+
+<p>Now lets include Validations:</p>
+
+<pre name="code" class="c#">public class UserRegistration : Gemini
+{
+    public UserRegistration(object dto) : base(dto) { }
+    public UserRegistration() : this(new { }) { }
+
+    //we can define this at the entry point of our application
+    //or just put the module definitions into a static constructor
+    static UserRegistration()
+    {
+        Gemini.Extend&lt;UserRegistration, Validations&gt;();
+    }
+
+    //defining a method called validates gives an object validation capabilities,
+    //if you don't define this method, the validations module simply ignores
+    //the mixin and won't attach validation methods to your object
+    IEnumerable&lt;dynamic&gt; Validates()
+    {
+        //verify that the email matches a specfic format
+        yield return
+        new Format("Email")
+        {
+            With = @"^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$"
+        };
+
+        //verify that passwords must match
+        yield return
+        new Confirmation("Password") { ErrorMessage = "Passwords must match." }
+    }
+}
+</pre>
+
+<p>With the Validations module mixed in, performing a ToString() on this object will print this out:</p>
+
+<pre>this (UserRegistration)
+  Validates (DynamicFunction)
+  Errors (DynamicFunction)
+  IsValid (DynamicFunctionWithParam)
+  FirstError (DynamicFunction)
+  Email (String): user@example.com
+  Password (String): user@example.com
+  PasswordConfirmation: null
+</pre>
+
+<p>The validations module <strong>added properties and methods for us without the need for inheritance</strong>.  Specifically, we stated that the password requires confirmation.  Given that, the validation rule added the PasswordConfirmation property for us. Here is a sample of using the validations module:</p>
+
+<pre name="code" class="c#">//all dynamically typed so we bypass the compiler
+dynamic userRegistration = new UserRegistration(new
+{
+    Email = "user@example.com",
+    Password = "Secret"
+});
+
+//this would return false
+userRegistration.IsValid();
+
+//this would return "Passwords must match."
+userRegistration.FirstError();
+
+//set the password to match
+userRegistration.PasswordConfirmation = userRegistration.Password;
+
+//this would return true
+userRegistration.IsValid();
+
+userRegistration.Email = "i am invalid";
+
+//this would return false
+userRegistration.IsValid();
+
+//this would return "Email is invalid."
+userRegistration.FirstError();
+</pre>
+
+<h1>
+<a name="still-not-convinced-show-me-moar" class="anchor" href="#still-not-convinced-show-me-moar"><span class="mini-icon mini-icon-link"></span></a>Still not convinced, show me MOAR</h1>
+
+<p>Ever wanted to cache the values returned from long running methods?  Here is an example of a module called Memoize.</p>
+
+<pre name="code" class="c#">public class SlowPerson : Gemini
+{
+    dynamic SayHello(dynamic otherPerson)
+    {
+        //wait an uncomfortable 10 seconds and then say hello
+        System.Threading.Thread.Sleep(10000);
+
+        return "Hello " + args.Name;
+    }
+}
+</pre>
+
+<p>Now lets memoize the long running SayHello method using a module:</p>
+
+<pre name="code" class="c#">public class SlowPerson : Gemini
+{
+    //we can define this at the entry point of our application
+    //or just put the module definitions into a static constructor
+    static SlowPerson()
+    {
+        Gemini.Extend&lt;SlowPerson, Memoize&gt;();
+    }
+
+    IEnumerable&lt;dynamic&gt; Memoize()
+    {
+        //define a method called Memoize
+        //and state that you want to memoize the SayHello
+        //method
+        yield return (DynamicFunctionWithParam)SayHello;
+    }
+
+    dynamic SayHello(dynamic otherPerson)
+    {
+        //wait an uncomfortable 10 seconds and then say hello
+        System.Threading.Thread.Sleep(10000);
+
+        return "Hello " + otherPerson.Name;
+    }
+}
+</pre>
+
+<p>That's it.  The SayHello method is now memoized. Here is the behavior of the memoized method:</p>
+
+<pre name="code" class="c#">dynamic slowPerson = new SlowPerson();
+
+//takes 10 seconds
+slowPerson.SayHello(Name: "Jane Doe");
+
+//saying hello again returns immediately with the cached result
+slowPerson.SayHello(Name: "Jane Doe");
+
+//takes 10 seconds (different arguements)
+slowPerson.SayHello(Name: "John Doe");
+
+//saying hello again returns immediately with the cached result
+slowPerson.SayHello(Name: "John Doe");
+</pre>
+
+<p>Take a moment and reflect on this module.  With very little code, I was able to do a parameter by parameter cache for a method.  It's hard to create something this elegant in a strongly typed world (I've searched around and the best I've seen is memoization at the functional level, if someone can think of a elegant solution I'll be happy to update this blog post with your implementation).  Also, <strong>keep in mind that you can include multiple modules into any class</strong>.</p>
+
+<p>The Validations and Memoize modules are actually part of <a href="http://amirrajan.github.com/Oak">Oak</a> (a dynamic suite that augments ASP.NET MVC).</p>
+
+<h1>
+<a name="step-aside-compiler" class="anchor" href="#step-aside-compiler"><span class="mini-icon mini-icon-link"></span></a>Step aside, Compiler.</h1>
+
+<p>There are some instances where going dynamic gives you a significant advantage. Creating modules that are mixed into your components flat out reduces the amount of repetitive code that you write...it's simply just less code that you have to maintain.  When you start using dynamic constructs, you may find that you stop caring about what something is and just <strong>concentrate on what something does</strong>. You also stop using interfaces to define contracts and just rely on introspection (eg: "does this object respond to this method?").  I expect a healthy amount of skepticism.  It's jarring to take this approach to development to say the least. But that's why I wrote this blog post. It gives us a means to have a conversation about dynamic C#. Evaluate dynamic C#, try it out, take a look at <a href="http://amirrajan.github.com/Oak">Oak</a>, and ask yourself the hard questions about what benefits the compiler is really giving you...you may find yourself saying "step aside, compiler" for some of the problems programming problems you face.</p>
+
+<p>All the source is online:</p>
+
+<ul>
+<li><a href="http://nuget.org/packages/Gemini">Nuget package for Gemini</a></li>
+<li><a href="http://amirrajan.github.com/Oak">Oak</a></li>
+<li><a href="https://github.com/amirrajan/Oak/blob/master/Oak/Gemini.cs">Source for the core Gemini construct</a></li>
+<li><a href="https://github.com/amirrajan/Oak/wiki/Adding-validation-using-Oak.DynamicModel">Validations Module Usage</a></li>
+<li><a href="https://github.com/amirrajan/Oak/blob/master/Oak/Validation.cs">Source for the Validations Module</a></li>
+<li><a href="https://github.com/amirrajan/Oak/wiki/memoize">Memoize Module Usage</a></li>
+<li><a href="https://github.com/amirrajan/Oak/blob/master/Oak/Memoize.cs">Source for the Memoize Module</a></li>
+</ul>
+
+    <hr />
+    <span style="color: Silver; font-size: small;">Written: 11/22/2012</span>
+    
+    <script>
+        var idcomments_acct = '6ed8d3f7f3b269a55fc308e535627d11';
+        var idcomments_post_url;
+
+        var  idcomments_post_id = 'dynamic-c-sharp';
+
+    </script>
+    <span id="IDCommentsPostTitle" style="display:none">Comments</span>
+    <script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+    <script>$("#body").append('<div></div>').html(idcomments_post_id);</script>
+
+        </div>
+    </div>
+</body>
+</html>

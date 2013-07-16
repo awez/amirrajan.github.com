@@ -1,0 +1,112 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	
+    
+    Code Blog Foo: jquery-auto-complete-text-box-for-asp-mvc
+
+</title><link href="../Content/base.css" rel="stylesheet" type="text/css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    
+    <script src="../../Scripts/shAll.js" type="text/javascript"></script>
+    <link href="../../Content/SyntaxHighlighter.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<strong>This is an archive of blog posts from a "long time ago".  If you find this useful, let me know and I'll revive it.</strong>
+    <div class="wrap">
+        
+        <div id="top group">
+            <header>
+                <h1>code blog foo - tag line bar</h1>
+            </header>
+            <div style="padding: 5px; border-bottom: 1px solid silver; border-top: 1px solid silver;">
+                <nav>
+                    <a href="/" style="margin-left: 15px; border-style: solid; border-width: 1px;">home</a>
+                    <span class="sep"></span>
+                    <a href="/Blog/Posts" style="margin-left: 15px; border-style: solid; border-width: 1px;">blog</a>
+                    <a href="/Home/About" style="margin-left: 15px; border-style: solid; border-width: 1px;">about</a>
+                    <a href="/Home/Portfolio" style="margin-left: 15px; border-style: solid; border-width: 1px;">projects/open source</a>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="content">
+            
+    
+    
+    <script type="text/javascript">
+        window.onload = function () {
+            SyntaxHighlighter.config.clipboardSwf = '/Scripts/clipboard.swf';
+            SyntaxHighlighter.all();
+            dp.SyntaxHighlighter.HighlightAll('code');
+        };
+
+     </script>
+    <p>
+There is an excellent post on how to make an <a target="_blank" href="http://flux88.com/blog/jquery-auto-complete-text-box-with-asp-net-mvc/">auto complete text box from scratch</a>.  I have taken these concepts along with a lot of help from this <a target="_blank" href="http://www.pengoworks.com/workshop/jquery/autocomplete.htm">jQuery plugin</a> and this <a target="_blank" href="http://dyve.net/jquery/?autocomplete">jQuery plugin</a> to create an auto complete plug in that is ready to drop into an ASP.NET MVC 1.0 web application (see notes below for using this in MVC 2).  The css for this plugin comes directly from <a target="_blank" href="http://www.jqueryui.com/themeroller/">jQueryUI</a>....so if you have a custom theme file from there....this auto complete text box plugin should be skinned well enough...I have tested compatibility with IE7+, Firefox 2.0+, Chrome, and Safari 3.0+...no...I have no idea if it works in IE6....IE6 is evil...
+</p> 
+
+<h3>About the Source</h3>
+
+<p>
+This was written using the MVC 1.0 project template (I will update this to MVC 2.0 shortly).  If you have difficulty opening the project in Visual Studio, chances are you have ASP.NET MVC 2.0 installed.  Refer to this link for instructions on how to change over the project: <a href="http://www.asp.net/learn/whitepapers/aspnet-mvc2-upgrade-notes/">Convert an MVC 1.0 Project to MVC 2.0</a>.
+</p>
+
+<p>
+Also in MVC 2, returning JSON via an HTTP/GET Controller action will throw an exception if you do:
+</p>
+
+<pre name="code" class="c#">
+public ActionResult Search(string searchString)
+{
+    //populate search results
+    List&lt;KeyValuePair&lt;string,string&gt;&gt; searchResults = ...;     
+
+    //this will throw an exception in ASP.NET MVC 2
+    return Json(searchResults);  
+}
+</pre>
+
+<p>
+ <strong>Again, the code above will throw an exception and must be changed to the following if you plan on upgrading the source code for this post to ASP.NET MVC 2:</strong>
+</p>
+
+<pre name="code" class="c#">
+public ActionResult Search(string searchString)
+{
+    //populate search results 
+    List&lt;KeyValuePair&lt;string,string&gt;&gt; searchResults = ...;     
+
+    //this will fix the exception
+    return Json(searchResults, JsonRequestBehavior.AllowGet);
+}
+</pre>
+
+<p>
+For a fully integrated example into an asp mvc application:<br/> <a href="../../files/AutoComplete.zip">download the full solution (.zip)</a>.
+</p>
+
+<p>
+Source code for auto complete plug-in:<br/> <a href="../../files/jquery-rima-autocomplete.js.txt">jquery-rima-autocomplete.js</a>.
+</p>
+    <hr />
+    <span style="color: Silver; font-size: small;">Written: 3/25/2010</span>
+    
+    <script>
+        var idcomments_acct = '6ed8d3f7f3b269a55fc308e535627d11';
+        var idcomments_post_url;
+
+        var  idcomments_post_id;// = 'http%3A%2F%2Famirrajan.net%2FBlogs%2F' + 'jquery-auto-complete-text-box-for-asp-mvc';
+
+    </script>
+    <span id="IDCommentsPostTitle" style="display:none">Comments</span>
+    <script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+    <script>$("#body").append('<div></div>').html(idcomments_post_id);</script>
+
+        </div>
+    </div>
+</body>
+</html>

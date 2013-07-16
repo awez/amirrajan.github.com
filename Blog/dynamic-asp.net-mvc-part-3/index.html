@@ -1,0 +1,349 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	
+    
+    Code Blog Foo: dynamic-asp.net-mvc-part-3
+
+</title><link href="../Content/base.css" rel="stylesheet" type="text/css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    
+    <script src="../../Scripts/shAll.js" type="text/javascript"></script>
+    <link href="../../Content/SyntaxHighlighter.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<strong>This is an archive of blog posts from a "long time ago".  If you find this useful, let me know and I'll revive it.</strong>
+    <div class="wrap">
+        
+        <div id="top group">
+            <header>
+                <h1>code blog foo - tag line bar</h1>
+            </header>
+            <div style="padding: 5px; border-bottom: 1px solid silver; border-top: 1px solid silver;">
+                <nav>
+                    <a href="/" style="margin-left: 15px; border-style: solid; border-width: 1px;">home</a>
+                    <span class="sep"></span>
+                    <a href="/Blog/Posts" style="margin-left: 15px; border-style: solid; border-width: 1px;">blog</a>
+                    <a href="/Home/About" style="margin-left: 15px; border-style: solid; border-width: 1px;">about</a>
+                    <a href="/Home/Portfolio" style="margin-left: 15px; border-style: solid; border-width: 1px;">projects/open source</a>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="content">
+            
+    
+    
+    <script type="text/javascript">
+        window.onload = function () {
+            SyntaxHighlighter.config.clipboardSwf = '/Scripts/clipboard.swf';
+            SyntaxHighlighter.all();
+            dp.SyntaxHighlighter.HighlightAll('code');
+        };
+
+     </script>
+    <script type="text/javascript">
+   window.onload = function() {
+       SyntaxHighlighter.config.clipboardSwf = '/Scripts/clipboard.swf';
+       SyntaxHighlighter.all();
+       dp.SyntaxHighlighter.HighlightAll('code');
+   };
+</script>
+
+
+<h2>Dynamic ASP.NET MVC - Part 3, Your First Failing Test</h2>
+
+<ul>
+<li>
+<a href="dynamic-asp.net-mvc">TOC</a>
+</li>
+<li>
+<a href="dynamic-asp.net-mvc-part-1">Part 1, Setting Up Your Environment</a>
+</li>
+<li>
+<a href="dynamic-asp.net-mvc-part-2">Part 2, Creating a Better "Compiler"</a>
+</li>
+<li>
+<a href="dynamic-asp.net-mvc-part-3">Part 3, Your First Failing Test</a>
+</li>
+<li>
+<a href="dynamic-asp.net-mvc-part-4">Part 4, Dynamic Data Access</a>
+</li>
+<li>
+<a href="dynamic-asp.net-mvc-part-5">Part 5, Dynamic Data to Views</a>
+</li>
+<li>
+<a href="dynamic-asp.net-mvc-part-6">Part 6, Mixing in Behavior</a>
+</li>
+<li>
+<a href="dynamic-asp.net-mvc-part-7">Part 7, Oak Projections in Massive</a>
+</li>
+</ul>
+
+<h2>Listing All Blog Posts</h2>
+<p>
+   For a blog, we need to well..list all blog posts.  Currently we have one Controller action on HomeController.cs that returns Index.cshtml:
+</p>
+
+<pre name="code" class="c#">
+    public class HomeController : Controller
+    {
+        public ActionResult Index()
+        {
+            return View();
+        }
+
+    }
+</pre>
+
+<p>
+     This implementation is incomplete.  The view (Index.cshtml) needs to be given a list of blog titles to display.  <strong>Let's write a test stating that the ViewBag.Blogs needs to be populated with an IEnumerable&lt;dynamic&gt;</strong>.
+</p>
+
+<h2>Dealing With Anonymous Types Across Projects</h2>
+<p>Note: you only have to do this if you didn't use the warmup command in the previous blog post to bootstrap your application.  If you've done so, then just skim through this section.</p>
+
+<p>
+   So here's the thing...anonymous types are by default declared as internal classes.  There will be points in time where we'll need to perform assertions on anonymous types.  <strong>We need to ensure that anonymous types declared are visible outside of their respective projects, here's how we do that:</strong>
+</p>
+<ul>
+    <li>hold your nose cause this is kinda stinky</li>
+    <li>go to your <strong>web project</strong>, expand the properties folder, and add the following line to AssemblyInfo.cs:
+<pre name="code" class="c#">
+[assembly: InternalsVisibleTo("DynamicBlog.Tests")] //reference to your test project
+</pre>
+    </li>
+    <li>go to your <strong>test project</strong>, expand the properties folder, and add the following line to AssemblyInfo.cs:
+<pre name="code" class="c#">
+[assembly: InternalsVisibleTo("DynamicBlog")] //reference to your web project
+</pre>
+    </li>
+</ul>
+
+<h2>First Failing Test (written in NSpec)</h2>
+<p>
+   We'll be using NSpec to write our tests (the installation was covered in Part 2).  Visit the <a href="http://nspec.org" target="_blank">NSpec website</a> if you need a crash course on it (you don't need to know all the in's and out's of the framework to start using it).  Here are the steps:
+</p>
+<ul>
+   <li>start Growl for Windows if you don't have it already started</li>
+   <li>start specwatchr if you don't already have that started (sidekick.bat)</li>
+   <li>add a folder under your test project called Controllers</li>
+   <li>add a class file called describe_HomeController.cs under that the Controllers folder in your test project</li>
+   <li>save all your changes (specwatchr will notify you that the project will be reloaded to accommodate the new file)</li>
+   <li>write your first failing test (it's not a lot of code, I've added comments for those that are new to NSpec):</li>
+</ul>
+
+<pre name="code" class="c#">
+//describe_HomeController inherits from nspec
+//access modifier for class isn't required
+class describe_HomeController : nspec
+{
+    //declare controller as a private member variable on class
+    HomeController controller;
+    //view result property will get set within our tests
+    ViewResult viewResult;
+    //view bag will get set within our tests
+    dynamic viewBag;
+       
+    //nspec will run this method before each test
+    void before_each()
+    {
+        controller = new HomeController();
+    }
+
+    //define a "method level context" called "when navigating to the home page"
+    void when_navigating_to_the_home_page()
+    {
+        //this "act" is directly related to the context...
+        //it navigates to the home page and sets the view result and view bag
+        act = () =&gt;
+        {
+            viewResult = controller.Index() as ViewResult;
+            viewBag = viewResult.ViewBag;
+        };
+
+        //perform your assertion stating that the view bag should have
+        //a property called Blogs that is a enumerable of dynamic
+        it["gives a list of blogs"] = () =&gt;
+            (viewBag.Blogs as IEnumerable&lt;dynamic&gt;).should_not_be_null();
+    }
+}
+</pre>
+
+<p>
+  Saving the describe_HomeController.cs file will fire off specwatchr, <strong>which will run the test for you...growl will notify you that you have a failing test</strong> (you can look at the console output in the Ruby Command Prompt for additional details).
+</p>
+
+<h2>Make it Pass</h2>
+<p>
+   Updating the controller like so will make our test pass (it's important to  do the simplest thing possible to make the tests pass...doing this will ensure that our test suite is thoroughly specified):
+</p>
+
+<pre name="code" class="c#">
+public class HomeController : Controller
+{
+    public ActionResult Index()
+    {
+        //this line will make our test pass
+        ViewBag.Blogs = new List&lt;dynamic&gt;();
+
+        return View();
+    }
+}
+</pre>
+
+<p>
+Saving the HomeController.cs file will fire off specwatchr, <strong>which will run impacted tests for you...growl will notify you that all your tests pass</strong> (you can look at the console output in the Ruby Command Prompt for additional details).
+</p>
+
+<h2>Flushing Out the Rest of the Implementation</h2>
+<p>
+  This is not a complete implementation.  Looks like we need to expand our test suite.  We need to communicate that the blog posts come from some model class.  We are going to use a slightly altered version of <a href="https://github.com/robconery/massive" target="_blank">Massive</a> (which was included in the oak NuGet package).  There are a few things we need to do before we can write our next test (appeasing the compiler).
+</p>
+
+<ul>
+    <li>
+        Create a class under the Models folder in the MVC Project called Blogs.cs
+        <pre name="code" class="csharp">
+//yes, that's all you have to type
+public class Blogs : DynamicRepository
+{
+    
+}
+        </pre>
+    </li>
+    <li>
+        We also need to change our controller to take in the Blogs class:
+        <pre name="code" class="csharp">
+public class HomeController : Controller
+{
+    public Blogs Blogs { get; set; }
+
+    public HomeController(Blogs blogs)
+    {
+        Blogs = blogs;
+    }
+
+    public ActionResult Index()
+    {
+        ViewBag.Blogs = new List&lt;dynamic&gt;();
+
+        return View();
+    }
+}
+        </pre>
+    </li>
+    <li>
+       Go to the Package Manager Console Window, select the Test Project as your Default Project and type the following command: <strong>install-package Moq</strong>
+    </li>
+    <li>
+        Save All (specwatchr will notify you that it has been reloaded).
+    </li>
+    <li>
+        In our test, we want to state that blogs should be retrieved from our model class, <strong>here is the updated specification</strong>:
+    <pre name="code" class="c#">
+class describe_HomeController : nspec
+{
+    HomeController homeController;
+    ViewResult viewResult;
+    dynamic viewBag;
+    //use moq to create a mock of the blog entries
+    //we dont want to worry about the database just yet, so
+    //this allows us to mock out that interaction
+    Mock&lt;Blogs&gt; blogs;
+    //this will represent the blog posts that will retrieved
+    List&lt;dynamic&gt; blogsFromModel;
+
+    void before_each()
+    {
+        //new up the mock
+        blogs = new Mock&lt;Blogs&gt;();
+        //new up blogs from model to be an arbitrary collection of
+        //dynamic objects
+        blogsFromModel = new List&lt;dynamic&gt; { new { } };
+        //setup the mock: blogs.All() returns blogsFromModel
+        blogs.Setup(s =&gt; s.All()).Returns(blogsFromModel);
+        homeController = new HomeController(blogs.Object);
+    }
+
+    void navigating_to_the_home_page()
+    {
+        act = () =&gt;
+        {
+            viewResult = homeController.Index() as ViewResult;
+            viewBag = viewResult.ViewBag;
+        };
+
+        //change the assertion so that it verifies that the entity
+        //from view bags is the same collection returned from
+        //the model
+        it["gives a list of blogs"] = () =&gt;
+            (viewBag.Blogs as IEnumerable&lt;dynamic&gt;).should_be(blogsFromModel);
+    }
+}
+    </pre>
+    </li>
+    <li>
+       We make the test pass with the following implementation change:
+       <pre name="code" class="c#">
+public class HomeController : Controller
+{
+    public Blogs Blogs { get; set; }
+
+    public HomeController(Blogs blogs)
+    {
+        Blogs = blogs;
+    }
+
+    public ActionResult Index()
+    {
+        ViewBag.Blogs = Blogs.All();
+
+        return View();
+    }
+}
+       </pre>
+    </li>
+    <li>specwatchr will notify you that all tests pass</li>
+</ul>
+
+<h2>Take it All in</h2>
+<p>
+   We covered our first controller test.  As it stands, if you try to start the website, you'll probably get some exceptions (the next parts of this series will explain why and we will fix those things...so don't worry).  If Moq didn't make sense, then take some time to read <a href="introduction-to-behavior-driven-development-and-mocking">this blog post on Moq and Behavior Driven Development</a>.  <strong>The important thing to take away from Part 3 is the evolution of the implementation and how we didn't have to press an debug buttons, build buttons, or test buttons (those pieces were handled for us so we could concentrate 100% on the tests and implementation).</strong>
+</p>
+
+<h2>A Dialog With Myself</h2>
+<blockquote>
+    <strong>Wait just a second.  This "first failing tests" is pretty stupid.  Your use of Moq gives us very little value.  All you are doing is asserting that the All() method on the Blogs model has been called.</strong>
+</blockquote>
+<p>
+  <b>You are absolutely right.  The first failing test we created is absolutely useless as it stands</b>, and I wouldn't write this test in the "real world".  We are going to elaborate on this test in the next part.  I wanted you to get used to the development flow before I open the flood gates.
+</p>
+<blockquote>
+    <strong>It also looks like that we are prematurely mocking.  Why immediately introduce dependency injection and mocking?
+    </strong>
+</blockquote>
+<p>
+    Same reason as above. We as developers have the habit of mocking too much, this is post is a clear example of how silly this is. Also, I wanted Part 3 to be about the development flow and get you used to the rhythm.  We are actually going to back out the dependency injection and the mocking in Part 4.
+</p>
+    <hr />
+    <span style="color: Silver; font-size: small;">Written: 6/18/2011</span>
+    
+    <script>
+        var idcomments_acct = '6ed8d3f7f3b269a55fc308e535627d11';
+        var idcomments_post_url;
+
+        var  idcomments_post_id;// = 'http%3A%2F%2Famirrajan.net%2FBlogs%2F' + 'dynamic-asp.net-mvc-part-3';
+
+    </script>
+    <span id="IDCommentsPostTitle" style="display:none">Comments</span>
+    <script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+    <script>$("#body").append('<div></div>').html(idcomments_post_id);</script>
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,198 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	
+    
+    Code Blog Foo: prime-factors-kata-in-fsharp
+
+</title><link href="../Content/base.css" rel="stylesheet" type="text/css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    
+    <script src="../../Scripts/shAll.js" type="text/javascript"></script>
+    <link href="../../Content/SyntaxHighlighter.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<strong>This is an archive of blog posts from a "long time ago".  If you find this useful, let me know and I'll revive it.</strong>
+    <div class="wrap">
+        
+        <div id="top group">
+            <header>
+                <h1>code blog foo - tag line bar</h1>
+            </header>
+            <div style="padding: 5px; border-bottom: 1px solid silver; border-top: 1px solid silver;">
+                <nav>
+                    <a href="/" style="margin-left: 15px; border-style: solid; border-width: 1px;">home</a>
+                    <span class="sep"></span>
+                    <a href="/Blog/Posts" style="margin-left: 15px; border-style: solid; border-width: 1px;">blog</a>
+                    <a href="/Home/About" style="margin-left: 15px; border-style: solid; border-width: 1px;">about</a>
+                    <a href="/Home/Portfolio" style="margin-left: 15px; border-style: solid; border-width: 1px;">projects/open source</a>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="content">
+            
+    
+    
+    <script type="text/javascript">
+        window.onload = function () {
+            SyntaxHighlighter.config.clipboardSwf = '/Scripts/clipboard.swf';
+            SyntaxHighlighter.all();
+            dp.SyntaxHighlighter.HighlightAll('code');
+        };
+
+     </script>
+    <script src="../../Scripts/shBrushFSharp.js" type="text/javascript"></script> 
+
+<h2>Prime Factors Kata in F#</h2>
+
+<p>
+    The <a target="_blank" href="http://www.google.com/search?aq=f&sourceid=chrome&ie=UTF-8&q=Prime+Factors+Kata">Prime Factors Kata</a>, is one of many BDD (Behavior Driven Development) katas out there to help developers practice development with a "BDD mind set".  Long story short, I wanted to see what the solution would look like in F#...so I tried it...and now I'm writing a blog post on it :-).
+</p>
+
+<h3>What is a BDD Kata?</h3>
+<p>
+<image src="../../Content/images/kata.jpg" style="float: right; margin-left: 10px; border: solid 1px silver; padding: 3px;" />  <a href="http://www.codinghorror.com/blog/2008/06/the-ultimate-code-kata.html" target="_blank">Jeff Atwood, Coding Horror</a> does an excellent job in explaining what a Kata is.  To paraphrase, <strong>a "code kata" is a (sometimes trivial, usually simple) programming problem that helps a developer hone their ninja skills (a.k.a. development skills).</strong><br /><br />The Prime Factors BDD Kata introduces BDD concepts and helps developers get into the habit of finding a solution to a problem using a test driven development style.  Kata's are meant to be done over and over again, until it becomes muscle memory.  Once you've "mastered" the kata, it then becomes much easier to cut your teeth on a non-trivial/real world problem.  Wax on, wax off.
+</p>
+
+
+<h3>The Goal for Prime Factors Kata</h3>
+<p>
+   The goal of the Prime Factors Kata is to create a method that returns a list of primes for any whole number.  The solution should be derived using a "BDD mind set".  I would <strong>strongly recommend</strong> watching <a target="_blank" href="http://katas.softwarecraftsmanship.org/?p=71"> this video which shows the kata done in Ruby</a>.
+</p>
+
+<h3>Prime Factors Solution in F#</h3>
+<p>
+   Taking a BDD approach, this is the first solution I came up with:
+</p>
+<pre name="code" class="fsharp">
+let Primes number = 
+    let mutable factors = []
+    let mutable n, factor = number, 2
+    while n &gt; 1 do
+        if n % factor = 0 then 
+            factors &lt;- List.append factors [factor]
+            n &lt;- n / factor
+        else factor &lt;- factor + 1
+    factors
+</pre>
+
+<p>
+   This is a pretty straightforward solution, but the solution isn't "functional"...some dead giveaways are the use of the mutable keyword and the use of loops (if I'm not mistaken, <strong>functional solutions are immutable and recursive in nature</strong>).
+</p>
+
+<h3>Refactoring the Solution</h3>
+<p>
+   I wanted the solution to be a <i>functional</i> solution as opposed to a <i>procedural</i> solution.  <strong>Since I took a test driven approach to development, I had many tests written to ensure the correctness of the algorithm...and because of this, I was able to refactor the algorithm KNOWING that my unit tests would catch any errors I may make.</strong>  Here is the functional solution:
+</p>
+
+<pre name="code" class="fsharp">
+let Primes number = 
+    let rec factorsOf number factor accumulator = 
+        if number &gt; 1 && number % factor = 0 then 
+            factorsOf (number / factor) (factor) (List.append accumulator [factor])
+        else if number &gt; 1 then 
+            factorsOf (number) (factor + 1) (accumulator)
+        else accumulator
+    factorsOf number 2 []
+</pre>
+
+<p>
+As you can see, there is a huge difference between the procedural approach and the functional approach....good thing I had those unit tests ;-).
+</p>
+
+<h3>The Spec</h3>
+<p>
+   Here are the unit tests (the spec) that came about using BDD (Behavior Driven Development):
+</p>
+<pre name="code" class="fsharp">
+namespace kata
+
+open System
+open System.Collections.Generic
+open System.Linq
+open NUnit.Framework
+
+[&lt;TestFixture&gt;]
+type when_factoring() =
+    class
+        //solution
+        let Primes number = 
+            let rec factorsOf (number) (factor) (accumulator) = 
+                if number &gt; 1 && number % factor = 0 then 
+                    factorsOf (number / factor) (factor) (List.append accumulator [factor])
+                else if number &gt; 1 then 
+                    factorsOf (number) (factor + 1) (accumulator)
+                else accumulator
+            factorsOf number 2 []
+
+        //methods added for readability of spec
+        let given = fun number -&gt; Primes number
+        let shouldbe = fun (actual:IEnumerable&lt;int&gt;) (expected:IEnumerable&lt;int&gt;) -&gt; Assert.IsTrue (actual.SequenceEqual expected)
+
+        [&lt;Test&gt;]
+        member t.given_0_should_be_empty() =
+            given 0 |&gt; shouldbe []
+
+        [&lt;Test&gt;]
+        member t.given_1_should_be_empty() =
+            given 1 |&gt; shouldbe []
+
+        [&lt;Test&gt;]
+        member t.given_2_should_be_2() =
+            given 2 |&gt; shouldbe [2]
+
+        [&lt;Test&gt;]
+        member t.given_3_should_be_3() =
+            given 3 |&gt; shouldbe [3]
+
+        [&lt;Test&gt;]
+        member t.given_4_should_be_2_2() =
+            given 4 |&gt; shouldbe [2; 2]
+
+        [&lt;Test&gt;]
+        member t.given_5_should_be_5() =
+            given 5 |&gt; shouldbe [5]
+
+        [&lt;Test&gt;]
+        member t.given_6_should_be_2_3() =
+            given 6 |&gt; shouldbe [2; 3]
+
+        [&lt;Test&gt;]
+        member t.given_7_should_be_7() =
+            given 7 |&gt; shouldbe [7]
+
+        [&lt;Test&gt;]
+        member t.given_8_should_be_2_2_2() =
+            given 8 |&gt; shouldbe [2; 2; 2]
+
+        [&lt;Test&gt;]
+        member t.given_9_should_be_3_3() =
+            given 9 |&gt; shouldbe [3; 3]
+
+        [&lt;Test&gt;]
+        member t.given_2730_should_be_2_3_5_7_13() = 
+            given 2730 |&gt; shouldbe [2; 3; 5; 7; 13]
+    end
+</pre>
+    <hr />
+    <span style="color: Silver; font-size: small;">Written: 8/24/2010</span>
+    
+    <script>
+        var idcomments_acct = '6ed8d3f7f3b269a55fc308e535627d11';
+        var idcomments_post_url;
+
+        var  idcomments_post_id;// = 'http%3A%2F%2Famirrajan.net%2FBlogs%2F' + 'prime-factors-kata-in-fsharp';
+
+    </script>
+    <span id="IDCommentsPostTitle" style="display:none">Comments</span>
+    <script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+    <script>$("#body").append('<div></div>').html(idcomments_post_id);</script>
+
+        </div>
+    </div>
+</body>
+</html>

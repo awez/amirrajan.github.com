@@ -1,0 +1,599 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	
+    
+    Code Blog Foo: leveraging-mvp-for-async-communication-in-asp-mvc
+
+</title><link href="../Content/base.css" rel="stylesheet" type="text/css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    
+    <script src="../../Scripts/shAll.js" type="text/javascript"></script>
+    <link href="../../Content/SyntaxHighlighter.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<strong>This is an archive of blog posts from a "long time ago".  If you find this useful, let me know and I'll revive it.</strong>
+    <div class="wrap">
+        
+        <div id="top group">
+            <header>
+                <h1>code blog foo - tag line bar</h1>
+            </header>
+            <div style="padding: 5px; border-bottom: 1px solid silver; border-top: 1px solid silver;">
+                <nav>
+                    <a href="/" style="margin-left: 15px; border-style: solid; border-width: 1px;">home</a>
+                    <span class="sep"></span>
+                    <a href="/Blog/Posts" style="margin-left: 15px; border-style: solid; border-width: 1px;">blog</a>
+                    <a href="/Home/About" style="margin-left: 15px; border-style: solid; border-width: 1px;">about</a>
+                    <a href="/Home/Portfolio" style="margin-left: 15px; border-style: solid; border-width: 1px;">projects/open source</a>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="content">
+            
+    
+    
+    <script type="text/javascript">
+        window.onload = function () {
+            SyntaxHighlighter.config.clipboardSwf = '/Scripts/clipboard.swf';
+            SyntaxHighlighter.all();
+            dp.SyntaxHighlighter.HighlightAll('code');
+        };
+
+     </script>
+    <h2 style="line-height: 1.3em">Leveraging the MVP Design Pattern to Perform Asynchronous Communication in ASP.NET MVC</h2>
+
+<p>
+    I know what you're thinking... "Why in the world would you use the MVP design pattern in ASP.NET <strong style="font-size: 1.4em">MVC</strong>?!!!" I have a blog post that goes into <a href="mvc-vs-mvp-vs-mvvm">the difference between MVC, MVP, and MVVM</a>, but let me try to summarize why.
+</p>
+
+<h3>The Problem</h3>
+<p>
+<image src="../../Content/images/lol_cat_intersting.jpg" style="float: right; margin-left: 10px; border: solid 1px silver; padding: 3px;" />
+   MVC (Model-View-Controller) is a wonderful design pattern that works great in certain situations.  <strong>MVC shines when all application interaction can be funneled through a finite set of events or interaction points.</strong>  <strong>For web applications, that very simple (yet so powerful) interaction point is the HTTP Request</strong>.  Think about it...every interaction you have with a "plain Jane" web site is either through an HTTP/GET request, or an HTTP/POST request.  ASP.NET MVC intercepts the HTTP Request via the <a href="http://msdn.microsoft.com/en-us/library/system.web.mvc.mvchttphandler.aspx" target="_blank">MvcHttpHandler</a>, and sends it through ASP.NET MVC's pipeline.  <strong>So here's the problem...when DHTML and asynchronous communication via javascript come into the picture, the MVC design pattern falls apart</strong>.  When DHTML is involved, the interaction point with an application is <strong>no longer funneled through an HTTP/GET or HTTP/POST</strong>...events such as button clicks, mouse hovers, keyboard input (and anything else you can think of doing with javascript and the HTML page) come into the picture.
+</p>
+
+<h3>The Easy Solution</h3>
+<p>
+    To reiterate, DHTML with asynchronous communication does not work with the MVC design pattern because we no longer have a finite set of interaction points that can be funneled to the MVC pipeline (there are many DHMTL events and controls that can cause server-side processing).  ASP.NET MVC attempts to remedy this with Ajax.BeginForm and I would recommend using this (or jQuery) for simple asynchronous interaction...<a href="asp-mvc-ajax-begin-form-vs-jquery-dhtml-and-microtemplating">here is a blog post that shows how to use Ajax.BeginForm and asynchronous jQuery</a>.  This simple approach works really well for small asynchronous tasks, but may fall short in web pages that have very complex asynchronous interactions.
+</p>
+
+<h3>When Ajax.BeginForm or $.getJSON/$.post Doesn't Cut It</h3>
+<p>
+    <strong>Believe it or not, javascript is becoming a multi-browser, multi-OS programming platform for client side interaction.  Because of this, we can "safely" implement the MVP design pattern entirely in client side javascript</strong>.  So if you've tried the easy solution and it "smells bad," read on and consider using the MVP (in this case, the <a href="http://martinfowler.com/eaaDev/SupervisingPresenter.html" target="_blank">Supervising Controller</a> flavor) design pattern (but in client side javascript).
+</p>
+
+<h3>Javascript MVP Implementation Walk Through</h3>
+<p>
+   Here we go.  This is what the walk through will cover:
+</p>
+<ul>
+    <li>Object Oriented Javascript Tutorial</li>
+    <li>Building your Presenter in Javascript</li>
+    <li>Communicating with your MVC Controllers via the Presenter</li>
+    <li>Wiring up your MVC View to use the Presenter</li>
+</ul>
+
+<h3>Object Oriented Javascript</h3>
+<p>
+    This is a very quick crash course on OO Javascript.  Here is how you create a class in javascript (we are going to create a Person class in javascript):
+</p>
+
+<pre name="code" class="javascript">
+function Person() {
+}
+</pre>
+
+<p>
+   This is how you new up a Person object:
+</p>
+
+<pre name="code" class="javascript">
+function Person() {
+}
+   
+//new up person class
+var somePerson = new Person();
+</pre>
+
+<p>
+    This is how you declare a constructor with parameters:
+</p>
+
+<pre name="code" class="javascript">
+function Person(firstName, lastName) {
+}
+</pre>
+
+<p>
+    This is how you new up a Person that takes in a first and last Name:
+</p>
+
+<pre name="code" class="javascript">
+function Person(firstName, lastName) {
+}
+
+//new up person class with parameters
+var somePerson = new Person('John', 'Doe');
+</pre>
+
+<p>
+   This is how you take those constructor parameters and associate them with properties that can be accessed....and how you new up and access those properties.
+</p>
+
+<pre name="code" class="javascript">
+function Person(firstName, lastName) {
+    //you MUST use the "this" keyword
+    this.FirstName = firstName;
+    this.LastName = lastName;
+}
+
+//new up person class with parameters
+var somePerson = new Person('John', 'Doe');
+alert(somePerson.FirstName + " " + somePerson.LastName);
+</pre>
+
+<p>
+    This is how you add a SayHello method to our Person call...and how to call that method.
+</p>
+
+<pre name="code" class="javascript">
+function Person(firstName, lastName) {
+    //you MUST use the "this" keyword
+    this.FirstName = firstName;
+    this.LastName = lastName;
+}
+
+//every object in javascript has a "prototype" property
+//that allows you to extend an entity...
+//in this case, we are extending Person to contain
+//a SayHello method
+Person.prototype.SayHello = function() {
+    //you MUST use the "this" keyword to access the properties
+    alert(this.FirstName + ' ' + this.LastName + ' says hello!');
+}
+
+//new up person class with parameters
+var somePerson = new Person('John', 'Doe');
+
+//this is how you call the SayHello method:
+//notice that when calling the method, you do not have to 
+//do somePerson.prototype.SayHello()...you just have to do
+//classInstance.SayHello()
+somePerson.SayHello();
+</pre>
+
+<p>
+   This is how you add a Greet method that takes in another Person object as a parameter...and how to call the Greet method:
+</p>
+
+
+<pre name="code" class="javascript">
+function Person(firstName, lastName) {
+    this.FirstName = firstName;
+    this.LastName = lastName;
+}
+
+Person.prototype.SayHello = function() {
+    alert(this.FirstName + ' ' + this.LastName + ' says hello!');
+}
+
+Person.prototype.Greet = function(otherPerson) {
+    alert(this.FirstName + ' ' + this.LastName + ' says hello to ' + otherPerson.FirstName + ' ' + otherPerson.LastName + '!');
+}
+
+//new up person class with parameters
+var somePerson = new Person('John', 'Doe');
+
+//call greet passing in another person object as a parameter
+//when calling this method, you would see an alert box that says: 
+//"John Doe says hello to Jane Smith!"
+somePerson.Greet(new Person('Jane', 'Smith'));
+</pre>
+
+<p>
+   So this C# Person class:
+</p>
+
+<pre name="code" class="c#">
+public class Person
+{
+    public Person(string firstName, string lastName) 
+    {
+        FirstName = firstName;
+        LastName = lastName;
+    }
+
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public void SayHello() { }
+    public void Greet(Person otherPerson) { }
+}
+</pre>
+
+<p>
+   Looks like the following in javascript:
+</p>
+
+<pre name="code" class="javascript">
+function Person(firstName, lastName) {
+    this.FirstName = firstName;
+    this.LastName = lastName;
+}
+
+Person.prototype.SayHello = function() { }
+
+Person.prototype.Greet = function(otherPerson) { }
+</pre>
+
+<p>
+   Crystal clear? Wonderful! Let's move on.
+</p>
+
+<h3>Creating your Presenter in Javascript</h3>
+<p>
+   For this example, consider the following HTML page.  The page will be used to retrieve and save a person:
+</p>
+
+<pre name="code" class="c#">
+//controller action for retrieving the initial view
+[HttpGet]
+public ActionResult Index(Guid? personId)
+{
+    ViewData["PersonId"] = personId ?? Guid.NewGuid();
+    return View();
+}
+</pre>
+
+<pre name="code" class="html">
+&lt;div&gt;
+    &lt;span id="spanStatus" style="color: Green"&gt;&lt;/span&gt;&lt;br /&gt;
+    &lt;input type="hidden" id="personId" value='&lt;%= ViewData["PersonId"].ToString() %&gt;' /&gt;
+    First Name:&lt;br /&gt;
+    &lt;input id="firstName" type="text" /&gt;&lt;br /&gt;
+    Last Name:&lt;br /&gt;
+    &lt;input id="lastName" type="text" /&gt;&lt;br /&gt;
+    &lt;input type="submit" value="save" id="buttonSave" /&gt;
+&lt;/div&gt;
+</pre>
+
+<p>
+    The presenter for this view will need a Load method for initializing the page (and getting things going), a GetPerson method for retrieving a person, and a SavePerson method for saving a person.  Here is the starting point for the presenter:
+</p>
+
+<pre name="code" class="javascript">
+//PersonPresenter
+function PersonPresenter() {
+
+}
+
+//Load method which will get called when the html page is loaded
+PersonPresenter.prototype.Load = function () {
+
+}
+
+//Request to retrieve a person
+PersonPresenter.prototype.GetPerson = function () {
+
+}
+
+//Request to save a person
+PersonPresenter.prototype.SavePerson = function () {
+
+}
+</pre>
+
+<p>
+   Pretty straight forward (again, if you aren't familiar with Model-View-Presenter I would recommend reading <a href="mvc-vs-mvp-vs-mvvm">my blog post that goes into more details</a>).  Now that we have a presenter, we need to <strong>inject a view (the view will also be implemented in javascript)</strong>.  The view will get passed into the presenter's constructor:
+</p>
+
+<pre name="code" class="javascript">
+function PersonPresenter(view) {
+    this._view = view;
+}
+</pre>
+
+<p>
+   Here is what the html page looks like so far:
+</p>
+
+<pre name="code" class="javascript">
+&lt;script type="text/javascript"&gt;
+    //PersonPresenter
+    function PersonPresenter(view) {
+        this._view = view;
+    }
+
+    //Load method which will get called when the html page is loaded
+    PersonPresenter.prototype.Load = function () {
+        
+    }
+
+    //Request to retrieve a person
+    PersonPresenter.prototype.GetPerson = function () {
+        
+    }
+
+    //Request to save a person
+    PersonPresenter.prototype.SavePerson = function () {
+        
+    }
+&lt;/script&gt;
+
+&lt;body&gt;
+    &lt;script type="text/javascript"&gt;
+        //declare an instance of the view
+        var _view;
+        
+        //declare an instance of the presenter
+        var _presenter;
+
+        //jQuery $() syntax delineates that the Initialize() method will get called when the form loads
+        $(Initialize);
+
+        function Initialize() {
+            //new up the view (the view will be a JSON object)
+            _view = { }
+
+            //new up the presenter, injecting the view into it
+            _presenter = new PersonPresenter(_view);
+
+            //load the view after everything is wired up
+            _presenter.Load();
+        }
+    &lt;/script&gt;
+    &lt;div&gt;
+        &lt;span id="spanStatus" style="color: Green"&gt;&lt;/span&gt;&lt;br /&gt;
+        &lt;input type="hidden" id="personId" value='&lt;%= ViewData["PersonId"].ToString() %&gt;' /&gt;
+        First Name:&lt;br /&gt;
+        &lt;input id="firstName" type="text" /&gt;&lt;br /&gt;
+        Last Name:&lt;br /&gt;
+        &lt;input id="lastName" type="text" /&gt;&lt;br /&gt;
+        &lt;input type="submit" value="save" id="buttonSave" /&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+</pre>
+
+<h3>The Controller Actions</h3>
+
+<p>
+    When the html page has been rendered, the Load() method will get called on the PersonPresenter.  The following controller action services up this view and populates ViewData["PersonId"].  The person id will be used to load our Person asynchronously.  Here is the controller action that gets everything going:
+</p>
+
+<pre name="code" class="c#">
+[HttpGet]
+public ActionResult Index(Guid? personId)
+{
+    ViewData["PersonId"] = personId ?? Guid.NewGuid();
+    return View();
+}
+</pre>
+
+<p>
+And here is the controller action to retrieve the actual person data:
+</p>
+
+<pre name="code" class="c#">
+[HttpGet]
+public ActionResult Get(Guid personId)
+{
+    Person person = //retrieves some person from a repository
+    
+    //return the person object as a json serialization (ASP.NET MVC 2.0 version)
+    return Json(person, JsonRequestBehavior.AllowGet);
+
+    //return if you are using MVC 1.0, this is what the return statement would look like
+    return Json(person);
+}
+</pre>
+
+<p>
+And here is the controller action for saving a person:
+</p>
+
+<pre name="code" class="c#">
+[HttpPost]
+public ActionResult Save(Guid personId, string firstName, string lastName)
+{
+    //validate the person server side
+    //save data to the database and return an empty result to signify that everything went well
+    return new EmptyResult();
+}
+</pre>
+
+<h3>The Presenter</h3>
+
+<p>
+   When the page gets loaded, we can then load the person asynchronously via the presenter.  This is the fully implemented presenter (read the comments carefully to get a feel for what's going on):
+</p>
+
+<pre name="code" class="javascript">
+&lt;!-- controller actions --&gt;
+&lt;% string getPersonUri = Url.RouteUrl(new { controller = "Person", action = "Get" }); %&gt;
+&lt;% string savePersonUri = Url.RouteUrl(new { controller = "Person", action = "Save" }); %&gt;
+
+&lt;script type="text/javascript"&gt;
+    //person presenter class declaration
+    function PersonPresenter(view) {
+        this._view = view;
+    }
+
+    //method gets called when the page loads
+    PersonPresenter.prototype.Load = function () {
+        //when the page loads get the person asynchronously
+        this.GetPerson();
+    }
+
+    //request to retrieve a person asynchronously
+    PersonPresenter.prototype.GetPerson = function () {
+        //reference the view locally so that it can be used in the $.getJSON closure
+        var view = this._view;
+
+        //get the person id from the view reference
+        var personId = this._view.GetPersonId();
+
+        //call $.getJSON to asynchronously return the person
+        //when the function returns, the presenter tells the view to populate the first name and last name
+        $.getJSON(
+            //uri for controller action 
+            '&lt;%= getPersonUri %&gt;',
+            //parameter for controller action
+            { personId: personId }, 
+            //delegate to call when controller action returns successfully
+            function (data) {
+                //the presenter tells the view to set the first name
+                view.SetFirstName(data.FirstName);
+                //the presenter tells the view to set the last name
+                view.SetLastName(data.LastName);
+            });
+    }
+
+    //request to save a person asynchronously
+    PersonPresenter.prototype.SavePerson = function () {
+        //reference the view locally so that it can be used in the $.post closure
+        var view = this._view;
+        var personId = view.GetPersonId();
+        var firstName = view.GetFirstName();
+        var lastName = view.GetLastName();
+
+        //if the first name or last name is empty, then notify that the view
+        //of these errors and do not save.
+        if(firstName == '' || lastName == '') {
+            view.NotifyStatus('First name and last name are both required.');
+            return;
+        }
+
+        //if everything is valid,
+        //call $.post to asynchronously save the person
+        //when the function returns, the presenter tells the view that the save was successful
+        $.post(
+               //uri for controller action to save person
+               '&lt;%= savePersonUri %&gt;',
+               //create a list of parameters to pass to the save person uri
+               { 
+                 //get the person id from the view
+                 personId: personId, 
+
+                 //get the first name from the view
+                 firstName: firstName, 
+
+                 //get the last name from the view
+                 lastName: lastName  
+               },
+               //delegate to call when the controller action returns successfully
+               function () {
+                   //the presenter tells the view to notify the user of a successful save
+                   view.NotifyStatus('Save successful!');
+               });
+    }
+&lt;/script&gt;
+</pre>
+
+<h3>The View</h3>
+<p>
+   This is the view that gets injected into the PersonPresenter above.
+</p>
+
+<pre name="code" class="javascript">
+&lt;body&gt;
+    &lt;script type="text/javascript"&gt;
+        //declare variable to represent the view
+        var _view;
+        
+        //declare a variable to represent the presenter
+        var _presenter;
+
+        //when the html is completely rendered, call the initialize method (jQuery's equivalent of the onload event)
+        $(Initialize);
+
+        //method that gets called when the page loads
+        function Initialize() {
+        
+            //the view is a json object that contains all of the methods that are called by the presenter
+            _view = {
+                //GetPersonId finds the hidden element called personId and returns the value
+                GetPersonId: function () { return $("#personId").val(); },
+
+                //SetFirstName finds the input text box called firstName and sets the value to the value passed in
+                SetFirstName: function (value) { $("#firstName").val(value); },
+                
+                //GetFirstName finds the input text box called firstName and returns the value of the text box 
+                GetFirstName: function (value) { return $("#firstName").val(); },
+
+		//SetLastName finds the input text box called lastName and sets the value to the value passed in
+                SetLastName: function (value) { $("#lastName").val(value); },
+                
+                //GetLastName finds the input text box called lastName and returns the value of the text box 
+                GetLastName: function (value) { return $("#lastName").val(); },
+
+                //NotifySaveSuccessful sets the html of a span called spanStatus to Save Successful!
+                NotifyStatus: function (message) { $("#spanStatus").html(message); }
+            };
+
+            //new up the presenter and inject the view into it.
+            _presenter = new PersonPresenter(_view);
+
+            //wire up the save button to call the SavePerson method
+            $("#buttonSave").click(function () { _presenter.SavePerson(); });
+
+            //call the Load method on the presenter to start things off
+            _presenter.Load();
+        }
+    &lt;/script&gt;
+    &lt;div&gt;
+        &lt;span id="spanStatus" style="color: Green"&gt;&lt;/span&gt;&lt;br /&gt;
+        &lt;input type="hidden" id="personId" value='&lt;%= ViewData["PersonId"].ToString() %&gt;' /&gt;
+        First Name:&lt;br /&gt;
+        &lt;input id="firstName" type="text" /&gt;&lt;br /&gt;
+        Last Name:&lt;br /&gt;
+        &lt;input id="lastName" type="text" /&gt;&lt;br /&gt;
+        &lt;input type="submit" value="save" id="buttonSave" /&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+</pre>
+
+<h3>Done.</h3>
+
+<p>
+   That's it!  We have implemented the MVP design pattern in ASP.NET MVC.  Here is a final summary of what will occur when the user browses to the page.
+</p>
+
+<ul>
+    <li>The user browses to the page.</li>
+    <li>The Index controller action gets called and the ViewData["PersonId"] gets set.</li>
+    <li>The html page gets rendered and the ViewData["PersonId"] is written to the page in a hidden variable.</li>
+    <li>When the page is done loading, jQuery will call the Initialize method we created.</li>
+    <li>The Initialize method "new's up" a view and presenter and maps UI components to the persenter methods (in this case, the SavePerson method will get called when the user clicks the save button).</li>
+    <li>After everything is instantiated, the Load method is called on the presenter.</li>
+    <li>The Load method calls GetPerson to get things going.</li>
+    <li>The GetPerson method retrieves the person id from the view and asynchronously calls the GetPerson controller action</li>
+    <li>When the action returns, the JSON result's properties are applied to the view via the presenter.</li>
+    <li>*user clicks the save method*</li>
+    <li>The SavePerson method on the presenter gets executed.</li>
+    <li>The id, first name and last name are validated.</li>
+    <li>If the person is invalid, the presenter tells the view to notify the user of the errors.</li>
+    <li>If the person is valid, the SavePerson controller action is called asynchronously passing in the Person data provided by the view.</li>
+    <li>Once the controller action returns, the presenter tells the view to notify the user of a successful save.</li>
+</ul>
+    <hr />
+    <span style="color: Silver; font-size: small;">Written: 5/17/2010</span>
+    
+    <script>
+        var idcomments_acct = '6ed8d3f7f3b269a55fc308e535627d11';
+        var idcomments_post_url;
+
+        var  idcomments_post_id;// = 'http%3A%2F%2Famirrajan.net%2FBlogs%2F' + 'leveraging-mvp-for-async-communication-in-asp-mvc';
+
+    </script>
+    <span id="IDCommentsPostTitle" style="display:none">Comments</span>
+    <script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+    <script>$("#body").append('<div></div>').html(idcomments_post_id);</script>
+
+        </div>
+    </div>
+</body>
+</html>

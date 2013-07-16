@@ -1,0 +1,317 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	
+    
+    Code Blog Foo: textboxfor-usage
+
+</title><link href="../Content/base.css" rel="stylesheet" type="text/css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    
+    <script src="../../Scripts/shAll.js" type="text/javascript"></script>
+    <link href="../../Content/SyntaxHighlighter.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<strong>This is an archive of blog posts from a "long time ago".  If you find this useful, let me know and I'll revive it.</strong>
+    <div class="wrap">
+        
+        <div id="top group">
+            <header>
+                <h1>code blog foo - tag line bar</h1>
+            </header>
+            <div style="padding: 5px; border-bottom: 1px solid silver; border-top: 1px solid silver;">
+                <nav>
+                    <a href="/" style="margin-left: 15px; border-style: solid; border-width: 1px;">home</a>
+                    <span class="sep"></span>
+                    <a href="/Blog/Posts" style="margin-left: 15px; border-style: solid; border-width: 1px;">blog</a>
+                    <a href="/Home/About" style="margin-left: 15px; border-style: solid; border-width: 1px;">about</a>
+                    <a href="/Home/Portfolio" style="margin-left: 15px; border-style: solid; border-width: 1px;">projects/open source</a>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="content">
+            
+    
+    
+    <script type="text/javascript">
+        window.onload = function () {
+            SyntaxHighlighter.config.clipboardSwf = '/Scripts/clipboard.swf';
+            SyntaxHighlighter.all();
+            dp.SyntaxHighlighter.HighlightAll('code');
+        };
+
+     </script>
+    <h2>TextBoxFor Usage in ASP.NET MVC</h2>
+
+<p>
+<image src="../../Content/images/mvc2logo.jpg" style="float: left; margin-right: 10px; border: solid 1px silver; padding: 3px;" />
+In ASP.NET MVC, the Microsoft team has given us a very nice extension method called Html.TextBoxFor(). This method is much nicer than Html.TextBox().  Magic strings are needed when you use Html.TextBox, which makes refactoring a real pain...using Html.TextBoxFor() doesn't require any magic strings....which is a good thing.  So lets see what TextBoxFor can do, shall we?
+</p>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<h4>What TextBoxFor Does</h4>
+<p>
+I have the following strongly typed View Page:
+</p>
+
+<pre name="code" class="html">
+    &lt;%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage&lt;Customer&gt;" %&gt;
+    &lt;!-- notice that the ViewPage's ViewData.Model is of type Customer --&gt;
+</pre>
+
+<p>
+Now let's say I want a textbox for the customer's first name.  I can use the HtmlHelper TextBoxFor() method to create a textbox:
+</p>
+
+<pre name="code" class="html">
+    &lt;%= Html.TextBoxFor(customer =&gt; customer.FirstName, 
+        new { @class="roundedTextBox" }) %&gt;
+</pre>
+
+<p>
+The code above will generate the following html:
+<p>
+
+<pre name="code" class="html">
+    &lt;input type="text" name="FirstName" id="FirstName" class="roundedTextBox" value="John" /&gt;
+</pre>
+
+<h4>Saving a Customer - View Page</h4>
+
+<p>
+So here's the thing...that's nice and all...but let's take the following scenario.  I want to update some customer information.  Here is what the view code would look like for generating a save customer form.
+</p>
+
+<pre name="code" class="html">
+&lt;% using(Html.BeginForm("Save", "Customer", FormMethod.Post)) { %&gt;
+    &lt;!-- Html Helper HiddenFor() and TextBoxFor() are used -->
+    &lt;%= Html.HiddenFor(customer =&gt; customer.Id) %&gt;
+    First Name:
+    &lt;%= Html.TextBoxFor(customer =&gt; customer.FirstName) %&gt;
+    Last Name:
+    &lt;%= Html.TextBoxFor(customer =&gt; customer.LastName) %&gt;
+    &lt;input type="submit" value="save" /&gt;
+&lt;% } %&gt;
+</pre>
+
+<p>
+This is the html that would get generated:
+</p>
+
+<pre name="code" class="html">
+&lt;form action="/Customer/Save" method="post"&gt;
+    &lt;input id="Id" name="Id" type="hidden" value="9100eb3c-86fa-4d4d-a81b-b53532c48a06" /&gt;
+    First Name:
+    &lt;input id="FirstName" name="FirstName" type="text" value="John" /&gt;
+    Last Name:
+    &lt;input id="LastName" name="LastName" type="text" value="Doe" /&gt;
+    &lt;input type="submit" value="save" /&gt;
+&lt;/form&gt;
+</pre>
+
+<h4>Saving a Customer - Exploring Controller Actions</h4>
+
+<p>
+We've created the view/html.  Here is the controller action that would be needed to service the form above:
+</p>
+
+<pre name="code" class="c#">
+HttpPost
+ActionName("Save")
+public ActionResult Save(Guid id, string firstName, string lastName)
+{
+    //map the properties to a customer object so that 
+    //it can be saved to the repository
+    Customer customer = 
+        new Customer 
+        { 
+            Id = id, 
+            FirstName = firstName,
+            LastName = lastName
+        };
+
+    //save customer to the database
+    //redirect to edit screen after save
+    return RedirectToAction("Edit", new { id = id }); 
+}
+</pre>
+
+<p>
+The controller action is nice...but has some shortcomings:
+<br/>
+<br/>
+The controller action is strongly typed (which is favorable), but I'm tasked with mapping the properties in the Customer object manually.  It also has a fidelity issue...if I decided to refactor and change Id to CustomerId or LastName to Surname, I would have to change the parameters in the controller method respectively.
+<p>
+
+<p>
+This controller action can also service the form:
+</p>
+
+<pre name="code" class="c#">
+HttpPost
+ActionName("Save")
+public ActionResult Save(FormCollection formCollection)
+{
+    Customer customer = new Customer();
+    UpdateModel&lt;Customer&gt;(customer, formCollection);
+     
+    //save customer to the database
+    //redirect to edit screen after save
+    return RedirectToAction("Edit", new { id = customer.Id }); 
+}
+</pre>
+
+<p>
+Again, it'll work, but I don't like that I'm taking in an arbitrary, loosely typed FormCollection (which smells bad to me).  On top of this, I still have to map the properties using the UpdateModel() method...
+</p>
+
+<h4>The Better Controller Action</h4>
+<p>
+I prefer the following controller action:
+</p>
+
+<pre name="code" class="c#">
+HttpPost
+ActionName("Save")
+public ActionResult Save(Customer customer)
+{
+    //save customer to the database
+    //redirect to edit screen after save
+    return RedirectToAction("Edit", new { id = customer.Id }); 
+}
+</pre>
+
+<p>
+By taking in a strongly typed Customer as a parameter, I can let ASP.NET MVC do all the mapping for me....did I mention it's also strongly typed? Woot.  This is where TextBoxFor (and all the other For helpers for that matter) really shines.  This method will render the html for binding the model to the controller action with no problems what-so-ever.  You can even do more complicated bindings.
+</p>
+
+<h4>A More Complicated Binding</h4>
+
+<p>
+  Lets say I have the following view model.
+</p>
+
+<pre name="code" class="c#">
+    public class CustomerContactViewModel
+    {
+        public Customer Customer { get; set; }
+        public ContactPerson ContactPerson { get; set; }
+    }
+
+    public class Customer
+    {
+        public Guid Id { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+    }
+
+    public class ContactPerson
+    {
+        public Guid Id { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+    }
+</pre>
+
+<p>
+And I have the following View Page with a save customer/contact person form.
+</p>
+
+<pre name="code" class="html">
+&lt;%@ Page Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage&lt;CustomerContactViewModel&gt;" %&gt;
+</pre>
+
+<p>
+...
+</p>
+
+<pre name="code" class="html">
+&lt;% using(Html.BeginForm(new { controller = "Home", action = "Customer" })) { %&gt;
+       &lt;!-- customer info --&gt;
+       &lt;%= Html.HiddenFor(c =&gt; c.Customer.Id, null)%&gt;
+       Customer First Name:&lt;br /&gt;
+       &lt;%= Html.TextBoxFor(c =&gt; c.Customer.FirstName, null)%&gt;&lt;br /&gt;
+       Customer Last Name:&lt;br /&gt;
+       &lt;%= Html.TextBoxFor(c =&gt; c.Customer.LastName, null)%&gt;&lt;br /&gt;
+       
+       &lt;!-- customer contact person info --&gt;
+       &lt;%= Html.HiddenFor(c =&gt; c.ContactPerson.Id, null)%&gt;
+       Customer Contact First Name:&lt;br /&gt;
+       &lt;%= Html.TextBoxFor(c =&gt; c.ContactPerson.FirstName, null)%&gt;&lt;br /&gt;
+       Customer Contact Last Name:&lt;br /&gt;
+       &lt;%= Html.TextBoxFor(c =&gt; c.ContactPerson.LastName, null)%&gt;&lt;br /&gt;
+       &lt;input type="submit" value="save" /&gt;
+&lt;% } %&gt;
+</pre>
+
+<p>
+This is the html that will get rendered:
+</p>
+
+<pre name="code" class="html">
+&lt;form action="/Home/Customer" method="post"&gt;
+    &lt;!-- customer info --&gt;
+    &lt;input id="Customer_Id" name="Customer.Id" type="hidden" value="afeb1d9f-acc7-464a-9172-8d0fa53d1b3a" /&gt;
+    Customer First Name:&lt;br /&gt;
+    &lt;input id="Customer_FirstName" name="Customer.FirstName" type="text" value="" /&gt;&lt;br /&gt;
+    Customer Last Name:&lt;br /&gt;
+    &lt;input id="Customer_LastName" name="Customer.LastName" type="text" value="" /&gt;&lt;br /&gt;
+
+    &lt;!-- customer contact person info --&gt;
+    &lt;input id="ContactPerson_Id" name="ContactPerson.Id" type="hidden" value="a5079b2c-355c-4b05-b6ae-91cd1b0a48f1" /&gt;
+    Customer Contact First Name:&lt;br /&gt;
+    &lt;input id="ContactPerson_FirstName" name="ContactPerson.FirstName" type="text" value="" /&gt;&lt;br /&gt;
+    Customer Contact Last Name:&lt;br /&gt;
+    &lt;input id="ContactPerson_LastName" name="ContactPerson.LastName" type="text" value="" /&gt;&lt;br /&gt;
+    &lt;input type="submit" value="save" /&gt;
+&lt;/form&gt;
+</pre>
+
+<p>
+The controller action below gets bound without a hitch!
+</p>
+
+<pre name="code" class="c#">
+HttpPost
+ActionName("Save")
+public ActionResult Save(Customer customer, ContactPerson contactPerson)
+{
+    //save customer to the database
+    //save employee to the database
+    //redirect to edit screen after save
+    return RedirectToAction("Edit", new { id = customer.Id }); 
+}
+</pre>
+
+<h3>The Joke</h3>
+<p>
+I was searching for a good MVC2 logo to associate with this blog posts...so I Googled images for "mvc 2" and got the following result:
+</p>
+<image src="../../Content/images/mvc2logo.jpg" style="border: solid 1px silver; padding: 3px;" />
+<p>MVC 2....get it?</p>
+
+    <hr />
+    <span style="color: Silver; font-size: small;">Written: 3/31/2010</span>
+    
+    <script>
+        var idcomments_acct = '6ed8d3f7f3b269a55fc308e535627d11';
+        var idcomments_post_url;
+
+        var  idcomments_post_id;// = 'http%3A%2F%2Famirrajan.net%2FBlogs%2F' + 'textboxfor-usage';
+
+    </script>
+    <span id="IDCommentsPostTitle" style="display:none">Comments</span>
+    <script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+    <script>$("#body").append('<div></div>').html(idcomments_post_id);</script>
+
+        </div>
+    </div>
+</body>
+</html>

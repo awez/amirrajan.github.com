@@ -1,0 +1,130 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	
+    
+    Code Blog Foo: code-katas-prime-factors
+
+</title><link href="../Content/base.css" rel="stylesheet" type="text/css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    
+    <script src="../../Scripts/shAll.js" type="text/javascript"></script>
+    <link href="../../Content/SyntaxHighlighter.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<strong>This is an archive of blog posts from a "long time ago".  If you find this useful, let me know and I'll revive it.</strong>
+    <div class="wrap">
+        
+        <div id="top group">
+            <header>
+                <h1>code blog foo - tag line bar</h1>
+            </header>
+            <div style="padding: 5px; border-bottom: 1px solid silver; border-top: 1px solid silver;">
+                <nav>
+                    <a href="/" style="margin-left: 15px; border-style: solid; border-width: 1px;">home</a>
+                    <span class="sep"></span>
+                    <a href="/Blog/Posts" style="margin-left: 15px; border-style: solid; border-width: 1px;">blog</a>
+                    <a href="/Home/About" style="margin-left: 15px; border-style: solid; border-width: 1px;">about</a>
+                    <a href="/Home/Portfolio" style="margin-left: 15px; border-style: solid; border-width: 1px;">projects/open source</a>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="content">
+            
+    
+    
+    <script type="text/javascript">
+        window.onload = function () {
+            SyntaxHighlighter.config.clipboardSwf = '/Scripts/clipboard.swf';
+            SyntaxHighlighter.all();
+            dp.SyntaxHighlighter.HighlightAll('code');
+        };
+
+     </script>
+    <h2>Awesome Code Katas</h2>
+<p>
+   I've been doing quite a few Code Katas, especially at <a href="http://dallashackclub.com/" target="_blank">Dallas Hack Club</a>.  Here is a list of code katas that you may want to try out.  I recommend tackling them in the order they are listed :-).
+</p>
+<ul>
+<li>
+<a href="code-katas">TOC</a>
+</li>
+<li>
+<a href="code-katas-prime-factors">Prime Factors - Rite of Passage</a>
+</li>
+<li>
+<a href="code-katas-bowling-kata">Bowling Kata - Reinforcement</a>
+</li>
+<li>
+<a href="code-katas-mars-rover">Mars Rover - The Transition</a>
+</li>
+<li>
+<a href="code-katas-poker">Poker Kata - Picking the Right Test</a>
+</li>
+<li>
+<a href="code-katas-vending-machine">Vending Machine Kata - Exploring Behaviors</a>
+</li>
+<li>
+<a href="code-katas-map-kata">Map Kata - En Passe</a>
+</li>
+<li>
+<a href="code-katas-conways-game-of-life">Conway's Game of Life</a>
+</li>
+<li>
+<a href="code-katas-mancala">Mancala</a>
+</li>
+</ul>
+
+<h2>Prime Factors Kata - The Rite of Passage</h2>
+<p>
+   This kata is a rite of passage for the most part.  It's designed to help you get used to doing test driven development.
+</p>
+<h2>Explanation</h2>
+<p>
+    Write a method that takes in an integer and returns all prime factors for that number.  For example, passing in the number 4 would return a list containing 2,2.  Notice I said method...don't go creating a complicated class or project structure.  Just create a test fixture and put a method right in there ;-).</p>
+
+<h2>Goals</h2>
+<p>
+    Start with the simplest implementation possible.  Don't try to find a solution all at once.  This kata will help you create the muscle memory to start with the most naive solution first.  In fact, I'm recommending you write your tests in this order (again, only write enough code to make each test pass):
+</p>
+<ul>
+    <li>given 0, should return empty list</li>
+    <li>given 1, should return empty list</li>
+    <li>given 2, should return 2</li>
+    <li>given 3, should return 3</li>
+    <li>given 4, should return 2,2</li>
+    <li>given 5, should return 5</li>
+    <li>given 6, should return 2,3</li>
+    <li>given 9, should return 3,3</li>
+    <li>given int.max, should return int.max</li>
+</ul>
+<h2>En-passe</h2>
+<p>
+   With this kata, you'll also learn the concept of an en-passe.  Were there instances in this kata where your algorithm had to completely change?  Your implementation should evolve as make more tests pass...if you find that your implementation changes drastically with each new test, repeat the kata until it evolves smoothly.
+</p>
+<h2>Get Up and Running. Fast.</h2>
+<p>
+This was the first kata I tackled, and did it many many times.  Every time you do this kata, think about how long it takes you to get your first failing test going (i.e. setting up the project/sln/folder structure and getting your test runner to execute the first failing test).  Work at getting that first failing test up and running quickly.  I would recommend using <a href="https://github.com/chucknorris/warmup" target="_blank">[WarmuP]</a> and create a project template to decrease that start up time.  Here is my WarmuP template for <a href="https://github.com/amirrajan/katanspec" target="_blank">[C#/NSpec Katas]</a>, <a href="https://github.com/amirrajan/kataruby" target="_blank">[Ruby Katas]</a>, and <a href="https://github.com/amirrajan/katajs" target="_blank">[JavaScript/CoffeeScript katas]</a>.  I'm up and running in literally 15 seconds.
+</p>
+    <hr />
+    <span style="color: Silver; font-size: small;">Written: 3/9/2012</span>
+    
+    <script>
+        var idcomments_acct = '6ed8d3f7f3b269a55fc308e535627d11';
+        var idcomments_post_url;
+
+        var  idcomments_post_id;// = 'http%3A%2F%2Famirrajan.net%2FBlogs%2F' + 'code-katas-prime-factors';
+
+    </script>
+    <span id="IDCommentsPostTitle" style="display:none">Comments</span>
+    <script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+    <script>$("#body").append('<div></div>').html(idcomments_post_id);</script>
+
+        </div>
+    </div>
+</body>
+</html>

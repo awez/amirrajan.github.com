@@ -1,0 +1,412 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	
+    
+    Code Blog Foo: facebook-oauth-authentication-and-iframe-apps
+
+</title><link href="../Content/base.css" rel="stylesheet" type="text/css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    
+    <script src="../../Scripts/shAll.js" type="text/javascript"></script>
+    <link href="../../Content/SyntaxHighlighter.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<strong>This is an archive of blog posts from a "long time ago".  If you find this useful, let me know and I'll revive it.</strong>
+    <div class="wrap">
+        
+        <div id="top group">
+            <header>
+                <h1>code blog foo - tag line bar</h1>
+            </header>
+            <div style="padding: 5px; border-bottom: 1px solid silver; border-top: 1px solid silver;">
+                <nav>
+                    <a href="/" style="margin-left: 15px; border-style: solid; border-width: 1px;">home</a>
+                    <span class="sep"></span>
+                    <a href="/Blog/Posts" style="margin-left: 15px; border-style: solid; border-width: 1px;">blog</a>
+                    <a href="/Home/About" style="margin-left: 15px; border-style: solid; border-width: 1px;">about</a>
+                    <a href="/Home/Portfolio" style="margin-left: 15px; border-style: solid; border-width: 1px;">projects/open source</a>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="content">
+            
+    
+    
+    <script type="text/javascript">
+        window.onload = function () {
+            SyntaxHighlighter.config.clipboardSwf = '/Scripts/clipboard.swf';
+            SyntaxHighlighter.all();
+            dp.SyntaxHighlighter.HighlightAll('code');
+        };
+
+     </script>
+    <h2>Working with the Facebook's OAuth protocol and Canvas Application in ASP.NET MVC</h2>
+
+<h3>Setting the Stage</h3>
+<p>
+   So you've read my post on <a href="asp-mvc-and-facebook-single-sign-on">leveraging Facebook's oAuth protocol for single sign on</a> and want to leverage this wonderful approach of authenticating a user in your Facebook Canvas Apps.  Well you probably got it working, but you may get a weird side effect.  When a user first visits your Facebook app, they'll see a grayed out iFrame (or a "go to facebook.com hyperlink")...maybe it looks something like this:
+</p>
+
+<image src="../../Content/images/facebookiframegrey.png" style="border: solid 1px silver; padding: 3px;" />
+
+<p>
+   And of course, you want your Facebook application to look professional and this <strong>"graying out" side effect in the iFrame is simply not acceptable by any means</strong>.  This blog post will show you how to get a nice transition when authorizing your application that <strong>also leverages the Facebook's oAuth protocol</strong>.
+</p>
+
+<h3>Here we go...</h3>
+<p>
+    Alright.  If you are not 100% familiar with Facebook's oAuth protocol, I strongly recommend you read <a href="asp-mvc-and-facebook-single-sign-on">this blog post first</a> (I will be building upon these concepts...).  All done? Good.  Here is an overview of the steps you'll need to take to get oAuth working without graying out your Facebook Canvas App:
+</p>
+<ol>
+    <li><strong>Configure:</strong> You have to go to your application configuration in Facebook and enable oAuth 2.0 for Canvas Apps</li>
+    <li><strong>Landing:</strong> Your landing page for your Facebook App will receive a query string parameter called <strong>signed_request</strong>...by extension your controller (I'm assuming you're using ASP.NET MVC) will also receive this query string parameter.</li>
+    <li><strong>Validation:</strong> the signed_request query string parameter is a digitally signed json serialization of the currently authenticated user.  You need to validate that the query string parameter actually came from Facebook and not some "hacker".</li>
+    <li><strong>Deserialization: </strong>  Once you have validated that the request did indeed come from Facebook, you can then deserialize the JSON object.</li>
+    <li><strong>Authorization (not authorized/not logged in): </strong>  If the oAuth property is empty (the source being the deserialized JSON object, which is contained in the signed_request query string parameter), then redirect the user (via javascript) to the GraphAPI authorization url so your Canvas App can be authorized.</li>
+    <li><strong>Authorization (logged in and authorized): </strong>  If the oAuth property is populated (the source being the deserialized JSON object, which is contained in the signed_request query string parameter), then you can pull out the oAuth (and Facebook User ID) for later use with Facebook's Graph API.  With an authorized user, an oauth_token, and the Facebook User ID, you'll be good to go!</li>
+    <li><strong>Dealing with Internet Explorer</strong>:  After you get alllll of this working, you'll find that your implementation will work for Firefox, Chrome, and Safari....but not IE (surprised?).  Internet Explorer strictly enforces P3P policy filters for iFrames...given that...Facebook cannot set the required authentication cookies for your application.  So you have to include P3P policies in your controller actions.</li>
+</ol>
+
+<h3>Step by Step</h3>
+<p>
+   Lets take this step by step (again, I'm assuming you are using ASP.NET MVC 2.0 and that you have read the blog post I've mentioned above).
+</p>
+
+<h3>Configure:</h3>
+<p>
+  This step is easy.  Go to your application configuration page and enable oAuth 2.0 for Canvas:
+</p>
+
+<image src="../../Content/images/oauthbeta.png" style="border: solid 1px silver; padding: 3px;" />
+
+<h3>Landing:</h3>
+<p>
+   Your landing page is the one you provided to Facebook when you originally registered your app, here is the controller action you should start with (notice that it takes in a parameter called signed_request):
+</p>
+<pre name="code" class="c#">
+//these are the using statements for the classes you'll be working with
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web.Mvc;
+using System.IO;
+using System.Text;
+using System.Runtime.Serialization.Json;
+using System.Web.Security;
+using System.Text.RegularExpressions;
+using System.Security.Cryptography;
+
+[....controller declaration would be here....]
+
+[AcceptVerbs(HttpVerbs.Get)]
+public ActionResult Index(string signed_request)
+{
+    //when the user gets on the landing page, simply return the signed_request 
+    //this is just a starting point btw
+    return Content(signed_request);
+}
+</pre>
+<p>
+   If you did this step right, you should see a string similar to the following (it's kind of tiny, but I wanted to make sure the full signed_request fits on one line):<br/><br/>
+   <span style="font-size: .8em">296pqLD6heR1SWx-UB9wTw2nghfQUkIq0L5ih6oFIkk<strong style="font-size: 2.0em">.</strong>eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImlzc3VlZF9hdCI6MTI4NjU5ODM1Nn0</span><br/><br/>
+   <strong>The signed_request contains two pieces of data separated by a "." (period).</strong>  The first string is a hash that you should validate to ensure the query string parameter came from Facebook and not a "hacker".  The second parameter is the encoded JSON object that contains the oAuth access token and the Facebook User ID.  Once you have your controller action returning the signed_request, we can move on to validation (making sure that query string parameter actually came from Facebook).
+</p>
+
+<h3>Validation:</h3>
+<p>
+  Extend your controller action to look like the following code.  For more information on what is going on with this code, please refer to <a href="http://developers.facebook.com/docs/authentication/canvas" target="_blank">the Facebook oAuth for Canvas documentation</a> and <a href="http://stackoverflow.com/questions/3385593/c-hmacsha256-problem-matching-facebook-signed-request-implementation" target="_blank">this StackOverflow question</a> and <a href="http://en.wikipedia.org/wiki/Digital_signature" target="_blank">this Wikipedia article</a>.
+</p>
+
+<pre name="code" class="c#">
+[AcceptVerbs(HttpVerbs.Get)]
+public ActionResult Index(string signed_request)
+{
+    //when the user gets on the landing page, return the boolean result from ValidateSignedRequest()
+    //if all goes well, you should see "True"
+
+    //if the session variable is not set, then attempt to validate 
+    if(string.IsNullOrEmpty(signed_request) == false)
+    {
+        //call ValidateSignedRequest and return the result as Content
+        return Content(ValidateSignedRequest(signed_request).ToString());    
+    }
+
+    return Content(signed_request);
+}
+
+bool ValidateSignedRequest(string request)
+{
+    string applicationSecret = "put your application secret here";
+    string[] signedRequest = request.Split('.');
+    string expectedSignature = signedRequest[0];
+    string payload = signedRequest[1];
+
+    // Attempt to get same hash
+    byte[] hmac = SignWithHmac(UTF8Encoding.UTF8.GetBytes(payload), UTF8Encoding.UTF8.GetBytes(applicationSecret));
+    string hmacBase64 = ToUrlBase64String(hmac);
+
+    return (hmacBase64 == expectedSignature);
+}
+
+private byte[] SignWithHmac(byte[] dataToSign, byte[] keyBody)
+{
+    using (HMACSHA256 hmacAlgorithm = new HMACSHA256(keyBody))
+    {
+        hmacAlgorithm.ComputeHash(dataToSign);
+        return hmacAlgorithm.Hash;
+    }
+}
+
+private string ToUrlBase64String(byte[] Input)
+{
+    return Convert.ToBase64String(Input).Replace("=", String.Empty)
+                                        .Replace('+', '-')
+                                        .Replace('/', '_');
+}
+</pre>
+
+<h3>Deserialization:</h3>
+<p>
+  If you get a "True" from the code above in you oAuth Canvas App, then it is safe for you to deserialize the second part of signed_request (please note that if ValidateRequest ever returns false, it means that the query string parameter did not come from Facebook and should be under suspect).  Here is how you deserialize the JSON object.  First, you need to create this class:
+</p>
+<pre name="code" class="c#">
+public class FacebookSignedRequest
+{
+    public string algorithm { get; set; }
+    public string expires { get; set; }
+    public string issued_at { get; set; }
+    public string oauth_token { get; set; }
+    public string user_id { get; set; }
+}
+</pre>
+<p>
+Once you have the class created, you can change your controller action to look like the following code (be sure to add the deserialization method below).
+</p>
+<pre name="code" class="c#">
+[AcceptVerbs(HttpVerbs.Get)]
+public ActionResult Index(string signed_request)
+{
+    if (string.IsNullOrEmpty(signed_request) == false)
+    {
+        if (ValidateSignedRequest(signed_request))
+        {
+            FacebookSignedRequest facebookSignedRequest = GetDecodedSignedRequest(signed_request);
+
+            //capture the access token in a session variable (if you want to)
+            HttpContext.Session["FacebookAccessToken"] = facebookSignedRequest.oauth_token;
+
+            //return the raw JSON if the signed_request came from facebook
+            return Content(GetJsonString(signed_request));
+        }
+        else
+        {
+            return Content("haxor!");    
+        }
+    }
+
+    return Content(signed_request);
+}
+
+private FacebookSignedRequest GetDecodedSignedRequest(string signedRequest)
+{
+    string json = GetJsonString(signedRequest);
+
+    DataContractJsonSerializer dataContractJsonSerializer = new DataContractJsonSerializer(typeof(FacebookSignedRequest));
+    FacebookSignedRequest facebookSignedRequest = new FacebookSignedRequest();
+    using (MemoryStream ms = new MemoryStream(Encoding.Unicode.GetBytes(json)))
+    {
+        DataContractJsonSerializer serializer = new DataContractJsonSerializer(facebookSignedRequest.GetType());
+        facebookSignedRequest = (FacebookSignedRequest)serializer.ReadObject(ms); // <== Your missing line
+    }
+
+    return facebookSignedRequest;
+}
+
+private string GetJsonString(string signedRequest)
+{
+    string payload = signedRequest.Split('.').Last();
+    UTF8Encoding encoding = new UTF8Encoding();
+    string decodedJson = payload.Replace("=", string.Empty).Replace('-', '+').Replace('_', '/');
+    byte[] base64JsonArray = Convert.FromBase64String(decodedJson.PadRight(decodedJson.Length + (4 - decodedJson.Length % 4) % 4, '='));
+    string json = encoding.GetString(base64JsonArray);
+    return json;
+}
+</pre>
+
+If you did everything right, <strong>you should see something like the following for unauthorized/not logged in users:</strong>
+<pre>
+{
+    "algorithm":"HMAC-SHA256",
+    "issued_at":1286601537
+}
+</pre>
+And you should see the something like the following <strong>if the user is logged in and has authorized your app</strong>:
+<pre>
+{
+    "algorithm":"HMAC-SHA256",
+    "expires":1286607600,
+    "issued_at":1286601604,
+    "oauth_token":"114756055226487|2.pDgAV_s_R2VW3jcNiEM7SQ__.3600.1286607600-1756053625|-do9O3DzQ97jTHJfvgJLEv51azA",
+    "user_id":"1111111111"
+}
+</pre>
+<p>
+  So far so good?  Let's move on to the next step.
+</p>
+<h3>Authorization (not authorized/not logged in):</h3>
+<p>
+   A user that is not logged in needs to be redirected to the authorization screen....the catch is that your controller <strong>cannot</strong> perform the redirect, it must be done through javascript.  Given that.  You first need to create a view to perform the redirect...I called mine RedirectToFacebookLogin.aspx.  The code for the view follows:
+</p>
+
+<pre>
+&lt;%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage" %&gt;
+
+&lt;asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server"&gt;
+	Redirect
+&lt;/asp:Content&gt;
+
+&lt;asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server"&gt;
+    Redirecting...please wait
+
+    &lt;script type="text/javascript"&gt;
+        top.location = "https://graph.facebook.com/oauth/authorize?client_id=YOURPUBLICAPPID&redirect_uri=http://apps.facebook.com/YOURAWESOMEAPP/&type=user_agent&display=page";
+    &lt;/script&gt;
+
+&lt;/asp:Content&gt;
+</pre>
+<p>
+Once you have the view created, you need to create a controller action to bring up the view:
+</p>
+<pre name="code" class="c#">
+[AcceptVerbs(HttpVerbs.Get)]
+[ActionName("RedirectToFacebookLogin")]
+public ActionResult RedirectToFacebookLogin()
+{
+    return View();
+}
+</pre>
+<p>
+Now that you have the redirect view created, we can change our controller action to redirect if the user isn't logged in.  <strong>A unauthorized/not logged in user will have an empty/unspecified oAuth access token in the JSON entity that was deserialized</strong>.  The code below redirects to the login view if the oauth_token is null or string.empty.
+</p>
+<pre name="code" class="c#">
+[AcceptVerbs(HttpVerbs.Get)]
+public ActionResult Index(string signed_request)
+{
+    //if the signed_request query string parameter is specified
+    if (string.IsNullOrEmpty(signed_request) == false)
+    {
+        //if the request did indeed come from facebook
+        if (ValidateSignedRequest(signed_request))
+        {
+            //deserialize the json object into the strongly typed class we created 
+            FacebookSignedRequest facebookSignedRequest = GetDecodedSignedRequest(signed_request);
+
+            //this signifies that the user is not logged in or has not authorized your app.
+            //if so redirect to facebook application authorization page via javascript
+            if(string.IsNullOrEmpty(facebookSignedRequest.oauth_token))
+            {
+                return RedirectToAction("RedirectToFacebookLogin");
+            }
+
+            HttpContext.Session["FacebookAccessToken"] = facebookSignedRequest.oauth_token;
+            return Content(GetJsonString(signed_request));
+        }
+        else
+        {
+            return Content("haxor!");
+        }
+    }
+
+    return Content(signed_request);
+}
+</pre>
+<p>
+   If all went well, the unauthorized/not logged in user should have been redirected to the login/authorize screen.  Now that this is working.  We can now move on to what we do when a user is logged in and has authorized your app.
+</p>
+<h3>Authorization (logged in and authorized): </h3>
+<p>
+   Whew....we are finally here.  One last change to your app and you should be ready to go.
+</p>
+<pre name="code" class="c#">
+[AcceptVerbs(HttpVerbs.Get)]
+public ActionResult Index(string signed_request)
+{
+    if (string.IsNullOrEmpty(signed_request) == false)
+    {
+        if (ValidateSignedRequest(signed_request))
+        {
+            FacebookSignedRequest facebookSignedRequest = GetDecodedSignedRequest(signed_request);
+
+            //this signifies that the user is not logged in or has not authorized your app.
+            //if so redirect to facebook application authorization page via javascript
+            if(string.IsNullOrEmpty(facebookSignedRequest.oauth_token))
+            {
+                return RedirectToAction("RedirectToFacebookLogin");
+            }
+
+            //capture the facebook access token if you want
+            HttpContext.Session["FacebookAccessToken"] = facebookSignedRequest.oauth_token;
+
+            //capture the user id if you want
+            HttpContext.Session["FacebookUserId"] = facebookSignedRequest.user_id;
+            
+
+            return RedirectToAction(/*your application entry point */); //redirect to your app entry point
+        }
+        else
+        {
+            //if the validation fails, redirect them to the login page
+            return RedirectToAction("RedirectToFacebookLogin");  
+        }
+    }
+
+    //if the user stumbles onto the page, then redirect them to login
+    return RedirectToAction("RedirectToFacebookLogin");  
+}
+</pre>
+
+<h3>Dealing With Internet Explorer</h3>
+<p>
+   Alright...now to deal with IE.  Internet Explorer strictly enforces P3P policy filters...and since your application is in an iFrame, IE will restrict cookie access by default if your application doesn't have a P3P policy.  In order to resolve this, <strong>you need to create a p3p policy that is consistent with your application</strong>, and override the default MVC Controller behavior to include the P3P policy in the HttpContext.  Here is a sample implementation of how to do that:
+</p>
+<pre name="code" class="csharp">
+public class BaseController : Controller
+{
+    //inherit from Controller and add this override.  All of your controllers that are
+    //associated with your facebook app must derive from the controller you created
+    protected override void OnActionExecuting(ActionExecutingContext filterContext)
+    {
+        filterContext.HttpContext.Response.AddHeader("p3p", "CP=\"IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT\"");
+        base.OnActionExecuting(filterContext);
+    }
+}
+</pre>
+<p>
+  To reiterate.  You cannot simply copy the code above.  The policy filter is there so that the end user knows what information your application is collecting.  So if your P3P policy states (for example) "I don't collect your IP Address", but you do, that user could press legal charges against you.  The code above is simply showing how to add P3P policy information to your MVC application.
+<p>
+<p>
+   That should do it.  Hope this blog post helped.  Don't hesitate to email or comment if you need help.
+</p>
+    <hr />
+    <span style="color: Silver; font-size: small;">Written: 7/6/2010</span>
+    
+    <script>
+        var idcomments_acct = '6ed8d3f7f3b269a55fc308e535627d11';
+        var idcomments_post_url;
+
+        var  idcomments_post_id;// = 'http%3A%2F%2Famirrajan.net%2FBlogs%2F' + 'facebook-oauth-authentication-and-iframe-apps';
+
+    </script>
+    <span id="IDCommentsPostTitle" style="display:none">Comments</span>
+    <script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+    <script>$("#body").append('<div></div>').html(idcomments_post_id);</script>
+
+        </div>
+    </div>
+</body>
+</html>

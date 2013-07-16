@@ -1,9 +1,51 @@
----
-title: Facebook Platform OAuth 2.0 Protocol and ASP.NET MVC
-category: code
-layout: post
-tags : [facebook, asp.net mvc]
----
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	
+    
+    Code Blog Foo: asp-mvc-and-facebook-single-sign-on
+
+</title><link href="../Content/base.css" rel="stylesheet" type="text/css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    
+    <script src="../../Scripts/shAll.js" type="text/javascript"></script>
+    <link href="../../Content/SyntaxHighlighter.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<strong>This is an archive of blog posts from a "long time ago".  If you find this useful, let me know and I'll revive it.</strong>
+    <div class="wrap">
+        
+        <div id="top group">
+            <header>
+                <h1>code blog foo - tag line bar</h1>
+            </header>
+            <div style="padding: 5px; border-bottom: 1px solid silver; border-top: 1px solid silver;">
+                <nav>
+                    <a href="/" style="margin-left: 15px; border-style: solid; border-width: 1px;">home</a>
+                    <span class="sep"></span>
+                    <a href="/Blog/Posts" style="margin-left: 15px; border-style: solid; border-width: 1px;">blog</a>
+                    <a href="/Home/About" style="margin-left: 15px; border-style: solid; border-width: 1px;">about</a>
+                    <a href="/Home/Portfolio" style="margin-left: 15px; border-style: solid; border-width: 1px;">projects/open source</a>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="content">
+            
+    
+    
+    <script type="text/javascript">
+        window.onload = function () {
+            SyntaxHighlighter.config.clipboardSwf = '/Scripts/clipboard.swf';
+            SyntaxHighlighter.all();
+            dp.SyntaxHighlighter.HighlightAll('code');
+        };
+
+     </script>
+    <h2>Facebook Platform's OAuth 2.0 Protocol and ASP.NET MVC</h2>
 <p>
     The Facebook Platform allows external websites the ability to leverage user accounts that exist in Facebook...<a href="http://en.wikipedia.org/wiki/Single_sign-on" target="_blank">click here for an explanation of single sign-on</a>.
 </p>
@@ -28,26 +70,26 @@ tags : [facebook, asp.net mvc]
 <p>
    After you yourself have registered and have exposed yourself to the <a href="http://www.youtube.com/watch?v=7XhzYGoBif8" target="_blank">Facebook conspiracy</a> (I kid, I kid), you then have to add the Developer App to your profile.<br/>
 </p>
-<image src="/assets/images/facebook_OAuth_step1.png" style="border: solid 1px silver; padding: 3px;" />
+<image src="../../Content/images/facebook_OAuth_step1.png" style="border: solid 1px silver; padding: 3px;" />
 <p>
     After you have authorized the Developer App, you can add your website (click the "Set Up New Application" button and set up your app as follows).
 </p>
-<image src="/assets/images/facebook_OAuth_step2.png" style="border: solid 1px silver; padding: 3px;" />
+<image src="../../Content/images/facebook_OAuth_step2.png" style="border: solid 1px silver; padding: 3px;" />
 <p>
     Things you have to set up.<br/><br/>Basic Information (make sure to make note of your <strong>Application ID, API Key, and your Secret Key</strong>):
 </p>
-<image src="/assets/images/facebook_OAuth_step3.png" style="border: solid 1px silver; padding: 3px;" />
+<image src="../../Content/images/facebook_OAuth_step3.png" style="border: solid 1px silver; padding: 3px;" />
 
 <p>
     Authentication Information:
 </p>
-<image src="/assets/images/facebook_OAuth_step4.png" style="border: solid 1px silver; padding: 3px;" />
+<image src="../../Content/images/facebook_OAuth_step4.png" style="border: solid 1px silver; padding: 3px;" />
 
 <p>
     Connect Information: (your Connect URL is what Facebook will use to ensure a connection is coming in from you and not some 3rd party)<br/><br/><strong>Also, make sure you keep your connect url as ALL LOWERCASE.  The connect url is case sensitive so any reference to this connect url must be IDENTICAL to what you've provided to Facebook.</strong>
 </p>
 
-<image src="/assets/images/facebook_OAuth_step5.png" style="border: solid 1px silver; padding: 3px;" />
+<image src="../../Content/images/facebook_OAuth_step5.png" style="border: solid 1px silver; padding: 3px;" />
 
 <h3>Authenticating With Facebook</h3>
 <p>
@@ -64,6 +106,32 @@ tags : [facebook, asp.net mvc]
     <li>You can save this UserId to your database and "go to town" relating "stuff" to it!</li>
 </ol>
 
+<p>
+    Here is some ascii art to explain:
+</p>
+
+<pre>
+     +--------+                                  +---------------+
+     |        |--(A)-- Authorization Request --->|   Resource    |
+     |        |                                  |     Owner     |
+     |        |<-(B)------ Access Grant ---------|               |
+     |        |                                  +---------------+
+     |        |
+     |        |         Client Credentials &     +---------------+
+     |        |--(C)------ Access Grant -------->| Authorization |
+     | Client |                                  |     Server    |
+     |        |<-(D)------ Access Token ---------|               |
+     |        |      (w/ Optional Refresh Token) +---------------+
+     |        |
+     |        |                                  +---------------+
+     |        |--(E)------ Access Token -------->|    Resource   |
+     |        |                                  |     Server    |
+     |        |<-(F)---- Protected Resource -----|               |
+     +--------+                                  +---------------+
+</pre>
+<!--
+<image src="../../Content/images/oauth.png" style="border: solid 1px silver; padding: 3px;" />
+-->
 <h3>The Code</h3>
 <p>
    Alright.  You've registered your website with Facebook.  And you understand (at least at a high level) what is involved with performing a successful handshake.  Now it's time to implement that handshake in ASP.NET MVC.
@@ -73,24 +141,22 @@ tags : [facebook, asp.net mvc]
 <p>
    Per the Facebook documentation, you have to redirect to: <strong>https://graph.facebook.com/oauth/authorize</strong> to get things started.  There are 3 query string parameters you have to include with this URL:
 </p>
-
 <ul>
-  <li>client_id: this is your Application ID</li>
-  <li>redirect_uri: this is the URI Facebook will redirect to after authentication is successful.  <strong>This URI must be prefixed with the Connect URL that you provided to Facebook and is case sensitive.</strong>  The redirect_uri will be a controller action we provide in our ASP.NET MVC application.</li>
-  <li>type: there are two options for this, you can do user_agent or web_server as the type.  Because we are not Authentication via javascript/asynchronously, we will use the web_server option.</li>
+    <li>client_id: this is your Application ID</li>
+    <li>redirect_uri: this is the URI Facebook will redirect to after authentication is successful.  <strong>This URI must be prefixed with the Connect URL that you provided to Facebook and is case sensitive.</strong>  The redirect_uri will be a controller action we provide in our ASP.NET MVC application.
+    <li>type: there are two options for this, you can do user_agent or web_server as the type.  Because we are not Authentication via javascript/asynchronously, we will use the web_server option.</li>
 </ul>
-
 <p>
     Here is the controller action for redirecting to Facebook:
 </p>
 
-<pre>
+<pre name="code" class="c#">
 [HttpGet]
 [ActionName("FacebookLogin")]
 public ActionResult FacebookLogin()
 {
      //redirect to https://graph.facebook.com/oauth/authorize giving Facebook my application id, the request type and the redirect url
-     return new RedirectResult("https://graph.facebook.com/oauth/authorize? type=web_server&amp; client_id=114756055226487&amp; redirect_uri=http://www.examplewebsite.com/facebook/handshake/");
+     return new RedirectResult("https://graph.facebook.com/oauth/authorize? type=web_server& client_id=114756055226487& redirect_uri=http://www.examplewebsite.com/facebook/handshake/");
 }
 </pre>
 
@@ -127,7 +193,7 @@ http://www.examplewebsite.com/facebook/handshake/?code=2.DQUGad7_kFVGqKTeGUqQTQ_
    The workflow make sense?  Good.  Here is the code:
 </p>
 
-<pre name="code">
+<pre name="code" class="c#">
 //this is the statically typed representation of the JSON object that will get returned from: https://graph.facebook.com/me
 public class FacebookUser
 {
@@ -144,66 +210,66 @@ public class FacebookUser
 [ActionName("handshake")]
 public ActionResult Handshake(string code)
 {
-     //after authentication, Facebook will redirect to this controller action with a QueryString parameter called "code" (this is Facebook's Session key)
+         //after authentication, Facebook will redirect to this controller action with a QueryString parameter called "code" (this is Facebook's Session key)
 
-     //example uri: http://www.examplewebsite.com/facebook/handshake/?code=2.DQUGad7_kFVGqKTeGUqQTQ__.3600.1273809600-1756053625|dil1rmAUjgbViM_GQutw-PEgPIg.
+         //example uri: http://www.examplewebsite.com/facebook/handshake/?code=2.DQUGad7_kFVGqKTeGUqQTQ__.3600.1273809600-1756053625|dil1rmAUjgbViM_GQutw-PEgPIg.
 
-    //this is your Facebook App ID
-    string clientId = "114756055226487";
-    
-    //this is your Secret Key
-    string clientSecret = "YOURSECRETKEY";
+        //this is your Facebook App ID
+        string clientId = "114756055226487";
+        
+        //this is your Secret Key
+        string clientSecret = "YOURSECRETKEY";
 
-    //we have to request an access token from the following Uri
-    string url = "https://graph.facebook.com/oauth/access_token?client_id={0}&amp;redirect_uri={1}&amp;client_secret={2}&amp;code={3}";
+        //we have to request an access token from the following Uri
+        string url = "https://graph.facebook.com/oauth/access_token?client_id={0}&redirect_uri={1}&client_secret={2}&code={3}";
 
-    //your redirect uri must be EXACTLY the same Uri that caused the initial authentication handshake
-    string redirectUri = "http://www.examplewebsite.com/facebook/handshake/"; 
+        //your redirect uri must be EXACTLY the same Uri that caused the initial authentication handshake
+        string redirectUri = "http://www.examplewebsite.com/facebook/handshake/"; 
 
-    //Create a webrequest to perform the request against the Uri
-    WebRequest request = WebRequest.Create(string.Format(url, clientId, redirectUri, clientSecret, code));
-    
-    //read out the response as a utf-8 encoding and parse out the access_token
-    WebResponse response = request.GetResponse();
-    Stream stream = response.GetResponseStream();
-    Encoding encode = System.Text.Encoding.GetEncoding("utf-8");
-    StreamReader streamReader = new StreamReader(stream, encode);
-    string accessToken = streamReader.ReadToEnd().Replace("access_token=", "");
-    streamReader.Close();
-    response.Close();
+        //Create a webrequest to perform the request against the Uri
+        WebRequest request = WebRequest.Create(string.Format(url, clientId, redirectUri, clientSecret, code));
+        
+        //read out the response as a utf-8 encoding and parse out the access_token
+        WebResponse response = request.GetResponse();
+        Stream stream = response.GetResponseStream();
+        Encoding encode = System.Text.Encoding.GetEncoding("utf-8");
+        StreamReader streamReader = new StreamReader(stream, encode);
+        string accessToken = streamReader.ReadToEnd().Replace("access_token=", "");
+        streamReader.Close();
+        response.Close();
 
-    //set the access token to some session variable so it can be used through out the session
-    Session["FacebookAccessToken"] = accessToken;
+        //set the access token to some session variable so it can be used through out the session
+        Session["FacebookAccessToken"] = accessToken;
 
-    //now that we have an access token, query the Graph Api for the JSON representation of the User
-    string url = "https://graph.facebook.com/me?access_token={0}";
+        //now that we have an access token, query the Graph Api for the JSON representation of the User
+        string url = "https://graph.facebook.com/me?access_token={0}";
 
-    //create the request to https://graph.facebook.com/me
-    request = WebRequest.Create(string.Format(url, accessToken));
+        //create the request to https://graph.facebook.com/me
+        request = WebRequest.Create(string.Format(url, accessToken));
 
-    //Get the response
-    response = request.GetResponse();
+        //Get the response
+        response = request.GetResponse();
 
-    //Get the response stream
-    Stream stream = response.GetResponseStream();
+        //Get the response stream
+        Stream stream = response.GetResponseStream();
 
-    //Take our statically typed representation of the JSON User and deserialize the response stream
-    //using the DataContractJsonSerializer
-    DataContractJsonSerializer dataContractJsonSerializer = new DataContractJsonSerializer(typeof(FacebookUser));
-    FacebookUser user = new FacebookUser();
-    user = dataContractJsonSerializer.ReadObject(stream) as FacebookUser;
+        //Take our statically typed representation of the JSON User and deserialize the response stream
+        //using the DataContractJsonSerializer
+        DataContractJsonSerializer dataContractJsonSerializer = new DataContractJsonSerializer(typeof(FacebookUser));
+        FacebookUser user = new FacebookUser();
+        user = dataContractJsonSerializer.ReadObject(stream) as FacebookUser;
 
-    //close the stream
-    response.Close();
+        //close the stream
+        response.Close();
 
-    //capture the UserId
-    Session["FacebookUserId"] = user.id;
+        //capture the UserId
+        Session["FacebookUserId"] = user.id;
 
-    //Set the forms authentication auth cookie
-    FormsAuthentication.SetAuthCookie(user.email, false);
+        //Set the forms authentication auth cookie
+        FormsAuthentication.SetAuthCookie(user.email, false);
 
-    //redirect to home page so that user can start using your application      
-    return RedirectToAction("Home", "User");
+        //redirect to home page so that user can start using your application      
+        return RedirectToAction("Home", "User");
 }
 </pre>
 
@@ -304,7 +370,7 @@ public ActionResult FacebookLogout()
 [HttpGet]
 public ActionResult FacebookLogout()
 {
-    string url = "http://www.facebook.com/logout.php?api_key=f3ff8e4ed6becc81176d0b2517c9c44c&amp;session_key={0}";
+    string url = "http://www.facebook.com/logout.php?api_key=f3ff8e4ed6becc81176d0b2517c9c44c&session_key={0}";
     
     //the Facebook session token is passed in, this was the token that was given to you immediately after Facebook authenticated the user
     return new RedirectResult(string.Format(url, Session["FacebookSessionToken"]));
@@ -315,4 +381,21 @@ public ActionResult FacebookLogout()
 <p>
     That's really all there is to Facebook's Single Sign-On.  If you have any questions, don't hesitate to email me (my email address is located at the bottom of the "about" page).
 </p>
+    <hr />
+    <span style="color: Silver; font-size: small;">Written: 5/8/2010</span>
+    
+    <script>
+        var idcomments_acct = '6ed8d3f7f3b269a55fc308e535627d11';
+        var idcomments_post_url;
 
+        var  idcomments_post_id;// = 'http%3A%2F%2Famirrajan.net%2FBlogs%2F' + 'asp-mvc-and-facebook-single-sign-on';
+
+    </script>
+    <span id="IDCommentsPostTitle" style="display:none">Comments</span>
+    <script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+    <script>$("#body").append('<div></div>').html(idcomments_post_id);</script>
+
+        </div>
+    </div>
+</body>
+</html>

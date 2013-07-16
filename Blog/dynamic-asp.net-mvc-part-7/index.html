@@ -1,0 +1,374 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	
+    
+    Code Blog Foo: dynamic-asp.net-mvc-part-7
+
+</title><link href="../Content/base.css" rel="stylesheet" type="text/css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    
+    <script src="../../Scripts/shAll.js" type="text/javascript"></script>
+    <link href="../../Content/SyntaxHighlighter.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<strong>This is an archive of blog posts from a "long time ago".  If you find this useful, let me know and I'll revive it.</strong>
+    <div class="wrap">
+        
+        <div id="top group">
+            <header>
+                <h1>code blog foo - tag line bar</h1>
+            </header>
+            <div style="padding: 5px; border-bottom: 1px solid silver; border-top: 1px solid silver;">
+                <nav>
+                    <a href="/" style="margin-left: 15px; border-style: solid; border-width: 1px;">home</a>
+                    <span class="sep"></span>
+                    <a href="/Blog/Posts" style="margin-left: 15px; border-style: solid; border-width: 1px;">blog</a>
+                    <a href="/Home/About" style="margin-left: 15px; border-style: solid; border-width: 1px;">about</a>
+                    <a href="/Home/Portfolio" style="margin-left: 15px; border-style: solid; border-width: 1px;">projects/open source</a>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="content">
+            
+    
+    
+    <script type="text/javascript">
+        window.onload = function () {
+            SyntaxHighlighter.config.clipboardSwf = '/Scripts/clipboard.swf';
+            SyntaxHighlighter.all();
+            dp.SyntaxHighlighter.HighlightAll('code');
+        };
+
+     </script>
+    <h2>Dynamic ASP.NET MVC - Part 7, Oak Projections in Massive</h2>
+
+<ul>
+<li>
+<a href="dynamic-asp.net-mvc">TOC</a>
+</li>
+<li>
+<a href="dynamic-asp.net-mvc-part-1">Part 1, Setting Up Your Environment</a>
+</li>
+<li>
+<a href="dynamic-asp.net-mvc-part-2">Part 2, Creating a Better "Compiler"</a>
+</li>
+<li>
+<a href="dynamic-asp.net-mvc-part-3">Part 3, Your First Failing Test</a>
+</li>
+<li>
+<a href="dynamic-asp.net-mvc-part-4">Part 4, Dynamic Data Access</a>
+</li>
+<li>
+<a href="dynamic-asp.net-mvc-part-5">Part 5, Dynamic Data to Views</a>
+</li>
+<li>
+<a href="dynamic-asp.net-mvc-part-6">Part 6, Mixing in Behavior</a>
+</li>
+<li>
+<a href="dynamic-asp.net-mvc-part-7">Part 7, Oak Projections in Massive</a>
+</li>
+</ul>
+
+<p>
+   So far we've got blog titles showing up on the front page and we've added the ability to create new blog posts.  Let's enhance the front page a little bit.  Instead of just showing the title, we'll add the title and a summary of the blog posts on the front page (the summary being the first 50 characters of the body).
+</p>
+
+<h2>Extending the Blog Model to Incorporate Summary</h2>
+<p>
+   We could just do a trim of the body inside of razor, but that's not really reusable. So we are going to add the property to Blog:
+</p>
+<ul>
+    <li>fire up specwatchr</li>
+    <li>add a folder under the test project called Models</li>
+    <li>in the test project under Models, create a class called describe_Blog.cs and Save All</li>
+    <li>add the following specification to force the implementation of the Summary property:
+<pre name="code" class="c#">
+//test class for blog
+class describe_Blog : nspec
+{
+    //member variable to store the blog
+    dynamic blog;
+
+    //summary field that will get inspected during an assertion
+    string summary;
+
+    void describe_summary()
+    {
+        //set the summary property of the blog
+        act = () =&gt; summary = blog.Summary;
+
+        //given the blog's body is null
+        context["body is null"] = () =&gt;
+        {
+            before = () =&gt; GivenBlog(withBody: null);
+            
+            //the summary should be empty string
+            it["summary returns empty string"] = () =&gt; 
+                summary.should_be("");
+        };
+    }
+
+    //helper method that creates a new blog with body
+    void GivenBlog(string withBody)
+    {
+        blog = new Blog(new { Body = withBody });
+    }
+}
+</pre>
+<li>here is the implementation to make the test pass:
+<pre name="code" class="c#">
+public class Blog : Gemini
+{
+    public Blog(object dto)
+        : base(dto)
+    {
+            
+    }
+
+    public bool IsValid()
+    {
+        return !string.IsNullOrEmpty(_.Title);
+    }
+
+    public string Validate()
+    {
+        if(!IsValid())
+        {
+            return "Title Required.";
+        }
+
+        return "";
+    }
+
+    //property is added to Blog and returns empty string.
+    public string Summary
+    {
+        get
+        {
+            return "";
+        }
+    }
+}
+</pre>
+</li>
+<li>
+    these were the next two tests I created for summary:
+<pre name="code" class="c#">
+context["body is under 50 characters"] = () =&gt;
+{
+    before = () =&gt; GivenBlog(withBody: "Blog under 50 characters");
+
+    it["returns body verbatim"] = () =&gt; 
+        summary.should_be("Blog under 50 characters");
+};
+
+context["body over 50 characters"] = () =&gt;
+{
+    before = () =&gt; 
+        GivenBlog(withBody:
+            "01234567890123456789012345678901234567890123456789OVER50");
+
+    it["returns the first 50 characters"] = () =&gt;
+        summary.should_be(
+            "01234567890123456789012345678901234567890123456789");
+};
+</pre>
+</li>
+<li>
+and the implementation that makes the tests go green:
+<pre name="code" class="c#">
+public string Summary
+{
+    get
+    {
+        if (_.Body == null) return "";
+
+        if (_.Body.Length > 50) return _.Body.Substring(0, 50);
+
+        return _.Body;
+    }
+}
+</pre>
+</li>
+</ul>
+
+<h2>Projections</h2>
+<p>
+    Now that Blog has the concept of Summary, we need to ensure that all the queries from the Massive return Blog.  <strong>Inside of oak, Massive has been changed to incorporate the concept of "Projections"</strong>.  To demonstrate:
+</p>
+<ul>
+    <li>Here is the failing test I specified in describe_HomeController.cs:
+<pre name="code" class="c#">
+void navigating_to_the_home_page()
+{
+    act = () =&gt;
+    {
+        actionResult = homeController.Index();
+    };
+
+    context["given a blog with title 'Hello'"] = () =&gt;
+    {
+        //change the before to include a body
+        before = () =&gt; new { Title = "Hello", Body = "Lorem Ipsum" }.InsertInto("Blogs");
+
+        it["gives blogs containing a blog named 'Hello'"] = () =&gt;
+        {
+            var first = 
+                (actionResult.ViewBag.Blogs as IEnumerable&lt;dynamic&gt;).First();
+
+            (first.Title as string).should_be("Hello");
+        };
+        
+        //add a specification stating that the blog has a summary
+        it["provides summary for blog"] = () =&gt;
+        {
+            var first = 
+                (actionResult.ViewBag.Blogs as IEnumerable&lt;dynamic&gt;).First();
+
+            (first.Summary as string).should_be("Lorem Ipsum");
+        };
+    };
+}
+</pre>
+    </li>
+    <li>
+        and here is the Projection that makes the test go green:
+<pre name="code" class="c#">
+public class Blogs : DynamicRepository
+{
+    public Blogs()
+    {
+        //provide a Func&lt;dynamic, dyanmic&gt;
+        //that will get applied to all of the Massive
+        //methods
+        Projection = (d) =&gt; new Blog(d);            
+    }
+}
+</pre>
+    </li>
+</ul>
+<p>
+   By providing this Func&lt;dynamic, dyanmic&gt;, all queries in Massive will return the projection defined in the constructor.
+</p>
+
+<h2>Changing the View to Include the Summary</h2>
+<p>
+    Now that we have added the Oak Projection.  We can show the Summary in the view.  We'll (of course), start with the SeedController:
+</p>
+<ul>
+    <li>update the sample entries method to incorporate blog body:
+<pre name="code" class="c#">
+public void SampleEntries()
+{
+    var blogPosts =
+        new[] 
+        { 
+            new { Title = "My First Blog Post", Body = "First Body" },
+            new { Title = "Another Blog Post", Body = "Another Body"  } ,
+            new { Title = "Sample", Body = "Sample Body" } ,
+            new { Title = "Yet Another One", Body = "Yet Another Body" }
+        };
+
+    foreach (var blog in blogPosts)
+    {
+        new
+        {
+            Title = blog.Title,
+            Body = blog.Body
+        }.InsertInto("Blogs");
+    }
+}
+</pre>
+    </li>
+    <li>now we can update the view (run rake sample to insert the sample entries):
+<pre name="code" class="html">
+@{
+    ViewBag.Title = "Blogs";
+}
+
+&lt;h2&gt;Blogs&lt;/h2&gt;
+@foreach (var blog in ViewBag.Blogs)
+{
+    @blog.Title&lt;br /&gt;
+    @blog.Summary&lt;br /&gt;
+    &lt;hr /&gt;
+}
+</pre>
+   (to view changes, run <strong>rake sample</strong> in a new command window)
+    </li>
+</ul>
+
+<h2>Last Dialog With Myself</h2>
+<blockquote>
+    <strong>Why isn't the Projection concept in Massive?</strong>
+</blockquote>
+<p>
+    Dunno.  But the beauty of open source and NuGet is the ability to bring source into your solution and <strong>do what you deem necessary to make things work for your application</strong>.  All the projects (<a href="http://amirrajan.github.com/Oak" target="_blank">oak</a>, <a href="http://nspec.org/continuoustesting" target="_blank">specwatchr</a>, <a href="http://www.github.com/amirrajan/rake-dot-net" target="_blank">rake-dot-net</a>, <a href="http://nspec.org" target="_blank">nspec</a>, and <a href="https://github.com/robconery/massive" target="_blank">massive</a>) are on github.
+</p>
+
+<blockquote>
+    <strong>There is so much open source stuff in this project, is it safe to rely on so many external dependencies that aren't provided to me by Microsoft.  What if these things change?  Open source software varies in quality and support.  How do I know they wont make a breaking change in future versions.
+    </strong>
+</blockquote>
+<p>
+    I can appreciate this sentiment.  The open source libraries are all under permissive licenses (it's okay to use for commercial purposes).  Hate to say this, <strong>but at some point in time, the open source libraries will evolve and will break current implementations (<a href="http://www.google.com/search?sourceid=chrome&ie=UTF-8&q=breaking+changes+in+.net+4.0" target="_blank">the .Net framework has had breaking changes too by the way</a>).</strong>  But. That's. Why. We. Write. Tests.  It allows us to be receptive to change.  So when libraries change, just try incorporating the changes into your project.  If it doesn't break any of your tests, then you're gold.
+</p>
+<blockquote>
+    <strong>Taking a test driven approach won't catch all bugs.</strong>
+</blockquote>
+<p>
+    You're right.  And for those instances, you'll get the yellow screen of death.  It's okay :-) Just write the failing test, make it pass, and that same bug will never show up again.
+</p>
+<blockquote>
+    <strong>There is still a lot of dynamic stuff in this solution.  What if something changes.  The test can't catch everything.</strong>
+</blockquote>
+<p>
+    Try it out.  Change something in this solution and see if you get a failing test.  One of my colleagues at <a href="http://www.improvingenterprises.com/" target="_blank">Improving Enterprises</a> named Greg Vaughn made a point that really resonated with me: <strong>The definition of legacy code is a code base you are afraid to change (regardless of whether it has tests or not)</strong>.  If you don't feel confident about making changes in your source code (statically typed or dynamic...tests or no tests), then you've got some larger problems to solve.  If dynamic still feels like too much, a lot of the concepts discussed in this series can still be applied to your existing solutions.  Wouldn't you agree?
+</p>
+<blockquote>
+    <strong>NSpec is freaking awesome, it provides a great way to incrementally define specifications and context.</strong>
+</blockquote>
+<p>
+    I know!  Thanks to Matt Florence for creating such a great testing framework.
+</p>
+
+<h2>Parting Thoughts</h2>
+<p>
+    I think this picture says it all:
+</p>
+
+<img src="../../content/images/dynamicmvc.gif" style="margin-left: 150px; border: solid 1px silver; padding: 3px;" />
+
+<blockquote>
+"We accept the reality of the world with which we are presented." The Truman Show (1998)
+</br>
+<a href="http://iwdrm.tumblr.com/" target="_blank">iwdrm.tumblr.com</a>
+</blockquote>
+<p>
+    Always challenge what you have been taught or told.  And more importantly, <strong>always have a humble and open mind to new ways of developing software</strong>.
+</p>
+<h2>Taking Development to the Next Level</h2>
+<p>The features of Oak I've shown in this blog series is <b>only the tip of this ice berg of awesomeness</b>.  Head over to <a target="_blank" href="http://amirrajan.github.com/Oak">Oak's GitHub page</a> to see all the incredible things you can do with this stack.
+    <hr />
+    <span style="color: Silver; font-size: small;">Written: 6/27/2011</span>
+    
+    <script>
+        var idcomments_acct = '6ed8d3f7f3b269a55fc308e535627d11';
+        var idcomments_post_url;
+
+        var  idcomments_post_id;// = 'http%3A%2F%2Famirrajan.net%2FBlogs%2F' + 'dynamic-asp.net-mvc-part-7';
+
+    </script>
+    <span id="IDCommentsPostTitle" style="display:none">Comments</span>
+    <script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+    <script>$("#body").append('<div></div>').html(idcomments_post_id);</script>
+
+        </div>
+    </div>
+</body>
+</html>

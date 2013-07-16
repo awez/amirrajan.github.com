@@ -1,0 +1,160 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	
+    
+    Code Blog Foo: how-to-return-a-binary-file-from-an-mvc-controller-action
+
+</title><link href="../Content/base.css" rel="stylesheet" type="text/css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    
+    <script src="../../Scripts/shAll.js" type="text/javascript"></script>
+    <link href="../../Content/SyntaxHighlighter.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<strong>This is an archive of blog posts from a "long time ago".  If you find this useful, let me know and I'll revive it.</strong>
+    <div class="wrap">
+        
+        <div id="top group">
+            <header>
+                <h1>code blog foo - tag line bar</h1>
+            </header>
+            <div style="padding: 5px; border-bottom: 1px solid silver; border-top: 1px solid silver;">
+                <nav>
+                    <a href="/" style="margin-left: 15px; border-style: solid; border-width: 1px;">home</a>
+                    <span class="sep"></span>
+                    <a href="/Blog/Posts" style="margin-left: 15px; border-style: solid; border-width: 1px;">blog</a>
+                    <a href="/Home/About" style="margin-left: 15px; border-style: solid; border-width: 1px;">about</a>
+                    <a href="/Home/Portfolio" style="margin-left: 15px; border-style: solid; border-width: 1px;">projects/open source</a>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="content">
+            
+    
+    
+    <script type="text/javascript">
+        window.onload = function () {
+            SyntaxHighlighter.config.clipboardSwf = '/Scripts/clipboard.swf';
+            SyntaxHighlighter.all();
+            dp.SyntaxHighlighter.HighlightAll('code');
+        };
+
+     </script>
+    <h2>Return a Binary File From an MVC Controller Action</h2>
+<image src="../../Content/images/easy.jpg" style="float: left; margin-right: 25px; border: solid 1px silver; padding: 3px;" />
+<p>
+    Returning a file from a database, or returning a file that is created on the fly is ridiculously easy in ASP.NET MVC (easy cheesy I tell ya!).  If you were to attempt the same thing in ASP.NET WebForms, you would have to:
+<br/><br/>
+1. Create an ashx file that implements IHttpHandler (or create a class that implements IHttpHander)
+<br/><br/>
+2. Implement the IHttpHandler interface
+<br/><br/>
+3. Register the ashx file in the web config and define which HTTP verbs it can accept
+<br/><br/>
+4. Then you have to deal with a clunky url like: http://www.example.com/getfile.ashx?fileId=39188
+<br/><br/>
+5. And if you want a prettier url, then you have to go through all of the hoops for that...
+</p>
+<h3>This is how you do it in ASP.NET MVC...</h3>
+<p>
+Just inherit from ActionResult:
+</p>
+<pre name="code" class="c#">
+public class BinaryResult : ActionResult
+{
+    private byte[] _fileBinary;
+    private string _contentType;
+    private string _fileName;
+
+    public BinaryResult(byte[] fileBinary, string contentType, string fileName)
+    {
+        _fileBinary = fileBinary;
+        _contentType = contentType;
+        _fileName = fileName;
+    }
+
+    public override void ExecuteResult(ControllerContext context)
+    {
+        context.HttpContext.Response.Clear();
+        context.HttpContext.Response.ContentType = _contentType;
+        context.HttpContext.Response.AddHeader("Content-Disposition", "filename=" + _fileName);
+
+        if (_fileBinary != null)
+        {
+            context.HttpContext.Response.BinaryWrite(_fileBinary);
+        }
+    }
+}
+</pre>
+<p>
+    And use it!
+</p>
+<pre name="code" class="c#">
+[AcceptVerbs(HttpVerbs.Get)]
+[ActionName("File")]
+public ActionResult File(string id)
+{
+   //some file retriever implemenation that returns a file as a byte array
+    byte []fileBytes = _fileRetriever.GetFile(id); 
+    string contentType = _fileRetirever.GetContentType(id);
+    string fileName = _fileRetriever.GetFileName(id);
+    return new BinaryResult(fileBytes "text/plain", fileName);
+}
+</pre>
+<p>
+Here is another version that returns a .txt file created on the fly.
+</p>
+<pre name="code" class="c#">
+[AcceptVerbs(HttpVerbs.Get)]
+[ActionName("File")]
+public ActionResult File(string id)
+{
+    //arbitrarily write 100 guids to a memory stream and return it as a text file
+    MemoryStream memoryStream = new MemoryStream();
+    for(int i = 0; i < 100; i++)
+    {
+        Write(Guid.NewGuid().ToString() + Environment.NewLine, memoryStream);
+    }
+
+    return new BinaryResult(memoryStream.ToArray(), "text/plain", "randomguids.txt");
+}
+
+private static byte[] StringToByteArray(string value)
+{
+    System.Text.ASCIIEncoding encoding = new System.Text.ASCIIEncoding();
+    return encoding.GetBytes(value);
+}
+
+private static void Write(string value, MemoryStream memoryStream)
+{
+    byte[] bytes = StringToByteArray(value);
+    foreach (byte @byte in bytes)
+    {
+        memoryStream.WriteByte(@byte);
+    }
+}
+</pre>
+
+    <hr />
+    <span style="color: Silver; font-size: small;">Written: 4/2/2010</span>
+    
+    <script>
+        var idcomments_acct = '6ed8d3f7f3b269a55fc308e535627d11';
+        var idcomments_post_url;
+
+        var  idcomments_post_id;// = 'http%3A%2F%2Famirrajan.net%2FBlogs%2F' + 'how-to-return-a-binary-file-from-an-mvc-controller-action';
+
+    </script>
+    <span id="IDCommentsPostTitle" style="display:none">Comments</span>
+    <script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+    <script>$("#body").append('<div></div>').html(idcomments_post_id);</script>
+
+        </div>
+    </div>
+</body>
+</html>
