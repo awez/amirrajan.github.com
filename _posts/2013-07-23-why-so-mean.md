@@ -9,7 +9,7 @@ tags : [meta]
 _Be nice. Code friendly. Remember that every person you interact with is a living, breathing human being._
 
 ##Some Background, Open Spaces 2009
-Four years ago, I attended an Open Spaces "conference" where [Scott Hanselman facilitated a session called Why So Mean](http://www.hanselman.com/blog/ThisDevelopersLife104BeingMean.aspx). The session was about why developers are so mean to each other and new comers to the field. I was 25 and barely 4 years out of college, and I couldn't believe I was about to spend the rest of my life in this kind of environment (thanks for the heads up Scott). I've been on the giving and receiving end of "being mean". Here are a few things I've learned.
+Four years ago, I attended an Open Spaces "conference" where [Scott Hanselman facilitated a session called Why So Mean](http://www.hanselman.com/blog/ThisDevelopersLife104BeingMean.aspx). The session was about why developers are so mean to each other and new comers to the field. I was 25 and barely 2 years out of college, and I couldn't believe I was about to spend the rest of my life in this kind of environment (thanks for the heads up Scott). I've been on the giving and receiving end of "being mean". Here are a few things I've learned.
 
 ##That person you're talking to is a human being
 Regardless of race, religion, gender, sexual preference or any other delineating factor you can think of. First and foremost, the person you are talking to is a human being. It's obvious, but we (I) forget it at times. So. To my future self. Remember that. And stop being so mean.
