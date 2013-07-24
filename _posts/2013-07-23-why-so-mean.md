@@ -148,7 +148,7 @@ Staying nice tips:
 - Ask them directly about their opinions, give them the opportunity to speak
 
 ###The "motivator" personality
-These guys will give energy to the team. Their the ones that'll wish everyone "happy _Monday_" :-)
+These guys will give energy to the team. They're the ones that'll wish everyone "happy _Monday_" :-)
 - If you want an idea sold, this is your guy
 - Helps team morale
 - Great facilitators for meetings
