@@ -141,10 +141,10 @@ Some of the nicest people I've worked with fall into this category, these guys a
 
 Staying nice tips:
 
-- Let them know their appreciated
+- Let them know they're appreciated
 - Put a greeting in your emails
 - Start conversations off with "how was your day?"
-- Don't interrupt them when their speaking
+- Don't interrupt them when they're speaking
 - Ask them directly about their opinions, give them the opportunity to speak
 
 ###The "motivator" personality
