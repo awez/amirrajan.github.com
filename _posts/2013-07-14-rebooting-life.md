@@ -2,7 +2,7 @@
 title: Rebooting Life
 category: meta
 layout: post
-tags : [meta]
+tags : [meta, passion]
 ---
 
 ##tl;dr;
