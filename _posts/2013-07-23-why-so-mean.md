@@ -9,7 +9,7 @@ tags : [meta]
 _Be nice. Code friendly. Remember that every person you interact with is a living, breathing human being._
 
 ##Some Background, Open Spaces 2009
-Six years ago, I attended an Open Spaces "conference" where [Scott Hanselman facilitated a session called Why So Mean](http://www.hanselman.com/blog/ThisDevelopersLife104BeingMean.aspx). The session was about why developers are so mean to each other and new comers to the field. I was 23 and barely 2 years out of college, and I couldn't believe I was about to spend the rest of my life in this kind of environment (thanks for the heads up Scott). Six years later, I've been on the giving and receiving end of "being mean". Here are a few things I've learned.
+Four years ago, I attended an Open Spaces "conference" where [Scott Hanselman facilitated a session called Why So Mean](http://www.hanselman.com/blog/ThisDevelopersLife104BeingMean.aspx). The session was about why developers are so mean to each other and new comers to the field. I was 25 and barely 4 years out of college, and I couldn't believe I was about to spend the rest of my life in this kind of environment (thanks for the heads up Scott). Six years later, I've been on the giving and receiving end of "being mean". Here are a few things I've learned.
 
 ##That person you're talking to is a human being
 Regardless of race, religion, gender, sexual preference or any other delineating factor you can think of. First and foremost, the person you are talking to is a human being. It's obvious, but we (I) forget it at times. So. To my future self. Remember that. And stop being so mean.
@@ -97,7 +97,7 @@ There will always be something you can learn from someone else. It may be about 
 Your past experience matters, and I know you want your expertise to be acknowledged and respected. But that's already happened... _that's why they hired you/brought you in_. So join the team, keep your ears open and take the role of a student. Learn as much as you possibly can from your _peers_.
 
 ##Play nice with others, personality patterns I've seen
-Some people get put off by personality surveys. It's crazy to think that you know everything about _me_ from a stupid questionnaire. But through my experience, I've seen a number of personality patterns. Here are the ones that have really stood out to me. It may help you get along better with people if you're generally aware of these types of things and will help you avoid coming off as mean when you didn't intend to. Here are a list of the personalities, pros, cons, general observations.
+Some people get put off by personality surveys. It's crazy to think that you know everything about _me_ from a stupid questionnaire. _But_ through my experience, I _have_ seen a number of personality patterns. Here are the ones that have really stood out to me. It may help you get along better with people if you're generally aware of these types of things and will help you avoid coming off as mean when you didn't intend to. Here are a list of the personalities, pros, cons, general observations.
 
 ###The "get to the point" personality
 I'd like to say these guys are natural born leaders (and kind of mean be nature). Here are some defining traits:
