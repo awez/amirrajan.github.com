@@ -2,7 +2,7 @@
 title: The Microsoft Manifesto
 category: meta
 layout: post
-tags : [meta]
+tags : [meta, oss]
 ---
 
 As developers and companies that have built their systems using Microsoft technologies. We are raising the bar of enterprise software development by using only frameworks, technologies, and operating systems built by Microsoft. Through our experience, we have come to value:
