@@ -1,11 +1,11 @@
 ---
-title: Microsoft Manifesto
+title: The Microsoft Manifesto
 category: meta
 layout: post
 tags : [meta]
 ---
 
-As .Net developers and companies that have built their systems on .Net. We are raising the bar of enterprise software development by using only frameworks, technologies, and operating systems built by Microsoft. Through our experience, we have come to value:
+As developers and companies that have built their systems using Microsoft technologies. We are raising the bar of enterprise software development by using only frameworks, technologies, and operating systems built by Microsoft. Through our experience, we have come to value:
 
 - **Waiting to adopt a development paradigms until Microsoft evangelizes it**, over evangelism of said paradigm in other development communities
 
