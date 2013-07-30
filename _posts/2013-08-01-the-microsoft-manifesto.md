@@ -17,7 +17,7 @@ As developers and companies that have built their systems using Microsoft techno
 
 - **Taking a conservative view towards non-Microsoft open source as high risk**, over a more progressive view of open source
 
-- **Frameworks officially supported by Microsoft's (approved for technical support via the MSDN Licence's technical support incidents)**, over frameworks supported by other communities/individuals
+- **Frameworks officially supported by Microsoft (approved for technical support via the MSDN Licence's technical support incidents)**, over frameworks supported by other communities/individuals
 
 - **Tools that fully and seamlessly integrate with Visual Studio**, over tools that are IDE independent
 
