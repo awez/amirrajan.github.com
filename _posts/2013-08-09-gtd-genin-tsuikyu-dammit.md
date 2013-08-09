@@ -61,7 +61,7 @@ Yes, that's the solution.
 
 Things to consider:
 
-- Is moral low?
+- Is morale low?
 - Are they bored with the work that's being done?
 - Is the commute to work an issue? Can we improve this by shifting core hours? Allow for remote work?
 - Is it an intrinsic part of our culture? Is "everyone doing it"? Should we just accept it and lower the number of required hours?
