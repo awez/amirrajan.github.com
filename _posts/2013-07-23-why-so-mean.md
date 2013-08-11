@@ -21,8 +21,8 @@ There is a word on Urban Dictionary called _sonder_ that I came across today. He
 
 And here's a video about _sonder_ too
 
-<div style="margin-left: auto; margin-right: auto; width: 560px; height: 315px;">
-  <iframe width="560" height="315" src="//www.youtube.com/embed/g0xIXghxyUk" frameborder="0" allowfullscreen="allowfullscreen">sonder</iframe>
+<div class="video">
+  <iframe src="//www.youtube.com/embed/g0xIXghxyUk" frameborder="0" allowfullscreen="allowfullscreen">sonder</iframe>
 </div>
 
 
