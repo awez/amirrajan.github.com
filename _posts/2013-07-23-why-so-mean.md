@@ -16,8 +16,10 @@ Regardless of race, religion, gender, sexual preference or any other delineating
 
 There is a word on Urban Dictionary called _sonder_ that I came across today. Here is the definition: 
 
->sonder - n. the realization that each random passerby is _living a life as vivid and complex as your own_
->[http://www.dictionaryofobscuresorrows.com/](http://www.dictionaryofobscuresorrows.com/)
+<blockquote>
+<p>sonder - n. the realization that each random passerby is <em>living a life as vivid and complex as your own</em>
+<a class="wordwrap" href="http://www.dictionaryofobscuresorrows.com/">http://www.dictionaryofobscuresorrows.com/</a></p>
+</blockquote>
 
 And here's a video about _sonder_ too
 
