@@ -12,12 +12,12 @@ group: navigation
 
 ##Contact
 - email: ar@amirrajan.net
-- twitter: [@amirrajan](http://twitter.com/amirrajan)
-- github: [http://github.com/amirrajan](http://github.com/amirrajan)
-- curriculum vitae: [http://careers.stackoverflow.com/amirrajan](http://careers.stackoverflow.com/amirrajan)
+- twitter: [@amirrajan](twitter.com/amirrajan)
+- cv: [careers.stackoverflow.com/amirrajan](http://careers.stackoverflow.com/amirrajan)
 
 
 ##Core contributor to
+- [Github Page](http://github.com/amirrajan)
 - [NSpec, a context/spec testing framework](http://nspec.org)
 - [SpecWatchr, an auto test tool for .Net development](http://nspec.org/continuoustesting)
 - [Oak, it makes ASP.NET MVC better for single page apps](http://amirrajan.github.com/Oak)
@@ -52,4 +52,3 @@ group: navigation
 - Dallas .Net Connected Systems User Group: Leveraging WCF in Silverlight (2009)
 - Dallas .Net User Group: Silverlight Line of Business Application (2009)
 - Dallas .Net Connected Systems User Group: WCF Chat Application (2008)
-
