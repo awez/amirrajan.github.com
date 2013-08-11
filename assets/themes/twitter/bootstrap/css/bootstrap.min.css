@@ -1,5 +1,6 @@
 body {
-  width: 700px;
+  padding: 10px;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
   font-size: 18px;
@@ -58,16 +59,8 @@ pre {
   word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
-.video {
-  margin-left: auto;
-  margin-right: auto;
-  width: 560px;
-  height: 315px;
-}
-
-.video iframe {
-  width: 560px;
-  height: 315px;
+iframe {
+  max-width: 100%;
 }
 
 .wordwrap {
@@ -78,20 +71,11 @@ pre {
   word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
+/*
 @media only screen 
 and (max-width : 480px) {
   body {
     width: 300px;
-    overflow-x: hidden;
-  }
-  
-  .video {
-    width: 300px;
-    height: 168px
-  }
-
-  .video iframe {
-    width: 300px;
-    height: 168px
   }
 }
+*/

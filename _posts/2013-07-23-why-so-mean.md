@@ -23,9 +23,7 @@ There is a word on Urban Dictionary called _sonder_ that I came across today. He
 
 And here's a video about _sonder_ too
 
-<div class="video">
-  <iframe src="//www.youtube.com/embed/g0xIXghxyUk" frameborder="0" allowfullscreen="allowfullscreen">sonder</iframe>
-</div>
+<iframe src="//www.youtube.com/embed/g0xIXghxyUk" frameborder="0" allowfullscreen="allowfullscreen">sonder</iframe>
 
 Point made hopefully.
 
