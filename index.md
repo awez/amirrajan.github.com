@@ -7,7 +7,10 @@ title:
 I'm just a guy trying to figure out why in the world I have a such a passion for development. Through my struggles with the human condition, I share my little blip of an existance through [**presenting**](/about/), [**this blog**]({{ HOME_PATH }}), [**github**](http://github.com/amirrajan), and [**twitter**](http://twitter.com/amirrajan).
 
 {% for post in site.posts %}
-  <div><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a> <span style="color: silver; font-size: 10px">{{ post.date | date_to_string }}</span></div>
+  <div style="line-height: 13px; padding-bottom: 10px">
+    <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a><br/>
+    <span style="color: silver; font-size: 10px">{{ post.date | date_to_string }}</span>
+  </div>
 {% endfor %}
 
 <hr />
