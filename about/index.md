@@ -13,8 +13,7 @@ group: navigation
 ##Contact
 - email: ar@amirrajan.net
 - twitter: [@amirrajan](twitter.com/amirrajan)
-- cv: [careers.stackoverflow.com/amirrajan](http://careers.stackoverflow.com/amirrajan)
-
+- [curriculum vitae](http://careers.stackoverflow.com/amirrajan)
 
 ##Core contributor to
 - [Github Page](http://github.com/amirrajan)
