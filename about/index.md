@@ -21,7 +21,7 @@ group: navigation
 - [NSpec, a context/spec testing framework](http://nspec.org)
 - [SpecWatchr, an auto test tool for .Net development](http://nspec.org/continuoustesting)
 - [Oak, it makes ASP.NET MVC better for single page apps](http://amirrajan.github.com/Oak)
-- [Canopy, a web test/automation framework build in F#](http://lefthandedgoat.github.com/canopy)
+- [Canopy, a web test/automation framework built in F#](http://lefthandedgoat.github.com/canopy)
 - [StacktracePreview, a ruby based project that parses .Net stack traces](http://amirrajan.net/StackTracePreview/#/toc)
 - [Kata NSpec, code katas in NSpec using VIM](https://github.com/amirrajan/katanspec)
 - [Here is a list of nuget packages](http://www.nuget.org/profiles/amirrajan/)
