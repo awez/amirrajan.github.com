@@ -25,7 +25,6 @@ And here's a video about _sonder_ too
   <iframe src="//www.youtube.com/embed/g0xIXghxyUk" frameborder="0" allowfullscreen="allowfullscreen">sonder</iframe>
 </div>
 
-
 Point made hopefully.
 
 ##Each person will feel what they did was justified
