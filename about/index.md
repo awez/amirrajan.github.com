@@ -12,7 +12,7 @@ group: navigation
 
 ##Contact
 - email: ar@amirrajan.net
-- twitter: [@amirrajan](twitter.com/amirrajan)
+- twitter: [@amirrajan](http://twitter.com/amirrajan)
 - [curriculum vitae](http://careers.stackoverflow.com/amirrajan)
 
 ##Core contributor to
