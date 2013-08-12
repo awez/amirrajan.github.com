@@ -18,7 +18,7 @@ Initial roll out of these new transmissions went smoothly, given the due diligen
 
 "How could this be?" thought everyone.
 
-"We've hired top talent. The specs were spot on. All parts past quality assurance. What is going on?!?!?"
+"We've hired top talent. The specs were spot on. All parts passed quality assurance. What is going on?!?!?"
 
 The search for an answer begins.
 
@@ -38,7 +38,7 @@ The Japanese transmissions. Every single hole. All parts. Were **dead on**, exac
 
 The engineering team, astonished, called up the head of the Japanese assembly line.
 
-"How did you do this? How did you get the all the holes on this transmission to spec??" asked the lead engineer
+"How did you do this? How did you get all the holes on this transmission to spec??" asked the lead engineer
 
 "Well... We saw that whenever we drilled a hole into the transmission, the drills would wobble ever so slightly... So we fixed them."
 
