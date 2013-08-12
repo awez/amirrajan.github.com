@@ -69,7 +69,7 @@ Things to consider:
 Again, consider root causes.
 
 ##Confirmation - Are you sure? Are you really really sure?
-I received a request to clear out one of test environments (basically to "reset" one of our end user sandboxes). Welp. I passed in the wrong argument into the reset script and blew away a different environment... Luckily (after lots of panicking), we found that differential backups were being run against that environment every 15 minutes. In the retrospective, we talked about adding a Y/N confirmation to the script so that it doesn't happen again... famous last words. Better solutions to consider:
+I received a request to clear out one of the team's test environments (basically to "reset" one of our end user sandboxes). Welp. I passed in the wrong argument into the reset script and blew away a different environment... Luckily (after lots of panicking), we found that differential backups were being run against that environment every 15 minutes. In the retrospective, we talked about adding a Y/N confirmation to the script so that it doesn't happen again... famous last words. Better solutions to consider:
 
 - Taking a backup before preforming a destructive action
 - Adding an undo command to the script, and printing that command after the destructive command is executed
