@@ -26,6 +26,7 @@ group: navigation
 - [Here is a list of nuget packages](http://www.nuget.org/profiles/amirrajan/)
 
 ##Presentations and Podcasts
+- Austin Code Camp: JavaScript Framework Rundown (August 2013)
 - Dallas .Net User Group: Dynamic ASP.NET MVC (July 2013)
 - Austin .Net User Group: Dynamic ASP.NET MVC (July 2013)
 - North Dallas .Net User Group, Fort Worth .Net User Group: Single Page Web Apps - JavaScript MVC Frameworks and Prototypical ASP.NET MVC (April, June 2013)
