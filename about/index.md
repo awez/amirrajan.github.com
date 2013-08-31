@@ -23,6 +23,7 @@ group: navigation
 - [Canopy, a web test/automation framework built in F#](http://lefthandedgoat.github.com/canopy)
 - [StacktracePreview, a ruby based project that parses .Net stack traces](http://amirrajan.net/StackTracePreview/#/toc)
 - [Kata NSpec, code katas in NSpec using VIM](https://github.com/amirrajan/katanspec)
+- [Sortis, A twitter client for power users, and a springboard for developers](https://github.com/amirrajan/sortis)
 - [Here is a list of nuget packages](http://www.nuget.org/profiles/amirrajan/)
 
 ##Presentations and Podcasts
