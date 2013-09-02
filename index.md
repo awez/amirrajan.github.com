@@ -4,7 +4,7 @@ title:
 ---
 {% include JB/setup %}
 
-I'm just a guy trying to figure out why in the world I have a such a passion for development. Through my struggles with the human condition, I share my little blip of an existance through [**presenting**](/about/), [**this blog**]({{ HOME_PATH }}), [**github**](http://github.com/amirrajan), [**twitter**](http://twitter.com/amirrajan), and [**vimeo**](https://vimeo.com/user19333001).
+I'm just a guy trying to figure out why in the world I have a such a passion for development. Through my struggles with the human condition, I share my little blip of an existence through [**presenting**](/about/), [**this blog**]({{ HOME_PATH }}), [**github**](http://github.com/amirrajan), [**twitter**](http://twitter.com/amirrajan), and [**vimeo**](https://vimeo.com/user19333001).
 
 {% for post in site.posts %}
   <div style="line-height: 13px; padding-bottom: 10px">
