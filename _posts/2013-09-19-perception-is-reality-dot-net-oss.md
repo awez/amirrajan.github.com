@@ -14,7 +14,6 @@ I'm hoping the following timeline illustrates how long mainstream .Net devs wait
 
 This link will take you to the [full-screen version](http://tinyurl.com/lbgqdej).
 
-<iframe src="http://tinyurl.com/mpu4tbv" width="600" height="600" frameborder="0"></iframe>
+<iframe src="http://tinyurl.com/mpu4tbv" width="600" height="600" frameborder="0">perception is reality</iframe>
 
 It doesn't have to be this way.
-
