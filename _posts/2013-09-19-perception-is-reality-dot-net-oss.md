@@ -16,4 +16,4 @@ This link will take you to the [full-screen version](http://tinyurl.com/lbgqdej)
 
 <iframe src="http://tinyurl.com/mpu4tbv" width="600" height="600" frameborder="0">perception is reality</iframe>
 
-It doesn't have to be this way.
+It _doesn't_ have to be this way.
