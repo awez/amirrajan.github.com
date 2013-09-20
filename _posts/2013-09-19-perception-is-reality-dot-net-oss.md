@@ -1,5 +1,5 @@
 ---
-title: Perception is Reality - .Net OSS
+title: Perception is Reality - .Net OSS is DOA
 category: meta
 layout: post
 tags : [meta]
