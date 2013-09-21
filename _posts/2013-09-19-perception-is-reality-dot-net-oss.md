@@ -2,7 +2,7 @@
 title: Perception is Reality - .Net OSS is DOA
 category: meta
 layout: post
-tags : [meta, oss]
+tags : [oss]
 ---
 
 ##tl;dr;
