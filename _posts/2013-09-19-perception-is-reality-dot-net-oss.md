@@ -2,7 +2,7 @@
 title: Perception is Reality - .Net OSS is DOA
 category: meta
 layout: post
-tags : [meta]
+tags : [meta, oss]
 ---
 
 ##tl;dr;
@@ -21,6 +21,18 @@ It _doesn't_ have to be this way.
 ##Notable Comments
 
 A lot of good comments have been posted. Here are a few them. For the full spectrum of comments you can follow these threads: [my original tweet](https://twitter.com/amirrajan/status/381068801061568512), [this offshoot](https://twitter.com/jbogard/status/381091906702565376), [another offshoot](https://twitter.com/AquaBirdConsult/status/381070709554184192), [this retweet](https://twitter.com/randompunter/status/381378264142716928), and [reddit](http://www.reddit.com/r/programming/comments/1mskjc/ask_proggit_is_my_perception_of_net_oss_accurate/).
+
+<hr/>
+
+>Not pointing blame per-say, I'm saying MS is one of the view tech companies that competes with it's community
+
+[source](https://twitter.com/TheCodeJunkie/status/319323827677057025)
+
+<hr/>
+
+>we've promoted Nancy for 2½ years and Web API had more users after 1 week =)
+
+[source](https://twitter.com/TheCodeJunkie/status/319321977259184128)
 
 <hr/>
 
