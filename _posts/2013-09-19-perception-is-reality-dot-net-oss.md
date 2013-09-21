@@ -54,7 +54,7 @@ A lot of good comments have been posted. Here are a few them. For the full spect
 
 <hr/>
 
->I think that’s terribly unfair, especially to @shanselman & co who spend their days boiling frogs. Will comment later!
+>I think [this blog post] is terribly unfair, especially to @shanselman & co who spend their days boiling frogs. Will comment later!
 
 [source](https://twitter.com/Cranialstrain/status/381385107690754049)
 
