@@ -6,11 +6,11 @@ tags : [meta]
 ---
 
 ##tl;dr;
-_Microsoft is trying to change the mainstream (corporate) .Net culture. They are genuinely trying to promote open source software, without bias. And I can't thank people at Microsoft (like Glenn Block, Scott Hanselman, and Jon Galloway) enough for busting their asses trying to push open source initiatives. Unfortunately, a culture has built up that (so far) doesn't look like it's changed. The general perception by .Net open source developers (in large corporate environments) is still: "if it isn't made or endorsed by Microsoft, we wont use it."_
+_Microsoft is trying to change the mainstream (corporate) .Net culture. They are genuinely trying to promote open source software, without bias. And I can't thank people at Microsoft (like Glenn Block, Scott Hanselman, and Jon Galloway) enough for busting their asses trying to push open source initiatives. Unfortunately, a culture has built up that (so far) doesn't look like it's changed. The general stigma  (in large corporate environments) is still: "if it isn't made or endorsed by Microsoft, we won't use it."_
 
-##A timeline that shows how long mainstream (corporate devs) .Net devs wait
+##A timeline that shows how long mainstream (corporate) .Net devs wait
 
-I'm hoping the following timeline illustrates how long mainstream .Net devs wait to take advantage of a new framework. **It doesn't have to be this way**. We don't have to wait for Microsoft to endorse or build a clone of a popular framework. There are developers out there that have already done a lot of the heavy lifting. Support _them_. Give _them_ feedback, contribute to _their_ solutions, raise awareness. Don't just sit there and wait for Microsoft.
+I'm hoping the following timeline illustrates how long mainstream .Net devs wait to take advantage of a new framework _and to get some conversations going_. **It doesn't have to be this way**. We don't have to wait for Microsoft to endorse or build a clone of a popular framework. There are developers out there that have already done a lot of the heavy lifting. Support _them_. Give _them_ feedback, contribute to _their_ solutions, raise awareness. Don't just sit there and wait for Microsoft.
 
 ###This link will take you to the [full-screen version of the timeline](http://tinyurl.com/lbgqdej).
 
