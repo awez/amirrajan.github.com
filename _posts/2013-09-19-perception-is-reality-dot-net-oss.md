@@ -54,9 +54,13 @@ A lot of good comments have been posted. Here are a few them. For the full spect
 
 <hr/>
 
->I think [this blog post] is terribly unfair, especially to @shanselman & co who spend their days boiling frogs. Will comment later!
+>I think \[this blog post\] is terribly unfair, especially to @shanselman & co who spend their days boiling frogs. Will comment later!
 
 [source](https://twitter.com/Cranialstrain/status/381385107690754049)
+
+>As was once written, we are a product of our environment, and therefore it is the environment which is at fault and not MS for supplying it. I also have to say we as developers bear responsibility for influencing and changing our environments, if that seems beyond your reach - change your environment - vote with your feet!
+
+[source](http://disq.us/8f96c2)
 
 <hr/>
 
@@ -71,6 +75,20 @@ A lot of good comments have been posted. Here are a few them. For the full spect
 >Recently we brought on a new developer whose first question was "Why didn't you use Microsoft's WebApi". I had to gently explain that I couldn't use something that didn't exist. So I definitely feel the author's pain.
 
 [source](https://news.ycombinator.com/item?id=6419165)
+
+<hr/>
+
+>Microsoft puts a lot of emphasis on visual designer support and integration with Visual Studio. The big bulk of people who build enterprise apps on .NET are more concerned with business goals rather than actual coding. They don't want to leave Visual Studio, don't want to mess with the command line, don't want to edit XML files, don't want to experiment with new things, and generally just want to drag and drop things, press the play button, and have the program do its thing. This has been the experience that Microsoft tools have been giving for the longest time, especially on the Visual Basic side.
+
+>People who contribute to OSS, on the other hand, have a completely different mentality towards development. In general, people who participate in OSS are enamored a lot more with computers and the experience of tinkering and experimenting, and have less concerns over deadlines or meeting business goals. A lot of the OSS tech has a steep learning curve that involves reading documentation, figuring out how to configure the thing, using command line tools, so on and so forth.
+
+>When Microsoft introduces new technology, it's usually accompanied with massive training events, conferences, webcasts, videos, technotes, documentation, etc. All of this is necessary to push the new tech into the business developer's consciousness and make him comfortable trying something new. This isn't necessarily because they're bad developers, it's just most enterprise work requires that you spend less of your energy on implementation details, and focus more on the business logic, which is complex enough on its own.
+
+>Say what you want about how inefficient MS's "clones" are, but for the most part, I've been able to pick up and start working with almost all of their technologies (with the possible exception of WCF and WPF) just by opening Visual Studio and clicking things until it did what I wanted. I've recently inherited an application written in VB6, and I'm really quite happy about how straight-forward it all is, even if it is often sloppy and inelegant.
+
+>If the OSS community wants more adoption by "the mainstream", then they need to understand that "the mainstream" does not care who you are, they don't want to read your manual, nor they care about how elegant your code is. They need tremendous amounts of support, they expect a huge focus on ergonomics and polished edges, and to appeal to them you will need to do a lot of hard things that are not as fun as programming your pet project.
+
+[source](http://www.reddit.com/r/programming/comments/1mskjc/ask_proggit_is_my_perception_of_net_oss_accurate/cccdlc0)
 
 <hr/>
 
@@ -98,22 +116,3 @@ A lot of good comments have been posted. Here are a few them. For the full spect
 
 [source](http://www.reddit.com/r/programming/comments/1mskjc/ask_proggit_is_my_perception_of_net_oss_accurate/ccc8rt3)
 
-<hr/>
-
->I like .NET a lot and I agree. I used to look for libraries that did what I wanted, tried to contribute and finally see the project die (or being less used) once ms made its own alternative. This has happened a few times and you're stuck. Usually with oss the project can keep on going due to its following, but since the ms alternative is seen as 'the one way' people will abandon the non-ms projects.
-
-[source](http://www.reddit.com/r/programming/comments/1mskjc/ask_proggit_is_my_perception_of_net_oss_accurate/cccg341)
-
-<hr/>
-
->Microsoft puts a lot of emphasis on visual designer support and integration with Visual Studio. The big bulk of people who build enterprise apps on .NET are more concerned with business goals rather than actual coding. They don't want to leave Visual Studio, don't want to mess with the command line, don't want to edit XML files, don't want to experiment with new things, and generally just want to drag and drop things, press the play button, and have the program do its thing. This has been the experience that Microsoft tools have been giving for the longest time, especially on the Visual Basic side.
-
->People who contribute to OSS, on the other hand, have a completely different mentality towards development. In general, people who participate in OSS are enamored a lot more with computers and the experience of tinkering and experimenting, and have less concerns over deadlines or meeting business goals. A lot of the OSS tech has a steep learning curve that involves reading documentation, figuring out how to configure the thing, using command line tools, so on and so forth.
-
->When Microsoft introduces new technology, it's usually accompanied with massive training events, conferences, webcasts, videos, technotes, documentation, etc. All of this is necessary to push the new tech into the business developer's consciousness and make him comfortable trying something new. This isn't necessarily because they're bad developers, it's just most enterprise work requires that you spend less of your energy on implementation details, and focus more on the business logic, which is complex enough on its own.
-
->Say what you want about how inefficient MS's "clones" are, but for the most part, I've been able to pick up and start working with almost all of their technologies (with the possible exception of WCF and WPF) just by opening Visual Studio and clicking things until it did what I wanted. I've recently inherited an application written in VB6, and I'm really quite happy about how straight-forward it all is, even if it is often sloppy and inelegant.
-
->If the OSS community wants more adoption by "the mainstream", then they need to understand that "the mainstream" does not care who you are, they don't want to read your manual, nor they care about how elegant your code is. They need tremendous amounts of support, they expect a huge focus on ergonomics and polished edges, and to appeal to them you will need to do a lot of hard things that are not as fun as programming your pet project.
-
-[source](http://www.reddit.com/r/programming/comments/1mskjc/ask_proggit_is_my_perception_of_net_oss_accurate/cccdlc0)
