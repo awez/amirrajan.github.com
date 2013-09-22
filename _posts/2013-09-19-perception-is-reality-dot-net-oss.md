@@ -92,6 +92,14 @@ A lot of good comments have been posted. Here are a few them. For the full spect
 
 <hr/>
 
+>I love OSS, I really do, but for "enterprise" and "corporate" developers, and even those of us who are more open to trying new things and don't always rely upon getting our knowledge from the pre-chewed information spoon-fed to us by Microsoft, we're almost always better off with the Microsoft "solution". This is true for any developer (and this is probably most of all of us) who has a "deadline".
+
+>Tooling, Documentation & Community (number of users) are the factors that ensure this is true time and time again.
+
+[source](http://www.reddit.com/r/programming/comments/1mskjc/ask_proggit_is_my_perception_of_net_oss_accurate/ccd442t)
+
+<hr />
+
 >It was always a problem.
 
 >Castle Monorail (inspired by RoR) was developed since 2004 but web-MVC only caught up with ASP.NET MVC in 2007.
