@@ -10,11 +10,15 @@ _Microsoft is trying to change the mainstream (corporate) .Net culture. They are
 
 ##Blog Responses
 
-Others are taking the time to respond to what I've written. Happy to see conversations happening (if you have a response let me know via email/twitter and I'll link to it):
+Others are taking the time to respond to what I've written. Happy to see conversations happening (if you have a response, let me know via email/twitter and I'll link to it):
 
 <hr />
 
 **[Perception Is Reality - .NET OSS Is Getting Better](http://nerditorium.danielauger.com/blog/2013/09/23/perception-is-reality-net-oss-is-getting-better/) by [Daniel Auger @danielauger](https://twitter.com/danielauger)**
+
+<hr />
+
+**[Perception is Reality–The state of OSS in .NET](http://lostechies.com/jimmybogard/2013/09/25/perception-is-realitythe-state-of-oss-in-net/) by [Jimmy Bogard @jbogard](https://twitter.com/jbogard)
 
 <hr />
 
