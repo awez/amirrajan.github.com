@@ -18,7 +18,7 @@ Others are taking the time to respond to what I've written. Happy to see convers
 
 <hr />
 
-**[Perception is Reality–The state of OSS in .NET](http://lostechies.com/jimmybogard/2013/09/25/perception-is-realitythe-state-of-oss-in-net/) by [Jimmy Bogard @jbogard](https://twitter.com/jbogard)
+**[Perception is Reality–The state of OSS in .NET](http://lostechies.com/jimmybogard/2013/09/25/perception-is-realitythe-state-of-oss-in-net/) by [Jimmy Bogard @jbogard](https://twitter.com/jbogard)**
 
 <hr />
 
