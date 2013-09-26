@@ -22,6 +22,11 @@ Others are taking the time to respond to what I've written. Happy to see convers
 
 <hr />
 
+**[Reality is an illusion – .NET OSS is hard](http://blog.markrendle.net/2013/09/26/reality-is-an-illusion-net-oss-is-hard/) by [Mark Rendle
+@markrendle](https://twitter.com/markrendle)**
+
+<hr />
+
 ##A timeline that shows how long mainstream (corporate) .Net devs wait
 
 I'm hoping the following timeline illustrates how long mainstream .Net devs wait to take advantage of a new framework _and to get some conversations going_. **It doesn't have to be this way**. We don't have to wait for Microsoft to endorse or build a clone of a popular framework. There are developers out there that have already done a lot of the heavy lifting. Support _them_. Give _them_ feedback, contribute to _their_ solutions, raise awareness. Don't just sit there and wait for Microsoft.
