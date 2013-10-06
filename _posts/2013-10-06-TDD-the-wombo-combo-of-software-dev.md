@@ -6,25 +6,25 @@ tags : [testing]
 ---
 
 ##tl;dr;
-_Test Driven Development (TDD) is difficult to get good at. What makes things worse is that there is so much fervor around this technique. Those that want to better understand it are immediately turned of by practitioners. At the end of the day, **it’s a two way street**. If you want to get better at TDD, you have to look past heated, seemingly ridiculous debates between practitioners and **practice. Just like we do**. As practitioners, we need to continue to have the debates, but do a better job of generating artifacts (blog entries, gists, screen casts), and understand that **we don't have it all figured out**._
+_Test Driven Development (TDD) is difficult to get good at. What makes things worse is that there is so much fervor around this technique. Newcomers are immediately turned of by practitioners. At the end of the day, **it’s a two way street**. If you want to get better at TDD, you have to look past heated, seemingly ridiculous debates between practitioners and **practice. Just like we do**. As practitioners, we need to continue to have the debates, but do a better job of generating artifacts (blog entries, gists, screen casts), and understand that **we don't have it all figured out**._
 
 #The WOMBO COMBO!!!!
 
-If you're a gamer, you may have heard of _Super Smash Brothers Melee_. This game was played competitively. National tournaments, professional sponsorships, cash prizes. In other words, **it was a big deal**.
+If you're a gamer, you may have heard of _Super Smash Brothers Melee_. This game was played competitively. National tournaments. Professional sponsorships. Cash prizes. In other words, **it was a big deal**.
 
 I was in high school at the time this game came out. And a group of friends and I played this game every possible chance we got. We practiced, we studied the subtleties of it, and we competed in local tournaments.
 
-Now that the stage is set watch the video with the following points in mind:
+Now that the stage is set. Watch the video with the following points in mind:
 
-- If you've **never** played Super Smash Brothers Melee, you'll have no idea what just happened, and why everyone is excited.
+- If you've **never** played Super Smash Brothers Melee, you'll have no idea what just happened, nor why everyone is excited.
 
 - If you've played this game a **little bit**, you may understand what happened, but don't see it as a big deal.
 
-- If you've played this game a **lot**, you can appreciate what was shown. But you may **dismiss it as nice to learn, but not necessary to compete at a professional level**.
+- If you've played this game a **lot**, you can appreciate what was shown. But you may **say it's nice to learn, but not necessary to compete at a professional level**.
 
-- If you've played the game **professionally**, **(and understand the nuances of the game to the level these players did)**, you'd understand why this is regarded as one of the **greatest moments in this game's history**. What was shown in this video **fundamentally changed** how this game was played competitively at every level.
+- If you've played the game **competitively**, **(and understand the nuances of the game to the level these players did)**, you'd understand why this is regarded as one of the **greatest moments in this game's history**. What was shown in this video **fundamentally changed** how this game was played at every level.
 
-- The commentary is a **complete turn off**. You may never want to participate at a competitive level after hearing these juvenile comments that **contain profanity and reference male genitalia**
+- The commentary is a **complete turn off**. You may never want to participate, at a competitive level, after hearing these juvenile comments that **contain profanity and reference male genitalia**
 
 - A message to practitioners of TDD, this is probably **what we sound like to newcomers**
 
@@ -34,17 +34,18 @@ Now that the stage is set watch the video with the following points in mind:
 <iframe width="560" height="315" src="//www.youtube.com/embed/pD_imYhNoQ4" frameborder="0" allowfullscreen="allowfullscreen">wombo combo</iframe>
 
 <br/>
+
 #Reflect. Do you want to get better?
 
 Reflect on your experience with test driven development. Where do you exist on the spectrum?
 
 #Perspective. TDD is nice, but not necessary.
 
-At the risk of categorizing based on past experiences, many developers are in this category. And as far as you perception of TDD is concerned, you are _absolutely right_. You can develop at a professional level, write good, high quality code without doing TDD.
+At the risk of categorizing based on past experiences, many developers are in this category. And as far as your perception of TDD is concerned, you are _absolutely right_. You can develop at a professional level, write good, high quality code without doing TDD.
 
 **With regards to the two way street**
 
-For those that have this opinion: Do not discourage those that want to learn TDD. If someone wants to write tests, let them. Don't complain. Support your teammate's perspective.
+For those that have this opinion: Do not discourage others that want to learn TDD. If someone wants to write tests, let them. Don't complain. Support your teammate's perspective.
 
 For TDD practitioners: you need to be okay with devs that hold the opposing perspective. If you're new to TDD, get better through **independent practice** before attempting anything on production code. Do not impose testing on your peers (if everyone isn't on board, do not incorporate it into continuous integration). And when one of the tests fails because of _their_ check in, _you_ need to fix it. Because it's what _you_ value.
 
@@ -62,9 +63,9 @@ But I (we) get it. When one can understand and compete at _that_ level, it's ext
 
 For everyone seeing these debates: As painful as it is to watch, try to understand that we care about the subject. We don't see what we do as naval gazing. We try our best to... well... be the best.
 
-For the practitioners butting heads: **Document what you talk about**. Write a blog entry, leave artifacts for others to find (like [this one](http://lostechies.com/jimmybogard/2013/09/26/test-styles-and-avoiding-setupteardown/), [this one](http://wekeroad.com/2013/08/28/how-behavioral-is-your-bdd), [this one](https://gist.github.com/amirrajan/6701522), [this one](http://www.hanselminutes.com/294/understanding-bdd-and-nspec-with-matt-florence-and-amir-rajan), and [this one](http://vimeo.com/72745278)). Keep engaging in this constant, unrelenting debate.
+For the practitioners butting heads: **Document what you talk about**. Write a blog entry, leave artifacts for others to find (like [this one](http://lostechies.com/jimmybogard/2013/09/26/test-styles-and-avoiding-setupteardown/), [this one](http://wekeroad.com/2013/08/28/how-behavioral-is-your-bdd), [this one](http://www.hanselminutes.com/294/understanding-bdd-and-nspec-with-matt-florence-and-amir-rajan), and [this one](http://vimeo.com/72745278)). Keep engaging in this constant, unrelenting debate.
 
-TDD (testing in general) is constantly changing area. **You're doing yourself a disservice if you think you've got it all figured out.**
+TDD (testing in general) is a constantly changing area. **You're doing yourself a disservice if you think you've got it all figured out.**
 
 #Perspective. I've never attempted TDD or have only tried it a little bit.
 
@@ -74,7 +75,7 @@ Practice. A lot. A whole lot. It's a long, long road to get extremely good at TD
 
 For newcomers: try to look past the "commentary of the practitioners". Within the heated debates back and forth (and all the noise that comes with it), there is an important dialog that's occurring. We've worked our asses off to get to where we are, and with that comes some ill placed entitlement.
 
-For TDD practitioners: keep your ego in check. Especially when talking to someone that is _willing_ to learn. Be very much aware that you sound like can come off as sounding like the people in that video.
+For TDD practitioners: keep your ego in check. Especially when talking to someone that is _willing_ to learn. Be very much aware that you can come off as sounding like the people in that video.
 
 #How to get started with TDD
 
