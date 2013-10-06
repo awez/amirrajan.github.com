@@ -6,7 +6,7 @@ tags : [testing]
 ---
 
 ##tl;dr;
-_Test Driven Development (TDD) is difficult to get good at. What makes things worse is that there is so much fervor around this technique. Newcomers may be immediately turned off by practitioners. At the end of the day, **it’s a two way street**. If you want to get better at TDD, you have to look past heated, seemingly ridiculous debates between practitioners and **practice. Just like we do**. As practitioners, we need to continue to have the debates, but do a better job of generating artifacts (blog entries, gists, screen casts), and understand that **we don't have it all figured out**._
+_Test Driven Development (TDD) is difficult to get good at, [here is a good way to get started](#getstarted). What makes things worse is that there is so much fervor around this technique. Newcomers may be immediately turned off by practitioners. At the end of the day, **it’s a two way street**. If you want to get better at TDD, you have to look past heated, seemingly ridiculous debates between practitioners and **practice. Just like we do**. As practitioners, we need to continue to have the debates, but do a better job of generating artifacts (blog entries, gists, screen casts), and understand that **we don't have it all figured out**._
 
 #The WOMBO COMBO!!!!
 
@@ -76,6 +76,8 @@ Practice. A lot. A whole lot. It's a long, long road to get extremely good at TD
 For newcomers: try to look past the "commentary of the practitioners". Within the heated debates back and forth (and all the noise that comes with it), there is an important dialog that's occurring. We've worked our asses off to get to where we are, and with that comes some ill placed entitlement.
 
 For TDD practitioners: keep your ego in check. Especially when talking to someone that is _willing_ to learn. Be very much aware that you can come off as sounding like the people in that video.
+
+<div id="getstarted"></div>
 
 #How to get started with TDD
 
