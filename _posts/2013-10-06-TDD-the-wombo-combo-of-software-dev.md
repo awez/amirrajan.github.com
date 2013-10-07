@@ -65,7 +65,7 @@ For everyone seeing these debates: As painful as it is to watch, try to understa
 
 For the practitioners butting heads: **Document what you talk about**. Write a blog entry, leave artifacts for others to find (like [this one](http://lostechies.com/jimmybogard/2013/09/26/test-styles-and-avoiding-setupteardown/), [this one](http://wekeroad.com/2013/08/28/how-behavioral-is-your-bdd), [this one](http://www.hanselminutes.com/294/understanding-bdd-and-nspec-with-matt-florence-and-amir-rajan), and [this one](http://vimeo.com/72745278)). Keep engaging in this constant, unrelenting dialog.
 
-TDD (testing in general) is a constantly changing area. **You're doing yourself a disservice if you think you've got it all figured out.**
+TDD, BDD (testing in general) is a constantly changing area. **You're doing yourself a disservice if you think you've got it all figured out.**
 
 #Perspective. I've never attempted TDD or have only tried it a little bit.
 
