@@ -15,8 +15,8 @@ group: navigation
 - twitter: [@amirrajan](http://twitter.com/amirrajan)
 - [curriculum vitae](http://careers.stackoverflow.com/amirrajan)
 
-##Core contributor to
-- [Github Page](http://github.com/amirrajan)
+##Projects and Open Source
+- [My Github Page](http://github.com/amirrajan)
 - [NSpec, a context/spec testing framework](http://nspec.org)
 - [SpecWatchr, an auto test tool for .Net development](http://nspec.org/continuoustesting)
 - [Oak, it makes ASP.NET MVC better for single page apps](http://amirrajan.github.com/Oak)
@@ -24,7 +24,9 @@ group: navigation
 - [StacktracePreview, a ruby based project that parses .Net stack traces](http://amirrajan.net/StackTracePreview/#/toc)
 - [Kata NSpec, code katas in NSpec using VIM](https://github.com/amirrajan/katanspec)
 - [Sortis, A twitter client for power users, and a springboard for developers](https://github.com/amirrajan/sortis)
+- [A Dark Room for iOS](/a-dark-room)
 - [Here is a list of nuget packages](http://www.nuget.org/profiles/amirrajan/)
+
 
 ##Presentations and Podcasts
 - Austin Code Camp: JavaScript Framework Rundown (August 2013)
