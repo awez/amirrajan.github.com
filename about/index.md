@@ -17,18 +17,24 @@ group: navigation
 
 ##Projects and Open Source
 - [My Github Page](http://github.com/amirrajan)
-- [NSpec, a context/spec testing framework](http://nspec.org)
-- [SpecWatchr, an auto test tool for .Net development](http://nspec.org/continuoustesting)
-- [Oak, it makes ASP.NET MVC better for single page apps](http://amirrajan.github.com/Oak)
-- [Canopy, a web test/automation framework built in F#](http://lefthandedgoat.github.com/canopy)
-- [StacktracePreview, a ruby based project that parses .Net stack traces](http://amirrajan.net/StackTracePreview/#/toc)
-- [Kata NSpec, code katas in NSpec using VIM](https://github.com/amirrajan/katanspec)
-- [Sortis, A twitter client for power users, and a springboard for developers](https://github.com/amirrajan/sortis)
-- [A Dark Room for iOS](/a-dark-room)
+- [NSpec, a context/spec testing framework](http://nspec.org) <small>(C#)</small>
+- [SpecWatchr, an auto test tool for .Net development](http://nspec.org/continuoustesting) <small>(ruby)</small>
+- [Oak, it makes ASP.NET MVC better for single page apps](http://amirrajan.github.com/Oak) <small>(C#, JavaScript, ruby)</small>
+- [Canopy, a web test/automation framework](http://lefthandedgoat.github.com/canopy) <small>(F#)</small>
+- [StacktracePreview, a ruby based project that parses .Net stack traces](http://amirrajan.net/StackTracePreview/#/toc) <small>(ruby)</small>
+- [Kata NSpec, code katas in NSpec using VIM](https://github.com/amirrajan/katanspec) <small>(vim, rake, ruby, .Net)</small>
+- [Sortis, a twitter client for power users, and a springboard for developers](https://github.com/amirrajan/sortis) <small>(NodeJS)</small>
+- [NodeKick, a real-time fighting game](https://github.com/amirrajan/nodekick) <small>(JavaScript, NodeJS)</small>
+- [NodeJS Against Humanity, a clone of Cards Against Humanity](https://github.com/amirrajan/nodejs-against-humanity) <small>(JavaScript, NodeJS)</small>
+- [A Dark Room for iOS](https://itunes.apple.com/us/app/a-dark-room/id736683061) <small>(RubyMotion, ObjectiveC)</small>
+- [NodeJS Against Humanity, a clone of Cards Against Humanity](https://github.com/amirrajan/nodejs-against-humanity) <small>(NodeJS)</small>
 - [Here is a list of nuget packages](http://www.nuget.org/profiles/amirrajan/)
 
 
 ##Presentations and Podcasts
+- Dallas.node Meetup: Nodekick! Building a real time game with NodeJS (November 2013)
+- Dallas.node Meetup: Hands on NodeJS. From localhost to Cloud! (October 2013)
+- North Dallas Cloud Computing Group: Hands on NodeJS. From localhost to Cloud! (September 2013)
 - Austin Code Camp: JavaScript Framework Rundown (August 2013)
 - Dallas .Net User Group: Dynamic ASP.NET MVC (July 2013)
 - Austin .Net User Group: Dynamic ASP.NET MVC (July 2013)
