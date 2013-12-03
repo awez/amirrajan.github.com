@@ -26,8 +26,13 @@ The 10k foot view. Feel free to contact me.
 
 </div>
 <link href="http://coderwall.com/stylesheets/jquery.coderwall.css" media="all" rel="stylesheet" type="text/css" />
-<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<script src="http://coderwall.com/javascripts/jquery.coderwall.js"></script>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js">
+
+</script>
+
+<script src="http://coderwall.com/javascripts/jquery.coderwall.js">
+
+</script>
 
 <div style="clear: both;">&nbsp;</div>
 </div>
