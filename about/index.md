@@ -6,14 +6,32 @@ group: navigation
 ---
 {% include JB/setup %}
 
-<a href="http://stackoverflow.com/users/40914/amir">
-<img src="http://stackoverflow.com/users/flair/40914.png" width="208" height="58" alt="profile for Amir at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Amir at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
-</a>
+The 10k foot view. Feel free to contact me.
 
 ##Contact
 - email: ar@amirrajan.net
 - twitter: [@amirrajan](http://twitter.com/amirrajan)
 - [curriculum vitae](http://careers.stackoverflow.com/amirrajan)
+
+##Flare
+
+<div style="border: solid 1px silver; padding: 10px">
+
+<a href="http://stackoverflow.com/users/40914/amir">
+  <img src="http://stackoverflow.com/users/flair/40914.png" width="208" height="58" alt="profile for Amir at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Amir at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+</a>
+<br />
+<br />
+<div class="coderwall" data-coderwall-username="amirrajan" data-coderwall-orientation="horizontal">
+
+</div>
+<link href="http://coderwall.com/stylesheets/jquery.coderwall.css" media="all" rel="stylesheet" type="text/css" />
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="http://coderwall.com/javascripts/jquery.coderwall.js"></script>
+
+<div style="clear: both;">&nbsp;</div>
+</div>
+
 
 ##Projects and Open Source
 - [My Github Page](http://github.com/amirrajan)
