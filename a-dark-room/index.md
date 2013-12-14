@@ -6,6 +6,8 @@ group: navigation
 ---
 {% include JB/setup %}
 
+<img src="/assets/images/adarkroombanner.png" style="border: solid 1px silver; padding: 3px; max-width: 100%; width: 100%" />
+
 Hope you like the game. Please rate it and let others know about it. If you need to contact me, shoot an email to ar@amirrajan.net or reach out to me on Twitter: @amirrajan. 
 
 The web based version is free to play here: [A Dark Room](http://adarkroom.doublespeakgames.com/)
