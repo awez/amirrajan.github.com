@@ -18,7 +18,7 @@ I tried to keep this letter spoiler free. If you haven't played the web or mobil
 
 **The History**
 
-A Dark Room for iOS is an official release of the web based version of the game. I worked closely with Michael Townsend to ensure the spirit of the game is captured in a mobile medium. After [quiting my 9-5 job](/meta/2013/07/14/rebooting-life/), this was my first attempt at making something on my own...in delivering software that people enjoy using (as opposed to being just a cog in a corporation).
+A Dark Room for iOS is an official release of the web based version of the game. I worked closely with Michael Townsend to ensure the spirit of the game is captured in a mobile medium. After [quitting my 9-5 job](/meta/2013/07/14/rebooting-life/), this was my first attempt at making something on my own...in delivering software that people enjoy using (as opposed to being just a cog in a corporation).
 
 I came across A Dark Room, June 2013 on Twitter. After playing the game, I knew that this was something important. A work of art. That very same day I contacted Michael Townsend about building a mobile version of this game. Michael, being the awesome dude he is, replied the same day.
 
