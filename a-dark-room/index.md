@@ -48,7 +48,7 @@ Follow [@ADarkRoomiOS](https://twitter.com/adarkroomios) on Twitter. Tell your f
 
 If you have any questions or want hints about some of the easter eggs that are hidden in the game, reach out to [ADarkRoomiOS](https://twitter.com/adarkroomios) on Twitter...it may ask for your soul as payment though. 
 
-May the fire burn brightly for you. Sincerely,
+May the fire burn bright and warm for you. Sincerely,
 
 A Dark Room
 
