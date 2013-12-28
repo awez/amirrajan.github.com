@@ -58,11 +58,11 @@ A Dark Room
 
 [Forbes - Daniel Nye Griffiths: Top 5 Anti-Games of 2013](http://www.forbes.com/sites/danielnyegriffiths/2013/12/22/not-the-top-5-indie-games-of-2013/)
 
-[Giant Bomb - Zoe Quinn's: Top 10 Games of 2013](http://www.giantbomb.com/articles/zoe-quinn-s-top-10-games-of-2013/1100-4813/)
+[Giant Bomb - Zoe Quinn: Top 10 Games of 2013](http://www.giantbomb.com/articles/zoe-quinn-s-top-10-games-of-2013/1100-4813/)
 
-[Giant Bomb - Cara Eillison's: Top 10 Games of 2013 (honorable mention)](http://www.giantbomb.com/articles/cara-ellison-s-top-10-games-of-2013/1100-4833/)
+[Giant Bomb - Cara Eillison: Top 10 Games of 2013 (honorable mention)](http://www.giantbomb.com/articles/cara-ellison-s-top-10-games-of-2013/1100-4833/)
 
-[Indie Mega Booth Podcast - A Dark Room](http://indiemegabooth.com/indie-megacast-episode-11/)
+[Indie Mega Booth Podcast - A Dark Room Story Analysis and Discussion](http://indiemegabooth.com/indie-megacast-episode-11/)
 
 [The Bygone Bureau - Elizabeth Simins: Best of Arts 2013](http://bygonebureau.com/2013/12/18/best-of-the-arts-2013/#elizabeth) <small>(displayed below with permission)</small>
 
