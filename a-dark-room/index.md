@@ -51,3 +51,21 @@ If you have any questions or want hints about some of the easter eggs that are h
 May the fire burn brightly for you. Sincerely,
 
 A Dark Room
+
+##Media Coverage
+
+[Paste Magazine - Maddy Myers', Top 20 Indie Games of 2013](http://www.pastemagazine.com/blogs/lists/2013/12/the-20-best-indie-videogames-of-2013.html)
+
+[Forbes - Daniel Nye Griffiths', Top 5 Anti-Games of 2013](http://www.forbes.com/sites/danielnyegriffiths/2013/12/22/not-the-top-5-indie-games-of-2013/)
+
+[Giant Bomb - Zoe Quinn's, Top 10 Games of 2013](http://www.giantbomb.com/articles/zoe-quinn-s-top-10-games-of-2013/1100-4813/)
+
+[Giant Bomb - Cara Eillison's, Top 10 Games of 2013 (honorable mention)](http://www.giantbomb.com/articles/cara-ellison-s-top-10-games-of-2013/1100-4833/)
+
+[Indie Mega Booth Podcast - A Dark Room](http://indiemegabooth.com/indie-megacast-episode-11/)
+
+[The Bygone Bureau - Elizabeth Simins', Best of Arts 2013](http://bygonebureau.com/2013/12/18/best-of-the-arts-2013/#elizabeth) <small>(displayed below with permission)</small>
+
+<img src="/assets/images/adarkroomart.jpg" style="border: solid 1px silver; padding: 3px; max-width: 100%; width 100%" />
+<img src="/assets/images/adarkroomart2.jpg" style="border: solid 1px silver; padding: 3px; max-width: 100%; width 100%" />
+<img src="/assets/images/adarkroomart3.jpg" style="border: solid 1px silver; padding: 3px; max-width: 100%; width 100%" />
