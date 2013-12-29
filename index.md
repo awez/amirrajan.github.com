@@ -10,11 +10,11 @@ I'm just a guy trying to figure out why in the world I have a such a passion for
 
 <div style="line-height: 13px; padding-bottom: 10px">
   <a href="{{ BASE_PATH }}/nodejs-by-example">NodeJS by Example</a><br/>
-  <span style="color: silver; font-size: 12px">A list of NodeJS apps I've built to help you get started with the platform</span>
+  <span style="color: #767676; font-size: 12px">A list of NodeJS apps I've built to help you get started with the platform</span>
 </div>
 <div style="line-height: 13px; padding-bottom: 10px"><br/>
   <a href="{{ BASE_PATH }}/a-dark-room">A Dark Room for iOS</a><br/>
-  <span style="color: silver; font-size: 12px">Official release of A Dark Room on iOS</span>
+  <span style="color: #767676; font-size: 12px">Official release of A Dark Room on iOS</span>
 </div>
 
 ##Posts
@@ -22,7 +22,7 @@ I'm just a guy trying to figure out why in the world I have a such a passion for
 {% for post in site.posts %}
   <div style="line-height: 13px; padding-bottom: 10px">
     <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a><br/>
-    <span style="color: silver; font-size: 12px">{{ post.date | date_to_string }}</span>
+    <span style="color: #767676; font-size: 12px">{{ post.date | date_to_string }}</span>
   </div>
 {% endfor %}
 
