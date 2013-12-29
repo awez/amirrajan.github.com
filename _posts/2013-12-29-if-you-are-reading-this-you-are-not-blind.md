@@ -1,6 +1,6 @@
 ---
 title: If You Are Reading This, You Are Not Blind
-category: meta
+category: software-development
 layout: post
 tags : [iOS, mobile]
 ---
