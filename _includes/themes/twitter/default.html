@@ -31,8 +31,8 @@
         <div class="container">
           <span class="brand">{{ site.title }}</span>
           <hr />
-          <span class="page-link"><a href="{{ HOME_PATH }}" class="active">Home</a></span>
-          <span class="page-link"><a href="/about/" class="active">About</a></span>
+          <span class="page-link"><a href="{{ HOME_PATH }}">Home</a></span>
+          <span class="page-link"><a href="/about/">About</a></span>
           <span class="page-link"><a href="/archive.html">Archive</a></span>
           <span class="page-link"><a href="/categories.html">Categories</a></span>
           <span class="page-link"><a href="/pages.html">Pages</a></span>
@@ -43,14 +43,7 @@
       </div>
     </div>
 
-    <div class="container">
-      <div class="content">
-        {{ content }}
-      </div>
-      <footer>
-        <p> </p>
-      </footer>
-    </div> <!-- /container -->
+    {{ content }}
 
     {% include JB/analytics %}
   </body>

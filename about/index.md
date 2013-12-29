@@ -15,12 +15,15 @@ The 10k foot view. Feel free to contact me.
 
 ##Flare
 
-<div style="border: solid 1px silver; padding: 10px">
+<div style="">
 
 <a href="http://stackoverflow.com/users/40914/amir">
-  <img src="http://stackoverflow.com/users/flair/40914.png" width="208" height="58" alt="profile for Amir at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Amir at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+  <img src="http://stackoverflow.com/users/flair/40914.png"
+       width="208"
+       height="58"
+       alt="profile for Amir at Stack Overflow, Q&amp;A for professional and enthusiast programmers"
+       title="profile for Amir at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
 </a>
-<br />
 <br />
 <div class="coderwall" data-coderwall-username="amirrajan" data-coderwall-orientation="horizontal">
 
@@ -36,7 +39,6 @@ The 10k foot view. Feel free to contact me.
 
 <div style="clear: both;">&nbsp;</div>
 </div>
-
 
 ##Projects and Open Source
 - [My Github Page](http://github.com/amirrajan)
