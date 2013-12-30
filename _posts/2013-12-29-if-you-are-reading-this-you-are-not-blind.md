@@ -5,8 +5,10 @@ layout: post
 tags : [iOS, mobile]
 ---
 
+I released an iOS game about a month ago. To avoid spoilers, I simply set the description of the game to "a text based journey... awake, head throbbing, vision blurry". A couple of weeks later, I received a tweet online from someone who was stuck. He said he was pretty far into the game, and was just having some difficulty making it back to a specific location, and needed some clarification about what some of the game elements meant. I was a little confused, I spent a whole lot of time making sure that all the game elements were simple to understand. After a few exchanges on Twitter, I finally realized he was _blind_. He was using iOS's built in screen reader to play the game and was well into the storyline. I never expected a blind person would try playing the game. I was extremely surprised at how far he had gotten (he was pretty much to the end). After helping him out, I read up on iOS's accessibilty features. With _very, very, little work_, I released an update to the game with accessibilty enhancements.
+
 ##tl;dr;
-_If you are building a native iOS app, consider making it accessible to the blind. The out of the box accessibility features of iOS devices are pretty damn impressive. The API's are simple. Use them. You'll be surprised at how little you have to do to make your app better for the visually impaired. I don't have any experience with accessibility on Android (yet), but from what I've read, the accessibility features are good. As of the publish date of this blog entry, Windows Phone has no out of the box screen readers or assisted navigation, though it is something they are working on (part of the Windows Phone 8.1 release maybe)._
+_If you are building a native iOS app, consider making it accessible to the blind. The out of the box accessibility features of iOS devices are pretty damn impressive. The API's are simple. Use them. **You'll be surprised at how little you have to do to make your app better for the visually impaired.** I don't have any experience with accessibility on Android (yet), but from what I've read, the accessibility features are good. As of the publish date of this blog entry, Windows Phone has no out of the box screen readers or assisted navigation, though it is something they are working on (part of the Windows Phone 8.1 release maybe)._
 
 ##Let's Paint a Picture
 Think of your favorite blog, the one that you just love to read while sitting on the can (admit it, you know you do it). So you're sitting in the dark. On the _toilette_ (saying it in French help?), about to do your thing. You don't need to turn on the lights in the bathroom. Cause you're blind. Not _blind-without-your-glasses_ blind, but **NLP (no light perception)** blind. You have your pants down to your ankles, your phone is in your hand. **Can you navigate to your favorite blog using the phone's browser, find the latest blog entry, and have your phone read it to you?** If you have an iOS device, the answer is a definite _yes_ (it's also a yes for Android phones).
@@ -27,14 +29,26 @@ Here is a video that **you** can **watch**, and the blind will **never, ever, ev
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/Cd4SPDUfJ-A" frameborder="0" allowfullscreen="allowfullscreen">tap, tap, see</iframe>
 
+Here is a short video about Austin Seraphin a blind software developer:
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/-h_Xi0id1NM" frameborder="0" allowfullscreen="allowfullscreen">Austin Seraphin</iframe>
+
+Here is a podcast about another blind software developers, Aaron Cannon:
+
+[NerdCast #45: Programming In The Dark – A Developers Tale](http://blog.nerdery.com/2013/09/nerdcast-45-programming-in-the-dark-a-developers-tale/)
+
+And a presentation on web accessibility by him:
+
+<iframe src="//player.vimeo.com/video/34968569" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen">Aaron Cannon</iframe>
+
 ##Some Help if You're Developing iOS Apps
 I found [this library called SSAccessibility](https://github.com/splinesoft/SSAccessibility) extremely helpful. It provides a facade over iOS's accessibility apis and does a great job of managing/queueing VoiceOver notifications (something that you'd have to build yourself... since the core libraries simply interrupt what's currently being spoken, if another notification comes in).
 
 There are already plenty of resources out there that will help you with the api, here are a few search terms that you can type into Google, leading to a wealth of material:
 
+- UIAccessibility Protocol Reference
 - UIAccessibilityIsVoiceOverRunning
 - UIAccessibilityPostNotification
-- UIAccessibilityScreenChangedNotification
 - accessibilityElementsHidden
 - setAccessibilityLabel
 - setAccessibilityHint
