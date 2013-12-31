@@ -76,3 +76,5 @@ I know many of us feel that having an app for something that can just be a websi
 When I first developed A Dark Room for the iOS, I was ignorant. I didn't think that mobile devices were such a life changer for the blind (and that there are blind gamers out there). I've went back and made a ton of accessibility changes to the game (available in v1.2), and am now writing this blog post. It is my meager attempt to raise a little bit of developer awareness. So, go forth, and make a difference. One of my friends said all this more succinctly when I was telling him about the updates I was making to A Dark Room:
 
 >**Their happiness is more important to me than the happiness of 1,000 spoiled nerds with $2. It matters.**
+
+_Note: for those that are interested in downloading the game, the accessible version of the game is currently in the review process. Version 1.2 should be approved by mid January._
