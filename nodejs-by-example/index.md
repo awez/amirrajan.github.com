@@ -51,11 +51,21 @@ Libraries used: express, ejs, redis
 
 Source: [https://github.com/amirrajan/nodejs-todo](https://github.com/amirrajan/nodejs-todo)
 
+##Pomodoro Text
+
+A Pomodoro client with a text messaging interface. The Pomodoro Technique is used for time management.
+
+This app is a "warm up" for the next app (Sortis). You'll see how to use Redis, Angular, and Twilio (a text messaging service) in a simple application. This app will also get you a familiar with Grunt (a JavaScript task runner).
+
+Libraries used: express, ejs, redis, angularjs, twilio, underscore
+
+Source: [https://github.com/amirrajan/pomodoro-text](https://github.com/amirrajan/pomodoro-text)
+
 ##Sortis - Twitter Mashup
 
 This app is a twitter client with a two phase authorization scheme (password and text). It allows you to search and add additional metadata to tweets. Read the readme for more information.
 
-This app shows a non-trivial use of <code>express</code>, <code>ejs</code>, <code>redis</code> and a front end framework called <code>angularjs</code>. You'll also learn how to leverage Twitter's REST Api's and Twillio, a service that allows you to send text messages. There is a lot of comments in this code base. Read the source for more information.
+This app shows a non-trivial use of <code>express</code>, <code>ejs</code>, <code>redis</code> and a front end framework called <code>angularjs</code>. You'll also learn how to leverage Twitter's REST Api's and Twilio, a service that allows you to send text messages. There is a lot of comments in this code base. Read the source for more information.
 
 Libraries used: express, ejs, redis, angularjs, twilio, underscore, oauth, request
 
