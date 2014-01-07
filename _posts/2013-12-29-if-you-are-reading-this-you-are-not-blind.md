@@ -77,4 +77,4 @@ When I first developed A Dark Room for the iOS, I was ignorant. I didn't think t
 
 >**Their happiness is more important to me than the happiness of 1,000 spoiled nerds with $2. It matters.**
 
-_Note: for those that are interested in downloading the game, the accessible version of the game is currently in the review process. Version 1.2 should be approved by mid January._
+_Note: for those that are interested in downloading the game, here is the link: [A Dark Room for iOS v1.2](https://itunes.apple.com/us/app/a-dark-room/id736683061?ls=1&mt=8)_
