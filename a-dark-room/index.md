@@ -62,6 +62,8 @@ A Dark Room
 
 [Giant Bomb, Cara Eillison: Top 10 Games of 2013 (honorable mention)](http://www.giantbomb.com/articles/cara-ellison-s-top-10-games-of-2013/1100-4833/)
 
+[Indie Games Top 10 Game Dev's Favorits of 2013](http://indiegames.com/2014/01/top_10_indie_game_devs_favorit_1.html)
+
 [Indie Mega Booth Podcast: A Dark Room Story Analysis and Discussion](http://indiemegabooth.com/indie-megacast-episode-11/)
 
 [The Bygone Bureau, Kevin Nguyen: Best of Arts 2013 by Elizabeth Simins](http://bygonebureau.com/2013/12/18/best-of-the-arts-2013/#elizabeth) <small>(displayed below with permission)</small>
