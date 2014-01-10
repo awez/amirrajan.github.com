@@ -1,5 +1,5 @@
 ---
-title: If You Are Reading This, You Are Not Blind
+title: Raising Awareness, the Blind use iOS Devices
 category: software-development
 layout: post
 tags : [iOS, mobile]
