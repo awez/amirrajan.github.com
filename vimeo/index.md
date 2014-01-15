@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Vimeo
-header: Vimeo
+title: Screencasts
+header: Screencasts
 group: navigation
 ---
 
