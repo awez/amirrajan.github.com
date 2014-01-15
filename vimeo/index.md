@@ -32,3 +32,11 @@ Hope you like the videos. Tips welcome. Think of it as buying me lunch for havin
         mozallowfullscreen="mozallowfullscreen"
         allowfullscreen="allowfullscreen">Coding Out Loud - Vim Ramblings and HelloRpgWorld Kata (Part 2)</iframe>
 <hr/>
+<iframe src="//player.vimeo.com/video/84241331"
+        width="100%"
+        height="300px"
+        frameborder="0"
+        webkitallowfullscreen="webkitallowfullscreen"
+        mozallowfullscreen="mozallowfullscreen"
+        allowfullscreen="allowfullscreen">Coding Out Loud - HelloRpgWorld Kata (Part 3)</iframe>
+<hr/>
