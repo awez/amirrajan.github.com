@@ -34,5 +34,5 @@ Hope you like the videos. Tips welcome. Think of it as buying me lunch for havin
 
 - Refactoring tests, when to do it, what risks exist when refactoring a test suite
 - Extracting code from a test file into a JavaScript module
-- Explores the ignore test feature of Jasmine
+- Explore the ignore test feature of Jasmine
 - Compare and contrast a module based approach vs using a "class" oriented approach in JavaScript
