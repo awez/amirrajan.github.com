@@ -42,3 +42,9 @@ Hope you like the videos. Tips welcome. Think of it as buying me lunch for havin
 - Create an Express website from scratch
 - Add Twitter Bootstrap and jQuery using Bower
 - Explore Twitter Bootstrap's grid layout system and other important Bootstrap classes
+
+##[Express, Twitter Bootstrap, and LESS](https://vimeo.com/channels/659338/84542536)
+
+- Using Twitter Bootstrap's LESS mixins
+- Adding LESS middleware to Express middle ware
+- VIM editing techniques and CSS styling "tips" (through out video)
