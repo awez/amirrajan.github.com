@@ -48,3 +48,12 @@ Hope you like the videos. Tips welcome. Think of it as buying me lunch for havin
 - Using Twitter Bootstrap's LESS mixins
 - Adding LESS middleware to Express middle ware
 - VIM editing techniques and CSS styling "tips" (through out video)
+
+##[Incorporating AngularJS into an Express app](https://vimeo.com/channels/659338/84693970)
+
+- Installing AngularJS via Bower
+- Defining an AngularJS app
+- Introduction to AngularJS's $scope service and template engine
+- Serving up json payloads from Express
+- Using AngularJS built in filters
+- Creating a custom AngularJS filter that leverages MomentJS
