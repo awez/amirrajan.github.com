@@ -57,3 +57,11 @@ Hope you like the videos. Tips welcome. Think of it as buying me lunch for havin
 - Serving up json payloads from Express
 - Using AngularJS built in filters
 - Creating a custom AngularJS filter that leverages MomentJS
+
+##[Twitter Bootstrap form components, nav components, posting to Express, and EJS partials](https://vimeo.com/channels/659338/84892795)
+
+- Brief explanation of Angular's $http service
+- Twitter Bootstrap form components
+- Accept an HTTP/POST with Express
+- EJS template engine "includes"
+- Twitter Bootstrap navbar components
