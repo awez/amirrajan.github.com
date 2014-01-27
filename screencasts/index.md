@@ -65,3 +65,10 @@ Hope you like the videos. Tips welcome. Think of it as buying me lunch for havin
 - Accept an HTTP/POST with Express
 - EJS template engine "includes"
 - Twitter Bootstrap navbar components
+
+##[Rest Apis Getting Started](https://vimeo.com/channels/659338/85154503)
+
+- NodeJS project structure (client/server assets, bower vs npm)
+- Tips for building "Rest" Apis (how to get started)
+- See the early stages of a "Rest" Api in action
+- The concept of "affordance"
