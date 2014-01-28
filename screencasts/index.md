@@ -72,3 +72,9 @@ Hope you like the videos. Tips welcome. Think of it as buying me lunch for havin
 - Tips for building "Rest" Apis (how to get started)
 - See the early stages of a "Rest" Api in action
 - The concept of "affordance"
+
+##[Rest Apis Getting Started (Part 2)](https://vimeo.com/channels/659338/85222400)
+
+- Adding a new endpoint to a Rest Api built with NodeJS
+- Using rspec (ruby) to test Rest Apis built with NodeJS
+- Deeper dive into the concept of affordance 
