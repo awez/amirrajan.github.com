@@ -78,3 +78,10 @@ Hope you like the videos. Tips welcome. Think of it as buying me lunch for havin
 - Adding a new endpoint to a Rest Api built with NodeJS
 - Using rspec (ruby) to test Rest Apis built with NodeJS
 - Deeper dive into the concept of affordance 
+
+##[Rest Apis Getting Started (Part 3)](https://vimeo.com/channels/659338/85576688)
+
+- Continue talking about affordance in Rest Apis
+- Using rspec to flush out a Rest state transition
+- TDD techniques, incremental changes, "triangulation"
+- Using the querystring module to craft links
