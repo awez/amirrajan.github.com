@@ -91,3 +91,15 @@ Hope you like the videos. Tips welcome. Think of it as buying me lunch for havin
 - Refactoring the Rest Api (“red, green, refactor”)
 - Method extraction and functional decomposition
 - Exploration of UnderscoreJS
+
+##[Rest Apis Getting Started (Part 5)](https://vimeo.com/channels/659338/86109044)
+
+- More refactoring the Rest Api (evolving software)
+- Deep dive into UnderscoreJS
+  - chain
+  - tap
+  - each
+  - map
+  - reject
+  - countBy
+
