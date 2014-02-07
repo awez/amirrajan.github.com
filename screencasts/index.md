@@ -85,3 +85,9 @@ Hope you like the videos. Tips welcome. Think of it as buying me lunch for havin
 - Using rspec to flush out a Rest state transition
 - TDD techniques, incremental changes, "triangulation"
 - Using the querystring module to craft links
+
+##[Rest Apis Getting Started (Part 4)](https://vimeo.com/channels/659338/86073155)
+
+- Refactoring the Rest Api (“red, green, refactor”)
+- Method extraction and functional decomposition
+- Exploration of UnderscoreJS
