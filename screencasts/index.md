@@ -103,7 +103,7 @@ Hope you like the videos. Tips welcome. Think of it as buying me lunch for havin
   - reject
   - countBy
 
-##[Rest Apis Getting Started (Part 6)](https://vimeo.com/86109044)
+##[Rest Apis Getting Started (Part 6)](https://vimeo.com/86721592)
 
 - Restify content negotiation and middleware
 - Restify and basic authorization
