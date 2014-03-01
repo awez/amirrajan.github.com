@@ -8,9 +8,37 @@ group: navigation
 
 <img src="/assets/images/adarkroombanner.png" style="border: solid 1px silver; padding: 3px; max-width: 100%; width: 100%" />
 
-Hope you like the game. Please rate it and let others know about it. If you need to contact me, shoot an email to ar@amirrajan.net or reach out to me on Twitter: @amirrajan. 
+**Media Coverage**
+
+[Paste Magazine, Maddy Myers: Top 20 Indie Games of 2013](http://www.pastemagazine.com/blogs/lists/2013/12/the-20-best-indie-videogames-of-2013.html)
+
+[Forbes, Daniel Nye Griffiths: Top 5 Anti-Games of 2013](http://www.forbes.com/sites/danielnyegriffiths/2013/12/22/not-the-top-5-indie-games-of-2013/)
+
+[Giant Bomb, Zoe Quinn: Top 10 Games of 2013](http://www.giantbomb.com/articles/zoe-quinn-s-top-10-games-of-2013/1100-4813/)
+
+[Giant Bomb, Cara Eillison: Top 10 Games of 2013 (honorable mention)](http://www.giantbomb.com/articles/cara-ellison-s-top-10-games-of-2013/1100-4833/)
+
+[Indie Games: Top 10 Game Dev's Favorites of 2013](http://indiegames.com/2014/01/top_10_indie_game_devs_favorit_1.html)
+
+**Support Us. Need Help?**
+
+Hope you like the game. Please rate it and let others know about it. If you need to contact me, shoot an email to ar@amirrajan.net. 
+
+Follow [@ADarkRoomiOS](https://twitter.com/adarkroomios) on Twitter. Tell your friends about the game. Say thank you to Michael ([@continuities](https://twitter.com/continuities)) and Amir ([@amirrajan](https://twitter.com/amirrajan)) for creating this experience.
+
+If you have any questions or want hints about some of the easter eggs that are hidden in the game, reach out to [ADarkRoomiOS](https://twitter.com/adarkroomios) on Twitter...it may ask for your soul as payment though. 
 
 The web based version is free to play here: [A Dark Room](http://adarkroom.doublespeakgames.com/)
+
+<hr />
+
+[Support Elizabeth Siminis on Patreon](http://www.patreon.com/elizsimins). This is one of her works.
+
+A Tribute to A Dark Room <small>(displayed with permission)</small>
+
+<img src="/assets/images/adarkroomart.jpg" style="border: solid 1px silver; padding: 3px; max-width: 100%; width 100%" />
+<img src="/assets/images/adarkroomart2.jpg" style="border: solid 1px silver; padding: 3px; max-width: 100%; width 100%" />
+<img src="/assets/images/adarkroomart3.jpg" style="border: solid 1px silver; padding: 3px; max-width: 100%; width 100%" />
 
 ##A letter to the fans of A Dark Room
 
@@ -42,32 +70,13 @@ I'm glad the game has been well received, for the most part. So far, all the rat
 
 If you enjoyed the game. Please, leave us a review in the [App Store](https://itunes.apple.com/us/app/a-dark-room/id736683061). 5 stars hopefully.
 
-**Support Us. Need Help?**
-
-Follow [@ADarkRoomiOS](https://twitter.com/adarkroomios) on Twitter. Tell your friends about the game. Say thank you to Michael ([@continuities](https://twitter.com/continuities)) and Amir ([@amirrajan](https://twitter.com/amirrajan)) for making this happen.
-
-If you have any questions or want hints about some of the easter eggs that are hidden in the game, reach out to [ADarkRoomiOS](https://twitter.com/adarkroomios) on Twitter...it may ask for your soul as payment though. 
 
 May the fire burn bright and warm for you. Sincerely,
 
 A Dark Room
 
-##Media Coverage
+**The Rest of the Story**
 
-[Paste Magazine, Maddy Myers: Top 20 Indie Games of 2013](http://www.pastemagazine.com/blogs/lists/2013/12/the-20-best-indie-videogames-of-2013.html)
+I want to make sure I keep a log of everything that's happend around the growth and popularity of A Dark Room. I hope that indie developers (or those that want to try to "make it" in the App Store) can benefit from these entries. Notable events are listed below along with any pertinent information about how it affected downloads, reviews, and anything else that influnced the success (or failure) of A Dark Room for iOS.
 
-[Forbes, Daniel Nye Griffiths: Top 5 Anti-Games of 2013](http://www.forbes.com/sites/danielnyegriffiths/2013/12/22/not-the-top-5-indie-games-of-2013/)
-
-[Giant Bomb, Zoe Quinn: Top 10 Games of 2013](http://www.giantbomb.com/articles/zoe-quinn-s-top-10-games-of-2013/1100-4813/)
-
-[Giant Bomb, Cara Eillison: Top 10 Games of 2013 (honorable mention)](http://www.giantbomb.com/articles/cara-ellison-s-top-10-games-of-2013/1100-4833/)
-
-[Indie Games: Top 10 Game Dev's Favorites of 2013](http://indiegames.com/2014/01/top_10_indie_game_devs_favorit_1.html)
-
-[Indie Mega Booth Podcast: A Dark Room Story Analysis and Discussion](http://indiemegabooth.com/indie-megacast-episode-11/)
-
-[The Bygone Bureau, Kevin Nguyen: Best of Arts 2013 by Elizabeth Simins](http://bygonebureau.com/2013/12/18/best-of-the-arts-2013/#elizabeth) <small>(displayed below with permission)</small>
-
-<img src="/assets/images/adarkroomart.jpg" style="border: solid 1px silver; padding: 3px; max-width: 100%; width 100%" />
-<img src="/assets/images/adarkroomart2.jpg" style="border: solid 1px silver; padding: 3px; max-width: 100%; width 100%" />
-<img src="/assets/images/adarkroomart3.jpg" style="border: solid 1px silver; padding: 3px; max-width: 100%; width 100%" />
+Todo...
