@@ -83,11 +83,11 @@ I want to make sure I've logged everything that's happened around the growth and
 
 **Jun 29, 2013: Picking the Development Environment**
 
-Starting off, I knew I didn't want to write an app in Objective C and XCode again. During my time off, I had already built apps using Objective C, Interface Builder, and XCode. I wanted the experience in building an app using the "recommended" development environment... It was just not fun. I've spent too much time with bloated IDE's and visual designers. I didn't want to experience that again.
+Starting off, I knew I didn't want to write an app in Objective C and XCode again. During my time off, I had already built apps using Objective C, Interface Builder, and XCode. I _wanted_ the experience in building an app using the "recommended" development environment... It was just not fun. I've spent too much time with bloated IDE's and visual designers. I didn't want to experience that again.
 
-My first few lines of A Dark Room code were still in Objective C and XCode. After a day of coding, I got fed up with the environment. I had a copy of RubyMotion sitting on my virtual shelf. I put aside my fears of "using something that isn't supported by Apple", dusted it off, and started building the app in RubyMotion instead.
+My first few lines of A Dark Room code were still in Objective C via XCode. After a day of coding, I got fed up with the environment. I had a copy of RubyMotion sitting on my virtual shelf. I put aside my fears of "using something that isn't supported by Apple", dusted it off, and started building the app in RubyMotion instead.
 
-I coded for 12 hours straight on the game. I haven't had this feeling in a very long time. Losing track of time like that.
+I coded for 12 hours straight on the game. I haven't had this feeling in a very long time... losing track of time like that.
 
 **Jul 7, 2013: A Week Later. First Playtest by a Non-Gamer**
 
@@ -99,11 +99,11 @@ I was working on the game while at the same time preparing for an Austin .Net Us
 
 **Jul 11, 2013: Realization That I Enjoy Helping Others Break Down Barriers**
 
-I Did another presentation on ASP.NET MVC web development using the dynamic capabilities of C#. I'd say that this Dallas .Net User Group presentation was the best presentation I've ever done. The turnout was huge (120+ people). I was presenting on ideas I cared about. I was trying to break down barriers for developers, and share techniques/workflows to development that just simply aren't practiced on the .Net stack. I hope I showed enough good things about fast feedback loops (out of proc build and deploys, fast test feedback), and low friction workflows (command line centric actions)... the Visual Studio IDE and Microsoft created frameworks... just don't seem to value these ideas as much. I see it more now given all the work I've now done using NodeJS, JavaScript, Rails, and RubyMotion.
+I did another presentation on ASP.NET MVC web development using the dynamic capabilities of C#. I'd say that this Dallas .Net User Group presentation was the best presentation I've ever done. The turnout was huge (120+ people). I was presenting on ideas I cared about. I was trying to break down barriers for developers, and share techniques/workflows to development that just simply aren't practiced on the .Net stack. I hope I showed enough good things about fast feedback loops (out of proc build and deploys, fast test feedback), and low friction workflows (command line centric actions). I see the importance of these things given all the work I've now done using NodeJS, JavaScript, Rails, and (now) RubyMotion.
 
 **Jul 12, 2013: The First Road Block in Developing A Dark Room**
 
-I hit my first road block. When I reached out to Michael about porting the game to iOS, I actually hadn't finished playing the web version. I never bought the compass to set out onto the Dusty Path. I thought I was making extremely good progress, but then I saw the complexity of the outside world. The economy management part of the game that I had been coding on, was just the tip of the iceberg.
+I hit my first road block. When I reached out to Michael about porting the game to iOS, I actually hadn't finished playing the web version. I never bought the compass to set out onto the Dusty Path. I thought I was making extremely good progress, but then I saw the complexity of the outside world. The economy management part of the game, that I had been coding on, was just the tip of the iceberg.
 
 The Dusty Path was really hard to fit on a small screen. It took me 10 days to figure out how to approach the next part of the game. I made tiny sample apps and tried different variations of pinch and zoom techniques, scrolling techniques, "follow the player" techniques, and skeuomorphic stuff. Before this day I thought I was so close to finishing the implementation of game....
 
@@ -113,13 +113,13 @@ I settled on a "follow the player" implementation where the map would center whe
 
 **Jul 26, 2013: Making the iOS Version My Own**
 
-At this point I needed to take a break from the Dusty Path and do some polish and play testing. The pacing in the game was an issue. It was too slow to get started. I didn't know if it was because I had played it so many times or if the game was actually just too slow to get going on a mobile medium.
+At this point I needed to take a break from the Dusty Path and do some polish and play testing. The pacing in the game was an issue. It was too slow to get started. I didn't know if it was because I had played it so many times, or if the game was actually just too slow to get going on a mobile medium.
 
 I decided to add Friedrich Nietzsche quotes that would show up randomly when you stoked the fire (to give the player something to read through the slower points in the game). This didn't make it into the final release, but were in the game for a while. I had accumulated 200 quotes and felt that it was inline with the atmosphere of the game.
 
 **Jul 28, 2013: Creativity is a Drug**
 
-I don't know what it was about these Nietzsche quotes. I think it was my first attempt at doing something different and creative... something that set this version apart from the web version. I spent the day incorporating quotes, thinking to myself how awesome it would be and how eerie it would make the game. Here are some of them:
+I don't know what it was about these Nietzsche quotes. I think it was my first attempt at doing something different and creative... something that set A Dark Room iOS apart from the web version. I spent the day incorporating quotes, thinking to myself how awesome it would be and how eerie it would make the game. Here are some of them:
 
 >every profound spirit needs a mask: even more, around every profound spirit a mask is continually growing.
 
@@ -133,13 +133,13 @@ To help again with pacing, I decided to add "flashes of events" that would show 
 
 **Jul 30, 2013: Back to Battle the Dusty Path**
 
-The quotes were in place (I was so excited about showing this to Michael). I had random Room events working too. The after effects created from spending so many days with wrestling the map on the Dusty Path had worn off. I started specing out the battle sequences now.
+The quotes were in place (I was so excited about showing this to Michael). I had random Room events working too. The after effects created from spending so many days with wrestling the map had worn off. I started specing out the battle sequences now.
 
 **Aug 1, 2013: Reflecting on the .Net Ecosystem - The Microsoft Manifesto**
 
 I haven't booted up Windows for a long period of time at this point. Most of my time was spent building A Dark Room on OSX. I still built small applications and kept my skills sharp with NodeJS, and Rails. I still paired with developers on any stack (.Net or not), and I still went to .Net User Groups to meet up with friends.
 
-But at this point I just had some (for lack of a better term) "resentment" with the .Net ecosystem (and the person I used to be). I've spent a good amount of time "on the other side" and have tried really, really hard to break down barriers for .Net developers. But I just didn't seem to be making any progress. So I took the day and wrote a blog entry about it: [The Microsoft Manifesto](http://amirrajan.net/meta/2013/08/01/the-microsoft-manifesto/).
+But at this point I just had some (for lack of a better term) "resentment" with the .Net ecosystem (and the person I used to be). I've spent a good amount of time "on the other side" and have tried really, really hard to break down barriers for .Net developers. I took the day and wrote a blog entry about my past self: [The Microsoft Manifesto](http://amirrajan.net/meta/2013/08/01/the-microsoft-manifesto/).
 
 **Aug 2, 2013: Had to Take Another Break**
 
