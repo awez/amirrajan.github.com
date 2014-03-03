@@ -77,9 +77,9 @@ A Dark Room
 
 **The Rest of the Story**
 
-Everything past this point contains spoilers. If you haven't played the game and dont want the story spoiled. Stop reading now.
+Everything past this point contains spoilers. If you haven't played the game and don't want the story spoiled. Stop reading now.
 
-I want to make sure I've logged everything that's happend around the growth and popularity of A Dark Room. I hope that indie developers (or those that want to try to "make it" in the App Store) can benefit from these entries. Notable events are listed below along with any pertinent information about how it affected downloads, reviews, emotions, and anything else that influnced the success (or failure) of A Dark Room for iOS.
+I want to make sure I've logged everything that's happened around the growth and popularity of A Dark Room. I hope that indie developers (or those that want to try to "make it" in the App Store) can benefit from these entries. Notable events are listed below along with any pertinent information about how it affected downloads, reviews, emotions, and anything else that influenced the success (or failure) of A Dark Room for iOS.
 
 **Jun 29, 2013: Picking the Development Environment**
 
@@ -91,7 +91,7 @@ I coded for 12 hours straight on the game. I haven't had this feeling in a very 
 
 **Jul 7, 2013: A Week Later. First Playtest by a Non-Gamer**
 
-I got huts working and had implemented population growth. The game was far from complete. But I took the chance and showed it to a non gamer. They were throughly confused. But slowly got pulled into the game and had built "a tiny village". I consistently heard "it needs pictures, it needs visuals". I actually thought about adding black and white background images to the game that would change as the player progressed... but I wanted to have a complete game before adding my own creativity to it.
+I got huts working and had implemented population growth. The game was far from complete. But I took the chance and showed it to a non gamer. They were thoroughly confused. But slowly got pulled into the game and had built "a tiny village". I consistently heard "it needs pictures, it needs visuals". I actually thought about adding black and white background images to the game that would change as the player progressed... but I wanted to have a complete game before adding my own creativity to it.
 
 **Jul 8, 2013: Realization That I was Growing as a Developer**
 
@@ -119,7 +119,7 @@ I decided to add Friedrich Nietzsche quotes that would show up randomly when you
 
 **Jul 28, 2013: Creativity is a Drug**
 
-I don't know what it was about these Nietzche quotes. I think it was my first attempt at doing something different and creative... something that set this version apart from the web version. I spent the day incorporating quotes, thinking to myself how awesome it would be and how erie it would make the game. Here are some of them:
+I don't know what it was about these Nietzsche quotes. I think it was my first attempt at doing something different and creative... something that set this version apart from the web version. I spent the day incorporating quotes, thinking to myself how awesome it would be and how eerie it would make the game. Here are some of them:
 
 >every profound spirit needs a mask: even more, around every profound spirit a mask is continually growing.
 
@@ -181,7 +181,7 @@ All of September went to the Dusty Path. Made sure all the different city and to
 
 The Dusty Path is finally to a point where all the events work and the spaceship can be unlocked. I have saving working. A number of my friends and family have play tested the game to this point (and have frankly gotten sick of it).
 
-During this time period I removed the Nietzche quotes. It just led to confusion and the pacing was good enough with the gather wood storyline events. Reading all those quotes helped shape the storyline I put in place. Particularly this quote:
+During this time period I removed the Nietzsche quotes. It just led to confusion and the pacing was good enough with the gather wood storyline events. Reading all those quotes helped shape the storyline I put in place. Particularly this quote:
 
 >a dictator divides mankind into two classes: tools and enemies.
 
@@ -205,7 +205,7 @@ I couldn't believe it. I had a fully functioning game from beginning to end. I k
 
 This is a testament to how awesome and brilliant Michael is. He appreciated the changes I made to the storyline, and loved the enhancements I made to the mobile version of the game. It was as simple as that. He just said, "That's awesome! I like it!" Suffice to say that a huge weight was lifted off of my shoulders. We got to talking in fact about the intricacies of the game. I mentioned that most of the game could have been played without any villagers if iron, coal and sulphur could be mined by the player. Michael said "Hey, why don't you add that? Add a solo mode with an alternate ending?"
 
-**Oct 30, 2013: Incorporating Micheal's Feedback**
+**Oct 30, 2013: Incorporating Michael's Feedback**
 
 The primary feedback that I got was removal of pronouns. I didn't realize it, but no part of the web version referred to the player as "you" or "I" or "us". I also incorporated the solo mode and alternate ending to the game. Play testing. Play testing. More play testing. More tweaking. More play testing.
 
@@ -273,7 +273,7 @@ The game up to this point has had 245 downloads over an 18 day period (that's 13
 
 >What was a simple and elegant game should not have been messed with. I regret spending $2 on such a mess. Not only is the UI counter-intuitive and clumsy, but the mobile designer took far too much creative license in altering the original statistics and proportions put in place by Michael Townsend, original designer. Additionally, there is a bug that results in permanent thieves with no way to deter them, making the game essentially unplayable.
 
-What do I do? I played through the game hundreds of times. Meticulously place every button, every interaction. There was no bug in the thieves, I checked 10 times to make sure (just impatience on the part of the player, and unlucky random number generation). One bad review off sets 100 good ones. To this day I feel the pains of this review. I see it as incredibly brutal. Empathy was something I've learned through my time as an independent developer. I understood how frustrating it is to pay for an app and get delivered "shit". So I apologized on this "support" page. I have no idea if blewis1234 will ever read anything on this page. But I hope at some point, he'll re-rate the game.
+What do I do? I played through the game hundreds of times. Meticulously place every button, every interaction. There was no bug in the thieves, I checked 10 times to make sure (just impatience on the part of the player, and unlucky random number generation). One bad review offsets 100 good ones. To this day I feel the pains of this review. I see it as incredibly brutal. Empathy was something I've learned through my time as an independent developer. I understood how frustrating it is to pay for an app and get delivered "shit". So I apologized on this "support" page. I have no idea if blewis1234 will ever read anything on this page. But I hope at some point, he'll re-rate the game.
 
 **Nov 26, 2013: Game Back Story, an Apology, and a Post to Hacker News**
 
@@ -283,7 +283,7 @@ I updated the support page for A Dark Room to include some back story. The name 
 
 Cassandra Khaw (@casskhaw), an editor at USGamer, tweets about A Dark Room on iOS. Again because of an interaction from @ADarkRoomiOS. I'm getting more involved in the indie gamer community. Courtney, Leigh, and Cassandra are all people that @ADarkRoomiOS (and by extension I) follow. That day the downloads spiked to 45. The largest single day download for A Dark Room iOS. The download trend didn't last. Every time I think the download trend will hold, it doesn't.
 
-I also came across a video review Chris Charlton (@reasonjp) did on the [iOS version of the game](http://kaijupop.com/2013/11/iospc-quick-vid-dark-room/). It was an incredible review, and it truely made my day. These small wins help me get through each disappointment in the number of downloads.
+I also came across a video review Chris Charlton (@reasonjp) did on the [iOS version of the game](http://kaijupop.com/2013/11/iospc-quick-vid-dark-room/). It was an incredible review, and it truly made my day. These small wins help me get through each disappointment in the number of downloads.
 
 **Dec 10, 2013: Blind Gamers Are Playing A Dark Room**
 
@@ -303,7 +303,7 @@ Maddy Myers was part of the discussion on the Indie Mega Booth podcast. She's an
 
 **Dec 22, 2013: Someone Stopped Playing Because of Slaves**
 
-The first public comment about the slaves in the mobile version was posted on Michaels blog. My biggest fear is the vengeful 1 star review. I already had one... I didn't want another:
+The first public comment about the slaves in the mobile version was posted on Michael's blog. My biggest fear is the vengeful 1 star review. I already had one... I didn't want another:
 
 >I am hoping someone can help. I started to play through and had carted wood to the point the population becomes slaves. I then had thieves and it was taking so long to stop them that I thought you were supposed to stop carting wood before your population became slaves. So I reset. I left the cart alone even though it had a “!” Next to it. I know have the entire map uncovered, I have been to every location and have used the jewel. I have the space ship but I have no option to upgrade it even though I have 40 alien alloy. Is this a bug because I ignored the cart for so long or am I missing something. Very frustrating as I will NOT be replying to get to this point.
 
@@ -325,7 +325,7 @@ I waited till the next day. I woke up in the morning and checked the downloads..
 
 **Dec 28, 2013: [Elizabeth Siminis (@ElizSimins)](http://cargocollective.com/eliz) and Patreon**
 
-After seeing her art work on Bygon Bereau, I reached out to Elizabeth and asked here if I could put her piece on A Dark Room's support page. She said yes :-) Another bit of good news to keep my spirits up. Thank you Elizabeth, I'm forever grateful that you allowed me to showcase your work here (it's at the top of this page). Her work also led me to discover [Patreon](http://www.patreon.com/elizsimins). I'm amazed at how technology has given a means for artists to showcase their works. Removing the middle man and making it easy for artists to promote their own works is a big deal.
+After seeing her art work on Bygon Bereau, I reached out to Elizabeth and asked her if I could put her piece on A Dark Room's support page. She said yes :-) Another bit of good news to keep my spirits up. Thank you Elizabeth, I'm forever grateful that you allowed me to showcase your work here (it's at the top of this page). Her work also led me to discover [Patreon](http://www.patreon.com/elizsimins). I'm amazed at how technology has given a means for artists to showcase their works. Removing the middle man and making it easy for artists to promote their own works is a big deal.
 
 **Jan 1, 2014: First Check From Apple**
 
@@ -335,13 +335,13 @@ First check comes in. The grand totals for the month of November:
 - Downloads: 403
 - Reviews: 5 five-star reviews, 1 one-star review
 - RPG Rank: 567th at its low point, 27th at its height
-- overall Rank: 1479th for two days (metrics below the 1500th placement aren't kept in AppAnnie)
+- overall Rank: 1479 th for two days (metrics below the 1500th placement aren't kept in AppAnnie)
 
 **Jan 4, 2014: The Accessible Version of A Dark Room is Release**
 
 I worked through the holidays to get the accessible version of A Dark Room completed. It spent about 5 days in the approval process and then finally released on the 4th. I let Orinks and Aaron know about the updates and they subsequently let their respective communities know. The downloads spiked to about 40 downloads for the next two days. I really didn't care about the downloads this time around. I wanted to do the right thing. I also ended up writing about what it took to make A Dark Room accessible: [Raising Awareness, the Blind use iOS Devices](http://amirrajan.net/software-development/2013/12/29/if-you-are-reading-this-you-are-not-blind/).
 
-Given the accessibilty updates and the recent media coverage for A Dark Room, I changed the App Store description too:
+Given the accessibility updates and the recent media coverage for A Dark Room, I changed the App Store description too:
 
 >Awake. Head throbbing. Vision blurry. 
 
@@ -361,7 +361,7 @@ I also nerfed thieves a little bit... you're welcome blewis1234 ;-)
 
 **Jan 5, 2014: Changes in Routine**
 
-The iOS version of the game is solid. I still get a little ansty releasing updates and brace for insta-crashes on my iPad Air. It hasn't happend again though. With a little bit of breathing room, I started working through Land of Lisp and started studying Clojure. I also started doing screen casts on NodeJS development (my Coding Out Loud screencasts). @ADarkRoomiOS's Twitter remained active. I kept interacting with fans. It was a great way to relax and joke around with the community.
+The iOS version of the game is solid. I still get a little antsy releasing updates and brace for insta-crashes on my iPad Air. It hasn't happened again though. With a little bit of breathing room, I started working through Land of Lisp and started studying Clojure. I also started doing screencasts on NodeJS development (my Coding Out Loud screencasts). @ADarkRoomiOS's Twitter remained active. I kept interacting with fans. It was a great way to relax and joke around with the community.
 
 I also started work on a "spiritual" sequel to A Dark Room. Lots of HTML5 canvas work and AngularJS. Nodekick (the NodeJS game that Team Us built for Node Knockout 2013) also got cleaned up.
 
@@ -387,17 +387,17 @@ Another wonderful interaction for @ADarkRoomiOS. This time a random follower of 
 
 I asked if Pocket Tactics would like to do a review on A Dark Room. Owen replied and I sent over a promo code (yay!).
 
-On Feb 4th, Owen emailed with the word: "Amazing". I hope to see a review show up soon on Pocket Tactics. I try to be diligent on following up with Owen... without being annoying. It's hard to find a good balance between the two. A review hasn't gone up yet. But after another release of the game I'll be sure to follow up with Owen. I hope he doesn't take offense to my persistence.
+On Feb 4th, Owen emailed with the word: "Amazing". I hope to see a review show up soon on Pocket Tactics. I try to be diligent in following up with Owen... without being annoying. It's hard to find a good balance between the two. A review hasn't gone up yet. But after another release of the game I'll be sure to follow up with Owen. I hope he doesn't take offense to my persistence.
 
 **Jan 19, 2014: Apple Vis Promo Code Give Away**
 
-The blog post I wrote about accessibilty received some buzz in the blind community. The AppleVis editorial team reached out to me. They wanted to run a promo code give away. I sent them 10 promo codes and they did something really unique. Instead of just giving them away, they asked individuals to go read about the blog post I did on making the game accessible to the blind, and about the making of the game. They had to mention something from the write ups to get a promo code. It was a great idea, and I saw a lot of nice things said about the game.
+The blog post I wrote about accessibility received some buzz in the blind community. The AppleVis editorial team reached out to me. They wanted to run a promo code give away. I sent them 10 promo codes and they did something really unique. Instead of just giving them away, they asked individuals to go read about the blog post I did on making the game accessible to the blind, and about the making of the game. They had to mention something from the write ups to get a promo code. It was a great idea, and I saw a lot of nice things said about the game.
 
-Downloads spiked to 50 during the contest period. I'm burnig through my promo codes, but they are generating results.
+Downloads spiked to 50 during the contest period. I'm burning through my promo codes, but they are generating results.
 
 **Jan 26, 2014: Promo Code Give Away on Touch Arcade**
 
-I took Apple Vis' idea and gave away 20 promo codes across two seperate contests. The interations I had with the fans (old and new) was great. A lot kind words and genuine support.
+I took Apple Vis' idea and gave away 20 promo codes across two separate contests. The interactions I had with the fans (old and new) was great. A lot kind words and genuine support.
 
 For the last four days of January, stayed at a steady 40 downloads a day (many of those were promo code redemptions too). 
 
@@ -415,25 +415,25 @@ Second check comes in. The grand totals for the month of December:
 
 So a bit of background about the iOS version and its ending game sequence. The starship represents the end of the game. It is only unlocked once you've progressed far enough in the story line. If a player avoids storyline progression, they are effectively stuck, and can't complete the game. The villagers turning into slaves leaves another person in this stuck state:
 
->Also I would like to mention that I liked this game until I found out I was getting screwed over.  I am playing it on an iPhone 4.  Just hoping you guys can fix this before a flood of unhappy folks come by and take your stars down a notch.  And no I haven't rated your game because I am not the vengeful type.  Video games are hard to make and it seems you put a lot of effort into this.  I am sending you screen shots of my game. 
+>Also I would like to mention that I liked this game until I found out I was getting screwed over.  I am playing it on an iPhone 4.  Just hoping you guys can fix this before a flood of unhappy folks come by and take your stars down a notch.  And no I haven't rated your game because I am not the vengeful type.  Video games are hard to make and it seems you put a lot of effort into this.  I am sending you screenshots of my game. 
 
-The player was kind enough to include screen shots of his current game. I didn't need to look (but I did anyways). He stopped progressing the story line...
+The player was kind enough to include screenshots of his current game. I didn't need to look (but I did anyways). He stopped progressing the story line...
 
->Every time you gather wood the storyline progresses toward the end. There is an alternate ending too. Some people are sad with how the story line progresses. The alternated approach to playing the game (though much harder) leads to a happier ending. Let me know if you have any other questions. And I love hearing from fans. So don't hesitate to reach out Daniel. And thanks for the detailed screenshots :-)
+>Every time you gather wood the storyline progresses toward the end. There is an alternate ending too. Some people are sad with how the storyline progresses. The alternative approach to playing the game (though much harder) leads to a happier ending. Let me know if you have any other questions. And I love hearing from fans. So don't hesitate to reach out Daniel. And thanks for the detailed screenshots :-)
 
 He replied with:
 
->Mmm.  I see now.  Lol I was trying not to further my slave owner persona.  You know if you made a instruction manual and just mentioned a few things, I'm sure this app will be an even better hit. (Example I thought the carbine shot bullets not battery's, because there is a actual rifle named the carbine.  I think its ww2 era). I think any one who played the older call of duties would make this mistake: Thanks for your help.  Say, if I could rack your brain, do I not need to build huts to get the new ending, or could I build huts but just not gather wood?
+>Mmm.  I see now.  Lol I was trying not to further my slave owner persona.  You know if you made a instruction manual and just mentioned a few things, I'm sure this app will be an even better hit. (Example I thought the carbine shot bullets not battery's, because there is a actual rifle named the carbine.  I think its ww2 era). I think anyone who played the older call of duties would make this mistake: Thanks for your help.  Say, if I could rack your brain, do I not need to build huts to get the new ending, or could I build huts but just not gather wood?
 
 And a happy ending:
 
 >Hey thanks!  I sure will.  I left a positive review in the App Store.  I found this game on reddit.  I highly recommend creating a user account and posting something like "great iOS game, free downloads for the first 5 commenters". In the description write please leave review and comment for download.  Those people usually will help generate your sales.  I found a post about this game in r/gaming.  Good luck and thank you for answering my emails.  I really thought the game was busted.  Lol
 
-I ended up putting a more assertive message about gathering wood to progress the story line within the game. In version 1.4, when you stoke the fire (and there is a story line element that needs to be dealt with). You get a small message "need to gather wood, the forest beckons". This will hopefully help guide future gamers.
+I ended up putting a more assertive message about gathering wood to progress the storyline within the game. In version 1.4, when you stoke the fire (and there is a story line element that needs to be dealt with). You get a small message "need to gather wood, the forest beckons". This will hopefully help guide future gamers.
 
 **Feb 5, 2014: Promo Code Give Away on Reddit**
 
-I'm burning through my promo codes at this point. The Apple Vis approach to giving away promo codes. Leads to a much deeper connection with the fans of the game. It's meaningful and I enjoy hearing all the good conversations. I ran a couple of promo code give aways on Reddit.
+I'm burning through my promo codes at this point. The Apple Vis approach to giving away promo codes. Leads to a much deeper connection with the fans of the game. It's meaningful and I enjoy hearing all the good conversations. I ran a couple of promo code giveaways on Reddit.
 
 Downloads spiked to 40 that day.
 
@@ -443,19 +443,19 @@ I was down to my last 15 codes. I Reached out to Cara Ellison on Twitter about g
 
 **Feb 11, 2014: A Hail Mary to Brandon Boyer**
 
-I'm getting more cautions at this point (I'm down to 9 codes). I'm scouring Twitter for connections, people to reach out to. People that may respond. @Kotaku follows only 41 people and is followed by over 300 thousand. A fairly currated list of followers.
+I'm getting more cautions at this point (I'm down to 9 codes). I'm scouring Twitter for connections, people to reach out to. People that may respond. @Kotaku follows only 41 people and is followed by over 300 thousand. A fairly curated list of followers.
 
-There were two people on this list that I had hopes in responding: Leigh Alexander (@leighalexander) and Brandon Boyer (@brandonnn). Both had a large number of followers and (based on their profiles) are receptive to indie developers. Brandon Boyer and Cara Ellison follow eachother. Leigh Alexander and Maddy Myers follow each other.... is this borderline stalking? ... XD 
+There were two people on this list that I had hopes in responding: Leigh Alexander (@leighalexander) and Brandon Boyer (@brandonnn). Both had a large number of followers and (based on their profiles) are receptive to indie developers. Brandon Boyer and Cara Ellison follow each other. Leigh Alexander and Maddy Myers follow each other.... is this borderline stalking? ... XD 
 
-I end up emailing Brandon Boyer. I tried not to send him a wall of text (it happend anyways). But Brandon replied after a few days (yay!). I sent over a promo code. Now I just have to wait T_T.
+I end up emailing Brandon Boyer. I tried not to send him a wall of text (it happened anyways). But Brandon replied after a few days (yay!). I sent over a promo code. Now I just have to wait T_T.
 
 **Feb 12, 2014: Appcessible Podcast**
 
-Around this same time Jonathan Mosen reached out to me. He is another individual from the blind community and came across the blog entry I did on adding accessibilty enhancments to A Dark Room. He wanted to have me on a new podcast he was launching for the blind community. I said yes (of course), [here is a link to the podcast](http://www.appcessible.net/talking-apps-podcast-episode-2-amir-rajan/).
+Around this same time Jonathan Mosen reached out to me. He is another individual from the blind community and came across the blog entry I did on adding accessibility enhancements to A Dark Room. He wanted to have me on a new podcast he was launching for the blind community. I said yes (of course), [here is a link to the podcast](http://www.appcessible.net/talking-apps-podcast-episode-2-amir-rajan/).
 
 **Feb 13, 2014: Price Dropped on Game to $0.99 (50% off Sale)**
 
-A Dark Room is now hovering near the top 10 under the RPG Category. I didn't want the ranking to drop. I'm down to 6 promocodes, I have a pending release, but haven't pushed it yet. So I dropped the price of A Dark Room by 50% ($0.99).
+A Dark Room is now hovering near the top 10 under the RPG Category. I didn't want the ranking to drop. I'm down to 6 promo codes, I have a pending release, but haven't pushed it yet. So I dropped the price of A Dark Room by 50% ($0.99).
 
 I tweeted about it, a bunch of people tweeted about it. Pocket Tactics wrote up a short piece on the game being half off. There was an unsolicited Reddit post on the price drop. There was an unsolicited post on Touch Arcade. I woke up the next day I look at the downloads. They spiked to 351 in one day.
 
@@ -479,10 +479,12 @@ Sent an email to the RubyMotion team telling them about the success the game has
 
 **Feb 27, 2013: Another Release Of A Dark Room, The Review Me Button**
 
-There is always a side effect to releasing a new version of the app to the App Store. The first is that you "lose" all the reviews for the current version of the App. The second is that you gate more promo codes.
+There is always a side effect to releasing a new version of the app to the App Store. The first is that you "lose" all the reviews for the current version of the App. The second is that you get more promo codes.
 
-A Dark Room's current version has 56 five star reviews, 1 one star review, and 1 four star review. The app ranking was already shot to hell (relative to where it was before). So I figured this would be a good time to do an update. I added the "you better go gather wood" notification to help move the story along. I made more accessibilty enhancements to the game to make a little bit easier for the blind to navigate the Dusty Path. And I added a "review me" button to the game. The app is currently in the App Store's review process. I'll update this log as soon as I get the results/side effects from making these changes.
+A Dark Room's current version has 56 five star reviews, 1 one star review, and 1 four star review. The app ranking was already shot to hell (relative to where it was before). So I figured this would be a good time to do an update. I added the "you better go gather wood" notification to help move the story along. I made more accessibility enhancements to the game to make a little bit easier for the blind to navigate the Dusty Path. And I added a "review me" button to the game. The app is currently in the App Store's review process. I'll update this log as soon as I get the results/side effects from making these changes.
 
 **March 3, 2014: Slides Complete for my First Presentation at a Ruby User Group - 12k Lines of RubyMotion**
 
-A lot is still up in the air at this point. Version 1.4 is waiting for release. I've permanently dropped the price of A Dark Room to $0.99. I'm hoping that Owen from Pocket Tactics shows some love to A Dark Room on his website. I'm hoping that Leigh publishes the interview questions. I'm hoping that Brandon gets back to me about his thoughts on the game with any help he can provide. I'm hoping the RubyMotion team likes the slides I've sent them and that I'll get some visibilty with them too. I'm hoping that my first presentation at a Ruby user group goes well. Lots of hope... few answers at this point.
+A lot is still up in the air at this point. Version 1.4 is waiting for release. I've permanently dropped the price of A Dark Room to $0.99. I'm hoping that Owen from Pocket Tactics shows some love to A Dark Room on his website. I'm hoping that Leigh publishes the interview questions. I'm hoping that Brandon gets back to me about his thoughts on the game with any help he can provide. I'm hoping the RubyMotion team likes the slides I've sent them and that I'll get some visibility with them too. I'm hoping that my first presentation at a Ruby user group goes well. Lots of hope... few answers at this point.
+
+
