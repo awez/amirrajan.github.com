@@ -14,7 +14,7 @@ group: navigation
 
 [Forbes, Daniel Nye Griffiths: Top 5 Anti-Games of 2013](http://www.forbes.com/sites/danielnyegriffiths/2013/12/22/not-the-top-5-indie-games-of-2013/)
 
-[Giant Bomb, Zoe Quinn: Top 10 Games of 2013](http://www.giantbomb.com/articles/zoe-quinn-s-top-10-games-of-2013/1100-4813/)
+[Giant Bomb, Staff Pick: Top 10 Games of 2013](http://www.giantbomb.com/articles/zoe-quinn-s-top-10-games-of-2013/1100-4813/)
 
 [Giant Bomb, Cara Eillison: Top 10 Games of 2013 (honorable mention)](http://www.giantbomb.com/articles/cara-ellison-s-top-10-games-of-2013/1100-4833/)
 
@@ -77,15 +77,15 @@ A Dark Room
 
 **The Rest of the Story**
 
-I want to make sure I an logged of everything that's happend around the growth and popularity of A Dark Room. I hope that indie developers (or those that want to try to "make it" in the App Store) can benefit from these entries. Notable events are listed below along with any pertinent information about how it affected downloads, reviews, and anything else that influnced the success (or failure) of A Dark Room for iOS.
+I want to make sure I've logged everything that's happend around the growth and popularity of A Dark Room. I hope that indie developers (or those that want to try to "make it" in the App Store) can benefit from these entries. Notable events are listed below along with any pertinent information about how it affected downloads, reviews, emotions, and anything else that influnced the success (or failure) of A Dark Room for iOS.
 
 **Jun 29, 2013: Picking the Development Environment**
 
-Starting off, I knew I didn't want to write an app in Objective C and XCode again. During my time off, I had already built apps using Objective C, Interface Builder and XCode. I wanted the experience in building an app using the "recommended" development environment... It was just not fun. I've spent too much time with bloated IDE's and visual designers. I didn't want to experience that again.
+Starting off, I knew I didn't want to write an app in Objective C and XCode again. During my time off, I had already built apps using Objective C, Interface Builder, and XCode. I wanted the experience in building an app using the "recommended" development environment... It was just not fun. I've spent too much time with bloated IDE's and visual designers. I didn't want to experience that again.
 
 My first few lines of A Dark Room code were still in Objective C and XCode. After a day of coding, I got fed up with the environment. I had a copy of RubyMotion sitting on my virtual shelf. I put aside my fears of "using something that isn't supported by Apple", dusted it off, and started building the app in RubyMotion instead.
 
-I Coded for 12 hours straight on the game. I haven't had this feeling in a very long time. Losing track of time like that.
+I coded for 12 hours straight on the game. I haven't had this feeling in a very long time. Losing track of time like that.
 
 **Jul 7, 2013: A Week Later. First Playtest by a Non-Gamer**
 
@@ -93,23 +93,23 @@ I got huts working and had implemented population growth. The game was far from 
 
 **Jul 8, 2013: Realization That I was Growing as a Developer**
 
-I was working on the game while at the same time preparing for an Austin .Net user group presantation on using the dynamic capabilities of C#. It's really interesting being proficient in multiple languages now. It's a perspective thats hard to describe. The presentation went well.
+I was working on the game while at the same time preparing for an Austin .Net User Group presantation on using the dynamic capabilities of C#. It's really interesting being proficient in multiple languages now. It's a perspective thats hard to describe. The presentation went well.
 
 **Jul 11, 2013: Realization That I Enjoy Helping Others Break Down Barriers**
 
-I Did another presentation on ASP.NET MVC web development using the dynamic capabilities of C#. I'd say that this Dallas .Net User Group presentation was the best presentation I've ever done. The turn out was huge (120+ people). I was presenting on ideas I cared about. I was trying to break down barriers for developers, and sharing techniques/workflows to development that just simply aren't practiced on the .Net stack. I hope I showed enough good things about fast feedback loops (out of proc build and deploys, fast test feedback), and low friction workflows (command line centric actions)... the Visual Studio IDE and Microsoft created frameworks... just don't seem to value these ideas as much. I see it more now given all the work I've now done using NodeJS, JavaScript, Rails, and RubyMotion.
+I Did another presentation on ASP.NET MVC web development using the dynamic capabilities of C#. I'd say that this Dallas .Net User Group presentation was the best presentation I've ever done. The turn out was huge (120+ people). I was presenting on ideas I cared about. I was trying to break down barriers for developers, and share techniques/workflows to development that just simply aren't practiced on the .Net stack. I hope I showed enough good things about fast feedback loops (out of proc build and deploys, fast test feedback), and low friction workflows (command line centric actions)... the Visual Studio IDE and Microsoft created frameworks... just don't seem to value these ideas as much. I see it more now given all the work I've now done using NodeJS, JavaScript, Rails, and RubyMotion.
 
 **Jul 12, 2013: The First Road Block in Developing A Dark Room**
 
-I hit my first road block. When I reached out to Michael about porting the game to iOS, I actually hadn't finished playing the web version. I never bought the compass to set out onto the Dusty Path. I thought I was making extremely good progress, but then I saw the complexity of the outside world. The economy management was just the tip of the iceberg. The size of the Dusty Path was also a challenge to fit on a tiny screen.
+I hit my first road block. When I reached out to Michael about porting the game to iOS, I actually hadn't finished playing the web version. I never bought the compass to set out onto the Dusty Path. I thought I was making extremely good progress, but then I saw the complexity of the outside world. The economy management part of the game that I had been coding on, was just the tip of the iceberg.
 
-It took me 10 days to figure out how to approach the next part of the game. I made tiny sample apps and tried different variations of pinch and zoom techniques, scrolling techniques, "follow the player" techniques, and skeumorphic stuff. Before this day I thought I was so close to finishing the implementation of game....
+The Dusty Path was really hard to fit on a small screen. It took me 10 days to figure out how to approach the next part of the game. I made tiny sample apps and tried different variations of pinch and zoom techniques, scrolling techniques, "follow the player" techniques, and skeumorphic stuff. Before this day I thought I was so close to finishing the implementation of game....
 
 **Jul 21, 2013: I Want to Stab Cocoa UI In the Face**
 
-I settled on a "follow the player" implemenation where the map would center when the player moved on the map. You could scroll around the map if you needed, but as soon as you moved again, it would refocus to your current location. I had to use two layers of overlapping labels to represent landmarks and terrain (Cocoa UILabels can only have one format/font). It took 5 days to get the labels lined up and scrolling correctly. Fifteen days, just gone on trying to display a map...
+I settled on a "follow the player" implemenation where the map would center when the player moved on the map. You could scroll around the map if you needed, but as soon as you moved again, it would refocus to your current location. I had to use two layers of overlapping labels to represent landmarks and terrain (Cocoa UILabels can only have one format/font). It took 5 days to get the labels lined up and scrolling correctly. Fifteen days, just gone on trying to display a map.
 
-**Jul 26, 2013: Making the iOS Version my Own**
+**Jul 26, 2013: Making the iOS Version My Own**
 
 At this point I needed to take a break from the Dusty Path and do some polish and play testing. The pacing in the game was an issue. It was too slow to get started. I didn't know if it was because I had played it so many times or if the game was actually just too slow to get going on a mobile medium.
 
@@ -141,19 +141,21 @@ But at this point I just had some (for lack of a better term) "resentment" with 
 
 **Aug 2, 2013: Had to Take Another Break**
 
-Again. Had to take a break from the Dusty Path. Combat was working at a cursory level... mostly just animations. The battle sequence was pretty much a real time game with a timer running at 10 frames per second. I'm making a real time game using Cocoa controls as opposed to sprites and a canvas... kind of felt weird about that. But it worked.
-
-**Aug 7, 2013: Still Trying to Push Through**
+Development on A Dark Room started to slow down a bit (I hit a bit of a low point in motivation). Combat was working at a cursory level... mostly just animations. The battle sequence was pretty much a real time game with a timer running at 10 frames per second. I was making a real time game using Cocoa controls as opposed to sprites and a canvas... kind of felt weird about that. But it worked.
 
 5 days on and off to work through the loot screen (the screen that came up after you won a battle). Pixel pushing labels and buttons. At this point I dread any kind of UI work in iOS. 
 
 **Aug 13, 2013: Another Realization That I Was Becoming a Better Developer**
 
-I was scheduled to speak at Austin Code Camp. I was going to do a presentation on an array of front end JavaScript frameworks. I spent the next few days working on the presentation and spent some time preparing a lighting talk about how you could use VIM for C# development. I also helped one of my friends (Chris Holt), prepare for his presentation on F#. Here I am, 4 months into my "sabbatical". I'm proficient with C#/F#, JavaScript, Objective C, Ruby, VIM, Visual Studio, and XCode.
+I was scheduled to speak at Austin Code Camp. I was going to do a presentation on an array of front end JavaScript frameworks. I spent the next few days working on the presentation and spent some time preparing a lighting talk about how you could use VIM for C# development. I also helped one of my friends (Chris Holt), prepare for his presentation on F#. Here I am, 4 months into my "sabbatical". Every day, gaining proficientcy with C#/F#, JavaScript, Objective C, Ruby, VIM, Visual Studio, and XCode.
 
 **Aug 25, 2013: Taking a Break to Scratch a NodeJS Itch**
 
-I've spent the last 8 days on the Dusty Path. Adding the Iron Mine, Coal Mine, Sulfur Mine, working through road creation, and working through unlocking workshop items. Needed another break. I spent the next week working on a Twitter mashup written in NodeJS (github.com/amirrjan/sortis).
+I've spent the last 8 days on the Dusty Path. Adding the Iron Mine, Coal Mine, Sulfur Mine, working through road creation, and working through unlocking Workshop items. I Needed another break. I spent the next week working on a Twitter mashup written in NodeJS (github.com/amirrjan/sortis).
+
+**Sep 18, 2013: My First "Not .Net" Presentation**
+
+I did my very first presentation on NodeJS. It was a quasi workshop that went through a number of NodeJS applications I've built. I helped developers build and deploy their first NodeJS applications to Nodejitsu and Heroku. It was lots of fun :-)
 
 **Sep 19, 2013: .Net OSS is DOA**
 
@@ -161,40 +163,43 @@ Development of the game continues. Play testing and tweaking the Dusty Path. I w
 
 Another internal struggle with .Net development. I've tried to have discourse on Twitter with a number of .Net devs. I built a Twitter mashup to help me manage that discourse because I was having so many conversations at once. At this point I've learned (or at least gotten better) at objectively analyzing risk and reward. Using NodeJS and Ruby Motion, I have now have a better understanding of what OSS _really_ looks like. So I put another blog post up: [.Net OSS is DOA](http://amirrajan.net/meta/2013/09/19/perception-is-reality-dot-net-oss/). This one got some attention. I wanted to (again) help developers break down barriers and see that all the "answers" don't exist in any single stack.
 
-I was berated by my peers. I was "just plain wrong", that it was "just an opinion", and that "I was sorely misguided". "Here we go again with all the .Net OSS whining". I felt labeled as just some dude with a lot of angst. I wish I never wrote this blog entry.
+I was berated by my peers. I was "just plain wrong", I was told it's "just an opinion", and that "I was sorely misguided". Another dev tweets, "Here we go again with all the .Net OSS whining". I felt labeled as just some dude with a lot of angst. I wish I never wrote this blog entry.
 
 **Sep 25, 2013: I'm Done Debating With Expert .Net Developers and Dealing With the .Net Mono Culture**
 
-Another heated debate on Twitter. This time with regards to test driven development and behavior driven development. I now understand the term "strong opinons, strongly held". At this point, I knew I was done debating with experts of the .Net stack. They have formed and solidified their opinons about "how things should be done". So I'm done trying to be respected/acknowledged by these individuals. I've wasted my breath too many times trying to get these guru's to see that they don't have it all figured out (no one has it all figured out, and you're selling yourself short if you think you do).
+Another heated debate on Twitter. This time with regards to test driven development and behavior driven development. I now understand the term "strong opinons, strongly held". At this point, I knew I was done debating with experts of the .Net stack. Many (not all) have formed and solidified their opinons about "how things should be done". So I'm done trying to be respected/acknowledged by these individuals. I've wasted my breath too many times trying to get these guru's to see that they don't have it all figured out (no one has it all figured out, and you're selling yourself short if you think you do).
 
 I didn't write a "Farewell .Net" blog post. It would have been a waste of my breath. 
 
 **Oct 1, 2013: The Play Testing Grind... This is Not Fun**
 
-All of september went to the Dusty Path. Making sure all the different city and town events showed up. Made sure the workshop items and workers unlocked correctly. Made sure map state rolled back if the player dies. I chatted with Michael about this. How the hell he managed to test all this... He did what I did, just grinded through it. I spent 2 days creating an automated test suite afterwards which tested all the different random paths the events could take. Glad I did that. Even with all the manual testing, I still had a number of bugs. 
+All of September went to the Dusty Path. Made sure all the different city and town events showed up. Made sure the workshop items and workers unlocked correctly. Made sure map state rolled back if the player dies. I chatted with Michael about this. How the hell he managed to test all this... He did what I did, just grinded through it. I spent 2 days creating an automated test suite. It tested all the different random paths the events could take. Glad I did that. Even with all the manual testing, I still had a number of bugs. 
 
 **Oct 19, 2013: A Dusty Path Complete. I Hate You Micheal (in a good way)**
 
-The Dusty Path is finally to a point where all the events work and the spaceship can be unlocked. I have saving working. A number of my friends and family have play tested the game to this point (and have frankly gotten sick of it...).
+The Dusty Path is finally to a point where all the events work and the spaceship can be unlocked. I have saving working. A number of my friends and family have play tested the game to this point (and have frankly gotten sick of it).
 
-During this time period I removed the Nietzche quotes. It just led to confusion and the pacing was good enough with the gather wood story line events. Reading all those quotes and picking the ones that fit the atmosphere of the game helped shape the storyline I put in place. Particularly this quote:
+During this time period I removed the Nietzche quotes. It just led to confusion and the pacing was good enough with the gather wood story line events. Reading all those quotes helped shape the storyline I put in place. Particularly this quote:
 
 >a dictator divides mankind into two classes: tools and enemies.
 
-There was a specific lull in the gameplay. The time between buying the compass and then building the smokehouse, tannery, and workshop was still a bit of a wait. This is where I decided to shift the story to take a turn for the worse. Through the creation of these three buildings, the player would slowly see that the villagers were being overworked. And finally, the villagers became slaves:
+There was a specific lull in the gameplay. The time between buying the compass and then building the Smokehouse, Tannery, and Workshop was still a bit of a wait. This is where I decided to shift the story to take a turn for the worse. Through the creation of these three buildings, the player would slowly see that the villagers were being overworked. And finally, the villagers became slaves:
 
 >the villagers...i can see the fatigue in their eyes...
+
 >back breaking labor...the villagers are mine to command...
+
 >leather for finer things, must push the villagers...
+
 >i'll make the villagers work...day and night...they are my slaves...
 
-After the game releasted, I had a number of people literally reset the game at this point... or simply stop gathering wood because they didn't want their villagers to turn into slaves. I didn't expect this kind of internal, viseral reaction to the events. We murder in video game all the time. We vandalize. We steal cars. We stomp on the heads of turtles and mushrooms that never did anything to us. Why did the events in the game cause people to stop playing?
+After the game released, I had a number of people literally reset the game at this point... or simply stop gathering wood because they didn't want their villagers to turn into slaves. I didn't expect this kind of internal, viseral reaction to the events. We murder in video game all the time. We vandalize. We steal cars. We stomp on the heads of turtles and mushrooms that never did anything to us. Why did the events in the game cause people to stop playing?
 
 I hate you Michael (in a good way). You didn't build a single game. You built 3 games and stitched them together in a brilliant way. The ship scene was the next thing to tackle. There was an end in sight. The largest part of the game (The Dusty Path) was done.
 
 **Oct 23, 2013: Space Sequence Complete. The Meeting With Michael.**
 
-I can't believe it. I have a fully functioning game from begining to end. I knew I had a number of things to polish. But the game was "code complete". Around this time I emailed Michael to set up a video conference (he lives in Canada.. I live in Dallas, TX). I can't believe that all the communication up until this point was done through email and chat. Michael hadn't seen the story line additions I made. I was worried he'd say "no" to the changes. It wasn't a lot of work to rip it out, but it was definitely something I felt contributed greatly to the experience of A Dark Room. It made the player feel anxious, uneasy, even worried to continue the game at times.
+I couldn't believe it. I had a fully functioning game from begining to end. I knew I had a number of things to polish. But the game was "code complete". Around this time I emailed Michael to set up a video conference (he lives in Canada.. I live in Dallas, TX). I can't believe that all the communication up until this point was done through email and chat. Michael hadn't seen the story line additions I made. I was worried he'd say "no" to the changes. It wasn't a lot of work to rip it out, but it was definitely something I felt contributed greatly to the experience of A Dark Room. It made the player feel anxious, uneasy, even worried to continue the game at times.
 
 This is a testimant to how awesome and brilliant Michael is. He appreciated the changes I made to the story line, and loved the enhancements I made to the mobile version of the game. It was as simple as that. He just said, "That's awesome! I like it!" Suffice to say that a huge weight was lifted off of my shoulders. We got to talking infact about the intriciacies of the game. I mentioned that most of the game could have been played without any villagers if iron, coal and sulphur could be mined by the player. Michael said "Hey, why don't you add that? Add a solo mode with an alternate ending?"
 
@@ -210,13 +215,13 @@ But my wife stands well above all the others that play tested. She could have sa
 
 **Nov 1, 2013: Submitted to the App Store at $1.99**
 
-I submitted the game to the App Store. The description of the game was set to "a text based journey... awake. head throbbing. vision blurry." I still spent a day making minor tweeks to balancing. I play tested the game another 4 times before releasing. My game times were pretty damn fast at this point because I new exactly what to do. I could beat the game in 90 to 100 minutes without even thinking too hard. Now I just have to wait. This was a good week. I shipped the A Dark Room for iOS. And I was now preparing for a NodeJS competition. Node Knockout 2013!
+I submitted the game to the App Store. The description of the game was set to "a text based journey... awake. head throbbing. vision blurry." I still spent a day making minor tweeks to balancing. I play tested the game another 4 times before releasing. My game times were pretty damn fast at this point because I new exactly what to do. I could beat the game in 90 to 100 minutes without even thinking too hard. Now I just have to wait. This was a good week. I shipped A Dark Room for iOS. And I was now preparing for a NodeJS competition. Node Knockout 2013!
 
 **Nov 8, 2013: One of the Worst Days of My Life**
 
-It took a full 7 days. But A Dark Room was finally in the App Store. I downloaded the game on my iPhone 4 and was able to play it. It was an unreal feeling given how much work was put into the game. I know Michael tweeted about the release. I was hoping that enough people would retweet about the release of the game. It was 6 months since the Hacker News post of A Dark Room, many people would have forgotten about the game by now. But maybe it would catch like wild fire again.
+It took a full 7 days. But A Dark Room was finally in the App Store. I downloaded the release version of the game on my iPhone 5 and was able to play it. It was an unreal feeling given how much work was put into the game. I know Michael tweeted about the release. I was hoping that many people would tweet about the iOS version. It was 6 months since the Hacker News post of A Dark Room, many people would have forgotten about the game by now. But maybe it would go viral like the web version did.
 
-The first reply to the tweet came in. I was sick to my stomach: "The game just crashes, I have an iPhone5S". I screamed at the top of my lungs, broke down, literally fell to my knees and cried. No one wants to see that on their release day. No one should ever have that happen to them. I tried my wife's iPhone5S and it was crashing there too. I texted my friend Eric Sowell and the game was also crashing for him. A that moment I wished I never spent all that time building the game.
+The first reply to the tweet came in. I was sick to my stomach: "The game just crashes, I have an iPhone 5s". I screamed at the top of my lungs, broke down, literally fell to my knees and cried. No one wants to see that on their release day. No one should ever have that happen to them. I tried my wife's iPhone 5s and it was crashing there too. I texted my friend Eric Sowell and the game was also crashing for him. A that moment I wished I never spent all that time building the game.
 
 I pulled myself together and put a debug build of the game on my wife's iPhone. It crashed immediately with a runtime exception (the error itself is a blur now, but I remeber it having to do with compilation flags). My assumption at this point was it had something to do with 64bit architecture of the new iOS devices.
 
@@ -234,7 +239,7 @@ Our Node Knockout 2013 team: Team Us - As in "us" not "them", ended up placing 1
 
 **Nov 10, 2013: My Obsession with Twitter and @ADarkRoomiOS Begins**
 
-I created the ADarkRoomiOS twitter handle and start tweeting in the persona of the game. The plan was to interact with as many people as possible who ever tweeted about the web version of the game. Having a daily tweet from the game, showed that I wasn't just a random spam bot. That there was a real person behind these tweets. I did a Twitter search for "adarkroom" and began combing through all the tweets... replying to anyone who mentioned the game. Letting them know that there was an iOS version.
+I created the @ADarkRoomiOS twitter handle and started tweeting in the persona of the game. The plan was to interact with anyone and everyone who ever tweeted about the web version of the game. Having a daily tweet from the game, showed that I wasn't just a random spam bot... that there was a real person behind these tweets. I did a Twitter search for "adarkroom" and began combing through all the tweets... replying to anyone who mentioned the game. Letting them know that there was an iOS version.
 
 **Nov 15, 2013: A Ray of Hope - [Courtney Stanton (@q0rt)](http://superopinionated.com/)**
 
@@ -248,17 +253,17 @@ This tweet also represented a window into the indie game world. I started follow
 
 I woke up the next morning, awake, head throbbing, vision blurry. In a sleepy stupor, I logged into iTunes Connect and saw the number of downloads caused by Courtney's tweet. It spiked to 30. Thirty downloads... a tweet sent to over 3,000 people... and it lead to only 30 downloads.
 
-**Nov 18, 2013: More Notable Interactions**
+**Nov 18, 2013: Additional Notable Interactions**
 
 Using the @ADarkRoomiOS twitter account, I interacted with Leigh Alexander (@leighalexander), an editor at Gamasutra and Kotaku, about a tweet she posted about A Dark Room. Letting a number of people in the conversation know about the existence of the iOS version. There was no noticable difference in downloads the next day. A meager 5 downloads on the 19th. I'm glad I was able to interact a meaningful interaction with Leigh however.
 
 **Nov 22, 2013: Pocket Gamers writes an Entry on A Dark Room**
 
-I added "search on Google for any mention of A Dark Room" to my routine. I came accross this: [Take a risk on iOS adventure game A Dark Room and you might have a new addiction](http://www.pocketgamer.co.uk/r/iPad/A+Dark+Room/news.asp?c=55477). This review written by Chris Preistman (@CPriestman), is the first review of A Dark Room iOS that I've come across. How freaking cool is that? Unsolicited reviews are starting to come up. A spike to 30 downloads happen that day.
+I added "search on Google for any mention of A Dark Room" to my routine. I came accross this: [Take a risk on iOS adventure game A Dark Room and you might have a new addiction](http://www.pocketgamer.co.uk/r/iPad/A+Dark+Room/news.asp?c=55477). This review written by Chris Preistman (@CPriestman), is the first review of A Dark Room iOS that I had come across. How freaking cool is that? Unsolicited reviews are starting to come up. A spike to 30 downloads happened that day.
 
 **Nov 23, 2013: A Dark Room Forum Entry on Touch Arcade**
 
-I received an email from a random person today. The game was listed in the Touch Arcade forumns, and on of the members emailed me to get some details about the game (what the game was about, how long the game was, etc). I answered his questions immediately and was happy to hear that he loved the game and wrote about his experience on the Touch Arcade forumns. Every week afterwards, I have emailed a promo code to Touch Arcade for an official review. I have yet to hear back from them.
+I received an email from a random person this day. The game was listed in the Touch Arcade forums, and one of the members emailed me to get some details about the game (what the game was about, how long the game was, etc). I answered his questions immediately and was happy to hear that he loved the game and wrote about his experience on the Touch Arcade forums. Every week afterwards, I have emailed a promo code to Touch Arcade for an official review. I have yet to hear back from them.
 
 **Nov 24, 2013: The First One Star Review**
 
@@ -266,7 +271,7 @@ The game up to this point has had 245 downloads over an 18 day period (that's 13
 
 >What was a simple and elegant game should not have been messed with. I regret spending $2 on such a mess. Not only is the UI counter-intuitive and clumsy, but the mobile designer took far too much creative license in altering the original statistics and proportions put in place by Michael Townsend, original designer. Additionally, there is a bug that results in permanent thieves with no way to deter them, making the game essentially unplayable.
 
-What do I do? I played through the game hundereds of times. Meticulously place every button, every interaction. There was no bug in the theives, I checked 10 times to make sure (just impatience on the part of the player, and unlucky random number generation). One bad review off sets 100 good ones. To this day I feel the pains of this review. I see it as incredibly brutal. Empathy was something I've learned through this time period off. I understood how frustrating it is to pay for an app and get delievered "shit". So I apologized. I have no idea if blewis1234 will ever read anything on this page. But I hope at some point, he'll re-rate the game.
+What do I do? I played through the game hundereds of times. Meticulously place every button, every interaction. There was no bug in the theives, I checked 10 times to make sure (just impatience on the part of the player, and unlucky random number generation). One bad review off sets 100 good ones. To this day I feel the pains of this review. I see it as incredibly brutal. Empathy was something I've learned through my time as an independent developer. I understood how frustrating it is to pay for an app and get delievered "shit". So I apologized on this "support" page. I have no idea if blewis1234 will ever read anything on this page. But I hope at some point, he'll re-rate the game.
 
 **Nov 26, 2013: Game Back Story, an Apology, and a Post to Hacker News**
 
@@ -280,31 +285,45 @@ I also came across a video review Chris Charlton (@reasonjp) did on the [iOS ver
 
 **Dec 10, 2013: Blind Gamers Are Playing A Dark Room**
 
-Blind gamers reached out to @ADarkRoomiOS: Orinks (a member of AppleVis.com) and Aaron (a member of AudioGames.net). I was in complete utter shock that blind people were trying to play A Dark Room. I sent out a promise to them that I'd make the game fully accessible. I Fired up RubyMotion and started researching what it would take to make A Dark Room fully playable via VoiceOver.
+Blind gamers reached out to @ADarkRoomiOS: Orinks (a member of AppleVis.com) and Aaron (a member of AudioGames.net). I was in complete utter shock that blind people were trying to play A Dark Room. I sent out a promise to them that I'd make the game fully accessible. I fired up RubyMotion and started researching what it would take to make A Dark Room fully playable via VoiceOver.
 
 **Dec 16, 2013: [Cara Ellison (@Carachan1)](http://caraellison.co.uk/) - Another Glimmer of Hope for A Dark Room**
 
-Cara Ellison a writer for a number of online gaming website mentioned that she was considering A Dark Room for her 2013 Game of the Year list. I reached out to here hoping she would have some kind words to write about the iOS version. She said she'd give the game a shot! I emailed her a promo code that day. Again, these moments are hard to put in words. It's a chance for all the hard work Michael and I have put into the game to possibly pay off. For A Dark Room to finally make it into the lime lite.
+Cara Ellison a writer for a number of online gaming website mentioned that she was considering A Dark Room for her 2013 Game of the Year list. I reached out to here hoping she would have some kind words to write about the iOS version. She said she'd give the game a shot! I emailed her a promo code that day. Can't say this enough, these moments are hard to put in words. It's a chance for all the hard work Michael and I have put into the game to possibly pay off. For A Dark Room to finally make it into the lime lite.
 
 **Dec 17, 2013: Indie Mega Booth Does A Podcast on A Dark Room**
 
 Indie Mega Booth did a full length podcast on A Dark Room. It is incredible when 4 people can talk so long about the game. Just wonderful to hear different interpretations of the story. They mentioned that the iOS version of the game exists too. Yet again, hoping against all odds that the mention of the game would spur more downloads. I took the time to thank Indie Mega Booth for doing the podcast and personally thanked Maddy Myers (@samusclone) on Twitter.... such an awesome Twitter handle by the way.
 
-**Dec 18, 2013: [Maddy Myers (@samusclone)]**
+**Dec 18, 2013: [Maddy Myers (@samusclone)](http://metroidpolitan.com/) - More Connections With The Gaming Community**
 
-todo
+Maddy Myers was part of the discussion on the Indie Mega Booth podcast. She's an editor for Paste Magazine. Another important voice in the gaming community. Every person I've interacted with thus far is trying to be heard. Everyone in the gaming community (whether they are an independent game developer or writer) is struggling in some form. And all I can say is that I'll do what I can to make sure those people who have supported A Dark Room, have my support in turn.
 
 **Dec 22, 2013: Someone Stopped Playing Because of Slaves**
 
-todo https://mail.google.com/mail/u/0/#sent/1431cc43ec127938
+The first public comment about the slaves in the mobile version was posted on Michaels blog. My biggest fear is the vengful 1 star review. I already had one... I didn't want another:
+
+>I am hoping someone can help. I started to play through and had carted wood to the point the population becomes slaves. I then had thieves and it was taking so long to stop them that I thought you were supposed to stop carting wood before your population became salves. So I reset. I left the cart alone even though it had a “!” Next to it. I know have the entire map uncovered, I have been to every location and have used the jewel. I have the space ship but I have no option to upgrade it even though I have 40 alien alloy. Is this a bug because I ignored the cart for so long or am I misisng something. Very frustrating as I will NOT be replaying to get to this point.
+
+Michael was able to get the email address for the person who left the comment. And I emailed him immediately tell him how to beat the game. I also gave him a hint on how to unlock the alternate ending where his villagers wouldn't become slaves. He was happy to receive the email and I felt like I dodged a bullet.
 
 **Dec 27, 2013: A Dark Room Makes a Number of 2013 GOTY Lists**
 
-todo
+I was holding my breath for this day. A number of online gaming websites posted their 2013 Games of the Year. A Dark Room (the web and mobile version) made three lists. Paste Magazine's - Maddy Myers, Giant Bomb's - Staff Pick and Giant Bomb's - Cara Ellison.
 
-**Dec 28, 2013: Zoe Quinn**
+Additionally A Dark Room was the inspiration for a work by Elizabeth Simins (@ElizSimins). She was listed as one of the top 10 works of art on The Bygon Bureau.
 
-todo
+This all happend in one day. I felt like I had won the lottery. Surely, this is A Dark Room's moment. These three GOTY entries probably reached 10's of thousands of gamers.
+
+This was also the first time I heard about [Depression Quest by Zoe Quinn](http://www.depressionquest.com/). I know she was feeling the same thing I was. We were two indie game developers, effectively broke, trying to create things that have meaning for us. And we both made some 2013 Game of the Year lists.
+
+I played Depression Quest all the way through. It was an _experience_... that's the best way to describe it. Just like A Dark Room is just an _experience_. I'm glad there are games coming out that connect emotionally with the player... that are more than guns and eye candy. I reached out to Zoe and let her know that the blind community are always in need for video games, and to spend some time in making her game accessible.
+
+I waited till the next day. I woke up in the morning and checked the downloads... there were 54. It's the highest thus far... but that was all the downloads that were generated... soul crushing I tell you.
+
+**Dec 28, 2013: [Elizabeth Siminis (@ElizSimins)](http://cargocollective.com/eliz)**
+
+I reached out to Elizabeth and asked here if I could put her work of art on A Dark Room's support page. She said yes :-) Another bit of good news to keep my spirits up. Thank you Elizabeth, I'm forever grateful that you allowed me to showcase your work here (it's at the top of this page).
 
 **Jan 1, 2014: First Check From Apple**
 
@@ -384,8 +403,6 @@ Sent an email to the RubyMotion team telling them about the success the game has
 
 todo
 
-**March 1, 2014
+**March 1, 2014**
 
 **March 2, 2014: Slides Complete for my First Presentation at a Ruby User Group - 12k Lines of RubyMotion**
-
-**March 3, 2014: 
