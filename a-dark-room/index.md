@@ -143,13 +143,13 @@ But at this point I just had some (for lack of a better term) "resentment" with 
 
 **Aug 2, 2013: Had to Take Another Break**
 
-Development on A Dark Room started to slow down a bit (I hit a bit of a low point in motivation). Combat was working at a cursory level... mostly just animations. The battle sequence was pretty much a real time game with a timer running at 10 frames per second. I was making a real time game using Cocoa controls as opposed to sprites and a canvas... kind of felt weird about that. But it worked.
+Development on A Dark Room started to slow down a bit (I hit a bit of a low point in motivation). Combat was working at a cursory level... mostly just animations. The battle sequence was pretty much a real time game with a timer running at 10 frames per second... I was making a real time game using Cocoa controls as opposed to sprites and a canvas... kind of felt weird about that. But it worked.
 
 5 days on and off to work through the loot screen (the screen that came up after you won a battle). Pixel pushing labels and buttons. At this point I dread any kind of UI work in iOS. 
 
 **Aug 13, 2013: Another Realization That I Was Becoming a Better Developer**
 
-I was scheduled to speak at Austin Code Camp. I was going to do a presentation on an array of front end JavaScript frameworks. I spent the next few days working on the presentation and spent some time preparing a lighting talk about how you could use VIM for C# development. I also helped one of my friends (Chris Holt), prepare for his presentation on F#. Here I am, 4 months into my "sabbatical". Every day, gaining proficiency with C#/F#, JavaScript, Objective C, Ruby, VIM, Visual Studio, and XCode.
+I was scheduled to speak at Austin Code Camp. I was going to do a presentation on an array of front end JavaScript frameworks. I spent the next few days working on the presentation and spent some time preparing a lighting talk about how you could use VIM for C# development. I also helped one of my friends (Chris Holt), prepare for his presentation on F#. Here I am, 4 months into my sabbatical. Continually gaining proficiency with C#/F#, JavaScript, Objective C, Ruby, VIM, Visual Studio, and XCode.
 
 **Aug 25, 2013: Taking a Break to Scratch a NodeJS Itch**
 
@@ -165,23 +165,23 @@ Development of the game continues. Play testing and tweaking the Dusty Path. I w
 
 Another internal struggle with .Net development. I've tried to have discourse on Twitter with a number of .Net devs. I built a Twitter mashup to help me manage that discourse because I was having so many conversations at once. At this point I've learned (or at least gotten better) at objectively analyzing risk and reward. Using NodeJS and Ruby Motion, I have now have a better understanding of what OSS _really_ looks like. So I put another blog post up: [.Net OSS is DOA](http://amirrajan.net/meta/2013/09/19/perception-is-reality-dot-net-oss/). This one got some attention. I wanted to (again) help developers break down barriers and see that all the "answers" don't exist in any single stack.
 
-I was berated by my peers. I was "just plain wrong", I was told it's "just an opinion", and that "I was sorely misguided". Another dev tweets, "Here we go again with all the .Net OSS whining". I felt labeled as just some dude with a lot of angst. I wish I never wrote this blog entry.
+I was berated by my peers. I was "just plain wrong", I was told it's "just an opinion", and that "I was sorely misguided". Another dev tweets, "Here we go again with all the .Net OSS angst". I wish I never wrote this blog entry.
 
 **Sep 25, 2013: I'm Done Debating With Expert .Net Developers and Dealing With the .Net Mono Culture**
 
 Another heated debate on Twitter. This time with regards to test driven development and behavior driven development. I now understand the term "strong opinions, strongly held". At this point, I knew I was done debating with experts of the .Net stack. Many (not all) have formed and solidified their opinions about "how things should be done". So I'm done trying to be respected/acknowledged by these individuals. I've wasted my breath too many times trying to get these guru's to see that they don't have it all figured out (no one has it all figured out, and you're selling yourself short if you think you do).
 
-I didn't write a "Farewell .Net" blog post. It would have been a waste of my breath. 
-
 **Oct 1, 2013: The Play Testing Grind... This is Not Fun**
 
-All of September went to the Dusty Path. Made sure all the different city and town events showed up. Made sure the workshop items and workers unlocked correctly. Made sure map state rolled back if the player dies. I chatted with Michael about this. How the hell he managed to test all this... He did what I did, just grinded through it. I spent 2 days creating an automated test suite. It tested all the different random paths the events could take. Glad I did that. Even with all the manual testing, I still had a number of bugs. 
+All of September went to the Dusty Path (and being a grumpy developer). I made sure all the different city and town events showed up. I made sure the workshop items and workers unlocked correctly. I made sure map state rolled back if the player dies.
+
+I chatted with Michael about this. How the hell he managed to test all this... He did what I did, just grinded through it. I spent 2 days creating an automated test suite. It tested all the different random paths the events could take. Glad I did that. Even with all the manual testing, I still had a number of bugs. 
 
 **Oct 19, 2013: A Dusty Path Complete. I Hate You Michael (in a good way)**
 
-The Dusty Path is finally to a point where all the events work and the spaceship can be unlocked. I have saving working. A number of my friends and family have play tested the game to this point (and have frankly gotten sick of it).
+The Dusty Path is finally to a point where all the events work and the spaceship can be unlocked. I have saving working too. A number of my friends and family have play tested the game to this point (and have frankly gotten sick of it).
 
-During this time period I removed the Nietzsche quotes. It just led to confusion and the pacing was good enough with the gather wood storyline events. Reading all those quotes helped shape the storyline I put in place. Particularly this quote:
+During this time period I removed the Nietzsche quotes. It just led to confusion and the pacing was good enough with the "gather wood storyline events". Reading all those quotes helped shape the storyline I put in place. Particularly this quote:
 
 >a dictator divides mankind into two classes: tools and enemies.
 
@@ -195,41 +195,43 @@ There was a specific lull in the gameplay. The time between buying the compass a
 
 >i'll make the villagers work...day and night...they are my slaves...
 
-After the game released, I had a number of people literally reset the game at this point... or simply stop gathering wood because they didn't want their villagers to turn into slaves. I didn't expect this kind of internal, visceral reaction to the events. We murder in video game all the time. We vandalize. We steal cars. We stomp on the heads of turtles and mushrooms that never did anything to us. Why did the events in the game cause people to stop playing?
+After the game released, I had a number of people literally reset the game at this point... or simply stop gathering wood because they didn't want their villagers to turn into slaves. I didn't expect this kind of visceral reaction to the events. We murder in video game all the time. We vandalize. We steal cars. We stomp on the heads of turtles and mushrooms that never did anything to us. Why did the slave event cause people to stop playing?
 
 I hate you Michael (in a good way). You didn't build a single game. You built 3 games and stitched them together in a brilliant way. The ship scene was the next thing to tackle. There was an end in sight. The largest part of the game (The Dusty Path) was done.
 
 **Oct 23, 2013: Space Sequence Complete. The Meeting With Michael.**
 
-I couldn't believe it. I had a fully functioning game from beginning to end. I knew I had a number of things to polish. But the game was "code complete". Around this time I emailed Michael to set up a video conference (he lives in Canada.. I live in Dallas, TX). I can't believe that all the communication up until this point was done through email and chat. Michael hadn't seen the story line additions I made. I was worried he'd say "no" to the changes. It wasn't a lot of work to rip it out, but it was definitely something I felt contributed greatly to the experience of A Dark Room. It made the player feel anxious, uneasy, even worried to continue the game at times.
+I couldn't believe it. I had a fully functioning game from beginning to end. I knew I had a number of things to polish. But the game was "code complete". Around this time I emailed Michael to set up a video conference (he lives in Canada.. I live in Dallas, Tx). I can't believe that all the communication up until this point was done through email and chat.
+
+Michael hadn't seen the story line additions I made. I was worried he'd say "no" to the changes. It wasn't a lot of work to rip it out, but it was definitely something I felt contributed greatly to the experience of A Dark Room. It made the player feel anxious, uneasy, even worried to continue the game at times.
 
 This is a testament to how awesome and brilliant Michael is. He appreciated the changes I made to the storyline, and loved the enhancements I made to the mobile version of the game. It was as simple as that. He just said, "That's awesome! I like it!" Suffice to say that a huge weight was lifted off of my shoulders. We got to talking in fact about the intricacies of the game. I mentioned that most of the game could have been played without any villagers if iron, coal and sulphur could be mined by the player. Michael said "Hey, why don't you add that? Add a solo mode with an alternate ending?"
 
 **Oct 30, 2013: Incorporating Michael's Feedback**
 
-The primary feedback that I got was removal of pronouns. I didn't realize it, but no part of the web version referred to the player as "you" or "I" or "us". I also incorporated the solo mode and alternate ending to the game. Play testing. Play testing. More play testing. More tweaking. More play testing.
+The primary feedback that I got was removal of pronouns. I didn't realize it, but no part of the web version referred to the player as "you" or "I" or "us". I also incorporated the solo mode and alternate ending into the game. Playtesting. Playtesting. More playtesting. More tweaking. More playtesting.
 
 **Oct 31, 2013: My Wife's Final Play Test**
 
-The game is in its final form. My wife sits down and plays the game for the 50th time. A number of my friends play tested the game. But I really didn't want to ask too much of them. Most of them only play tested the game once at different points. I was able to get feedback from them, and they were a tremendous help (thank you Jason Smith, Eric Sowell, Kevin Wade, Matt Florence, Tim Rayburn, Zahan Tariq, Christopher Krailo, Aaron Lasseigne, and Chris Holt).
+The game is in its final form. My wife sits down and plays the game for the 50th time. A number of my friends play tested the game. But I really didn't want to ask too much of them. Most of them only play tested the game once, at different points in the development process. I was able to get feedback from them, and they were a tremendous help (thank you Jason Smith, Eric Sowell, Kevin Wade, Matt Florence, Tim Rayburn, Zahan Tariq, Christopher Krailo, Aaron Lasseigne, and Chris Holt).
 
 But my wife stands well above all the others that play tested. She could have said she was tired of playing this game at any point, but she didn't. She was the only person that, without hesitation, would play through the game any time I asked. I handed the final game to her at 10 pm that night. And she played the game non stop, all the way to the end. It was 2 am when she completed the play through. Thank you my dear.
 
 **Nov 1, 2013: Submitted to the App Store at $1.99**
 
-I submitted the game to the App Store. The description of the game was set to "a text based journey... awake. head throbbing. vision blurry." I still spent a day making minor tweaks to balancing. I play tested the game another 4 times before releasing. My game times were pretty damn fast at this point because I knew exactly what to do. I could beat the game in 90 to 100 minutes without even thinking too hard. Now I just have to wait. This was a good week. I shipped A Dark Room for iOS. And I was now preparing for a NodeJS competition. Node Knockout 2013!
+I submitted the game to the App Store. The description of the game was set to "a text based journey... awake. head throbbing. vision blurry." I still spent a day making minor tweaks to balancing. I play tested the game another 4 times before releasing. My game times were pretty damn fast at this point because I knew exactly what to do. I could beat the game in 90 to 100 minutes without even thinking too hard. Now I just have to wait. This was a good week. I shipped A Dark Room for iOS. And I was now preparing for a NodeJS competition: Node Knockout 2013!
 
 **Nov 8, 2013: One of the Worst Days of My Life**
 
-It took a full 7 days. But A Dark Room was finally in the App Store. I downloaded the release version of the game on my iPhone 5 and was able to play it. It was an unreal feeling given how much work was put into the game. I know Michael tweeted about the release. I was hoping that many people would tweet about the iOS version. It was 6 months since the Hacker News post of A Dark Room, many people would have forgotten about the game by now. But maybe it would go viral like the web version did.
+It took a full 7 days. But A Dark Room was finally in the App Store. I downloaded the release version of the game on my iPhone 5 and was able to play it. It was an unreal feeling given how much work was put in. I know Michael tweeted about the release. I was hoping that many people would tweet about the iOS version. It was 6 months since the Hacker News post of A Dark Room. Everyone who upvoted the game probably have forgotten about it by now. But maybe it would go viral like the web version did.
 
-The first reply to the tweet came in. I was sick to my stomach: "The game just crashes, I have an iPhone 5s". I screamed at the top of my lungs, broke down, literally fell to my knees and cried. No one wants to see that on their release day. No one should ever have that happen to them. I tried my wife's iPhone 5s and it was crashing there too. I texted my friend Eric Sowell and the game was also crashing for him. A that moment I wished I never spent all that time building the game.
+The first reply to Michael's tweet came in. I was sick to my stomach: "The game just crashes, I have an iPhone 5s". I screamed at the top of my lungs, broke down, literally fell to my knees and cried. No one wants to see that on their release day. No one should ever have that happen to them. I tried my wife's iPhone 5s and it was crashing there too. I texted my friend Eric Sowell and the game was also crashing for him. At that moment I wished I never spent all that time building it.
 
-I pulled myself together and put a debug build of the game on my wife's iPhone. It crashed immediately with a runtime exception (the error itself is a blur now, but I remember it having to do with compilation flags). My assumption at this point was it had something to do with 64bit architecture of the new iOS devices.
+I pulled myself together and put a debug build of A Dark Room on my wife's iPhone. It crashed immediately with a runtime exception (the error itself is a blur now, but I remember it having to do with compilation flags). My assumption at this point was it had something to do with 64 bit architecture of the new iOS devices.
 
-I drove to the Apple Store in the Parks at Willowbend Mall and bought an iPad Air to test out my theory. I sat at the food court, took the iPad out. I loaded up the developer certs and deployed a debug build of the app. It crashed there too. I ended up explicitly setting setting the compilation flag to armv7 for all libraries I was referencing. This fixed the debug build.
+I drove (sped) to the Apple Store in the Parks at Willow Bend Mall, and bought an iPad Air to test out my theory. I sat at the food court, took the iPad out. I loaded up the developer certs and deployed a debug build of the app. It crashed there too. I ended up explicitly setting the compilation flag to armv7 for all libraries I was referencing. This fixed the debug build.
 
-I repackaged the app and via iTunes Connect, requested an emergency release of the app. Apple got back to me and approved the emergency release. I pushed up version 1.1 of the app. Then I just had to wait. I was taking part in a NodeJS competition at the time. So that helped keep my mind off of it.
+I repackaged the app and via iTunes Connect, requested an emergency release of the app. Apple got back to me and approved the emergency release. I pushed up version 1.1 of the app. Then I just had to wait... nothing really I could do. I was taking part in a NodeJS competition at the time. So that helped keep my mind off of it.
 
 **Nov 9, 2013: The Crash Fix Shipped**
 
@@ -237,7 +239,7 @@ Over the weekend (during the NodeJS competition), I received an email saying tha
 
 I still have no idea why setting the compilation flag to armv7 worked. But I'm not about to change that now. To this day, it's still extremely stressful deploying to the App Store. I have no idea if the instant crash will come back. I can't recreate it using the simulators either.
 
-Our Node Knockout 2013 team: Team Us - As in "us" not "them", ended up placing 15th overall and placed 6th in the fun/utility category. We built a game called [NodeKick](http://github.com/amirrajan/nodekic). It was an awesome experience.
+Our Node Knockout 2013 team: Team Us - As in "us" not "them", ended up placing 15th overall and placed 6th in the fun/utility category. We built a game called [NodeKick](http://github.com/amirrajan/nodekick). It was an awesome experience.
 
 **Nov 10, 2013: My Obsession with Twitter and @ADarkRoomiOS Begins**
 
