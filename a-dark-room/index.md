@@ -78,7 +78,7 @@ A Dark Room
 
 <b id="adarkroomstory">The Rest of the Story</b>
 
-Everything past this point contains spoilers. If you haven't played the game and don't want the story spoiled. Stop reading now.
+<div style="font-size: 20px; color: red; font-weight: bold;">Everything past this point contains spoilers. If you haven't played the game and don't want the story spoiled. Stop reading now.</div>
 
 I want to make sure I've logged everything that's happened around the growth and popularity of A Dark Room. I hope that indie developers (or those that want to try to "make it" in the App Store) can benefit from these entries. Notable events are listed below along with any pertinent information about how it affected downloads, reviews, emotions, and anything else that influenced the success (or failure) of A Dark Room for iOS.
 
