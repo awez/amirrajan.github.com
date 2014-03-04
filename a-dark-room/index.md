@@ -315,11 +315,11 @@ Michael was able to get the email address for the person who left the comment. A
 
 I was holding my breath for this day. A number of online gaming websites posted their 2013 Games of the Year. A Dark Room (the web and mobile version) made three lists: Maddy Myers', Zoe Quinn's and Cara Ellison's.
 
-Additionally A Dark Room was the inspiration for a work by Elizabeth Simins (@ElizSimins). She was listed as one of the top 10 works of art on The Bygon Bureau.
+Additionally A Dark Room was the inspiration for a work of art by Elizabeth Simins (@ElizSimins). She was listed as one of the top 10 works The Bygon Bureau.
 
 This all happened in one day. I felt like I had won the lottery. Surely, this is A Dark Room's moment. These three GOTY entries probably reached 10's of thousands of gamers.
 
-This was also the first time I heard about [Depression Quest by Zoe Quinn](http://www.depressionquest.com/). I know she was feeling the same thing I was. We were two indie game developers, trying to create things that have meaning for us. And we both made some 2013 Game of the Year lists.
+This was also the first time I heard about [Depression Quest by Zoe Quinn](http://www.depressionquest.com/). I know she was feeling the same thing I was. We were two indie game developers, trying to create things that have meaning for us. And we both made 2013 Game of the Year lists.
 
 I played Depression Quest all the way through. It was an _experience_... that's the best way to describe it. I'm glad there are games coming out that connect emotionally with the player... that are more than guns and eye candy. I reached out to Zoe and let her know that the blind community are always in need for video games, and to spend some time in making her game accessible.
 
@@ -327,7 +327,7 @@ I waited till the next day. I woke up in the morning and checked the downloads..
 
 **Dec 28, 2013: [Elizabeth Siminis (@ElizSimins)](http://cargocollective.com/eliz) and Patreon**
 
-After seeing her art work on Bygon Bereau, I reached out to Elizabeth and asked her if I could put her piece on A Dark Room's support page. She said yes :-) Another bit of good news to keep my spirits up. Thank you Elizabeth, I'm forever grateful that you allowed me to showcase your work here (it's at the top of this page). Her work also led me to discover [Patreon](http://www.patreon.com/elizsimins). I'm amazed at how technology has given a means for artists to showcase their works. Removing the middle man and making it easy for artists to promote their own works is a big deal.
+After seeing her art work on Bygon Bureau, I reached out to Elizabeth and asked if I could put her piece on A Dark Room's support page. She said yes :-) Another bit of good news to keep my spirits up. Thank you Elizabeth, I'm forever grateful that you allowed me to showcase your work here (it's at the top of this page). Her work also led me to discover [Patreon](http://www.patreon.com/elizsimins). I'm amazed at how technology has given a means for artists to showcase their works (and potentially make a living off of them). Removing the middle man and making it easy for artists to promote their own works is a big deal.
 
 **Jan 1, 2014: First Check From Apple**
 
@@ -337,7 +337,7 @@ First check comes in. The grand totals for the month of November:
 - Downloads: 403
 - Reviews: 5 five-star reviews, 1 one-star review
 - RPG Rank: 567th at its low point, 27th at its height
-- overall Rank: 1479 th for two days (metrics below the 1500th placement aren't kept in AppAnnie)
+- overall Rank: 1479th for two days (metrics below the 1500th placement aren't kept in AppAnnie)
 
 **Jan 4, 2014: The Accessible Version of A Dark Room is Release**
 
@@ -385,27 +385,27 @@ A notable individual in the game community @RobertAshley interacted with @ADarkR
 
 **Jan 16, 2014: Pocket Tactics and Owen Faraday**
 
-Another wonderful interaction for @ADarkRoomiOS. This time a random follower of the Twitter handle mentioned @ADarkRoomiOS and @PocketTactics. Letting the iOS publication know about the game. I took this opportunity to email Owen Faraday (editor of the publication).
+Another wonderful interaction for @ADarkRoomiOS. This time, a random follower mentioned @ADarkRoomiOS and @PocketTactics in the same tweet... letting the iOS publication know about the game. I took this opportunity to email Owen Faraday (editor of Pocket Tactics).
 
 I asked if Pocket Tactics would like to do a review on A Dark Room. Owen replied and I sent over a promo code (yay!).
 
-On Feb 4th, Owen emailed with the word: "Amazing". I hope to see a review show up soon on Pocket Tactics. I try to be diligent in following up with Owen... without being annoying. It's hard to find a good balance between the two. A review hasn't gone up yet. But after another release of the game I'll be sure to follow up with Owen. I hope he doesn't take offense to my persistence.
+On Feb 4th, Owen emailed with the word: "Amazing". I hope to see a review show up soon on Pocket Tactics. I try to be diligent in following up with Owen... without being annoying. It's hard to find a good balance between the two. A review hasn't gone up yet... but after another release of the game I'll be sure to follow up with Owen. I hope he doesn't take offense to my persistence.
 
 **Jan 19, 2014: Apple Vis Promo Code Give Away**
 
-The blog post I wrote about accessibility received some buzz in the blind community. The AppleVis editorial team reached out to me. They wanted to run a promo code give away. I sent them 10 promo codes and they did something really unique. Instead of just giving them away, they asked individuals to go read about the blog post I did on making the game accessible to the blind, and about the making of the game. They had to mention something from the write ups to get a promo code. It was a great idea, and I saw a lot of nice things said about the game.
+The blog post I wrote about accessibility received some buzz in the blind community. The AppleVis editorial team reached out to me. They wanted to run a promo code give away. I sent them 10 promo codes and they did something really unique. Instead of just giving them away, they asked individuals to go read the blog post I did on making the game accessible to the blind, and about the making of the game. They had to mention something from the write ups to get a promo code. It was a great idea, and I saw a lot of nice things said about the game.
 
 Downloads spiked to 50 during the contest period. I'm burning through my promo codes, but they are generating results.
 
 **Jan 26, 2014: Promo Code Give Away on Touch Arcade**
 
-I took Apple Vis' idea and gave away 20 promo codes across two separate contests. The interactions I had with the fans (old and new) was great. A lot kind words and genuine support.
+I took Apple Vis' idea and gave away 20 promo codes across two separate contests at Touch Arcade. The interactions I had with the fans (old and new) was great. A lot kind words and genuine support.
 
-For the last four days of January, stayed at a steady 40 downloads a day (many of those were promo code redemptions too). 
+The downloads for the last four days of January stayed at a steady 40. 
 
-**Feb 1, 2014: Check #2 Comes in from Apple**
+**Feb 1, 2014: Check #2 Comes in From Apple**
 
-Second check comes in. The grand totals for the month of December:
+The second check comes in. The grand totals for the month of December:
 
 - Revenue: $943.00
 - Downloads: 698
@@ -415,13 +415,15 @@ Second check comes in. The grand totals for the month of December:
 
 **Feb 2, 2014: Another Person Stopped Playing Because of Slaves**
 
-So a bit of background about the iOS version and its ending game sequence. The starship represents the end of the game. It is only unlocked once you've progressed far enough in the story line. If a player avoids storyline progression, they are effectively stuck, and can't complete the game. The villagers turning into slaves leaves another person in this stuck state:
+So a bit of background about the iOS version and its ending game sequence. The starship represents the end of the game. It is only unlocked once you've progressed far enough in the storyline. If a player avoids storyline progression, they are effectively stuck, and can't complete the game. The villagers turning into slaves leaves another person in this stuck state.
 
->Also I would like to mention that I liked this game until I found out I was getting screwed over.  I am playing it on an iPhone 4.  Just hoping you guys can fix this before a flood of unhappy folks come by and take your stars down a notch.  And no I haven't rated your game because I am not the vengeful type.  Video games are hard to make and it seems you put a lot of effort into this.  I am sending you screenshots of my game. 
+Here is a part of the email that was sent to me: 
 
-The player was kind enough to include screenshots of his current game. I didn't need to look (but I did anyways). He stopped progressing the story line...
+>Also I would like to mention that I liked this game until I found out I was getting screwed over.  I am playing it on an iPhone 4.  Just hoping you guys can fix this before a flood of unhappy folks come by and take your stars down a notch. And no I haven't rated your game because I am not the vengeful type.  Video games are hard to make and it seems you put a lot of effort into this. I am sending you screenshots of my game. 
 
->Every time you gather wood the storyline progresses toward the end. There is an alternate ending too. Some people are sad with how the storyline progresses. The alternative approach to playing the game (though much harder) leads to a happier ending. Let me know if you have any other questions. And I love hearing from fans. So don't hesitate to reach out Daniel. And thanks for the detailed screenshots :-)
+The player was kind enough to include screenshots of his current game. I didn't need to look (but I did anyways). He stopped progressing the storyline... Here is what I wrote back:
+
+>Every time you gather wood the storyline progresses toward the end. There is an alternate ending too. Some people are sad with how the storyline progresses. The alternative approach to playing the game (though much harder) leads to a happier ending. Let me know if you have any other questions. And I love hearing from fans. So don't hesitate to reach out. And thanks for the detailed screenshots :-)
 
 He replied with:
 
@@ -431,23 +433,23 @@ And a happy ending:
 
 >Hey thanks!  I sure will.  I left a positive review in the App Store.  I found this game on reddit.  I highly recommend creating a user account and posting something like "great iOS game, free downloads for the first 5 commenters". In the description write please leave review and comment for download.  Those people usually will help generate your sales.  I found a post about this game in r/gaming.  Good luck and thank you for answering my emails.  I really thought the game was busted.  Lol
 
-I ended up putting a more assertive message about gathering wood to progress the storyline within the game. In version 1.4, when you stoke the fire (and there is a story line element that needs to be dealt with). You get a small message "need to gather wood, the forest beckons". This will hopefully help guide future gamers.
+I ended up putting a more assertive message about gathering wood to progress the storyline within the game. In version 1.4, when you stoke the fire (and there is a storyline element that needs to be dealt with). You get a small message "need to gather wood, the forest beckons". This will hopefully help guide future gamers.
 
 **Feb 5, 2014: Promo Code Give Away on Reddit**
 
-I'm burning through my promo codes at this point. The Apple Vis approach to giving away promo codes. Leads to a much deeper connection with the fans of the game. It's meaningful and I enjoy hearing all the good conversations. I ran a couple of promo code giveaways on Reddit.
+I'm burning through my promo codes at this point. The Apple Vis approach to giving away promo codes leads to a much deeper connection with the fans of the game. It's meaningful and I enjoy having all the good conversations. I ran a couple of promo code giveaways on Reddit.
 
-Downloads spiked to 40 that day.
+Downloads spiked to 40 those days.
 
 **Feb 7, 2014: A Hail Mary To Cara Ellison**
 
-I was down to my last 15 codes. I Reached out to Cara Ellison on Twitter about getting A Dark Room in front of people that may write about it. Being the awesome person she is, she replied. I sent over 6 promo codes. The frustrating thing about promo codes is that I don't know if they've been redeemed. I know Cara is extremely busy, and she probably gets many, many emails from people trying to pitch her games. I'm just glad that I have someone that can advocate for me. She continues to be a ray of hope for A Dark Room. Unsolicited mentions of the game and always responds to my emails. Thank you, thank you Cara.
+I was down to my last 15 codes. I reached out to Cara Ellison on Twitter about getting A Dark Room in front of people that may write about it. Being the awesome person she is, she replied. I sent over 6 promo codes. The frustrating thing about promo codes is that I don't know if they've been redeemed. I know Cara is extremely busy, and she probably gets many, many emails from people trying to pitch her games. I'm just glad that I have someone that can advocate for me. She continues to be a ray of hope for A Dark Room. Unsolicited mentions of the game and always responds to my emails. Thank you... thank you Cara.
 
 **Feb 11, 2014: A Hail Mary to Brandon Boyer**
 
-I'm getting more cautions at this point (I'm down to 9 codes). I'm scouring Twitter for connections, people to reach out to. People that may respond. @Kotaku follows only 41 people and is followed by over 300 thousand. A fairly curated list of followers.
+I'm getting more cautions at this point (I'm down to 9 codes). I'm scouring Twitter for connections... people to reach out to... people that may respond. @Kotaku follows only 41 people and is followed by over three hundred thousand. It looks like the people Kotaku is following is fairly exclusive.
 
-There were two people on this list that I had hopes in responding: Leigh Alexander (@leighalexander) and Brandon Boyer (@brandonnn). Both had a large number of followers and (based on their profiles) are receptive to indie developers. Brandon Boyer and Cara Ellison follow each other. Leigh Alexander and Maddy Myers follow each other.... is this borderline stalking? ... XD 
+There were two people on this list that I had hopes would respond: Leigh Alexander (@leighalexander) and Brandon Boyer (@brandonnn). Both had a large number of followers and (based on their profiles) are receptive to indie developers. Brandon Boyer and Cara Ellison follow each other. Leigh Alexander (someone I've interacted with before) and Maddy Myers follow each other.... is this borderline stalking? ... XD 
 
 I end up emailing Brandon Boyer. I tried not to send him a wall of text (it happened anyways). But Brandon replied after a few days (yay!). I sent over a promo code. Now I just have to wait T_T.
 
@@ -459,34 +461,32 @@ Around this same time Jonathan Mosen reached out to me. He is another individual
 
 A Dark Room is now hovering near the top 10 under the RPG Category. I didn't want the ranking to drop. I'm down to 6 promo codes, I have a pending release, but haven't pushed it yet. So I dropped the price of A Dark Room by 50% ($0.99).
 
-I tweeted about it, a bunch of people tweeted about it. Pocket Tactics wrote up a short piece on the game being half off. There was an unsolicited Reddit post on the price drop. There was an unsolicited post on Touch Arcade. I woke up the next day I look at the downloads. They spiked to 351 in one day.
+I tweeted about it. A bunch of people tweeted about it. Pocket Tactics wrote up a short piece on the game being half off. There was an unsolicited Reddit post on the price drop. There was an unsolicited post on Touch Arcade. I woke up the next day I look at the downloads. They spiked to 351 in one day.
 
 **Feb 14, 2014: A Dark Room Makes it Into the Top 10 under the RPG Category**
 
-A Dark Room in now number 8 in the App Store under the RPG category. Downloads have dropped to 100 after the initial spike from the previous day. I didn't want it to lose steam, I didn't want it to lose steam. I wondered if I could set A Dark Room to free for two days. Would it reset my app rank? The app dropped to number 11 the next day. It was dropping again.... that evening I made the app free... for two days.
+A Dark Room in now number 8 in the App Store under the RPG category. Downloads have dropped to 100 after the initial spike from the previous day. I didn't want it to lose steam. I DIDN'T want it to lose steam. I wondered if I could set A Dark Room to free for two days. Would it reset my app rank? The app dropped to number 11 the next day. It was dropping again.... that evening I made the app free... for two days.
 
 **Feb 15, 2014: A Dark Room Is Free For Two Days**
 
-A number of unsolicited posts went up again about the app being free... over the weekend the A Dark Room got ~8,900 downloads and ~10 new 5 star reviews. But it lost it's rank entirely in the App Store. After the app went back to it's $0.99 price. It took a couple of days, but made it's way back to the ranking list. A Dark Room now hovers around 30 in the RPG Rankings. To this day I still wonder if it was a mistake to make the app free for two days.
+A number of unsolicited posts went up again about the app being free... over the weekend, A Dark Room got ~8,900 downloads and ~10 new five-star reviews. But it lost it's rank entirely in the App Store. The app went back to its $0.99 price. It took a couple of days, but made it's way back to the ranking list. A Dark Room now hovers around 30 in the RPG Rankings. To this day I still wonder if it was a mistake to make the app free for two days.
 
 **Feb 21, 2014: A Hail Mary to Leigh Alexander**
 
-I reached out to Leigh via email... and let her know via Twitter that I sent her an email :-D. After a few days, she replied back with some interview questions for me and Michael! Hopefully a publication by Leigh will put A Dark Room in the lime light.
+I reached out to Leigh via email... and let her know via Twitter that I sent her an email :-D. After a few days, she replied back with some interview questions for me and Michael! Hopefully a publication by Leigh will bring some visibility to A Dark Room.
 
 **Feb 24, 2014: Reaching Out to RubyMotion**
 
-I Talked to Karthik about the viability of releasing A Dark Room's source (with an e-book). Trying to think of additional ways to generate income off of this IP. The game isn't making a large amounts of money in the App Store. Every time the game gets a "huge" spike in downloads, it tapers off quickly. I keep thinking to myself "this trend will hold, this trend will hold." But it hasn't done so yet. Karthik also recommended that I reach out to the RubyMotion team and that Laruent Sansoetti is a nice guy and may be able to offer some advice.
+I Talked to Karthik Hariharan about the viability of releasing A Dark Room's source (with an e-book). Trying to think of additional ways to generate income off of this IP. The game isn't making large amounts of money in the App Store. Every time the game gets a "huge" spike in downloads, it tapers off quickly. I keep thinking to myself "this trend will hold, this trend will hold." But it hasn't done so yet. Karthik also recommended that I reach out to the RubyMotion team and that Laruent Sansoetti is a nice guy and may be able to offer some advice.
 
-Sent an email to the RubyMotion team telling them about the success the game has so far. It was incredible getting a response back so quickly from Laurent Sansonetti and then a tweet that reached a number of developers.
+I sent an email to the RubyMotion team telling them about the success the game had so far. It was incredible getting a response back so quickly from Laurent and then a tweet that reached a number of developers.
 
 **Feb 27, 2013: Another Release Of A Dark Room, The Review Me Button**
 
-There is always a side effect to releasing a new version of the app to the App Store. The first is that you "lose" all the reviews for the current version of the App. The second is that you get more promo codes.
+There is always a side effect to releasing a new version of the app to the App Store. The first side effect: you lose all the reviews for the current version of the App (only ratings for the current version of the app show up in preview screens, the user can go and see the reviews of the previous versions, but it's not immediately obvious). The second side effect: you get more promo codes.
 
-A Dark Room's current version has 56 five star reviews, 1 one star review, and 1 four star review. The app ranking was already shot to hell (relative to where it was before). So I figured this would be a good time to do an update. I added the "you better go gather wood" notification to help move the story along. I made more accessibility enhancements to the game to make a little bit easier for the blind to navigate the Dusty Path. And I added a "review me" button to the game. The app is currently in the App Store's review process. I'll update this log as soon as I get the results/side effects from making these changes.
+A Dark Room's current version has 56 five-star reviews, 1 one-star review, and 1 four-star review. The app ranking was already shot to hell (relative to where it was before), because of the two day price change to free. So I figured this would be a good time to do an update. I added the "you better go gather wood" notification to help the player through the slavery period. I made more accessibility enhancements to the game to make it a little bit easier for the blind to navigate the Dusty Path. And I added a "review me" button to the game. The app is currently in the App Store's review process. I'll update this log as soon as I get the results/side effects from making these changes.
 
 **March 3, 2014: Slides Complete for my First Presentation at a Ruby User Group - 12k Lines of RubyMotion**
 
-A lot is still up in the air at this point. Version 1.4 is waiting for release. I've permanently dropped the price of A Dark Room to $0.99. I'm hoping that Owen from Pocket Tactics shows some love to A Dark Room on his website. I'm hoping that Leigh publishes the interview questions. I'm hoping that Brandon gets back to me about his thoughts on the game with any help he can provide. I'm hoping the RubyMotion team likes the slides I've sent them and that I'll get some visibility with them too. I'm hoping that my first presentation at a Ruby user group goes well. Lots of hope... few answers at this point.
-
-
+A lot is still up in the air at this point. Version 1.4 is waiting for release. I've permanently dropped the price of A Dark Room to $0.99 (I don't know the long term effects of this). I'm hoping that Owen from Pocket Tactics shows some love to A Dark Room on his website. I'm hoping that Leigh publishes the interview questions. I'm hoping that Brandon gets back to me about his thoughts on the game and with any help he can provide. I'm hoping the RubyMotion team likes the slides I've sent them and that I'll get some visibility with them too. I'm hoping that my first presentation at a Ruby user group goes well. I'm hoping the new review button generates more reviews. Lots of hope... few answers at this point.
