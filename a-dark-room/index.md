@@ -370,7 +370,7 @@ I also started work on a "spiritual" sequel to A Dark Room. Lots of HTML5 canvas
 
 I finally started to get used to the number of downloads for the game. I accepted them for what they were. But I still meticulously observed impact to the number and correlated them to what I did online.
 
-**Jan 10, 2014: Tweets sent to 6k People**
+**Jan 10, 2014: Tweets Sent to 6k People**
 
 A notable individual in the iOS community @ScottStevenson mentioned A Dark Room. I replied with a few humorous tweets:
 
@@ -380,7 +380,7 @@ A notable individual in the iOS community @ScottStevenson mentioned A Dark Room.
 
 I got some retweets because of these interactions :-). Downloads spiked to 40 for a couple of days. Thank you for the support Scott.
 
-**Jan 15, 2014: Tweets sent to 18k People**
+**Jan 15, 2014: Tweets Sent to 18k People**
 
 A notable individual in the game community @RobertAshley interacted with @ADarkRoomiOS too. I sent Robert to this page and told him about how both Michael and I were the sole developers of the game. Robert was kind enough to craft a tweet telling his followers about the web and mobile version of the game. Downloads spiked again to 40 downloads for a couple of days.
 
@@ -442,7 +442,7 @@ I'm burning through my promo codes at this point. The Apple Vis approach to givi
 
 Downloads spiked to 40 those days.
 
-**Feb 7, 2014: A Hail Mary To Cara Ellison**
+**Feb 7, 2014: A Hail Mary to Cara Ellison**
 
 I was down to my last 15 codes. I reached out to Cara Ellison on Twitter about getting A Dark Room in front of people that may write about it. Being the awesome person she is, she replied. I sent over 6 promo codes. The frustrating thing about promo codes is that I don't know if they've been redeemed. I know Cara is extremely busy, and she probably gets many, many emails from people trying to pitch her games. I'm just glad that I have someone that can advocate for me. She continues to be a ray of hope for A Dark Room. Unsolicited mentions of the game and always responds to my emails. Thank you... thank you Cara.
 
