@@ -243,11 +243,11 @@ Our Node Knockout 2013 team: Team Us - As in "us" not "them", ended up placing 1
 
 **Nov 10, 2013: My Obsession with Twitter and @ADarkRoomiOS Begins**
 
-I created the @ADarkRoomiOS twitter handle and started tweeting in the persona of the game. The plan was to interact with anyone and everyone who ever tweeted about the web version of the game. Having a daily tweet from the game, showed that I wasn't just a random spam bot... that there was a real person behind these tweets. I did a Twitter search for "adarkroom" and began combing through all the tweets... replying to anyone who mentioned the game. Letting them know that there was an iOS version.
+I created the @ADarkRoomiOS Twitter handle and started tweeting in the persona of the game. The plan was to interact with anyone and everyone who ever tweeted about the web version of the game. Having a daily tweet from the game, showed that I wasn't just a random spam bot... that there was a real person behind these tweets. I did a Twitter search for "adarkroom" and began combing through all the tweets... replying to anyone who mentioned the game. Letting them know that there was an iOS version.
 
 **Nov 15, 2013: A Ray of Hope - [Courtney Stanton (@q0rt)](http://superopinionated.com/)**
 
-I've spent 5 days putting up daily tweets about A Dark Room. Reached out to a few people on Twitter in the persona of the game. It was fun. I got a couple of laughs and some people actually interacted with me too. I liked building a relationship with the fans :-). Every single morning I'd wake up and check the downloads of A Dark Room for iOS. They were abysmal. Only 5 to 10 downloads a day. It's such a let down. Such a beautiful game, and no one was downloading it.
+I've spent 5 days putting up daily tweets about A Dark Room. Reached out to a few people on Twitter in the persona of the game. It was fun. I got a couple of laughs and some people actually interacted with me too. I liked building a relationship with the fans :-). Every single morning I'd wake up and check the downloads of A Dark Room for iOS. They were abysmal. Only 5 to 10 downloads a day. It's such a let down. Such a beautiful game... and no one was downloading it.
 
 Then the ray of hope. Courtney Stanton (@q0rt) tweeted about the release of the game. This was a big deal given that it was the first tweet about the game from someone outside of Michael's and my development circles. Courtney also had large following on Twitter.
 
@@ -259,7 +259,7 @@ I woke up the next morning, awake, head throbbing, vision blurry. In a sleepy st
 
 **Nov 18, 2013: Additional Notable Interactions**
 
-Using the @ADarkRoomiOS twitter account, I interacted with Leigh Alexander (@leighalexander), an editor at Gamasutra and Kotaku, about a tweet she posted about A Dark Room. Letting a number of people in the conversation know about the existence of the iOS version. There was no noticeable difference in downloads the next day. A meager 5 downloads on the 19th. I'm glad I was able to interact a meaningful interaction with Leigh however.
+Using the @ADarkRoomiOS twitter account, I interacted with Leigh Alexander (@leighalexander), an editor at Gamasutra and Kotaku, about a tweet she posted with regards to A Dark Room. Letting a number of people in the conversation know about the existence of the iOS version. There was no noticeable difference in downloads the next day. A meager 5 downloads on the 19th. I'm glad I was able to havae a meaningful interaction with Leigh however.
 
 **Nov 22, 2013: Pocket Gamers writes an Entry on A Dark Room**
 
@@ -275,7 +275,7 @@ The game up to this point has had 245 downloads over an 18 day period (that's 13
 
 >What was a simple and elegant game should not have been messed with. I regret spending $2 on such a mess. Not only is the UI counter-intuitive and clumsy, but the mobile designer took far too much creative license in altering the original statistics and proportions put in place by Michael Townsend, original designer. Additionally, there is a bug that results in permanent thieves with no way to deter them, making the game essentially unplayable.
 
-What do I do? I played through the game hundreds of times. Meticulously place every button, every interaction. There was no bug in the thieves, I checked 10 times to make sure (just impatience on the part of the player, and unlucky random number generation). One bad review offsets 100 good ones. To this day I feel the pains of this review. I see it as incredibly brutal. Empathy was something I've learned through my time as an independent developer. I understood how frustrating it is to pay for an app and get delivered "shit". So I apologized on this "support" page. I have no idea if blewis1234 will ever read anything on this page. But I hope at some point, he'll re-rate the game.
+What do I do? I played through the game hundreds of times. Meticulously place every button, every interaction. There was no bug in the thieves, I checked 10 times to make sure (just impatience on the part of the player, and unlucky random number generation). One bad review offsets 100 good ones. To this day I feel the pains of this review. I see it as incredibly brutal. Empathy was something I've learned through my time as an independent developer. I understood how frustrating it is to pay for an app and get delivered "shit". So I apologized on this support page. I have no idea if blewis1234 will ever read anything on this page. But I hope at some point, he'll re-rate the game.
 
 **Nov 26, 2013: Game Back Story, an Apology, and a Post to Hacker News**
 
@@ -293,11 +293,11 @@ Blind gamers reached out to @ADarkRoomiOS: Orinks (a member of AppleVis.com) and
 
 **Dec 16, 2013: [Cara Ellison (@Carachan1)](http://caraellison.co.uk/) - Another Glimmer of Hope for A Dark Room**
 
-Cara Ellison a writer for a number of online gaming website mentioned that she was considering A Dark Room for her 2013 Game of the Year list. I reached out to her hoping she would have some kind words to write about the iOS version. She said she'd give the game a shot! I emailed her a promo code that day. Can't say this enough, these moments are hard to put in words. It's a chance for all the hard work Michael and I have put into the game to possibly pay off. For A Dark Room to finally make it into the lime lite.
+Cara Ellison, a writer for a number of online gaming website, mentioned that she was considering A Dark Room for her 2013 Game of the Year list. I reached out to her hoping she would have some kind words to write about the iOS version. She said she'd give the game a shot! I emailed her a promo code that day. Can't say this enough, these moments are hard to put in words. It's a chance for all the hard work Michael and I have put into the game to possibly pay off. For A Dark Room to finally make it into the lime lite.
 
 **Dec 17, 2013: Indie Mega Booth Does A Podcast on A Dark Room**
 
-Indie Mega Booth did a full length podcast on A Dark Room. It is incredible when 4 people can talk so long about the game. Just wonderful to hear different interpretations of the story. They mentioned that the iOS version of the game exists too. Yet again, hoping against all odds that the mention of the game would spur more downloads. I took the time to thank Indie Mega Booth for doing the podcast and personally thanked Maddy Myers (@samusclone) on Twitter.... such an awesome Twitter handle by the way.
+Another "search on Google everyday" result: Indie Mega Booth did a full length podcast on A Dark Room. It's hard to believe 4 people can talk so long about such a small game (it was awesome too). Just wonderful to hear different interpretations of the story. They mentioned that the iOS version of the game exists too. Yet again, hoping against all odds that the mention of the game would spur more downloads. I took the time to thank Indie Mega Booth for doing the podcast and personally thanked Maddy Myers (@samusclone) on Twitter.... such an awesome Twitter handle by the way.
 
 **Dec 18, 2013: [Maddy Myers (@samusclone)](http://metroidpolitan.com/) - More Connections With The Gaming Community**
 
@@ -307,9 +307,9 @@ Maddy Myers was part of the discussion on the Indie Mega Booth podcast. She's an
 
 The first public comment about the slaves in the mobile version was posted on Michael's blog. My biggest fear is the vengeful 1 star review. I already had one... I didn't want another:
 
->I am hoping someone can help. I started to play through and had carted wood to the point the population becomes slaves. I then had thieves and it was taking so long to stop them that I thought you were supposed to stop carting wood before your population became slaves. So I reset. I left the cart alone even though it had a “!” Next to it. I know have the entire map uncovered, I have been to every location and have used the jewel. I have the space ship but I have no option to upgrade it even though I have 40 alien alloy. Is this a bug because I ignored the cart for so long or am I missing something. Very frustrating as I will NOT be replying to get to this point.
+>I am hoping someone can help. I started to play through and had carted wood to the point the population becomes slaves. I then had thieves and it was taking so long to stop them that I thought you were supposed to stop carting wood before your population became slaves. So I reset. I left the cart alone even though it had a “!” Next to it. I now have the entire map uncovered, I have been to every location and have used the jewel. I have the space ship but I have no option to upgrade it even though I have 40 alien alloy. Is this a bug because I ignored the cart for so long or am I missing something. Very frustrating as I will NOT be replying to get to this point.
 
-Michael was able to get the email address for the person who left the comment. And I emailed him immediately tell him how to beat the game. I also gave him a hint on how to unlock the alternate ending where his villagers wouldn't become slaves. He was happy to receive the email and I felt like I dodged a bullet.
+Michael was able to get the email address for the person who left the comment. And I emailed him immediately to tell him how to beat the game. I also gave him a hint on how to unlock the alternate ending where his villagers wouldn't become slaves. He was happy to receive the email and I felt like I dodged a bullet.
 
 **Dec 27, 2013: A Dark Room Makes a Number of 2013 GOTY Lists**
 
