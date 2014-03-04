@@ -482,12 +482,12 @@ I Talked to Karthik Hariharan about the viability of releasing A Dark Room's sou
 
 I sent an email to the RubyMotion team telling them about the success the game had so far. It was incredible getting a response back so quickly from Laurent and then a tweet that reached a number of developers.
 
-**Feb 27, 2013: Another Release Of A Dark Room, The Review Me Button**
+**Feb 27, 2013: Another Release of A Dark Room, The Review Me Button**
 
 There is always a side effect to releasing a new version of the app to the App Store. The first side effect: you lose all the reviews for the current version of the App (only ratings for the current version of the app show up in preview screens, the user can go and see the reviews of the previous versions, but it's not immediately obvious). The second side effect: you get more promo codes.
 
 A Dark Room's current version has 56 five-star reviews, 1 one-star review, and 1 four-star review. The app ranking was already shot to hell (relative to where it was before), because of the two day price change to free. So I figured this would be a good time to do an update. I added the "you better go gather wood" notification to help the player through the slavery period. I made more accessibility enhancements to the game to make it a little bit easier for the blind to navigate the Dusty Path. And I added a "review me" button to the game. The app is currently in the App Store's review process. I'll update this log as soon as I get the results/side effects from making these changes.
 
-**March 3, 2014: Slides Complete for my First Presentation at a Ruby User Group - 12k Lines of RubyMotion**
+**March 3, 2014: Slides Complete for My First Presentation at a Ruby User Group - 12k Lines of RubyMotion**
 
 A lot is still up in the air at this point. Version 1.4 is waiting for release. I've permanently dropped the price of A Dark Room to $0.99 (I don't know the long term effects of this). I'm hoping that Owen from Pocket Tactics shows some love to A Dark Room on his website. I'm hoping that Leigh publishes the interview questions. I'm hoping that Brandon gets back to me about his thoughts on the game and with any help he can provide. I'm hoping the RubyMotion team likes the slides I've sent them and that I'll get some visibility with them too. I'm hoping that my first presentation at a Ruby user group goes well. I'm hoping the new review button generates more reviews. Lots of hope... few answers at this point.
