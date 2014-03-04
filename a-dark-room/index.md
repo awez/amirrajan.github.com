@@ -154,7 +154,7 @@ I was scheduled to speak at Austin Code Camp. I was going to do a presentation o
 
 **Aug 25, 2013: Taking a Break to Scratch a NodeJS Itch**
 
-I've spent the last 8 days on the Dusty Path. Adding the Iron Mine, Coal Mine, Sulfur Mine, working through road creation, and working through unlocking Workshop items. I Needed another break. I spent the next week working on a Twitter mashup written in NodeJS (github.com/amirrjan/sortis).
+I've spent the last 8 days on the Dusty Path. Adding the Iron Mine, Coal Mine, Sulfur Mine, working through road creation, and working through unlocking Workshop items. I needed another break. I spent the next week working on a Twitter mashup written in NodeJS (github.com/amirrajan/sortis).
 
 **Sep 18, 2013: My First "Not .Net" Presentation**
 
