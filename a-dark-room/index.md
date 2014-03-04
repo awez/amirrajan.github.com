@@ -32,7 +32,7 @@ The web based version is free to play here: [A Dark Room](http://adarkroom.doubl
 
 <hr />
 
-[Support Elizabeth Siminis on Patreon](http://www.patreon.com/elizsimins). This is one of her works.
+[Support Elizabeth Simins on Patreon](http://www.patreon.com/elizsimins). This is one of her works.
 
 A Tribute to A Dark Room <small>(displayed with permission)</small>
 
@@ -326,7 +326,7 @@ I played Depression Quest all the way through. It was an _experience_... that's 
 
 I waited till the next day. I woke up in the morning and checked the downloads... there were 54. It's the highest thus far... but that was all the downloads that were generated... soul crushing I tell you.
 
-**Dec 28, 2013: [Elizabeth Siminis (@ElizSimins)](http://cargocollective.com/eliz) and Patreon**
+**Dec 28, 2013: [Elizabeth Simins (@ElizSimins)](http://cargocollective.com/eliz) and Patreon**
 
 After seeing her art work on Bygon Bureau, I reached out to Elizabeth and asked if I could put her piece on A Dark Room's support page. She said yes :-) Another bit of good news to keep my spirits up. Thank you Elizabeth, I'm forever grateful that you allowed me to showcase your work here (it's at the top of this page). Her work also led me to discover [Patreon](http://www.patreon.com/elizsimins). I'm amazed at how technology has given a means for artists to showcase their works (and potentially make a living off of them). Removing the middle man and making it easy for artists to promote their own works is a big deal.
 
