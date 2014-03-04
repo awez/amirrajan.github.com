@@ -340,7 +340,7 @@ First check comes in. The grand totals for the month of November:
 - RPG Rank: 567th at its low point, 27th at its height
 - overall Rank: 1479th for two days (metrics below the 1500th placement aren't kept in AppAnnie)
 
-**Jan 4, 2014: The Accessible Version of A Dark Room is Release**
+**Jan 4, 2014: The Accessible Version of A Dark Room Is Released**
 
 I worked through the holidays to get the accessible version of A Dark Room completed. It spent about 5 days in the approval process and then finally released on the 4th. I let Orinks and Aaron know about the updates and they subsequently let their respective communities know. The downloads spiked to about 40 downloads for the next two days. I really didn't care about the downloads this time around. I wanted to do the right thing. I also ended up writing about what it took to make A Dark Room accessible: [Raising Awareness, the Blind use iOS Devices](http://amirrajan.net/software-development/2013/12/29/if-you-are-reading-this-you-are-not-blind/).
 
