@@ -75,7 +75,8 @@ May the fire burn bright and warm for you. Sincerely,
 
 A Dark Room
 
-**The Rest of the Story**
+
+<b id="adarkroomstory">The Rest of the Story</b>
 
 Everything past this point contains spoilers. If you haven't played the game and don't want the story spoiled. Stop reading now.
 
