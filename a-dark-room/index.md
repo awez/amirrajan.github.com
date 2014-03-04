@@ -260,7 +260,7 @@ I woke up the next morning, awake, head throbbing, vision blurry. In a sleepy st
 
 **Nov 18, 2013: Additional Notable Interactions**
 
-Using the @ADarkRoomiOS Twitter account, I interacted with Leigh Alexander (@leighalexander), an editor at Gamasutra and Kotaku, about a tweet she posted with regards to A Dark Room. Letting a number of people in the conversation know about the existence of the iOS version. There was no noticeable difference in downloads the next day. A meager 5 downloads on the 19th. I'm glad I was able to havae a meaningful interaction with Leigh however.
+Using the @ADarkRoomiOS Twitter account, I interacted with Leigh Alexander (@leighalexander), an editor at Gamasutra and Kotaku, about a tweet she posted with regards to A Dark Room. Letting a number of people in the conversation know about the existence of the iOS version. There was no noticeable difference in downloads the next day. A meager 5 downloads on the 19th. I'm glad I was able to have a meaningful interaction with Leigh however.
 
 **Nov 22, 2013: Pocket Gamers writes an Entry on A Dark Room**
 
