@@ -114,7 +114,7 @@ I settled on a "follow the player" implementation where the map would center whe
 
 **Jul 26, 2013: Making the iOS Version My Own**
 
-At this point I needed to take a break from the Dusty Path and do some polish and play testing. The pacing in the game was an issue. It was too slow to get started. I didn't know if it was because I had played it so many times, or if the game was actually just too slow to get going on a mobile medium.
+At this point I needed to take a break from the Dusty Path and do some polish and playtesting. The pacing in the game was an issue. It was too slow to get started. I didn't know if it was because I had played it so many times, or if the game was actually just too slow to get going on a mobile medium.
 
 I decided to add Friedrich Nietzsche quotes that would show up randomly when you stoked the fire (to give the player something to read through the slower points in the game). This didn't make it into the final release, but were in the game for a while. I had accumulated 200 quotes and felt that it was inline with the atmosphere of the game.
 
@@ -180,7 +180,7 @@ I chatted with Michael about this. How the hell he managed to test all this... H
 
 **Oct 19, 2013: A Dusty Path Complete. I Hate You Michael (in a good way)**
 
-The Dusty Path is finally to a point where all the events work and the spaceship can be unlocked. I have saving working too. A number of my friends and family have play tested the game to this point (and have frankly gotten sick of it).
+The Dusty Path is finally to a point where all the events work and the spaceship can be unlocked. I have saving working too. A number of my friends and family have playtested the game to this point (and have frankly gotten sick of it).
 
 During this time period I removed the Nietzsche quotes. It just led to confusion and the pacing was good enough with the "gather wood storyline events". Reading all those quotes helped shape the storyline I put in place. Particularly this quote:
 
@@ -204,7 +204,7 @@ I hate you Michael (in a good way). You didn't build a single game. You built 3 
 
 I couldn't believe it. I had a fully functioning game from beginning to end. I knew I had a number of things to polish. But the game was "code complete". Around this time I emailed Michael to set up a video conference (he lives in Canada.. I live in Dallas, Tx). I can't believe that all the communication up until this point was done through email and chat.
 
-Michael hadn't seen the story line additions I made. I was worried he'd say "no" to the changes. It wasn't a lot of work to rip it out, but it was definitely something I felt contributed greatly to the experience of A Dark Room. It made the player feel anxious, uneasy, even worried to continue the game at times.
+Michael hadn't seen the storyline additions I made. I was worried he'd say "no" to the changes. It wasn't a lot of work to rip it out, but it was definitely something I felt contributed greatly to the experience of A Dark Room. It made the player feel anxious, uneasy, even worried to continue the game at times.
 
 This is a testament to how awesome and brilliant Michael is. He appreciated the changes I made to the storyline, and loved the enhancements I made to the mobile version of the game. It was as simple as that. He just said, "That's awesome! I like it!" Suffice to say that a huge weight was lifted off of my shoulders. We got to talking in fact about the intricacies of the game. I mentioned that most of the game could have been played without any villagers if iron, coal and sulphur could be mined by the player. Michael said "Hey, why don't you add that? Add a solo mode with an alternate ending?"
 
@@ -212,15 +212,15 @@ This is a testament to how awesome and brilliant Michael is. He appreciated the 
 
 The primary feedback that I got was removal of pronouns. I didn't realize it, but no part of the web version referred to the player as "you" or "I" or "us". I also incorporated the solo mode and alternate ending into the game. Playtesting. Playtesting. More playtesting. More tweaking. More playtesting.
 
-**Oct 31, 2013: My Wife's Final Play Test**
+**Oct 31, 2013: My Wife's Final Playtest**
 
-The game is in its final form. My wife sits down and plays the game for the 50th time. A number of my friends play tested the game. But I really didn't want to ask too much of them. Most of them only play tested the game once, at different points in the development process. I was able to get feedback from them, and they were a tremendous help (thank you Jason Smith, Eric Sowell, Kevin Wade, Matt Florence, Tim Rayburn, Zahan Tariq, Christopher Krailo, Aaron Lasseigne, and Chris Holt).
+The game is in its final form. My wife sits down and plays the game for the 50th time. A number of my friends playtested the game. But I really didn't want to ask too much of them. Most of them only playtested the game once, at different points in the development process. I was able to get feedback from them, and they were a tremendous help (thank you Jason Smith, Eric Sowell, Kevin Wade, Matt Florence, Tim Rayburn, Zahan Tariq, Christopher Krailo, Aaron Lasseigne, and Chris Holt).
 
-But my wife stands well above all the others that play tested. She could have said she was tired of playing this game at any point, but she didn't. She was the only person that, without hesitation, would play through the game any time I asked. I handed the final game to her at 10 pm that night. And she played the game non stop, all the way to the end. It was 2 am when she completed the play through. Thank you my dear.
+But my wife stands well above all the others that playtested. She could have said she was tired of playing this game at any point, but she didn't. She was the only person that, without hesitation, would play through the game any time I asked. I handed the final game to her at 10 pm that night. And she played the game non stop, all the way to the end. It was 2 am when she completed the play through. Thank you my dear.
 
 **Nov 1, 2013: Submitted to the App Store at $1.99**
 
-I submitted the game to the App Store. The description of the game was set to "a text based journey... awake. head throbbing. vision blurry." I still spent a day making minor tweaks to balancing. I play tested the game another 4 times before releasing. My game times were pretty damn fast at this point because I knew exactly what to do. I could beat the game in 90 to 100 minutes without even thinking too hard. Now I just have to wait. This was a good week. I shipped A Dark Room for iOS. And I was now preparing for a NodeJS competition: Node Knockout 2013!
+I submitted the game to the App Store. The description of the game was set to "a text based journey... awake. head throbbing. vision blurry." I still spent a day making minor tweaks to balancing. I playtested the game another 4 times before releasing. My game times were pretty damn fast at this point because I knew exactly what to do. I could beat the game in 90 to 100 minutes without even thinking too hard. Now I just have to wait. This was a good week. I shipped A Dark Room for iOS. And I was now preparing for a NodeJS competition: Node Knockout 2013!
 
 **Nov 8, 2013: One of the Worst Days of My Life**
 
@@ -260,7 +260,7 @@ I woke up the next morning, awake, head throbbing, vision blurry. In a sleepy st
 
 **Nov 18, 2013: Additional Notable Interactions**
 
-Using the @ADarkRoomiOS twitter account, I interacted with Leigh Alexander (@leighalexander), an editor at Gamasutra and Kotaku, about a tweet she posted with regards to A Dark Room. Letting a number of people in the conversation know about the existence of the iOS version. There was no noticeable difference in downloads the next day. A meager 5 downloads on the 19th. I'm glad I was able to havae a meaningful interaction with Leigh however.
+Using the @ADarkRoomiOS Twitter account, I interacted with Leigh Alexander (@leighalexander), an editor at Gamasutra and Kotaku, about a tweet she posted with regards to A Dark Room. Letting a number of people in the conversation know about the existence of the iOS version. There was no noticeable difference in downloads the next day. A meager 5 downloads on the 19th. I'm glad I was able to havae a meaningful interaction with Leigh however.
 
 **Nov 22, 2013: Pocket Gamers writes an Entry on A Dark Room**
 
