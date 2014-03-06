@@ -119,6 +119,15 @@ I want to make sure I've logged everything that's happened around the growth and
 - [Nov 22, 2013: Pocket Gamers writes an Entry on A Dark Room](#pocketgamers)
 - [Nov 23, 2013: A Dark Room Forum Entry on Touch Arcade](#toucharcade)
 - [Nov 24, 2013: The First One Star Review](#onestarreview)
+- [Nov 26, 2013: Game Back Story, an Apology, and a Post to Hacker News](#hackernews)
+- [Nov 27, 2013: Another Notable Tweet. A Stellar Video Review.](#adrreview)
+- [Dec 10, 2013: Blind Gamers Are Playing A Dark Room](#blindgamers)
+- [Dec 16, 2013: Cara Ellison - Another Glimmer of Hope for A Dark Room](#cara)
+- [Dec 17, 2013: Indie Mega Booth Does A Podcast on A Dark Room](#indiemegabooth)
+- [Dec 18, 2013: Maddy Myers (@samusclone) - More Connections With The Gaming Community](#maddy)
+- [Dec 22, 2013: Someone Stopped Playing Because of Slaves](#slaves)
+- [Dec 27, 2013: A Dark Room, 2013 GOTY Lists, and Zoe Quinn](#zoe)
+- [Dec 28, 2013: Elizabeth Simins (@ElizSimins) and Patreon](#elizabeth)
 
 <a id="pickingdevenvironment"> </a>
 
@@ -378,9 +387,13 @@ The game up to this point has had 245 downloads over an 18 day period (that's 13
 
 What do I do? I played through the game hundreds of times. Meticulously place every button, every interaction. There was no bug in the thieves, I checked 10 times to make sure (just impatience on the part of the player, and unlucky random number generation). One bad review offsets 100 good ones. To this day I feel the pains of this review. I see it as incredibly brutal. Empathy was something I've learned through my time as an independent developer. I understood how frustrating it is to pay for an app and get delivered "shit". So I apologized on this support page. I have no idea if blewis1234 will ever read anything on this page. But I hope at some point, he'll re-rate the game.
 
+<a id="hackernews"> </a>
+
 **Nov 26, 2013: Game Back Story, an Apology, and a Post to Hacker News**
 
 I updated the support page for A Dark Room to include some back story. The name of the section is "A letter to the fans of A Dark Room" (near the top). I posted this entry on Hacker News and reddit.com/r/incremental_games to see if it would generate some interest. Again, I ended up hoping against all hope that enough people on Hacker News would remember the "Minimal Text Adventure" and show some love. It didn't happen. The response I got on Reddit was a bit better. I got quite a few kind words, which helped heal the wounds of my first one star review. The next morning, because of the post to Reddit, the game downloads spiked to 27 downloads. 
+
+<a id="adrreview"> </a>
 
 **Nov 27, 2013: Another Notable Tweet. A Stellar Video Review.**
 
@@ -388,21 +401,31 @@ Cassandra Khaw (@casskhaw), an editor at USGamer, tweets about A Dark Room on iO
 
 I also came across a video review Chris Charlton (@reasonjp) did on the [iOS version of the game](http://kaijupop.com/2013/11/iospc-quick-vid-dark-room/). It was an incredible review, and it truly made my day. These small wins help me get through each disappointment in the number of downloads.
 
+<a id="blindgamers"> </a>
+
 **Dec 10, 2013: Blind Gamers Are Playing A Dark Room**
 
 Blind gamers reached out to @ADarkRoomiOS: Orinks (a member of AppleVis.com) and Aaron (a member of AudioGames.net). I was in complete utter shock that blind people were trying to play A Dark Room. I sent out a promise to them that I'd make the game fully accessible. I fired up RubyMotion and started researching what it would take to make A Dark Room fully playable via VoiceOver.
+
+<a id="cara"> </a>
 
 **Dec 16, 2013: [Cara Ellison (@Carachan1)](http://caraellison.co.uk/) - Another Glimmer of Hope for A Dark Room**
 
 Cara Ellison, a writer for a number of online gaming website, mentioned that she was considering A Dark Room for her 2013 Game of the Year list. I reached out to her hoping she would have some kind words to write about the iOS version. She said she'd give the game a shot! I emailed her a promo code that day. Can't say this enough, these moments are hard to put in words. It's a chance for all the hard work Michael and I have put into the game to possibly pay off. For A Dark Room to finally make it into the lime lite.
 
+<a id="indiemegabooth"> </a>
+
 **Dec 17, 2013: Indie Mega Booth Does A Podcast on A Dark Room**
 
 Another "search on Google everyday" result: Indie Mega Booth did a full length podcast on A Dark Room. It's hard to believe 4 people can talk so long about such a small game (it was awesome too). Just wonderful to hear different interpretations of the story. They mentioned that the iOS version of the game exists too. Yet again, hoping against all odds that the mention of the game would spur more downloads. I took the time to thank Indie Mega Booth for doing the podcast and personally thanked Maddy Myers (@samusclone) on Twitter.... such an awesome Twitter handle by the way.
 
+<a id="maddy"> </a>
+
 **Dec 18, 2013: [Maddy Myers (@samusclone)](http://metroidpolitan.com/) - More Connections With The Gaming Community**
 
 Maddy Myers was part of the discussion on the Indie Mega Booth podcast. She's an editor for Paste Magazine. Another important voice in the gaming community. Every person I've interacted with thus far is trying to be heard. Everyone in the gaming community (whether they are an independent game developer or writer) is struggling in some form. And all I can say is that I'll do what I can to make sure those people who have supported A Dark Room, have my support in turn.
+
+<a id="slaves"> </a>
 
 **Dec 22, 2013: Someone Stopped Playing Because of Slaves**
 
@@ -412,7 +435,9 @@ The first public comment about the slaves in the mobile version was posted on Mi
 
 Michael was able to get the email address for the person who left the comment. And I emailed him immediately to tell him how to beat the game. I also gave him a hint on how to unlock the alternate ending where his villagers wouldn't become slaves. He was happy to receive the email and I felt like I dodged a bullet.
 
-**Dec 27, 2013: A Dark Room Makes a Number of 2013 GOTY Lists**
+<a id="zoe"> </a>
+
+**Dec 27, 2013: A Dark Room, 2013 GOTY Lists, and Zoe Quinn**
 
 I was holding my breath for this day. A number of online gaming websites posted their 2013 Games of the Year. A Dark Room (the web and mobile version) made three lists: Maddy Myers', Zoe Quinn's and Cara Ellison's.
 
@@ -425,6 +450,8 @@ This was also the first time I heard about [Depression Quest by Zoe Quinn](http:
 I played Depression Quest all the way through. It was an _experience_... that's the best way to describe it. I'm glad there are games coming out that connect emotionally with the player... that are more than guns and eye candy. I reached out to Zoe and let her know that the blind community are always in need for video games, and to spend some time in making her game accessible.
 
 I waited till the next day. I woke up in the morning and checked the downloads... there were 54. It's the highest thus far... but that was all the downloads that were generated... soul crushing I tell you.
+
+<a id="elizabeth"> </a>
 
 **Dec 28, 2013: [Elizabeth Simins (@ElizSimins)](http://cargocollective.com/eliz) and Patreon**
 
