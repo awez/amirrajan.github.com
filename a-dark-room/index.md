@@ -128,6 +128,27 @@ I want to make sure I've logged everything that's happened around the growth and
 - [Dec 22, 2013: Someone Stopped Playing Because of Slaves](#slaves)
 - [Dec 27, 2013: A Dark Room, 2013 GOTY Lists, and Zoe Quinn](#zoe)
 - [Dec 28, 2013: Elizabeth Simins (@ElizSimins) and Patreon](#elizabeth)
+- [Jan 1, 2014: First Check From Apple](#firstcheck)
+- [Jan 4, 2014: The Accessible Version of A Dark Room Is Released](#blindversionreleased)
+- [Jan 5, 2014: Changes in Routine](#routine)
+- [Jan 10, 2014: Tweets Sent to 6k People](#6kpeople)
+- [Jan 15, 2014: Tweets Sent to 18k People](#18kpeople)
+- [Jan 16, 2014: Pocket Tactics and Owen Faraday](#pockettactics)
+- [Jan 19, 2014: Apple Vis Promo Code Give Away](#applevis)
+- [Jan 26, 2014: Promo Code Give Away on Touch Arcade](#promocodestoucharcade)
+- [Feb 1, 2014: Check #2 Comes in From Apple](#secondcheck)
+- [Feb 2, 2014: Another Person Stopped Playing Because of Slaves](#slaves2)
+- [Feb 5, 2014: Promo Code Give Away on Reddit](#reddit)
+- [Feb 7, 2014: A Hail Mary to Cara Ellison](#hailcara)
+- [Feb 11, 2014: A Hail Mary to Brandon Boyer](#hailbrandon)
+- [Feb 12, 2014: Appcessible Podcast](#appcessible)
+- [Feb 13, 2014: Price Dropped on Game to $0.99 (50% off Sale)](#pricedrop)
+- [Feb 14, 2014: A Dark Room Makes it Into the Top 10 under the RPG Category](#top10)
+- [Feb 15, 2014: A Dark Room Is Free For Two Days](#free)
+- [Feb 21, 2014: A Hail Mary to Leigh Alexander](#hailleigh)
+- [Feb 24, 2014: Reaching Out to RubyMotion](#rubymotion)
+- [Feb 27, 2013: Another Release of A Dark Room, The Review Me Button](#reviewbutton)
+- [March 3, 2014: Slides Complete for My First Presentation at a Ruby User Group - 12k Lines of RubyMotion](#rubybrigade)
 
 <a id="pickingdevenvironment"> </a>
 
@@ -457,6 +478,8 @@ I waited till the next day. I woke up in the morning and checked the downloads..
 
 After seeing her art work on Bygon Bureau, I reached out to Elizabeth and asked if I could put her piece on A Dark Room's support page. She said yes :-) Another bit of good news to keep my spirits up. Thank you Elizabeth, I'm forever grateful that you allowed me to showcase your work here (it's at the top of this page). Her work also led me to discover [Patreon](http://www.patreon.com/elizsimins). I'm amazed at how technology has given a means for artists to showcase their works (and potentially make a living off of them). Removing the middle man and making it easy for artists to promote their own works is a big deal.
 
+<a id="firstcheck"> </a>
+
 **Jan 1, 2014: First Check From Apple**
 
 First check comes in. The grand totals for the month of November:
@@ -466,6 +489,8 @@ First check comes in. The grand totals for the month of November:
 - Reviews: 5 five-star reviews, 1 one-star review
 - RPG Rank: 567th at its low point, 27th at its height
 - overall Rank: 1479th for two days (metrics below the 1500th placement aren't kept in AppAnnie)
+
+<a id="blindversionreleased"> </a>
 
 **Jan 4, 2014: The Accessible Version of A Dark Room Is Released**
 
@@ -489,6 +514,8 @@ Given the accessibility updates and the recent media coverage for A Dark Room, I
 
 I also nerfed thieves a little bit... you're welcome blewis1234 ;-)
 
+<a id="routine"> </a>
+
 **Jan 5, 2014: Changes in Routine**
 
 The iOS version of the game is solid. I still get a little antsy releasing updates and brace for insta-crashes on my iPad Air. It hasn't happened again though. With a little bit of breathing room, I started working through Land of Lisp and started studying Clojure. I also started doing screencasts on NodeJS development (my Coding Out Loud screencasts). @ADarkRoomiOS's Twitter remained active. I kept interacting with fans. It was a great way to relax and joke around with the community.
@@ -496,6 +523,8 @@ The iOS version of the game is solid. I still get a little antsy releasing updat
 I also started work on a "spiritual" sequel to A Dark Room. Lots of HTML5 canvas work and AngularJS. Nodekick (the NodeJS game that Team Us built for Node Knockout 2013) also got cleaned up.
 
 I finally started to get used to the number of downloads for the game. I accepted them for what they were. But I still meticulously observed impact to the number and correlated them to what I did online.
+
+<a id="6kpeople"> </a>
 
 **Jan 10, 2014: Tweets Sent to 6k People**
 
@@ -507,9 +536,13 @@ A notable individual in the iOS community @ScottStevenson mentioned A Dark Room.
 
 I got some retweets because of these interactions :-). Downloads spiked to 40 for a couple of days. Thank you for the support Scott.
 
+<a id="18kpeople"> </a>
+
 **Jan 15, 2014: Tweets Sent to 18k People**
 
 A notable individual in the game community @RobertAshley interacted with @ADarkRoomiOS too. I sent Robert to this page and told him about how both Michael and I were the sole developers of the game. Robert was kind enough to craft a tweet telling his followers about the web and mobile version of the game. Downloads spiked again to 40 downloads for a couple of days.
+
+<a id="pockettactics"> </a>
 
 **Jan 16, 2014: Pocket Tactics and Owen Faraday**
 
@@ -519,17 +552,23 @@ I asked if Pocket Tactics would like to do a review on A Dark Room. Owen replied
 
 On Feb 4th, Owen emailed with the word: "Amazing". I hope to see a review show up soon on Pocket Tactics. I try to be diligent in following up with Owen... without being annoying. It's hard to find a good balance between the two. A review hasn't gone up yet... but after another release of the game I'll be sure to follow up with Owen. I hope he doesn't take offense to my persistence.
 
+<a id="applevis"> </a>
+
 **Jan 19, 2014: Apple Vis Promo Code Give Away**
 
 The blog post I wrote about accessibility received some buzz in the blind community. The AppleVis editorial team reached out to me. They wanted to run a promo code give away. I sent them 10 promo codes and they did something really unique. Instead of just giving them away, they asked individuals to go read the blog post I did on making the game accessible to the blind, and about the making of the game. They had to mention something from the write ups to get a promo code. It was a great idea, and I saw a lot of nice things said about the game.
 
 Downloads spiked to 50 during the contest period. I'm burning through my promo codes, but they are generating results.
 
+<a id="promocodestoucharcade"> </a>
+
 **Jan 26, 2014: Promo Code Give Away on Touch Arcade**
 
 I took Apple Vis' idea and gave away 20 promo codes across two separate contests at Touch Arcade. The interactions I had with the fans (old and new) was great. A lot kind words and genuine support.
 
 The downloads for the last four days of January stayed at a steady 40. 
+
+<a id="secondcheck"> </a>
 
 **Feb 1, 2014: Check #2 Comes in From Apple**
 
@@ -540,6 +579,8 @@ The second check comes in. The grand totals for the month of December:
 - Reviews: 3 five-star reviews
 - RPG Rank: 201st at its low point, 33rd at its height
 - overall Rank: 1428th at its low point, 486th at its height (fell below the 1500 cut off for only 3 days)
+
+<a id="slaves2"> </a>
 
 **Feb 2, 2014: Another Person Stopped Playing Because of Slaves**
 
@@ -563,15 +604,21 @@ And a happy ending:
 
 I ended up putting a more assertive message about gathering wood to progress the storyline within the game. In version 1.4, when you stoke the fire (and there is a storyline element that needs to be dealt with). You get a small message "need to gather wood, the forest beckons". This will hopefully help guide future gamers.
 
+<a id="reddit"> </a>
+
 **Feb 5, 2014: Promo Code Give Away on Reddit**
 
 I'm burning through my promo codes at this point. The Apple Vis approach to giving away promo codes leads to a much deeper connection with the fans of the game. It's meaningful and I enjoy having all the good conversations. I ran a couple of promo code giveaways on Reddit.
 
 Downloads spiked to 40 those days.
 
+<a id="hailcara"> </a>
+
 **Feb 7, 2014: A Hail Mary to Cara Ellison**
 
 I was down to my last 15 codes. I reached out to Cara Ellison on Twitter about getting A Dark Room in front of people that may write about it. Being the awesome person she is, she replied. I sent over 6 promo codes. The frustrating thing about promo codes is that I don't know if they've been redeemed. I know Cara is extremely busy, and she probably gets many, many emails from people trying to pitch her games. I'm just glad that I have someone that can advocate for me. She continues to be a ray of hope for A Dark Room. Unsolicited mentions of the game and always responds to my emails. Thank you... thank you Cara.
+
+<a id="hailbrandon"> </a>
 
 **Feb 11, 2014: A Hail Mary to Brandon Boyer**
 
@@ -581,9 +628,13 @@ There were two people on this list that I had hopes would respond: Leigh Alexand
 
 I end up emailing Brandon Boyer. I tried not to send him a wall of text (it happened anyways). But Brandon replied after a few days (yay!). I sent over a promo code. Now I just have to wait T_T.
 
+<a id="appcessible"> </a>
+
 **Feb 12, 2014: Appcessible Podcast**
 
 Around this same time Jonathan Mosen reached out to me. He is another individual from the blind community and came across the blog entry I did on adding accessibility enhancements to A Dark Room. He wanted to have me on a new podcast he was launching for the blind community. I said yes (of course), [here is a link to the podcast](http://www.appcessible.net/talking-apps-podcast-episode-2-amir-rajan/).
+
+<a id="pricedrop"> </a>
 
 **Feb 13, 2014: Price Dropped on Game to $0.99 (50% off Sale)**
 
@@ -591,17 +642,25 @@ A Dark Room is now hovering near the top 10 under the RPG Category. I didn't wan
 
 I tweeted about it. A bunch of people tweeted about it. Pocket Tactics wrote up a short piece on the game being half off. There was an unsolicited Reddit post on the price drop. There was an unsolicited post on Touch Arcade. I woke up the next day I look at the downloads. They spiked to 351 in one day.
 
+<a id="top10"> </a>
+
 **Feb 14, 2014: A Dark Room Makes it Into the Top 10 under the RPG Category**
 
 A Dark Room in now number 8 in the App Store under the RPG category. Downloads have dropped to 100 after the initial spike from the previous day. I didn't want it to lose steam. I DIDN'T want it to lose steam. I wondered if I could set A Dark Room to free for two days. Would it reset my app rank? The app dropped to number 11 the next day. It was dropping again.... that evening I made the app free... for two days.
+
+<a id="free"> </a>
 
 **Feb 15, 2014: A Dark Room Is Free For Two Days**
 
 A number of unsolicited posts went up again about the app being free... over the weekend, A Dark Room got ~8,900 downloads and ~10 new five-star reviews. But it lost it's rank entirely in the App Store. The app went back to its $0.99 price. It took a couple of days, but made it's way back to the ranking list. A Dark Room now hovers around 30 in the RPG Rankings. To this day I still wonder if it was a mistake to make the app free for two days.
 
+<a id="hailleigh"> </a>
+
 **Feb 21, 2014: A Hail Mary to Leigh Alexander**
 
 I reached out to Leigh via email... and let her know via Twitter that I sent her an email :-D. After a few days, she replied back with some interview questions for me and Michael! Hopefully a publication by Leigh will bring some visibility to A Dark Room.
+
+<a id="rubymotion"> </a>
 
 **Feb 24, 2014: Reaching Out to RubyMotion**
 
@@ -609,11 +668,15 @@ I Talked to Karthik Hariharan about the viability of releasing A Dark Room's sou
 
 I sent an email to the RubyMotion team telling them about the success the game had so far. It was incredible getting a response back so quickly from Laurent and then a tweet that reached a number of developers.
 
+<a id="reviewbutton"> </a>
+
 **Feb 27, 2013: Another Release of A Dark Room, The Review Me Button**
 
 There is always a side effect to releasing a new version of the app to the App Store. The first side effect: you lose all the reviews for the current version of the App (only ratings for the current version of the app show up in preview screens, the user can go and see the reviews of the previous versions, but it's not immediately obvious). The second side effect: you get more promo codes.
 
 A Dark Room's current version has 56 five-star reviews, 1 one-star review, and 1 four-star review. The app ranking was already shot to hell (relative to where it was before), because of the two day price change to free. So I figured this would be a good time to do an update. I added the "you better go gather wood" notification to help the player through the slavery period. I made more accessibility enhancements to the game to make it a little bit easier for the blind to navigate the Dusty Path. And I added a "review me" button to the game. The app is currently in the App Store's review process. I'll update this log as soon as I get the results/side effects from making these changes.
+
+<a id="rubybrigade"> </a>
 
 **March 3, 2014: Slides Complete for My First Presentation at a Ruby User Group - 12k Lines of RubyMotion**
 
