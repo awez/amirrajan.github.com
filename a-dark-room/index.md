@@ -77,7 +77,7 @@ A Dark Room
 
 <hr/>
 
-<a id="darkroomstory"> </a>
+<a id="adarkroomstory"> </a>
 
 [The Rest of A Dark Room's Story](#adarkroomstory)
 ======
