@@ -75,12 +75,52 @@ May the fire burn bright and warm for you. Sincerely,
 
 A Dark Room
 
+<hr/>
 
-<b id="adarkroomstory">The Rest of the Story</b>
 
-<div style="font-size: 20px; color: red; font-weight: bold;">Everything past this point contains spoilers. If you haven't played the game and don't want the story spoiled. Stop reading now.</div>
+
+[The Rest of A Dark Room's Story](#adarkroomstory)
+======
+
+<div style="font-size: 28px; color: #C34A2C; font-weight: bold; line-height: 28px">Everything past this point contains spoilers. If you haven't played the game, and don't want the story spoiled. Stop reading now. No really, even the Table of Contents has spoilers. Don't say I didn't warn you.</div>
 
 I want to make sure I've logged everything that's happened around the growth and popularity of A Dark Room. I hope that indie developers (or those that want to try to "make it" in the App Store) can benefit from these entries. Notable events are listed below along with any pertinent information about how it affected downloads, reviews, emotions, and anything else that influenced the success (or failure) of A Dark Room for iOS.
+
+**Table of Contents**
+
+- [Jun 29, 2013: Picking the Development Environment](#pickingdevenvironment)
+- [Jul 7, 2013: A Week Later. First Playtest by a Non-Gamer](#firstplaytest)
+- [Jul 8, 2013: Realization That I was Growing as a Developer](#growingasadeveloper)
+- [Jul 11, 2013: Realization That I Enjoy Helping Others Break Down Barriers](#breakingdownbarriers)
+- [Jul 12, 2013: The First Road Block in Developing A Dark Room](#firstroadblock)
+- [Jul 21, 2013: I Want to Stab Cocoa UI In the Face](#stabbingcocoaui)
+- [Jul 26, 2013: Making the iOS Version My Own](#myversion)
+- [Jul 28, 2013: Creativity is a Drug](#creativityisadrug)
+- [Jul 30, 2013: Back to Battle the Dusty Path](#battlingthedustypath)
+- [Aug 1, 2013: Reflecting on the .Net Ecosystem - The Microsoft Manifesto](#microsoftmanifesto)
+- [Aug 2, 2013: Had to Take Another Break](#takinganotherbreak)
+- [Aug 13, 2013: Another Realization That I Was Becoming a Better Developer](#abetterdeveloper2)
+- [Aug 25, 2013: Taking a Break to Scratch a NodeJS Itch](#nodejsitch)
+- [Sep 18, 2013: My First "Not .Net" Presentation](#notdotnetpresentation)
+- [Sep 19, 2013: .Net OSS is DOA](#dotnetossdoa)
+- [Sep 25, 2013: I'm Done Debating With Expert .Net Developers and Dealing With the .Net Mono Culture](#donewithdotnet)
+- [Oct 1, 2013: The Play Testing Grind... This is Not Fun](#playtestgrind)
+- [Oct 19, 2013: A Dusty Path Complete. I Hate You Michael (in a good way)](#ihatemichael)
+- [Oct 23, 2013: Space Sequence Complete. The Meeting With Michael.](#meetingwithmichael)
+- [Oct 30, 2013: Incorporating Michael's Feedback](#incorporatingfeedback)
+- [Oct 31, 2013: My Wife's Final Playtest](#mywife)
+- [Nov 1, 2013: Submitted to the App Store at $1.99](#submittingtotheappstore)
+- [Nov 8, 2013: One of the Worst Days of My Life](#worstdayofmylife)
+- [Nov 9, 2013: The Crash Fix Shipped](#crashfixshipped)
+- [Nov 10, 2013: My Obsession with Twitter and @ADarkRoomiOS Begins](#twitterobsession)
+- [Nov 15, 2013: A Ray of Hope - Courtney Stanton (@q0rt)](#courtney)
+- [Nov 16, 2013: A Rude Awakening](#rudeawakening)
+- [Nov 18, 2013: Additional Notable Interactions](#interactions)
+- [Nov 22, 2013: Pocket Gamers writes an Entry on A Dark Room](#pocketgamers)
+- [Nov 23, 2013: A Dark Room Forum Entry on Touch Arcade](#toucharcade)
+- [Nov 24, 2013: The First One Star Review](#onestarreview)
+
+<a id="pickingdevenvironment"> </a>
 
 **Jun 29, 2013: Picking the Development Environment**
 
@@ -90,17 +130,25 @@ My first few lines of A Dark Room code were still in Objective C via XCode. Afte
 
 I coded for 12 hours straight on the game. I haven't had this feeling in a very long time... losing track of time like that.
 
+<a id="firstplaytest"> </a>
+
 **Jul 7, 2013: A Week Later. First Playtest by a Non-Gamer**
 
 I got huts working and had implemented population growth. The game was far from complete. But I took the chance and showed it to a non gamer. They were thoroughly confused. But slowly got pulled into the game and had built "a tiny village". I consistently heard "it needs pictures, it needs visuals". I actually thought about adding black and white background images to the game that would change as the player progressed... but I wanted to have a complete game before adding my own creativity to it.
+
+<a id="growingasadeveloper"> </a>
 
 **Jul 8, 2013: Realization That I was Growing as a Developer**
 
 I was working on the game while at the same time preparing for an Austin .Net User Group presentation on using the dynamic capabilities of C#. It's really interesting being proficient in multiple languages now. It's a perspective that's hard to describe. The presentation went well.
 
+<a id="breakingdownbarriers"> </a>
+
 **Jul 11, 2013: Realization That I Enjoy Helping Others Break Down Barriers**
 
 I did another presentation on ASP.NET MVC web development using the dynamic capabilities of C#. I'd say that this Dallas .Net User Group presentation was the best presentation I've ever done. The turnout was huge (120+ people). I was presenting on ideas I cared about. I was trying to break down barriers for developers, and share techniques/workflows to development that just simply aren't practiced on the .Net stack. I hope I showed enough good things about fast feedback loops (out of proc build and deploys, fast test feedback), and low friction workflows (command line centric actions). I see the importance of these things given all the work I've now done using NodeJS, JavaScript, Rails, and (now) RubyMotion.
+
+<a id="firstroadblock"> </a>
 
 **Jul 12, 2013: The First Road Block in Developing A Dark Room**
 
@@ -108,15 +156,21 @@ I hit my first road block. When I reached out to Michael about porting the game 
 
 The Dusty Path was really hard to fit on a small screen. It took me 10 days to figure out how to approach the next part of the game. I made tiny sample apps and tried different variations of pinch and zoom techniques, scrolling techniques, "follow the player" techniques, and skeuomorphic stuff. Before this day I thought I was so close to finishing the implementation of game....
 
+<a id="stabbingcocoaui"> </a>
+
 **Jul 21, 2013: I Want to Stab Cocoa UI In the Face**
 
 I settled on a "follow the player" implementation where the map would center when the player moved on the map. You could scroll around the map if you needed, but as soon as you moved again, it would refocus to your current location. I had to use two layers of overlapping labels to represent landmarks and terrain (Cocoa UILabels can only have one format/font). It took 5 days to get the labels lined up and scrolling correctly. Fifteen days, just gone on trying to display a map.
+
+<a id="myversion"> </a>
 
 **Jul 26, 2013: Making the iOS Version My Own**
 
 At this point I needed to take a break from the Dusty Path and do some polish and playtesting. The pacing in the game was an issue. It was too slow to get started. I didn't know if it was because I had played it so many times, or if the game was actually just too slow to get going on a mobile medium.
 
 I decided to add Friedrich Nietzsche quotes that would show up randomly when you stoked the fire (to give the player something to read through the slower points in the game). This didn't make it into the final release, but were in the game for a while. I had accumulated 200 quotes and felt that it was inline with the atmosphere of the game.
+
+<a id="creativityisadrug"> </a>
 
 **Jul 28, 2013: Creativity is a Drug**
 
@@ -132,9 +186,13 @@ To help again with pacing, I decided to add "flashes of events" that would show 
 
 >hope she's okay, have to keep the fire going.
 
+<a id="battlingthedustypath"> </a>
+
 **Jul 30, 2013: Back to Battle the Dusty Path**
 
 The quotes were in place (I was so excited about showing this to Michael). I had random Room events working too. The after effects created from spending so many days with wrestling the map had worn off. I started specing out the battle sequences now.
+
+<a id="microsoftmanifesto"> </a>
 
 **Aug 1, 2013: Reflecting on the .Net Ecosystem - The Microsoft Manifesto**
 
@@ -142,23 +200,33 @@ I haven't booted up Windows for a long period of time at this point. Most of my 
 
 But at this point I just had some (for lack of a better term) "resentment" with the .Net ecosystem (and the person I used to be). I've spent a good amount of time "on the other side" and have tried really, really hard to break down barriers for .Net developers. I took the day and wrote a blog entry about my past self: [The Microsoft Manifesto](http://amirrajan.net/meta/2013/08/01/the-microsoft-manifesto/).
 
+<a id="takinganotherbreak"> </a>
+
 **Aug 2, 2013: Had to Take Another Break**
 
 Development on A Dark Room started to slow down a bit (I hit a bit of a low point in motivation). Combat was working at a cursory level... mostly just animations. The battle sequence was pretty much a real time game with a timer running at 10 frames per second... I was making a real time game using Cocoa controls as opposed to sprites and a canvas... kind of felt weird about that. But it worked.
 
 5 days on and off to work through the loot screen (the screen that came up after you won a battle). Pixel pushing labels and buttons. At this point I dread any kind of UI work in iOS. 
 
+<a id="abetterdeveloper2"> </a>
+
 **Aug 13, 2013: Another Realization That I Was Becoming a Better Developer**
 
 I was scheduled to speak at Austin Code Camp. I was going to do a presentation on an array of front end JavaScript frameworks. I spent the next few days working on the presentation and spent some time preparing a lighting talk about how you could use VIM for C# development. I also helped one of my friends (Chris Holt), prepare for his presentation on F#. Here I am, 4 months into my sabbatical. Continually gaining proficiency with C#/F#, JavaScript, Objective C, Ruby, VIM, Visual Studio, and XCode.
+
+<a id="nodejsitch"> </a>
 
 **Aug 25, 2013: Taking a Break to Scratch a NodeJS Itch**
 
 I've spent the last 8 days on the Dusty Path. Adding the Iron Mine, Coal Mine, Sulfur Mine, working through road creation, and working through unlocking Workshop items. I needed another break. I spent the next week working on a Twitter mashup written in NodeJS (github.com/amirrajan/sortis).
 
+<a id="notdotnetpresentation"> </a>
+
 **Sep 18, 2013: My First "Not .Net" Presentation**
 
 I did my very first presentation on NodeJS. It was a quasi workshop that went through a number of NodeJS applications I've built. I helped developers build and deploy their first NodeJS applications to Nodejitsu and Heroku. It was lots of fun :-)
+
+<a id="dotnetossdoa"> </a>
 
 **Sep 19, 2013: .Net OSS is DOA**
 
@@ -168,15 +236,21 @@ Another internal struggle with .Net development. I've tried to have discourse on
 
 I was berated by my peers. I was "just plain wrong", I was told it's "just an opinion", and that "I was sorely misguided". Another dev tweets, "Here we go again with all the .Net OSS angst". I wish I never wrote this blog entry.
 
+<a id="donewithdotnet"> </a>
+
 **Sep 25, 2013: I'm Done Debating With Expert .Net Developers and Dealing With the .Net Mono Culture**
 
 Another heated debate on Twitter. This time with regards to test driven development and behavior driven development. I now understand the term "strong opinions, strongly held". At this point, I knew I was done debating with experts of the .Net stack. Many (not all) have formed and solidified their opinions about "how things should be done". So I'm done trying to be respected/acknowledged by these individuals. I've wasted my breath too many times trying to get these guru's to see that they don't have it all figured out (no one has it all figured out, and you're selling yourself short if you think you do).
+
+<a id="playtestgrind"> </a>
 
 **Oct 1, 2013: The Play Testing Grind... This is Not Fun**
 
 All of September went to the Dusty Path (and being a grumpy developer). I made sure all the different city and town events showed up. I made sure the workshop items and workers unlocked correctly. I made sure map state rolled back if the player dies.
 
 I chatted with Michael about this. How the hell he managed to test all this... He did what I did, just grinded through it. I spent 2 days creating an automated test suite. It tested all the different random paths the events could take. Glad I did that. Even with all the manual testing, I still had a number of bugs. 
+
+<a id="ihatemichael"> </a>
 
 **Oct 19, 2013: A Dusty Path Complete. I Hate You Michael (in a good way)**
 
@@ -200,6 +274,8 @@ After the game released, I had a number of people literally reset the game at th
 
 I hate you Michael (in a good way). You didn't build a single game. You built 3 games and stitched them together in a brilliant way. The ship scene was the next thing to tackle. There was an end in sight. The largest part of the game (The Dusty Path) was done.
 
+<a id="meetingwithmichael"> </a>
+
 **Oct 23, 2013: Space Sequence Complete. The Meeting With Michael.**
 
 I couldn't believe it. I had a fully functioning game from beginning to end. I knew I had a number of things to polish. But the game was "code complete". Around this time I emailed Michael to set up a video conference (he lives in Canada.. I live in Dallas, Tx). I can't believe that all the communication up until this point was done through email and chat.
@@ -208,9 +284,13 @@ Michael hadn't seen the storyline additions I made. I was worried he'd say "no" 
 
 This is a testament to how awesome and brilliant Michael is. He appreciated the changes I made to the storyline, and loved the enhancements I made to the mobile version of the game. It was as simple as that. He just said, "That's awesome! I like it!" Suffice to say that a huge weight was lifted off of my shoulders. We got to talking in fact about the intricacies of the game. I mentioned that most of the game could have been played without any villagers if iron, coal and sulphur could be mined by the player. Michael said "Hey, why don't you add that? Add a solo mode with an alternate ending?"
 
+<a id="incorporatingfeedback"> </a>
+
 **Oct 30, 2013: Incorporating Michael's Feedback**
 
 The primary feedback that I got was removal of pronouns. I didn't realize it, but no part of the web version referred to the player as "you" or "I" or "us". I also incorporated the solo mode and alternate ending into the game. Playtesting. Playtesting. More playtesting. More tweaking. More playtesting.
+
+<a id="mywife"> </a>
 
 **Oct 31, 2013: My Wife's Final Playtest**
 
@@ -218,9 +298,13 @@ The game is in its final form. My wife sits down and plays the game for the 50th
 
 But my wife stands well above all the others that playtested. She could have said she was tired of playing this game at any point, but she didn't. She was the only person that, without hesitation, would play through the game any time I asked. I handed the final game to her at 10 pm that night. And she played the game non stop, all the way to the end. It was 2 am when she completed the play through. Thank you my dear.
 
+<a id="submittingtotheappstore"> </a>
+
 **Nov 1, 2013: Submitted to the App Store at $1.99**
 
 I submitted the game to the App Store. The description of the game was set to "a text based journey... awake. head throbbing. vision blurry." I still spent a day making minor tweaks to balancing. I playtested the game another 4 times before releasing. My game times were pretty damn fast at this point because I knew exactly what to do. I could beat the game in 90 to 100 minutes without even thinking too hard. Now I just have to wait. This was a good week. I shipped A Dark Room for iOS. And I was now preparing for a NodeJS competition: Node Knockout 2013!
+
+<a id="worstdayofmylife"> </a>
 
 **Nov 8, 2013: One of the Worst Days of My Life**
 
@@ -234,6 +318,8 @@ I drove (sped) to the Apple Store in the Parks at Willow Bend Mall, and bought a
 
 I repackaged the app and via iTunes Connect, requested an emergency release of the app. Apple got back to me and approved the emergency release. I pushed up version 1.1 of the app. Then I just had to wait... nothing really I could do. I was taking part in a NodeJS competition at the time. So that helped keep my mind off of it.
 
+<a id="crashfixshipped"> </a>
+
 **Nov 9, 2013: The Crash Fix Shipped**
 
 Over the weekend (during the NodeJS competition), I received an email saying that version 1.1 of A Dark Room was ready for sale. That moment, I asked Eric (he was also in the competition) to download the updated version of the app. He started it up, and it worked.
@@ -242,9 +328,13 @@ I still have no idea why setting the compilation flag to armv7 worked. But I'm n
 
 Our Node Knockout 2013 team: Team Us - As in "us" not "them", ended up placing 15th overall and placed 6th in the fun/utility category. We built a game called [NodeKick](http://github.com/amirrajan/nodekick). It was an awesome experience.
 
+<a id="twitterobsession"> </a>
+
 **Nov 10, 2013: My Obsession with Twitter and @ADarkRoomiOS Begins**
 
 I created the @ADarkRoomiOS Twitter handle and started tweeting in the persona of the game. The plan was to interact with anyone and everyone who ever tweeted about the web version of the game. Having a daily tweet from the game, showed that I wasn't just a random spam bot... that there was a real person behind these tweets. I did a Twitter search for "adarkroom" and began combing through all the tweets... replying to anyone who mentioned the game. Letting them know that there was an iOS version.
+
+<a id="courtney"> </a>
 
 **Nov 15, 2013: A Ray of Hope - [Courtney Stanton (@q0rt)](http://superopinionated.com/)**
 
@@ -254,21 +344,31 @@ Then the ray of hope. Courtney Stanton (@q0rt) tweeted about the release of the 
 
 This tweet also represented a window into the indie game world. I started following this community more closely. Reports for downloads of the game take a full day to get published in iTunes Connect. Seeing this kind of tweet and not knowing the impact right away is nerve wracking.
 
+<a id="rudeawakening"> </a>
+
 **Nov 16, 2013: A Rude Awakening**
 
 I woke up the next morning, awake, head throbbing, vision blurry. In a sleepy stupor, I logged into iTunes Connect and saw the number of downloads caused by Courtney's tweet. It spiked to 30. Thirty downloads... a tweet sent to over 3,000 people... and it lead to only 30 downloads.
+
+<a id="interactions"> </a>
 
 **Nov 18, 2013: Additional Notable Interactions**
 
 Using the @ADarkRoomiOS Twitter account, I interacted with Leigh Alexander (@leighalexander), an editor at Gamasutra and Kotaku, about a tweet she posted with regards to A Dark Room. Letting a number of people in the conversation know about the existence of the iOS version. There was no noticeable difference in downloads the next day. A meager 5 downloads on the 19th. I'm glad I was able to have a meaningful interaction with Leigh however.
 
+<a id="pocketgamers"> </a>
+
 **Nov 22, 2013: Pocket Gamers writes an Entry on A Dark Room**
 
 I added "search on Google for any mention of A Dark Room" to my routine. I came accross this: [Take a risk on iOS adventure game A Dark Room and you might have a new addiction](http://www.pocketgamer.co.uk/r/iPad/A+Dark+Room/news.asp?c=55477). This review written by Chris Preistman (@CPriestman), is the first review of A Dark Room iOS that I had come across. How freaking cool is that? Unsolicited reviews are starting to come up. A spike to 30 downloads happened that day.
 
+<a id="toucharcade"> </a>
+
 **Nov 23, 2013: A Dark Room Forum Entry on Touch Arcade**
 
 I received an email from a random person this day. The game was listed in the Touch Arcade forums, and one of the members emailed me to get some details about the game (what the game was about, how long the game was, etc). I answered his questions immediately and was happy to hear that he loved the game and wrote about his experience on the Touch Arcade forums. Every week afterwards, I have emailed a promo code to Touch Arcade for an official review. I have yet to hear back from them.
+
+<a id="onestarreview"> </a>
 
 **Nov 24, 2013: The First One Star Review**
 
