@@ -149,6 +149,9 @@ I want to make sure I've logged everything that's happened around the growth and
 - [Feb 24, 2014: Reaching Out to RubyMotion](#rubymotion)
 - [Feb 27, 2013: Another Release of A Dark Room, The Review Me Button](#reviewbutton)
 - [March 3, 2014: Slides Complete for My First Presentation at a Ruby User Group - 12k Lines of RubyMotion](#rubybrigade)
+- [March 4, 2014: The Review Button in A Dark Room](#reviewbutton)
+- [March 5, 2014: Check Number 3 From Apple](#thirdcheck)
+- [March 6, 2014: Leigh Alexander Publishes Her Interview on Gamasutra](#leigh)
 
 <a id="pickingdevenvironment"> </a>
 
@@ -488,7 +491,7 @@ First check comes in. The grand totals for the month of November:
 - Downloads: 403
 - Reviews: 5 five-star reviews, 1 one-star review
 - RPG Rank: 567th at its low point, 27th at its height
-- overall Rank: 1479th for two days (metrics below the 1500th placement aren't kept in AppAnnie)
+- Overall Rank: 1479th for two days (metrics below the 1500th placement aren't kept in AppAnnie)
 
 <a id="blindversionreleased"> </a>
 
@@ -578,7 +581,7 @@ The second check comes in. The grand totals for the month of December:
 - Downloads: 698
 - Reviews: 3 five-star reviews
 - RPG Rank: 201st at its low point, 33rd at its height
-- overall Rank: 1428th at its low point, 486th at its height (fell below the 1500 cut off for only 3 days)
+- Overall Rank: 1428th at its low point, 486th at its height (fell below the 1500 cut off for only 3 days)
 
 <a id="slaves2"> </a>
 
@@ -680,4 +683,48 @@ A Dark Room's current version has 56 five-star reviews, 1 one-star review, and 1
 
 **March 3, 2014: Slides Complete for My First Presentation at a Ruby User Group - 12k Lines of RubyMotion**
 
-A lot is still up in the air at this point. Version 1.4 is waiting for release. I've permanently dropped the price of A Dark Room to $0.99 (I don't know the long term effects of this). I'm hoping that Owen from Pocket Tactics shows some love to A Dark Room on his website. I'm hoping that Leigh publishes the interview questions. I'm hoping that Brandon gets back to me about his thoughts on the game and with any help he can provide. I'm hoping the RubyMotion team likes the slides I've sent them and that I'll get some visibility with them too. I'm hoping that my first presentation at a Ruby user group goes well. I'm hoping the new review button generates more reviews. Lots of hope... few answers at this point.
+A lot is still up in the air at this point. Version 1.4 is waiting for release. I've permanently dropped the price of A Dark Room to $0.99 (I don't know the long term effects of this). I'm hoping that Owen from Pocket Tactics shows some love to A Dark Room on his website. I'm hoping that Leigh publishes the interview questions. I'm hoping that Brandon gets back to me about his thoughts on the game and with any help he can provide. I'm hoping the RubyMotion team likes the slides I've sent them and that I'll get some visibility with them too. I'm hoping that my first presentation at a Ruby user group goes well. I'm hoping the new review button generates more reviews. Lots of hope... few answers at this point. [Here is the link to the presentation I did.](http://amirrajan.net/12k-lines-of-RM/#/title).
+
+<a id="reviewbutton"> </a>
+
+**March 4, 2014: The Review Button in A Dark Room**
+
+The pending release to A Dark Room hit the App Store. As expected all the reviews from the previous version get removed from the "current" release. The app at this point is ranked 32 under the RPG Category. With zero reviews for the current release. I knew this was a risk going in, but with it, I got 100 more promocodes.
+
+Outside of more accessibilty enhancements, and a bit more storyline elements; the most important part of this release was the review button I added. The review button shows up after the player has beaten the game. I decided to only show it at this point, because I know that the player has experienced the story in its _entirety_ at least once.
+
+That day I received 20 reviews. A small success to be celebrated. I'm hoping to have an influx of reviews every few days given how long it takes to beat the game... I'll probably be dissapointed... but we'll see.
+
+<a id="thirdcheck"> </a>
+
+**March 5, 2014: Check Number 3 From Apple**
+
+The third check comes in. The grand totals for the month of January:
+
+- Revenue: $1,320.00
+- Downloads: 986
+- Reviews: 11 five-star reviews, another one-star review
+- RPG Rank: 154th at its low point, 25th at its height
+- Overall Rank: 1469th at its low point, 432th at its height (stayed in the top 1500 Games for the entire month)
+
+The one star review I made me smile a little bit. You can't please everyone:
+
+>its crap ★
+
+>by Bryce68!!! - Version 1.3 - Jan 24, 2014
+
+>its a white screen those other ratings are rigged the game is junk
+
+I knew that the first part of the game was slow to "reveal itself". The web version takes 125 seconds for the builder to finally wake up and open up the rest of the game. In the mobile version, this time was dropped down to 45 seconds (specifically to avoid this kind of review). I added a few "keep going" messages in the mobile version that start revealing themselves 17 seconds into the game. Looks like neither of these carrots kept Byrce68's attention long enough. It sucks... but what can you do but smile and move on.
+
+A message to Bryce68: I'm sorry that I wasn't able to keep your attention, but none of the review are fake... all 20 of them (the grand total at the time Bryce's review was written) are genuine, through and through.
+
+<a id="leigh"> </a>
+
+**March 6, 2014: Leigh Alexander Publishes Her Interview on Gamasutra**
+
+Leigh, thank you for this. Thank you for taking the time to interview Michael and me. Thank you for skillfully writing about the journey we've had so far.
+
+Here is the write up [Leigh Alexander](http://leighalexander.net/) did on A Dark Room: [A Dark Room's unique journey from the web to iOS](http://www.gamasutra.com/view/news/212230/A_Dark_Rooms_unique_journey_from_the_web_to_iOS.php). It's an amazing read. Gamasutra has 100k followers... it was tweeted by their official Twitter handle. Additionally, the article was shared ~25 times on Twitter and got 15 likes on Facebook.
+
+At this point, I have a better expectations of the impact these kind of publications have on the number of downloads (it's small, but every little bit helps keep me going). The downloads for the day spiked to 68 (a little over double my $0.99-price averages for the month). The drop off is fairly quick for this kind of media coverage (given the historical data I have now... I'll report back after a few days have passed). Regardless, thank you Leigh Alexander. Thank you for this small win I can celebrate.
