@@ -707,7 +707,7 @@ The third check comes in. The grand totals for the month of January:
 - RPG Rank: 154th at its low point, 25th at its height
 - Overall Rank: 1469th at its low point, 432th at its height (stayed in the top 1500 Games for the entire month)
 
-The one star review I made me smile a little bit. You can't please everyone:
+The one star review made me smile a little bit. You can't please everyone:
 
 >its crap ★
 
