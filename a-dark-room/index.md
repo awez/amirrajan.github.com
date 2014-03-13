@@ -766,7 +766,7 @@ Given that an iPad version was going to be released, I decided to give away 50 m
 
 **March 13, 2014: Back in the Top 10, iPad Release**
 
-I woke up this morning. Awake, head throbbing, vision blurry ;-). Checked my App Rank... A Dark Room made it into the top 10 RPGs... and finally cracked the top 200 in the overall Games category. Back to testing the iPad/Universal version of the game.
+I woke up this morning. Awake, head throbbing, vision blurry ;-). Checked my app rank... A Dark Room made it into the top 10 RPGs... and finally cracked the top 200 in the overall Games category. Back to testing the iPad/Universal version of the game.
 
 <script src="/assets/themes/jquery.js"> </script>
 <script src="/assets/themes/rank.js"> </script>
