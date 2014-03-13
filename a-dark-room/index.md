@@ -740,7 +740,7 @@ At this point, I have a better expectations of the impact these kind of publicat
 
 Leigh's article stayed on Gamasutra's Top Articles for two days.
 
-On March 6th, Leigh tweeted about it to 12k Twitter followers. Gamasutra tweeted about it to their 100k followers.
+On March 6th, Leigh tweeted about it to 34k Twitter followers. Gamasutra tweeted about it to their 100k followers.
 
 On March 7th, Leigh tweeted about the article a second time.
 
