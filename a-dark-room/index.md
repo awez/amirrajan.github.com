@@ -8,6 +8,8 @@ group: navigation
 
 <img src="/assets/images/adarkroombanner.png" style="border: solid 1px silver; padding: 3px; max-width: 100%; width: 100%" />
 
+<div id="exactrank" style="text-align: center; font-size: small">&nbsp;</div>
+
 **Media Coverage**
 
 [Paste Magazine, Maddy Myers: Top 20 Indie Games of 2013](http://www.pastemagazine.com/blogs/lists/2013/12/the-20-best-indie-videogames-of-2013.html)
@@ -728,3 +730,6 @@ Leigh, thank you for this. Thank you for taking the time to interview Michael an
 Here is the write up [Leigh Alexander](http://leighalexander.net/) did on A Dark Room: [A Dark Room's unique journey from the web to iOS](http://www.gamasutra.com/view/news/212230/A_Dark_Rooms_unique_journey_from_the_web_to_iOS.php). It's an amazing read. Gamasutra has 100k followers... it was tweeted by their official Twitter handle. Additionally, the article was shared ~25 times on Twitter and got 15 likes on Facebook.
 
 At this point, I have a better expectations of the impact these kind of publications have on the number of downloads (it's small, but every little bit helps keep me going). The downloads for the day spiked to 68 (a little over double my $0.99-price averages for the month). The drop off is fairly quick for this kind of media coverage (given the historical data I have now... I'll report back after a few days have passed). Regardless, thank you Leigh Alexander. Thank you for this small win I can celebrate.
+
+<script src="/assets/themes/jquery.js"> </script>
+<script src="/assets/themes/rank.js"> </script>
