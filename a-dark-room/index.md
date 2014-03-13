@@ -154,6 +154,9 @@ I want to make sure I've logged everything that's happened around the growth and
 - [March 4, 2014: The Review Button in A Dark Room](#reviewbutton)
 - [March 5, 2014: Check Number 3 From Apple](#thirdcheck)
 - [March 6, 2014: Leigh Alexander Publishes Her Interview on Gamasutra](#leigh)
+- [March 8, 2014: Two Days After the Gamasutra Publication](#gamasutra)
+- [March 12, 2014: Four Days of Promotion](#promotion)
+- [March 13, 2014: Back in the Top 10, iPad Release](#top10again)
 
 <a id="pickingdevenvironment"> </a>
 
@@ -561,7 +564,7 @@ On Feb 4th, Owen emailed with the word: "Amazing". I hope to see a review show u
 
 **Jan 19, 2014: Apple Vis Promo Code Give Away**
 
-The blog post I wrote about accessibility received some buzz in the blind community. The AppleVis editorial team reached out to me. They wanted to run a promo code give away. I sent them 10 promo codes and they did something really unique. Instead of just giving them away, they asked individuals to go read the blog post I did on making the game accessible to the blind, and about the making of the game. They had to mention something from the write ups to get a promo code. It was a great idea, and I saw a lot of nice things said about the game.
+The blog post I wrote about accessibility received some buzz in the blind community. The AppleVis editorial team reached out to me. They wanted to run a promo code giveaway. I sent them 10 promo codes and they did something really unique. Instead of just giving them away, they asked individuals to go read the blog post I did on making the game accessible to the blind, and about the making of the game. They had to mention something from the write ups to get a promo code. It was a great idea, and I saw a lot of nice things said about the game.
 
 Downloads spiked to 50 during the contest period. I'm burning through my promo codes, but they are generating results.
 
@@ -691,7 +694,7 @@ A lot is still up in the air at this point. Version 1.4 is waiting for release. 
 
 **March 4, 2014: The Review Button in A Dark Room**
 
-The pending release to A Dark Room hit the App Store. As expected all the reviews from the previous version get removed from the "current" release. The app at this point is ranked 32 under the RPG Category. With zero reviews for the current release. I knew this was a risk going in, but with it, I got 100 more promocodes.
+The pending release to A Dark Room hit the App Store. As expected all the reviews from the previous version get removed from the "current" release. The app at this point is ranked 32 under the RPG Category. With zero reviews for the current release. I knew this was a risk going in, but with it, I got 100 more promo codes.
 
 Outside of more accessibilty enhancements, and a bit more storyline elements; the most important part of this release was the review button I added. The review button shows up after the player has beaten the game. I decided to only show it at this point, because I know that the player has experienced the story in its _entirety_ at least once.
 
@@ -731,5 +734,41 @@ Here is the write up [Leigh Alexander](http://leighalexander.net/) did on A Dark
 
 At this point, I have a better expectations of the impact these kind of publications have on the number of downloads (it's small, but every little bit helps keep me going). The downloads for the day spiked to 68 (a little over double my $0.99-price averages for the month). The drop off is fairly quick for this kind of media coverage (given the historical data I have now... I'll report back after a few days have passed). Regardless, thank you Leigh Alexander. Thank you for this small win I can celebrate.
 
+<a id="gamasutra"> </a>
+
+**March 8, 2014: Two Days After the Gamasutra Publication**
+
+Leigh's article stayed on Gamasutra's Top Articles for two days.
+
+On March 6th, Leigh tweeted about it to 12k Twitter followers. Gamasutra tweeted about it to their 100k followers.
+
+On March 7th, Leigh tweeted about the article a second time.
+
+The game's download spiked to ~100 downloads for each day. Its rank went from number 24 (in the RPG category), to number 16. All these changes were in line with my expectations. I wanted to keep the momentum going, so I decided to spend the next 4 days promoting the game on Reddit, Twitter, and Touch Arcade.
+
+<a id="promotion"> </a>
+
+**March 12, 2014: Four Days of Promotion**
+
+I posted this write up on /r/IndieGaming and /r/GameDev. To share what I've been through so far.. and yes, to help with visibility... two birds with one stone, right? The posts gained popularity and I had a number of good conversations, specifically about the viability of the Android market (tl;dr; it doesn't look promising).
+
+I did another promo code giveaway on Touch Arcade. But nobody (not a single person), asked for a promo code. That was incredibly surprising. I'm not sure if it was timing or if the people on Touch Arcade just didn't care to get a copy. I let the thread die off. That will be the last time I post on Touch Arcade.
+
+The reception or Reddit was much better. I received a number of good comments and support on /r/iOSGaming and /r/AppHookup. Thirty codes were given away and the downloads for three days stayed at around 80. Being active on Reddit and making sure to reply quickly to conversations took up a couple of hours every day. A Dark Room's App Store ranking (again, under the RPG section), continued to hover around 15.
+
+Good things came out of the the Reddit posts. I had a number of incredibly candid posts about the game and the development logs. Many people empathized and gave words of encouragement. Some didn't. Have I mentioned how important tact and empathy are?
+
+One notable conversation convinced me to try porting the game to iPad. I decided to time box the port to iPad. Surprisingly, I wrapped it up in a few days. I'm playtesting the game now... on an iPhone 5, iPhone 5s, iPad 3, iPad Air, and iPad 2... T_T.
+
+Given that an iPad version was going to be released, I decided to give away 50 more codes, but this time on Twitter (you lose any codes you don't use within a release). I posted the codes and tweeted about it. Cassandra Khaw (Editor at USGamers), Maddy Myers (Editor at Paste Magazine), Laruent Sansoetti (Founder of HipByte and RubyMotion), and Pocket Tactics (ie Owen Faraday) retweeted this promotion to their followers (~13k followers combined). All the codes were claimed. Given the downloads for that day, it didn't seem like they were all redeemed however. There was no spike in sales either. My downloads (and revenue) is flatlining now.
+
+<a id="top10again"> </a>
+
+**March 13, 2014: Back in the Top 10, iPad Release**
+
+I woke up this morning. Awake, head throbbing, vision blurry ;-). Checked my App Rank... A Dark Room made it into the top 10 RPGs... and finally cracked the top 200 in the overall Games category. Back to testing the iPad/Universal version of the game.
+
 <script src="/assets/themes/jquery.js"> </script>
 <script src="/assets/themes/rank.js"> </script>
+
+
