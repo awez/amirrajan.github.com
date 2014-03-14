@@ -7,6 +7,8 @@ group: navigation
 
 Hope you like the videos. Tips welcome. Think of it as buying me lunch for having conversations about the craft you care about. [Subscribe to the channel for updates](https://vimeo.com/channels/659338).
 
+Note: I've decided to put a hold on the screencasting. It was fun for a while, but my motivation started to wane a bit. The last thing I want is to deliver something I'm not motivated in doing. The last part of my Rest Api's Getting Started will not be recorded, but the commits have been made [(you can walk through the code and see the progresson, starting with this commit).](https://github.com/amirrajan/rest-tictactoe/commit/ff9c3f2be54010411bb180fa499b7d4569ca76f7)
+
 ##[Setting up a simple code kata project for NodeJS](https://vimeo.com/84082218)
 
 - Getting started with code katas in NodeJS
