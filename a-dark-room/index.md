@@ -157,6 +157,7 @@ I want to make sure I've logged everything that's happened around the growth and
 - [March 8, 2014: Two Days After the Gamasutra Publication](#gamasutra)
 - [March 12, 2014: Four Days of Promotion](#promotion)
 - [March 13, 2014: Back in the Top 10, iPad Release](#top10again)
+- [March 15, 2014: A Dark Room is Ranked 6th Under RPGs](#top6)
 
 <a id="pickingdevenvironment"> </a>
 
@@ -767,6 +768,20 @@ Given that an iPad version was going to be released, I decided to give away 50 m
 **March 13, 2014: Back in the Top 10, iPad Release**
 
 I woke up this morning. Awake, head throbbing, vision blurry ;-). Checked my app rank... A Dark Room made it into the top 10 RPGs... and finally cracked the top 200 in the overall Games category. Back to testing the iPad/Universal version of the game.
+
+<a id="top6"> </a>
+
+**March 15, 2014: A Dark Room is Ranked 6th Under RPGs**
+
+For the past two days, A Dark Room has gotten ~200 downloads. I haven't done any recent marketing of the game to result in that kind of spike. True, the game made it into the top 10 spot a couple of days ago... but I didn't experience this kind of spike the last time it was there.
+
+The only thing I can think of was that the web version of the game got 1000+ upvotes in an AskReddit thread: [Reddit, what is a fun webgame I can sink a lot of time into?](http://www.reddit.com/r/AskReddit/comments/20al3n/reddit_what_is_a_fun_webgame_i_can_sink_a_lot_of/?sort=top). Micheal mentioned that there was also an iOS version of the game within the thread comments... I still don't think it could have such an impact given that the [comment was buried way way down in the post](http://www.reddit.com/r/AskReddit/comments/20al3n/reddit_what_is_a_fun_webgame_i_can_sink_a_lot_of/cg1s9ho). Maybe it did... I have no idea. 
+
+Also. This dev blog was linked to in the following newsletters (I received emails and tweets from a couple of readers): [RubyMotion Dispatch](http://rubymotiondispatch.com/) and [TapFame's](https://tapfame.com/) Newsletter. Again, I don't think that such a spike could come from these distributions (I may be wrong).
+
+Regardless, it didn't last. A Dark Room's rank is back down to number 8. The iPad update is in the App Store review process, and will hopefully be released to the public next week (and hopefully without that dreaded first day crash I experienced and still can't explain). Perhaps the combined downloads from iPhone and iPad will bring up the ranking again. From what I hear, getting into the top 5 in your category is a big deal... and from the looks of it you have to be bringing in over 200 downloads for a solid week to break into that spot number 5 (in the RPG category... no telling what you have to be bringing in to get a top spot in another category).
+
+All I can really do is wait. I'm out of promo codes. I have no control over App Store ranking. Any amount of engagement I try to have on Twitter won't bring in numbers like what happend in the last two days. So I guess I'll geek out on something else for a while, and take a break for the next few days :-).
 
 <script src="/assets/themes/jquery.js"> </script>
 <script src="/assets/themes/rank.js"> </script>
