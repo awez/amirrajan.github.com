@@ -163,4 +163,4 @@ Here is a nice little story for you. It's about a boy who wanted to become a gre
 
 >"Leave me be," screamed the boy as he slammed his hand down on the table.  Everyone stood silent and wide-eyed for several moments... when he slammed his hand down... he had broken the thick stone table right in half.
 
-So, keep saying nay. Keep saying "I'm wasting my time". I'm a black belt, starting my journey over again as a white belt. **Once I come out the other end, I will be force to be reckoned with.**
+So, keep saying nay. Keep saying "I'm wasting my time". I'm a black belt, starting my journey over again as a white belt. **Once I come out the other end, I will be a force to be reckoned with.**
