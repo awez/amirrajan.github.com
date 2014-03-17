@@ -36,19 +36,19 @@ Michael Townsend created a minimalist web based idle game called A Dark Room. I 
 
 The word "built" is a loaded word. I didn't just port a game to iOS. I translated it to a mobile medium. I added my own artistic spin to the game. I wrote about it. I presented about it. I marketed it. I pushed it to a top spot in the App Store (at one point it was ranked #6 in the RPG Category). 
 
-Most importantly, I found that the saying "if you build it, they will come" is _completely, utterly false_. _Building_ something takes an _immense_ amount of work. Reflecting back, this is quite an accomplishment. Wouldn't have existed with Michael's initial work of course :-).
+Most importantly, I found that the saying "if you build it, they will come" is _completely, utterly false_. _Building_ something takes an _immense_ amount of work. Reflecting back, this is quite an accomplishment. Wouldn't have existed without Michael's initial work of course :-).
 
 **[You can read about the entire journey of A Dark Room right here. It's _over 9000_ words. So just be aware it's long.](http://amirrajan.net/a-dark-room/#adarkroomstory)**
 
 ##Present about software, contribute to open source
 
-Check and check. I've given eight presentations in the last ten months. On topics that I care about. I've created a number of [open source reference implementations for NodeJS](http://amirrajan.net/nodejs-by-example/), which will continue to grow. I've continued to help developers break down barriers and learn new things. I still want to make a contribution to a large open source project. Haven't "unlocked" that achievement yet.
+Check and check. I've given eight presentations in the last ten months. On topics that I care about. I've created a number of [open source reference implementations for NodeJS](http://amirrajan.net/nodejs-by-example/), which will continue to grow. I've continued to help developers break down barriers and learn new things. I still want to make a contribution to a large open source project. Haven't "unlocked that achievement" yet.
 
 ##Build my development chops on stacks other than .Net
 
 My work in NodeJS and A Dark Room iOS kept me on the OSX and Linux stack. Before my sabbatical, I barely ever booted into my OSX partition. My work was on Windows and .Net, so there was really no need to do so. With an iOS project, and many websocket-centric NodeJS projects, I _had_ to use my OSX partition.
 
-For a good 5 months, I didn't boot into Windows for any long period of time. After a while, the Linux file hierarchies began to make sense. My skills with the terminal got better. I can commission a bare bones Linux virtual machine via ssh. I can get a Node app up and running on nginx. Compiling things from source doesn't intimidate me anymore. Trying out emerging languages/technologies is much easier (because they “just work” on Linux based systems). I've pushed through the barrier of entry and there is a wealth of _knowledge_ on the other side.
+For a good 5 months, I didn't boot into Windows for any long period of time. After a while, the Linux file hierarchies began to make sense. My skills with the terminal got better. I can commission a bare bones Linux virtual machine via ssh. I can get a Node app up and running on nginx. Compiling languages and frameworks from source doesn't intimidate me anymore. Trying out emerging languages/technologies is much easier (because they “just work” on Linux based systems). I've pushed through the barrier of entry, and there is a wealth of _knowledge_ on the other side.
 
 There is still so much I need to learn, but I feel that I've reached a good level of comfort now. Also, I really can't comment much about the OSX operating system. Simply because the first thing I do, when I login, is start iTerm and put it in full screen mode.
 
@@ -99,7 +99,7 @@ I've also discovered a site called [Patreon](http://www.patreon.com/). The site 
 
 ##Failures
 
-Now for the failures. That's how you learn, right? All the failures have a common theme. What I've learned so far with setting goals. 
+Now for the failures. That's how you learn, right? All the failures have a common theme. What I've learned so far with setting goals (and failing): 
 
 - You have to have a genuine _interest in starting_.
 - You have to _enjoy the journey_ in achieving it.
@@ -119,7 +119,7 @@ I wanted to converse with developers (specifically experts). I wanted to talk ab
 
 The end goal of "impacting a peer" didn't happen in any substantial way. So I'm not going to try to reach out to experts anymore, because the already know everything there is to know about software (apparently). 
 
-Outside of the persona I place in marketing slicks, I honestly just feel that I'm just a practitioner of software, sharing the experiences I have. I no longer have an interest in debating with, or reaching out to, those who feel they've got it all figured out.
+Outside of the persona I place in marketing slicks, I honestly feel that I'm just a practitioner of software, sharing the experiences I have. I no longer have an interest in debating with, or reaching out to, those who feel they've got it all figured out.
 
 ##Music (guitar)
 
