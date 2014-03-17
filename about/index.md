@@ -57,6 +57,7 @@ The 10k foot view. Feel free to contact me.
 
 
 ##Presentations and Podcasts
+- Dallas Ruby Brigade: 12,000 Lines of RubyMotion (March 2013)
 - Dallas.node Meetup: Nodekick! Building a real time game with NodeJS (November 2013)
 - Dallas.node Meetup: Hands on NodeJS. From localhost to Cloud! (October 2013)
 - North Dallas Cloud Computing Group: Hands on NodeJS. From localhost to Cloud! (September 2013)
