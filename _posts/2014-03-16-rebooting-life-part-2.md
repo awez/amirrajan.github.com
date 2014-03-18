@@ -145,9 +145,9 @@ The sales from A Dark Room iOS (go buy it ^\_^) and for-pay remote pairing sessi
 
 I still need to delve into functional programming (F#, Haskell, Elixir) . I still want to wrap my head around Lisp (clojure). I still want to increase my breadth. Must. Have. More. Knowledge.
 
-##To all the naysayers
+##A Nice Story
 
-Here is a nice little story for you. It's about a boy who wanted to become a great martial artist. A monk of the Shaolin Temple.
+Here is a nice little story to end with. It's about a boy who wanted to become a great martial artist. A monk of the Shaolin Temple.
 
 >He was ordered by the chief instructor to carry a large wooden pail down the mountainside to a stream, fill it with water, and bring it back up to the temple. 
 
@@ -162,5 +162,3 @@ Here is a nice little story for you. It's about a boy who wanted to become a gre
 >The villagers dragged him to the head table and yelled and shouted and urged him to show them some real Shaolin kung fu. He stood motionless with tears welling in his eyes and his face reddening, ashamed to tell the villagers that he had learned nothing.
 
 >"Leave me be," screamed the boy as he slammed his hand down on the table.  Everyone stood silent and wide-eyed for several moments... when he slammed his hand down... he had broken the thick stone table right in half.
-
-So, keep saying nay. Keep saying "I'm wasting my time". I'm a black belt, starting my journey over again as a white belt. **Once I come out the other end, I will be a force to be reckoned with.**
