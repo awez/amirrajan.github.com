@@ -22,3 +22,5 @@ $.getJSON('https://itunes.apple.com/us/rss/toppaidapplications/limit=100/genre=7
     $("#exactrank").html("App Store Ranking<br/> RPGs: " + rpgRank + "<br/>Games Overall: " + overrallRank);
   });
 });
+
+//https://itunes.apple.com/us/rss/customerreviews/id=736683061/sortBy=mostRecent/json
