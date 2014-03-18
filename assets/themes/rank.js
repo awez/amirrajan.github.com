@@ -1,6 +1,6 @@
 $.getJSON('https://itunes.apple.com/us/rss/toppaidapplications/limit=100/genre=7014/json', function(data) {
   var rpgRank = "< 100 T_T";
-  var overrallRank = "< 200 T_T_";
+  var overrallRank = "< 200 T_T";
 
   for(var i = 0; i < data.feed.entry.length; i++) {
     console.log(data.feed.entry[i].title.label);
