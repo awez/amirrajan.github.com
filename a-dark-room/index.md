@@ -158,6 +158,7 @@ I want to make sure I've logged everything that's happened around the growth and
 - [March 12, 2014: Four Days of Promotion](#promotion)
 - [March 13, 2014: Back in the Top 10, iPad Release](#top10again)
 - [March 15, 2014: A Dark Room is Ranked 6th Under RPGs](#top6)
+- [March 18, 2014: The spike is over. iPad Version Release](#ipadrelease)
 
 <a id="pickingdevenvironment"> </a>
 
@@ -782,6 +783,14 @@ Also. This dev blog was linked to in the following newsletters (I received email
 Regardless, it didn't last. A Dark Room's rank is back down to number 10 (/le sigh). The iPad update is in the App Store review process, and will hopefully be released to the public next week (and hopefully without that dreaded first day crash I experienced and still can't explain). Perhaps the combined downloads from iPhone and iPad will bring up the ranking again. From what I hear, getting into the top 5 in your category is a big deal... and from the looks of it you have to be bringing in over 200 downloads for a solid week to break into that spot number 5 (in the RPG category... no telling what you have to be bringing in to get a top spot in another category).
 
 All I can really do is wait. I'm out of promo codes. I have no control over App Store ranking. Any amount of engagement I try to have on Twitter won't bring in numbers like what happend in the last two days. So I guess I'll geek out on something else for a while, and take a break for the next few days :-).
+
+<a id="ipadrelease"> </a>
+
+**March 18, 2014: The spike is over. iPad Version Release**
+
+The unexplained spike is over. Downloads are coming back down to "normal" levels. This morning I received an email that the iPad verison of the game is ready for sale. Of course, with every new release, I get a new set of promocodes, and all the reviews get "archived" (wiped out frankly, frustrating). From March 4th to today. A Dark Room received 85 reviews. One of them was a 4-star review, one of them was a 1-star review, the rest were 5-stars. The game was getting an average of 6 reviews a day.
+
+With the release of the iPad version. A Dark Room will now be searchable on all devices with default search filters. I'm also hoping that the combined download numbers between iPhone and iPad will help bring A Dark Room's ranking back up (which is currently hovering around #17). The game did not crash when I installed it on my iDevices. This was a huge relief for me, and possibly something I can put behind me now... I'd be lying if I said I slept well these past few nights.
 
 <script src="/assets/themes/jquery.js"> </script>
 <script src="/assets/themes/rank.js"> </script>
