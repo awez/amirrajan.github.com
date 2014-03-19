@@ -803,14 +803,25 @@ This is also the first day after the iPad relese. Downloads are back to normal l
 
 Also, the first day after a relase is always frustrating. When you push out a new release, you don't lose your rank in the app store, but you do lose all the reviews. So there sits A Dark Room, ranked #17 in the App Store, zero reviews, one boring screenshot, who will buy that? Thankfully, the trusty review button in the game pulled through again. I got twelve 5-star, and one 4-star review yesterday.
 
+<hr />
+
 <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css"/>
 
 <div id="mc_embed_signup">
   <form action="http://amirrajan.us8.list-manage.com/subscribe/post?u=61936e0179df5da623ee7cdb7&amp;id=f44fb947df"
       method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="novalidate">
     <label for="mce-EMAIL">Subscribe: A Dark Room's journey to a top spot in the App Store</label>
+
+    <div>Subscribe and you'll get emails with my log updates. There is an incredible amount of information with regards to:</div>
+
+    <ul>
+    <li>How the App Store works, what influences app rankings</li>
+    <li>How media coverage and app ranking impact downloads</li>
+    <li>Revenue information, review stats, new developments</li>
+    </ul>
+
     <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required="required" />
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" /></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" /> <small>powered by MailChimp</small></div>
   </form>
 </div>
 
