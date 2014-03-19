@@ -158,7 +158,8 @@ I want to make sure I've logged everything that's happened around the growth and
 - [March 12, 2014: Four Days of Promotion](#promotion)
 - [March 13, 2014: Back in the Top 10, iPad Release](#top10again)
 - [March 15, 2014: A Dark Room is Ranked 6th Under RPGs](#top6)
-- [March 18, 2014: The spike is over. iPad Version Release](#ipadrelease)
+- [March 18, 2014: The Spike is Over. iPad Version Release](#ipadrelease)
+- [March 19, 2014: Mystery of the Week Long Spike Solved](#mysterysolved)
 
 <a id="pickingdevenvironment"> </a>
 
@@ -786,11 +787,23 @@ All I can really do is wait. I'm out of promo codes. I have no control over App 
 
 <a id="ipadrelease"> </a>
 
-**March 18, 2014: The spike is over. iPad Version Release**
+**March 18, 2014: The Spike is Over. iPad Version Release**
 
 The unexplained spike is over. Downloads are coming back down to "normal" levels. This morning I received an email that the iPad verison of the game is ready for sale. Of course, with every new release, I get a new set of promocodes, and all the reviews get "archived" (wiped out frankly, frustrating). From March 4th to today. A Dark Room received 85 reviews. One of them was a 4-star review, one of them was a 1-star review, the rest were 5-stars. The game was getting an average of 6 reviews a day.
 
 With the release of the iPad version. A Dark Room will now be searchable on all devices with default search filters. I'm also hoping that the combined download numbers between iPhone and iPad will help bring A Dark Room's ranking back up (which is currently hovering around #17). The game did not crash when I installed it on my iDevices. This was a huge relief for me, and possibly something I can put behind me now... I'd be lying if I said I slept well these past few nights.
+
+<a id="mysterysolved" > </a>
+
+**March 19, 2014: Mystery of the Week Long Spike Solved**
+
+[Last week there was a spike in A Dark Room's download numbers that I couldn't explain](#top6). Kevin Wade of OrgSync figured it out. It was because of Spring Break. A bunch of people with time on their hands came to the App Store and bought the game. A Dark Room's rank didn't increase in the App Store with this large week long spike in downloads, because every game was experiencing a similar spike.
+
+This is also the first day after the iPad relese. Downloads are back to normal levels (a little over 100 a day). I didn't expect a big spike because of the iPad release. The game still needs to make it through the iPad ranking system (the iPhone rankings list is different than the iPad rankings list). From historical data, it looks like A Dark Room can make it into the top 20 in about a week. We'll see if my prediction holds true.
+
+Also, the first day after a relase is always frustrating. When you push out a new release, you don't lose your rank in the app store, but you do lose all the reviews. So there sits A Dark Room, ranked #17 in the App Store, zero reviews, one boring screenshot, who will buy that? Thankfully, the trusty review button in the game pulled through again. I got twelve 5-star, and one 4-star review yesterday.
+
+<iframe src="https://docs.google.com/forms/d/1uKBKkg_jsMJpLvzqUZ8-5qbybYFl7I7yPa3hgfsEvpE/viewform?embedded=true" width="560" height="620" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 
 <script src="/assets/themes/jquery.js"> </script>
 <script src="/assets/themes/rank.js"> </script>
