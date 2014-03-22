@@ -19,7 +19,7 @@ $.getJSON('https://itunes.apple.com/us/rss/toppaidapplications/limit=100/genre=7
       }
     }
 
-    if(rpgRank.length !== "TBD")
+    if(rpgRank.length !== "TBD") {
       $("#exactrank").html("App Store Ranking<br/> RPGs: " + rpgRank + "<br/>Games Overall: " + overrallRank);
     }
   });
