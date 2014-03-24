@@ -146,7 +146,7 @@ I want to make sure I've logged everything that's happened around the growth and
 - [Feb 12, 2014: Appcessible Podcast](#appcessible)
 - [Feb 13, 2014: Price Dropped on Game to $0.99 (50% off Sale)](#pricedrop)
 - [Feb 14, 2014: A Dark Room Makes it Into the Top 10 under the RPG Category](#top10)
-- [Feb 15, 2014: A Dark Room Is Free For Two Days](#free)
+- [Feb 15, 2014: A Dark Room is Free For Two Days](#free)
 - [Feb 21, 2014: A Hail Mary to Leigh Alexander](#hailleigh)
 - [Feb 24, 2014: Reaching Out to RubyMotion](#rubymotion)
 - [Feb 27, 2013: Another Release of A Dark Room, The Review Me Button](#reviewbutton)
@@ -160,6 +160,7 @@ I want to make sure I've logged everything that's happened around the growth and
 - [March 15, 2014: A Dark Room is Ranked 6th Under RPGs](#top6)
 - [March 18, 2014: The Spike is Over. iPad Version Release](#ipadrelease)
 - [March 19, 2014: Mystery of the Week Long Spike Solved](#mysterysolved)
+- [March 24, 2014: What Happened When A Dark Room Was Free for Two Days](#freeagain)
 
 <a id="pickingdevenvironment"> </a>
 
@@ -802,6 +803,33 @@ With the release of the iPad version. A Dark Room will now be searchable on all 
 This is also the first day after the iPad relese. Downloads are back to normal levels (a little over 100 a day). I didn't expect a big spike because of the iPad release. The game still needs to make it through the iPad ranking system (the iPhone rankings list is different than the iPad rankings list). From historical data, it looks like A Dark Room can make it into the top 20 in about a week. We'll see if my prediction holds true.
 
 Also, the first day after a relase is always frustrating. When you push out a new release, you don't lose your rank in the app store, but you do lose all the reviews. So there sits A Dark Room, ranked #17 in the App Store, zero reviews, one boring screenshot, who will buy that? Thankfully, the trusty review button in the game pulled through again. I got twelve 5-star, and one 4-star review yesterday.
+
+<a id="freeagain"> </a>
+
+**March 24, 2014: What Happened When A Dark Room Was Free for Two Days** <a href="#freeagain"><small>permalink</small></a>
+
+Spring Break (and the spike that came with it) was over... A Dark Room's ranking was falling. Part of this fall was related to the new release of the game (I think). This game has a huge risk every time a new version releases: previous reviews of the game get archived, which makes people, who've never experienced the game, hesitant in buying it. I was lucky to get twelve 5-star reviews the first day of the v1.5 release... it didn't look like it was enough to convince people to buy a game with only one screenshot, and a vague description. By the 19th, A Dark Room had 18 five-star reviews, but its rank had fallen to 28th in the RPG section.
+
+At this point I decided that the game could benefit from a little bit of publicity, so I made the app free for two days. [I've done this once before](#top10), the difference this time was A Dark Room was now equipped with a well placed review button. It was worth the risk of losing my app rank if it meant I could get a good surge of reviews.
+
+For the 20th and 21st the app was free. I posted the announcement to Touch Arcade, reddit/r/iOSGaming, reddit/r/AppHookup, and Twitter. As expected, the game got a lot of love on all fronts. The "App discount" syndications also published that the app went free.
+
+The combined downloads for the next two days was 13,997. The last time I did this, I received ~9,000 downloads. So it seems that these numbers weren't a fluke at all. This is actually the amount of downloads "top rated" free apps get on a daily basis.
+
+The game (depending on how addicted the player gets), can be completed in 3 hours, or up to 3 days of casual play. So now it was just a matter of waiting to see if the review button was doing its job. I waited two days before drawing any conclusions.
+
+Here is the download history for time the app went free (with a couple days before and after):
+
+- March 18th: 161
+- March 19th: 124
+- March 20th: 4,654
+- March 21st: 9,343
+- March 22nd: 221
+- March 23rd: 187
+
+Again, I wasn't surprised that the downloads went back to their regular numbers after the sale was over. But, during that time period, A Dark Room received an additional 112 5-star reviews, one 1-star review, and one 2-star review. It seems like players either "get" the game or they don't... thankfully, the ratio is well in A Dark Room's favor. Also, it seems that even with the well placed review button, the conversion rate for reviews is about 1%... geez.
+
+On the 18th, A Dark Room's iPhone and iPad RPG ranks were 28 and 71 respectively (and falling). The rankings were reset during the time period when the app was free (a risk I was well aware of). Today, A Dark Room's iPhone and iPad ranks are 16 and 40 respectively (and rising... so far). I'd say the two day sale was a success.
 
 <hr />
 
