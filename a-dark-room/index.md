@@ -73,7 +73,9 @@ I'm glad the game has been well received, for the most part. So far, all the rat
 If you enjoyed the game. Please, leave us a review in the [App Store](https://itunes.apple.com/us/app/a-dark-room/id736683061). 5 stars hopefully.
 
 
-May the fire burn bright and warm for you. Sincerely,
+May the fire burn brightly for you. May it keep you warm.
+
+Sincerely,
 
 A Dark Room
 
@@ -161,6 +163,7 @@ I want to make sure I've logged everything that's happened around the growth and
 - [March 18, 2014: The Spike is Over. iPad Version Release](#ipadrelease)
 - [March 19, 2014: Mystery of the Week Long Spike Solved](#mysterysolved)
 - [March 24, 2014: What Happened When A Dark Room Was Free for Two Days](#freeagain)
+- [March 31, 2014: Attack of the Minecraft Clones, and a New Hope in the United Kingdom](#minecraft)
 
 <a id="pickingdevenvironment"> </a>
 
@@ -830,6 +833,32 @@ Here is the download history for time the app went free (with a couple days befo
 Again, I wasn't surprised that the downloads went back to their regular numbers after the sale was over. But, during that time period, A Dark Room received an additional 112 5-star reviews, one 1-star review, and one 2-star review. It seems like players either "get" the game or they don't... thankfully, the ratio is well in A Dark Room's favor. Also, it seems that even with the well placed review button, the conversion rate for reviews is about 1%... geez.
 
 On the 18th, A Dark Room's iPhone and iPad RPG ranks were 28 and 71 respectively (and falling). The rankings were reset during the time period when the app was free (a risk I was well aware of). Today, A Dark Room's iPhone and iPad ranks are 16 and 40 respectively (and rising... so far). I'd say the two day sale was a success.
+
+<a id="minecraft"> </a>
+
+**March 31, 2014: Attack of the Minecraft Clones, and a New Hope in the United Kingdom** <a href="#minecraft"><small>permalink</small></a>
+
+For the past two weeks, a certain "anomaly" has existed in A Dark Room's small part of the App Store. There are two games that have managed to take top spots in the RPG category: Skyblock - Survival Game Mission Flying Island (which I'll call Skyblock1) and Skyblock - Mini Survival Game in Block Sky Worlds (which I'll call Skyblock2). Skyblock1 and Skyblock2 hold the _first_ and _tenth_ spot in the RPG category. The average rating for both games are two stars.
+
+I'm not sure what is going on here. I am well accustomed to the "I don't get it this is dumb" one-star review (I see that as a failure on my part by the way...). And here are two apps, that are in the top 10, and their reviews are mostly poor. Are the people that are reviewing this game, simply "not getting it"? Where are the reviews of people that enjoy the game?
+
+[As I've mentioned before](#top6), getting a top spot in rankings takes a consecutively high number of downloads, day after day. These games have been holding a top spot now for what looks like _two weeks_. These games are definitely bringing in a high number of downloads, but very few good reviews.
+
+Is the Minecraft "franchise" simply that popular? Here is a list of Minecraft based games that are high ranking right now:
+
+- Skyblock - Survival Game Mission Flying Island (#1 spot, 2-star average)
+- Hunt Games - Mine Mini Survival Game with Blocks (#9 spot, 2-star average)
+- Skyblock - Mini Survival Game in Block Sky World (#10 spot, 2-star average)
+- Minecraft Skin Studio - Official Skins Creator for Minecraft (#12 spot, 4.5-star average)
+- Adventure With Companions - 3D Online Multiplayer Block Building Sandbox With Creative (#17 spot, 4-star average)
+- Minecraft Explorer Pro (#18 spot, 3.5-star average)
+- World Explorer - Made for MineCraft (#19 spot, 2.5-star average)
+
+A Dark Room is currently ranked 20, with 220 reviews, average 5-star rating... in the United States.
+
+A few days ago, I saw a small spike in downloads. I didn't think too much of it. Yesterday, there was a 300% increase in A Dark Room's downloads. This got my attention. I tried to make sense of why this spike existed. App Annie, a site I use to track this stuff, showed a disproportionate number of downloads in the United Kingdom App Store. After looking at rankings, I saw that A Dark Room was recently promoted to the #1 spot in the UK App Store. Not #1 RPG, not #1 Game, **A Dark Room is currently the #1 app _overall_.**
+
+I don't have any details (yet) about what impacted this, or how many downloads this will translate to in the long run. One thing I've learned so far, you have to have tempered expectations. I've reached out to [Cara Ellison](#cara) and [Leigh Alexander](#leigh) (editors in the UK) to see if they have any idea about what's going on. I'm still trying to connect the dots... trying to understand how this happened. I'll add another entry as soon as I do.
 
 <hr />
 
