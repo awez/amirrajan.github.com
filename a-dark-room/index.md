@@ -907,7 +907,7 @@ The trust in the App Store, the trust in developers who develop products for the
 
 No, adding another screen shot or more details about the game won't help. One, because the game isn't visually appealing, and two, because I'm a stranger... I could be a scam artist that is putting up fake screen shots (I'm not of course). Most importantly, if I added any kind of hint to what was in the game, it would take away from the discovery that the player experiences. And I won't do that.
 
-At this point, all I can do is wait. It takes anywhere from 3 hours to 3 days to beat the game and get a "review me" button presented to you. I have to put _my_ trust in the player, and hope that he takes the time to review the game, and show that A Dark Room really is something brilliant and unique.
+At this point, all I can do is wait. It takes anywhere from 3 hours to 3 days to beat the game and get a "review me" button presented to you. I have to put _my_ trust in the player, and hope that they take the time to review the game, and show that A Dark Room really is something brilliant and unique.
 
 As a consolation, I've got some chuckles out of the reviews, specifically this one: 
 
