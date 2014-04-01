@@ -164,6 +164,7 @@ I want to make sure I've logged everything that's happened around the growth and
 - [March 19, 2014: Mystery of the Week Long Spike Solved](#mysterysolved)
 - [March 24, 2014: What Happened When A Dark Room Was Free for Two Days](#freeagain)
 - [March 31, 2014: Attack of the Minecraft Clones, and a New Hope in the United Kingdom](#minecraft)
+- [April 1, 2014: Day Two, at the Number One Spot, in the UK App Store](#topappday2)
 
 <a id="pickingdevenvironment"> </a>
 
@@ -859,6 +860,58 @@ A Dark Room is currently ranked 20, with 220 reviews, average 5-star rating... i
 A few days ago, I saw a small spike in downloads. I didn't think too much of it. Yesterday, there was a 300% increase in A Dark Room's downloads. This got my attention. I tried to make sense of why this spike existed. App Annie, a site I use to track this stuff, showed a disproportionate number of downloads in the United Kingdom App Store. After looking at rankings, I saw that A Dark Room was recently promoted to the #1 spot in the UK App Store. Not #1 RPG, not #1 Game, **A Dark Room is currently the #1 app _overall_.**
 
 I don't have any details (yet) about what impacted this, or how many downloads this will translate to in the long run. One thing I've learned so far, you have to have tempered expectations. I've reached out to [Cara Ellison](#cara) and [Leigh Alexander](#leigh) (editors in the UK) to see if they have any idea about what's going on. I'm still trying to connect the dots... trying to understand how this happened. I'll add another entry as soon as I do.
+
+<a id="topappday2"> </a>
+
+**April 1, 2014: Day Two, at the Number One Spot, in the UK App Store** <a href="#topappday2"><small>permalink</small></a>
+
+A Dark Room has managed to stay number 1 in the UK App Store for March 30th and 31st (so far). Here are my observations:
+
+Downloads have dropped 10% from D-day (March 30th). This was surprising given that when the [app was free](#freeagain), the downloads were higher on day two.
+
+The gains in the UK App Store don't seem to be influencing US sales. It may be too early to say this, but that's what I've seen so far.
+
+Another observation (and I think this is unique to the game), is there is now a higher number of 1-star reviews. For the past two days, A Dark Room has received 59 5-star reviews and 38 1-star reviews.
+
+If you've played the game, you know that the first part of the game has a slow reveal, and opens up "phase 2" only after you've bought the compass. I'm trying to put myself in the shoes of those that are in the UK. Here is a game... and it's the top app in the App Store. There is only one screen shot, a vague description and many of the review say the same thing:
+
+>**A-MAZING** - I don't write reviews. I find those "Rate this Game" popups extremely annoying. This game doesn't have those. Instead it waits until right at the end, after it has blown your mind, to ask for a rating. And for the first time ever, I felt obliged.
+
+>**One of a kind! Superb** - "I never write reviews," or "I hardly write reviews!" That's how all of the others have begun and if that doesn't draw you in then you shouldn't be on the App Store. This unique game has kept me entertained for hours on end...
+
+>**Wow!** - Well where to begin, I read the reviews and not knowing anything about the game I took a punt on it and I'm glad I did! What a brilliant game! ...
+
+>**;)** - A brilliant game very addictive and interesting concept. I would highly recommend it
+
+>**Fantastic** - Really atmospheric, very minimalist: an rpg, a survivor sim, a text adventure. Absolutely brilliant and shows you don't need grafix to make a really absorbing atmospheric game.
+
+I decide to give the game a shot. I _pay_ money for it. Pressing the buy button is a very powerful gesture. It doesn't matter if the app I am buying is $1 or $100. The act of buying something in the App Store has become an exchange of trust, more so than an exchange of money. When I hit the buy button, I am putting trust in the developer, trust in the App Store to curate apps, trust in the reviews that they are accurate and true.
+
+So here I am, a random person browsing the App Store, I may not even be a gamer, I may not even _like_ RPG's. And here's this app, it's in the _top spot_, and I decide to give a token of _trust_. I open up the app, and am presented with a black screen, and a single progress bar. I press the "light fire" button, and the screen changes color. I play for 5 seconds?, 10 seconds?, 5 minutes? The "game" does effectively nothing, a few pieces of text comes onto the screen, the progress bar updates, some new buttons show up, leading to more progress bars, the screen changes colors... that's it?
+
+I want immediate gratification for my _trust_, and I'm not getting that. My trust is short lived, since its being placed in the hands of complete strangers. I'm enraged, I'm so incredibly angry right now that I gave my trust to the developer, Apple, the reviewers, strangers, humanity... and I feel _betrayed_. So I leave a review to show my dissatisfaction:
+
+>**Fake reviews** - It's literally the most repetitive boring game. Was interested for about half an hour thinking it would get better but after a whole and giving it a chance, it just turns out it's pointless tapping
+
+>**Bit of a scam** - I bought this a week ago thinking the reviews looked positive. Now having played the game and read through further reviews I feel scammed. Poorly hidden "I don't usually write" fake reviews are littered everywhere.
+
+>**SCAM!!!** - Worst game ever!!! Don't buy it! Reviews are fake!!!
+
+>**Awful! The worst!** - his is the most awful game I have ever played ! It costs £0.69 which I would like back and it has fake reviews written about it by it's own company! DO NOT EVER BUY THIS "game".
+
+>**Con Artist of 2014 award goes to...** - Well I don't usually write reviews either, but after reading the hundreds of reviews below I can only come to the conclusion that they were paid to do them....
+
+When the game was in a quiet spot in the App Store, a lot of the downloads came from people recommending it word of mouth. You really couldn't find the game unless you specifically looked in the RPG section and scrolled down a couple of pages. When a real person, a friend, a fellow gamer, an esteemed editor recommends something to you... you give their recommendation more trust, and as a by product, you give A Dark Room more of your time.
+
+The trust in the App Store, the trust in developers who develop products for the App Store is forever waning. And I can see the exhaustion and frustration that people feel (I feel it myself when I'm browsing for apps). And right now, that frustration is being directed to A Dark Room.
+
+No, adding another screen shot or more details about the game won't help. One, because the game isn't visually appealing, and two, because I'm a stranger... I could be a scam artist that is putting up fake screen shots (I'm not of course). Most importantly, if I added any kind of hint to what was in the game, it would take away from the discovery that the player experiences. And I won't do that.
+
+At this point, all I can do is wait. It takes anywhere from 3 hours to 3 days to beat the game and get a "review me" button presented to you. I have to put _my_ trust in the player, and hope that he takes the time to review the game, and show that A Dark Room really is something brilliant and unique.
+
+As a consolation, I've got some chuckles out of the reviews, specifically this one: 
+
+>**Avoid** - To summarise, I would actually rather be in a dark room, with nothing else is in it, until my untimely death before playing this app again. The endless time that is spent tapping could be spent building a time machine that would take you back to the time you pressed 'install' just so you can slap yourself in the face. Take your 70p and go purchase a lettuce and tap that, it would be more productive... And at the end you have a lettuce.
 
 <hr />
 
