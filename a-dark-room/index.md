@@ -913,6 +913,47 @@ As a consolation, I've got some chuckles out of the reviews, specifically this o
 
 >**Avoid** - To summarise, I would actually rather be in a dark room, with nothing else is in it, until my untimely death before playing this app again. The endless time that is spent tapping could be spent building a time machine that would take you back to the time you pressed 'install' just so you can slap yourself in the face. Take your 70p and go purchase a lettuce and tap that, it would be more productive... And at the end you have a lettuce.
 
+<a id="topappday3"> </a>
+
+
+**April 2, 2014: Day Three, at the Number One Spot, in the UK App Store** <a href="#topappday3"><small>permalink</small></a>
+
+A Dark Room has been in the top spot in UK App Store for 3 days now. Downloads have fallen 56% from day two, but A Dark Room's rank still remains #1. From what I've observed so far, the rankings are heavily determined by the number of downloads you get (not the reviews). Given that the downloads are falling, this rank position may not last much longer.
+
+I don't have enough data yet, but it seems like the rankings in the UK App Store _are_ influencing the US App Store. With no noticeable spike in US downloads, A Dark Room has jumped to the #9 spot in the RPG Category and the 146th spot in the Games category. That is both exciting and _terrifying_. From what I've read, the US App Store market share is 5 times the size of the UK.
+
+The reviews have a definite pattern. You either _love_ the game or _hate_ it. Here are the review number for yesterday:
+
+- 5-star: 44
+- 4-star: 3
+- 3-star: 0
+- 2-star: 1
+- 1-star: 26 
+
+The reactions in the reviews continue to be visceral. Here are a couple:
+
+>**Amazingly bad!** - I lasted 30 seconds. I dont know what's worse, being charged more than a penny for this rubbish or reading the obviously faked reviews after purchasing or finding the developers epic long long long faked diary in making this 'game' that a 5 year old could put together. he also actually seems to believe that no one can review the 'game' without having completed it! Will be getting onto apple for a refund. Yes i can do that too!
+
+>**Fraudsters!!** - This game is awful. All the reviews are fake. The people behind this have broken the law as this is clearly fraudulent activity designed to get you to part with your money for false promises. Absolute disgrace. Pure theft. Pure criminality.
+
+One person from the UK actually "called @ADarkRoomiOS out" on Twitter. Against my better judgement, I decided to engage with her. I'm glad I did. Conversation follows:
+
+>her - @ADarkRoomiOS what a con! Waste of money, I wish I could warn others the reviews are fake.
+
+>me - I'm truly sorry you feel conned. More info about the game here, please take a moment to read if you can: http://amirrajan.net/a-dark-room/ 
+
+>me - did you get a chance to read the development log I had put up with regards to A Dark Room and my sabbatical?
+
+>her - I'm sure the game is great; maybe it's just not for me. But all the best to you, and I hope your success grows.
+
+>me - I appreciate that, but perhaps put yourself in my shoes. Any ideas how I can communicate that it isn't a con?
+
+>her - hey look, don't pay attention to the likes of me. Keep creating and keep making the cash, I would do the same!
+
+>me - thank you... you're a part of A Dark Room's history now. In a good way. :-)
+
+>her - haha thanks! Maybe I should reinstall the app and uninstall my ignorance
+
 <hr />
 
 <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css"/>
