@@ -165,6 +165,7 @@ I want to make sure I've logged everything that's happened around the growth and
 - [March 24, 2014: What Happened When A Dark Room Was Free for Two Days](#freeagain)
 - [March 31, 2014: Attack of the Minecraft Clones, and a New Hope in the United Kingdom](#minecraft)
 - [April 1, 2014: Day Two, at the Number One Spot, in the UK App Store](#topappday2)
+- [April 2, 2014: Day Three, at the Number One Spot, in the UK App Store](#topappday3)
 
 <a id="pickingdevenvironment"> </a>
 
@@ -915,10 +916,9 @@ As a consolation, I've got some chuckles out of the reviews, specifically this o
 
 <a id="topappday3"> </a>
 
-
 **April 2, 2014: Day Three, at the Number One Spot, in the UK App Store** <a href="#topappday3"><small>permalink</small></a>
 
-A Dark Room has been in the top spot in UK App Store for 3 days now. Downloads have fallen 56% from day two, but A Dark Room's rank still remains #1. From what I've observed so far, the rankings are heavily determined by the number of downloads you get (not the reviews). Given that the downloads are falling, this rank position may not last much longer.
+A Dark Room has been in the top spot in the UK App Store for 3 days now. Downloads have fallen 56% from day two, but A Dark Room's rank still remains #1. From what I've observed so far, the rankings are heavily determined by the number of downloads you get (not the reviews). Given that the downloads are falling, this rank position may not last much longer.
 
 I don't have enough data yet, but it seems like the rankings in the UK App Store _are_ influencing the US App Store. With no noticeable spike in US downloads, A Dark Room has jumped to the #9 spot in the RPG Category and the 146th spot in the Games category. That is both exciting and _terrifying_. From what I've read, the US App Store market share is 5 times the size of the UK.
 
