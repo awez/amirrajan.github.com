@@ -22,6 +22,8 @@ group: navigation
 
 [Indie Games: Top 10 Game Dev's Favorites of 2013](http://indiegames.com/2014/01/top_10_indie_game_devs_favorit_1.html)
 
+[Gamasutra: A Dark Room's unique journey from the web to iOS](http://www.gamasutra.com/view/news/212230/A_Dark_Rooms_unique_journey_from_the_web_to_iOS.php)
+
 **Support Us. Need Help?**
 
 Hope you like the game. Please rate it and let others know about it. If you need to contact me, shoot an email to ar@amirrajan.net. 
