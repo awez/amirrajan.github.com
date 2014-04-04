@@ -154,20 +154,21 @@ I want to make sure I've logged everything that's happened around the growth and
 - [Feb 21, 2014: A Hail Mary to Leigh Alexander](#hailleigh)
 - [Feb 24, 2014: Reaching Out to RubyMotion](#rubymotion)
 - [Feb 27, 2013: Another Release of A Dark Room, The Review Me Button](#reviewbutton)
-- [March 3, 2014: Slides Complete for My First Presentation at a Ruby User Group - 12k Lines of RubyMotion](#rubybrigade)
-- [March 4, 2014: The Review Button in A Dark Room](#reviewbutton)
-- [March 5, 2014: Check Number 3 From Apple](#thirdcheck)
-- [March 6, 2014: Leigh Alexander Publishes Her Interview on Gamasutra](#leigh)
-- [March 8, 2014: Two Days After the Gamasutra Publication](#gamasutra)
-- [March 12, 2014: Four Days of Promotion](#promotion)
-- [March 13, 2014: Back in the Top 10, iPad Release](#top10again)
-- [March 15, 2014: A Dark Room is Ranked 6th Under RPGs](#top6)
-- [March 18, 2014: The Spike is Over. iPad Version Release](#ipadrelease)
-- [March 19, 2014: Mystery of the Week Long Spike Solved](#mysterysolved)
-- [March 24, 2014: What Happened When A Dark Room Was Free for Two Days](#freeagain)
-- [March 31, 2014: Attack of the Minecraft Clones, and a New Hope in the United Kingdom](#minecraft)
-- [April 1, 2014: Day Two, at the Number One Spot, in the UK App Store](#topappday2)
-- [April 2, 2014: Day Three, at the Number One Spot, in the UK App Store](#topappday3)
+- [Mar 3, 2014: Slides Complete for My First Presentation at a Ruby User Group - 12k Lines of RubyMotion](#rubybrigade)
+- [Mar 4, 2014: The Review Button in A Dark Room](#reviewbutton)
+- [Mar 5, 2014: Check Number 3 From Apple](#thirdcheck)
+- [Mar 6, 2014: Leigh Alexander Publishes Her Interview on Gamasutra](#leigh)
+- [Mar 8, 2014: Two Days After the Gamasutra Publication](#gamasutra)
+- [Mar 12, 2014: Four Days of Promotion](#promotion)
+- [Mar 13, 2014: Back in the Top 10, iPad Release](#top10again)
+- [Mar 15, 2014: A Dark Room is Ranked 6th Under RPGs](#top6)
+- [Mar 18, 2014: The Spike is Over. iPad Version Release](#ipadrelease)
+- [Mar 19, 2014: Mystery of the Week Long Spike Solved](#mysterysolved)
+- [Mar 24, 2014: What Happened When A Dark Room Was Free for Two Days](#freeagain)
+- [Mar 31, 2014: Attack of the Minecraft Clones, and a New Hope in the United Kingdom](#minecraft)
+- [Apr 1, 2014: Day Two, at the Number One Spot, in the UK App Store](#topappday2)
+- [Apr 2, 2014: Day Three, at the Number One Spot, in the UK App Store](#topappday3)
+- [Apr 4, 2014: The Fall From the #1 Spot in the UK App Store. Here Are the Final Numbers](#topappday5)
 
 <a id="pickingdevenvironment"> </a>
 
@@ -697,13 +698,13 @@ A Dark Room's current version has 56 five-star reviews, 1 one-star review, and 1
 
 <a id="rubybrigade"> </a>
 
-**March 3, 2014: Slides Complete for My First Presentation at a Ruby User Group - 12k Lines of RubyMotion** <a href="#rubybrigade"><small>permalink</small></a>
+**Mar 3, 2014: Slides Complete for My First Presentation at a Ruby User Group - 12k Lines of RubyMotion** <a href="#rubybrigade"><small>permalink</small></a>
 
 A lot is still up in the air at this point. Version 1.4 is waiting for release. I've permanently dropped the price of A Dark Room to $0.99 (I don't know the long term effects of this). I'm hoping that Owen from Pocket Tactics shows some love to A Dark Room on his website. I'm hoping that Leigh publishes the interview questions. I'm hoping that Brandon gets back to me about his thoughts on the game and with any help he can provide. I'm hoping the RubyMotion team likes the slides I've sent them and that I'll get some visibility with them too. I'm hoping that my first presentation at a Ruby user group goes well. I'm hoping the new review button generates more reviews. Lots of hope... few answers at this point. [Here is the link to the presentation I did.](http://amirrajan.net/12k-lines-of-RM/#/title).
 
 <a id="reviewbutton"> </a>
 
-**March 4, 2014: The Review Button in A Dark Room** <a href="#reviewbutton"><small>permalink</small></a>
+**Mar 4, 2014: The Review Button in A Dark Room** <a href="#reviewbutton"><small>permalink</small></a>
 
 The pending release to A Dark Room hit the App Store. As expected all the reviews from the previous version get removed from the "current" release. The app at this point is ranked 32 under the RPG Category. With zero reviews for the current release. I knew this was a risk going in, but with it, I got 100 more promo codes.
 
@@ -713,7 +714,7 @@ That day I received 20 reviews. A small success to be celebrated. I'm hoping to 
 
 <a id="thirdcheck"> </a>
 
-**March 5, 2014: Check Number 3 From Apple** <a href="#thirdcheck"><small>permalink</small></a>
+**Mar 5, 2014: Check Number 3 From Apple** <a href="#thirdcheck"><small>permalink</small></a>
 
 The third check comes in. The grand totals for the month of January:
 
@@ -737,7 +738,7 @@ A message to Bryce68: I'm sorry that I wasn't able to keep your attention, but n
 
 <a id="leigh"> </a>
 
-**March 6, 2014: Leigh Alexander Publishes Her Interview on Gamasutra** <a href="#leigh"><small>permalink</small></a>
+**Mar 6, 2014: Leigh Alexander Publishes Her Interview on Gamasutra** <a href="#leigh"><small>permalink</small></a>
 
 Leigh, thank you for this. Thank you for taking the time to interview Michael and me. Thank you for skillfully writing about the journey we've had so far.
 
@@ -747,7 +748,7 @@ At this point, I have a better expectations of the impact these kind of publicat
 
 <a id="gamasutra"> </a>
 
-**March 8, 2014: Two Days After the Gamasutra Publication** <a href="#gamasutra"><small>permalink</small></a>
+**Mar 8, 2014: Two Days After the Gamasutra Publication** <a href="#gamasutra"><small>permalink</small></a>
 
 Leigh's article stayed on Gamasutra's Top Articles for two days.
 
@@ -759,7 +760,7 @@ The game's download spiked to ~100 downloads for each day. Its rank went from nu
 
 <a id="promotion"> </a>
 
-**March 12, 2014: Four Days of Promotion** <a href="#promotion"><small>permalink</small></a>
+**Mar 12, 2014: Four Days of Promotion** <a href="#promotion"><small>permalink</small></a>
 
 I posted this write up on /r/IndieGaming and /r/GameDev. To share what I've been through so far.. and yes, to help with visibility... two birds with one stone, right? The posts gained popularity and I had a number of good conversations, specifically about the viability of the Android market (tl;dr; it doesn't look promising).
 
@@ -775,13 +776,13 @@ Given that an iPad version was going to be released, I decided to give away 50 m
 
 <a id="top10again"> </a>
 
-**March 13, 2014: Back in the Top 10, iPad Release** <a href="#top10again"><small>permalink</small></a>
+**Mar 13, 2014: Back in the Top 10, iPad Release** <a href="#top10again"><small>permalink</small></a>
 
 I woke up this morning. Awake, head throbbing, vision blurry ;-). Checked my app rank... A Dark Room made it into the top 10 RPGs... and finally cracked the top 200 in the overall Games category. Back to testing the iPad/Universal version of the game.
 
 <a id="top6"> </a>
 
-**March 15, 2014: A Dark Room is Ranked 6th Under RPGs** <a href="#top6"><small>permalink</small></a>
+**Mar 15, 2014: A Dark Room is Ranked 6th Under RPGs** <a href="#top6"><small>permalink</small></a>
 
 For the past two days, A Dark Room has gotten ~200 downloads. I haven't done any recent marketing of the game to result in that kind of spike. True, the game made it into the top 10 spot a couple of days ago... but I didn't experience this kind of spike the last time it was there.
 
@@ -795,7 +796,7 @@ All I can really do is wait. I'm out of promo codes. I have no control over App 
 
 <a id="ipadrelease"> </a>
 
-**March 18, 2014: The Spike is Over. iPad Version Release** <a href="#ipadrelease"><small>permalink</small></a>
+**Mar 18, 2014: The Spike is Over. iPad Version Release** <a href="#ipadrelease"><small>permalink</small></a>
 
 The unexplained spike is over. Downloads are coming back down to "normal" levels. This morning I received an email that the iPad verison of the game is ready for sale. Of course, with every new release, I get a new set of promocodes, and all the reviews get "archived" (wiped out frankly, frustrating). From March 4th to today. A Dark Room received 85 reviews. One of them was a 4-star review, one of them was a 1-star review, the rest were 5-stars. The game was getting an average of 6 reviews a day.
 
@@ -803,7 +804,7 @@ With the release of the iPad version. A Dark Room will now be searchable on all 
 
 <a id="mysterysolved" > </a>
 
-**March 19, 2014: Mystery of the Week Long Spike Solved** <a href="#mysterysolved"><small>permalink</small></a>
+**Mar 19, 2014: Mystery of the Week Long Spike Solved** <a href="#mysterysolved"><small>permalink</small></a>
 
 [Last week there was a spike in A Dark Room's download numbers that I couldn't explain](#top6). Kevin Wade of OrgSync figured it out. It was because of Spring Break. A bunch of people with time on their hands came to the App Store and bought the game. A Dark Room's rank didn't increase in the App Store with this large week long spike in downloads, because every game was experiencing a similar spike.
 
@@ -813,7 +814,7 @@ Also, the first day after a relase is always frustrating. When you push out a ne
 
 <a id="freeagain"> </a>
 
-**March 24, 2014: What Happened When A Dark Room Was Free for Two Days** <a href="#freeagain"><small>permalink</small></a>
+**Mar 24, 2014: What Happened When A Dark Room Was Free for Two Days** <a href="#freeagain"><small>permalink</small></a>
 
 Spring Break (and the spike that came with it) was over... A Dark Room's ranking was falling. Part of this fall was related to the new release of the game (I think). This game has a huge risk every time a new version releases: previous reviews of the game get archived, which makes people, who've never experienced the game, hesitant in buying it. I was lucky to get twelve 5-star reviews the first day of the v1.5 release... it didn't look like it was enough to convince people to buy a game with only one screenshot, and a vague description. By the 19th, A Dark Room had 18 five-star reviews, but its rank had fallen to 28th in the RPG section.
 
@@ -827,12 +828,12 @@ The game (depending on how addicted the player gets), can be completed in 3 hour
 
 Here is the download history for time the app went free (with a couple days before and after):
 
-- March 18th: 161
-- March 19th: 124
-- March 20th: 4,654
-- March 21st: 9,343
-- March 22nd: 221
-- March 23rd: 187
+- Mar 18th: 161
+- Mar 19th: 124
+- Mar 20th: 4,654
+- Mar 21st: 9,343
+- Mar 22nd: 221
+- Mar 23rd: 187
 
 Again, I wasn't surprised that the downloads went back to their regular numbers after the sale was over. But, during that time period, A Dark Room received an additional 112 5-star reviews, one 1-star review, and one 2-star review. It seems like players either "get" the game or they don't... thankfully, the ratio is well in A Dark Room's favor. Also, it seems that even with the well placed review button, the conversion rate for reviews is about 1%... geez.
 
@@ -840,7 +841,7 @@ On the 18th, A Dark Room's iPhone and iPad RPG ranks were 28 and 71 respectively
 
 <a id="minecraft"> </a>
 
-**March 31, 2014: Attack of the Minecraft Clones, and a New Hope in the United Kingdom** <a href="#minecraft"><small>permalink</small></a>
+**Mar 31, 2014: Attack of the Minecraft Clones, and a New Hope in the United Kingdom** <a href="#minecraft"><small>permalink</small></a>
 
 For the past two weeks, a certain "anomaly" has existed in A Dark Room's small part of the App Store. There are two games that have managed to take top spots in the RPG category: Skyblock - Survival Game Mission Flying Island (which I'll call Skyblock1) and Skyblock - Mini Survival Game in Block Sky Worlds (which I'll call Skyblock2). Skyblock1 and Skyblock2 hold the _first_ and _tenth_ spot in the RPG category. The average rating for both games are two stars.
 
@@ -866,7 +867,7 @@ I don't have any details (yet) about what impacted this, or how many downloads t
 
 <a id="topappday2"> </a>
 
-**April 1, 2014: Day Two, at the Number One Spot, in the UK App Store** <a href="#topappday2"><small>permalink</small></a>
+**Apr 1, 2014: Day Two, at the Number One Spot, in the UK App Store** <a href="#topappday2"><small>permalink</small></a>
 
 A Dark Room has managed to stay number 1 in the UK App Store for March 30th and 31st (so far). Here are my observations:
 
@@ -918,7 +919,7 @@ As a consolation, I've got some chuckles out of the reviews, specifically this o
 
 <a id="topappday3"> </a>
 
-**April 2, 2014: Day Three, at the Number One Spot, in the UK App Store** <a href="#topappday3"><small>permalink</small></a>
+**Apr 2, 2014: Day Three, at the Number One Spot, in the UK App Store** <a href="#topappday3"><small>permalink</small></a>
 
 A Dark Room has been in the top spot in the UK App Store for 3 days now. Downloads have fallen 56% from day two, but A Dark Room's rank still remains #1. From what I've observed so far, the rankings are heavily determined by the number of downloads you get (not the reviews). Given that the downloads are falling, this rank position may not last much longer.
 
@@ -955,6 +956,45 @@ One person from the UK actually "called @ADarkRoomiOS out" on Twitter. Against m
 >me - thank you... you're a part of A Dark Room's history now. In a good way. :-)
 
 >her - haha thanks! Maybe I should reinstall the app and uninstall my ignorance
+
+<a id="topappday5"> </a>
+
+**Apr 4, 2014: The Fall From the #1 Spot in the UK App Store. Here Are the Final Numbers** <a href="#topappday5"><small>permalink</small></a>
+
+After <s>four</s> five days in A Dark Room finally dropped to the #2 spot.  Observations:
+
+- You either love A Dark Room or hate it.
+- Once you make it to the top 5 of your category, things begin to pick up.
+- There doesn't seem to be any correlation between the UK and US App Stores.
+- The US App Store is _definitely_ larger than the UK App Store.
+
+Here are the final numbers leading up to the #1 Spot:
+
+Date | Downloads (UK) | RPG Rank (UK) | Overall Rank (UK) | Downloads (US) | RPG Rank (US) | Overall Rank (US)
+:--- | -------------: | ------------: | ----------------: | -------------: | ------------: | ----------------:
+3/22 |             40 |            10 |               403 |            125 |            21 |               636
+3/23 |             58 |             6 |               333 |            109 |            20 |               573
+3/24 |             38 |             6 |               337 |             83 |            20 |               643
+3/25 |             36 |             5 |               277 |             88 |            20 |               605
+3/26 |             47 |             3 |               211 |            106 |            19 |               604
+3/27 |            108 |             1 |               100 |             82 |            22 |               774
+3/28 |            296 |             1 |                29 |            100 |            21 |               637
+3/29 |           1088 |             1 |                 5 |            117 |            24 |               719
+3/30 |           5959 |             1 |                 1 |            140 |            20 |               623
+3/31 |           5037 |             1 |                 1 |            103 |            16 |               560
+4/01 |           2812 |             1 |                 1 |            127 |            12 |               468
+4/02 |           2654 |             1 |                 1 |            181 |             7 |               314
+4/03 |           2195 |             1 |                 1 |            176 |             6 |               242
+
+During the 5 days at the top spot, users of the UK App Store gave A Dark Room the following ratings:
+
+- 5 stars: 195
+- 4 stars: 17
+- 3 stars: 2
+- 2 stars: 6
+- 1 stars: 94
+
+As for the reviews, I'd be lying if I said that I wasn't affected emotionally by people claiming that A Dark Room was a scam and I was a con artist. There were three individuals on Twitter that actually called out A Dark Room publicly. I addressed each tweet individually, exercising an extreme amount of empathy. Each person ended up retracting their statement about A Dark Room and apologizing (one even said that they'd give A Dark Room another shot). If anything, this was preparation for what _will_ come if I make it to a top spot in the US App Store.
 
 <hr />
 
