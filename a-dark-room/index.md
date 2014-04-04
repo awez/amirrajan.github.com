@@ -961,7 +961,7 @@ One person from the UK actually "called @ADarkRoomiOS out" on Twitter. Against m
 
 **Apr 4, 2014: The Fall From the #1 Spot in the UK App Store. Here Are the Final Numbers** <a href="#topappday5"><small>permalink</small></a>
 
-After <s>four</s> five days in A Dark Room finally dropped to the #2 spot.  Observations:
+After <s>four</s> five days in the top spot of the UK App Store, A Dark Room finally dropped to the #2 spot.  Observations:
 
 - You either love A Dark Room or hate it.
 - Once you make it to the top 5 of your category, things begin to pick up.
