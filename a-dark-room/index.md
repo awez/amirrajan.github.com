@@ -968,23 +968,41 @@ After <s>four</s> five days in the top spot of the UK App Store, A Dark Room fin
 - There doesn't seem to be any correlation between the UK and US App Stores.
 - The US App Store is _definitely_ larger than the UK App Store.
 
-Here are the final numbers leading up to the #1 Spot:
+Here are the final numbers leading up to the #1 spot in the UK:
 
-Date | Downloads (UK) | RPG Rank (UK) | Overall Rank (UK) | Downloads (US) | RPG Rank (US) | Overall Rank (US)
-:--- | -------------: | ------------: | ----------------: | -------------: | ------------: | ----------------:
-3/22 |             40 |            10 |               403 |            125 |            21 |               636
-3/23 |             58 |             6 |               333 |            109 |            20 |               573
-3/24 |             38 |             6 |               337 |             83 |            20 |               643
-3/25 |             36 |             5 |               277 |             88 |            20 |               605
-3/26 |             47 |             3 |               211 |            106 |            19 |               604
-3/27 |            108 |             1 |               100 |             82 |            22 |               774
-3/28 |            296 |             1 |                29 |            100 |            21 |               637
-3/29 |           1088 |             1 |                 5 |            117 |            24 |               719
-3/30 |           5959 |             1 |                 1 |            140 |            20 |               623
-3/31 |           5037 |             1 |                 1 |            103 |            16 |               560
-4/01 |           2812 |             1 |                 1 |            127 |            12 |               468
-4/02 |           2654 |             1 |                 1 |            181 |             7 |               314
-4/03 |           2195 |             1 |                 1 |            176 |             6 |               242
+Date | Downloads (UK) | RPG Rank (UK) | Overall Rank (UK)
+:--- | -------------: | ------------: | ----------------:
+3/22 |             40 |            10 |               403
+3/23 |             58 |             6 |               333
+3/24 |             38 |             6 |               337
+3/25 |             36 |             5 |               277
+3/26 |             47 |             3 |               211
+3/27 |            108 |             1 |               100
+3/28 |            296 |             1 |                29
+3/29 |           1088 |             1 |                 5
+3/30 |           5959 |             1 |                 1
+3/31 |           5037 |             1 |                 1
+4/01 |           2812 |             1 |                 1
+4/02 |           2654 |             1 |                 1
+4/03 |           2195 |             1 |                 1
+
+Here are the US numbers:
+
+Date | Downloads (US) | RPG Rank (US) | Overall Rank (US)
+:--- | -------------: | ------------: | ----------------:
+3/22 |            125 |            21 |               636
+3/23 |            109 |            20 |               573
+3/24 |             83 |            20 |               643
+3/25 |             88 |            20 |               605
+3/26 |            106 |            19 |               604
+3/27 |             82 |            22 |               774
+3/28 |            100 |            21 |               637
+3/29 |            117 |            24 |               719
+3/30 |            140 |            20 |               623
+3/31 |            103 |            16 |               560
+4/01 |            127 |            12 |               468
+4/02 |            181 |             7 |               314
+4/03 |            176 |             6 |               242
 
 During the 5 days at the top spot, users of the UK App Store gave A Dark Room the following ratings:
 
