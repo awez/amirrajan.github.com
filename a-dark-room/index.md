@@ -169,6 +169,7 @@ I want to make sure I've logged everything that's happened around the growth and
 - [Apr 1, 2014: Day Two, at the Number One Spot, in the UK App Store](#topappday2)
 - [Apr 2, 2014: Day Three, at the Number One Spot, in the UK App Store](#topappday3)
 - [Apr 4, 2014: The Fall From the #1 Spot in the UK App Store. Here Are the Final Numbers](#topappday5)
+- [Apr 9, 2014: #1 RPG, #5 Game, #10 App, in the US](#topofus) 
 
 <a id="pickingdevenvironment"> </a>
 
@@ -1013,6 +1014,24 @@ During the 5 days at the top spot, users of the UK App Store gave A Dark Room th
 - 1 stars: 94
 
 As for the reviews, I'd be lying if I said that I wasn't affected emotionally by people claiming that A Dark Room was a scam and I was a con artist. There were three individuals on Twitter that actually called out A Dark Room publicly. I addressed each tweet individually, exercising an extreme amount of empathy. Each person ended up retracting their statement about A Dark Room and apologizing (one even said that they'd give A Dark Room another shot). If anything, this was preparation for what _will_ come if I make it to a top spot in the US App Store.
+
+<a id="topofus"> </a>
+
+**Apr 9, 2014: #1 RPG, #5 Game, #10 App, in the US** <a href="#topofus"><small>permalink</small></a>
+
+Here we are. Ten days after A Dark Room made it to the #1 spot in the UK. This morning, A Dark Room is ranked #1 in the RPG category, #5 in the Games category, and is the #10 app, _overall_. I still have no idea what's happening. I don't know definitively whether the buzz in the United Kingdom somehow caused the same kind of viral outbreak in the United States.
+
+But (so far) the trends are holding. As soon as A Dark Room hit the #1 spot in the RPG category, a snowball effect occurred (similar to what I saw in the UK). If you look at the [rank progression in the UK](#topappday5), you'll notice that A Dark Room hit the #1 spot overall, three days after it became #1 in it the RPG category. A Dark Room hit the #1 RPG spot in the US late on April 6th... which makes day number 3, today. I doubt it'll jump 10 spots in one day, but it's worth noting how similar the trends are.
+
+Outside of impacts associated with being #1 in the UK. The following _may_ have given A Dark Room more steam in the United States.
+
+As soon as A Dark Room hit the #1 spot in the UK I reposted what I wrote here on /r/gamedev: [What happens when your iOS game goes viral and becomes the #1 app in the UK App Store](http://www.reddit.com/r/gamedev/comments/220quk/what_happens_when_your_ios_game_goes_viral_and/). The post received 200 up votes, and there were many good conversations to be had.
+
+Out of sheer luck. A Reddit user asked the following question on /r/askreddit, which Michael ended up responding to: [Has anyone here ever built a $20 or $40 desktop application, or $0.99 to $5 mobile app, and made real money from it?](http://www.reddit.com/r/AskReddit/comments/227qln/has_anyone_here_ever_built_a_20_or_40_desktop/cgk7rhp). The question received 1159 upvotes, and Michael's response was the top comment. 
+
+Around this same time, a review site, that I reached out to a couple weeks ago, gave A Dark Room 3 stars (the review said mostly good things about the game, so put your torches and pitchforks down): [148Apps - A Dark Room Review](http://www.148apps.com/reviews/dark-room-review/)
+
+That's all that's happened as far as I know. A Dark Room has dropped to #5 in the UK. Downloads are still dropping and haven't leveled off. Positive reviews out score negative reviews 3 to 1. Given what I've seen in the UK, if A Dark Room does indeed hit the top spot, it won't stay there for long.
 
 <hr />
 

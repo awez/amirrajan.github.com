@@ -123,7 +123,7 @@ Outside of the persona I place in marketing slicks, I honestly feel that I'm jus
 
 ##Music (guitar)
 
-Farewell electric guitar. The end goal was vivid, the interest was there, but I just didn't see progress. I can read music well, but couldn't get my fingers to perform what my mind could was capable of reading. There was a huge gap between the mental and the physical. It was too much "work without feedback" to close that mental gap.
+Farewell electric guitar. The end goal was vivid, the interest was there, but I just didn't see progress. I can read music well, but couldn't get my fingers to perform what my mind was capable of reading. There was a huge gap between the mental and the physical. It was too much "work without feedback" to close that mental gap.
 
 I'm trying again however. This time with a violin (great idea Amir -\_-). The interest is there. It's a smaller instrument with less to set up and play. The novelty with learning something new is there. Just comes down to the journey, the feeling that I've made some noticeable progress.
 
