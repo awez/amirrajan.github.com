@@ -1021,7 +1021,7 @@ As for the reviews, I'd be lying if I said that I wasn't affected emotionally by
 
 Here we are. Ten days after A Dark Room made it to the #1 spot in the UK. This morning, A Dark Room is ranked #1 in the RPG category, #5 in the Games category, and is the #10 app, _overall_. I still have no idea what's happening. I don't know definitively whether the buzz in the United Kingdom somehow caused the same kind of viral outbreak in the United States.
 
-But (so far) the trends are holding. As soon as A Dark Room hit the #1 spot in the RPG category, a snowball effect occurred (similar to what I saw in the UK). If you look at the [rank progression in the UK](#topappday5), you'll notice that A Dark Room hit the #1 spot overall, three days after it became #1 in the RPG category. A Dark Room hit the #1 RPG spot in the US late on April 6th... which makes day number 3, today. I doubt it'll jump 10 spots in one day, but it's worth noting how similar the trends are.
+But (so far) the trends are holding. As soon as A Dark Room hit the #1 spot in the RPG category, a snowball effect occurred (similar to what I saw in the UK). If you look at the [rank progression in the UK](#topappday5), you'll notice that A Dark Room hit the #1 spot overall, three days after it became #1 in the RPG category. A Dark Room hit the #1 RPG spot, in the US, late on April 6th... which makes day number 3, today. I doubt it'll jump 10 spots in one day, but it's worth noting how similar the trends are.
 
 Outside of impacts associated with being #1 in the UK. The following _may_ have given A Dark Room more steam in the United States.
 
