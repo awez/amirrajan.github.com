@@ -170,6 +170,7 @@ I want to make sure I've logged everything that's happened around the growth and
 - [Apr 2, 2014: Day Three, at the Number One Spot, in the UK App Store](#topappday3)
 - [Apr 4, 2014: The Fall From the #1 Spot in the UK App Store. Here Are the Final Numbers](#topappday5)
 - [Apr 9, 2014: #1 RPG, #5 Game, #10 App, in the US](#topofus) 
+- [Apr 15, 2014: #1 in the App Store](#number1us)
 
 <a id="pickingdevenvironment"> </a>
 
@@ -1032,6 +1033,28 @@ Out of sheer luck. A Reddit user asked the following question on /r/askreddit, w
 Around this same time, a review site, that I reached out to a couple weeks ago, gave A Dark Room 3 stars (the review said mostly good things about the game, so put your torches and pitchforks down): [148Apps - A Dark Room Review](http://www.148apps.com/reviews/dark-room-review/)
 
 That's all that's happened as far as I know. A Dark Room has dropped to #5 in the UK. Downloads are still dropping and haven't leveled off. Positive reviews out score negative reviews 3 to 1. Given what I've seen in the UK, if A Dark Room does indeed hit the top spot, it won't stay there for long.
+
+<a id="number1us"> </a>
+
+**Apr 15, 2014: #1 in the App Store** <a href="#number1us"><small>permalink</small></a>
+
+A Dark Room iOS finally clawed its way to the #1 spot. It happened on April 13, 2014. It took seven, very long days to make it there from the #1 RPG spot. I was in shock when it passed Mine Craft in the rankings. I literally gasped out loud when it passed Monument Valley. I laughed sinisterly when it took down RBI Baseball 14 (an officially licensed game of the MLB). This marks the third day at the #1 spot.
+
+The trends in the United Kingdom should give an indication as to what will happen in the US. Here are some observations and predictions:
+
+- The US App Store market is a little over 3x the size of the UK (not 5x).
+- iPad sales have been insignificant relative to iPhone.
+- Not a single major gaming website has done a piece about A Dark Room (yet).
+- The reviews in the US have been overall positive! (a ratio of 9 to 1 as opposed to UK's 3 to 1)
+- A Dark Room will fall out of the #1 US spot _very_ soon.
+- It'll see a 20% drop in downloads, day over day, until it levels out.
+- It'll take ~25 days for this "leveling" to occur.
+
+In the UK, A Dark Room is currently ranked #12. It _seems_ that the game has finally leveled out (or at least the fall has slowed down considerably). A Dark Room is averaging 400 downloads a day over there.
+
+I'll of course continue to post new observations as soon as I have more data. Also, there is going to be another _unique_ update to the game that may cause another viral out break (probably not, but I can hope).
+
+tl;dr; I won't be able to retire on the revenue A Dark Room is generating (not by a _long_ shot), but it'll definitely extend my sabbatical.
 
 <hr />
 
