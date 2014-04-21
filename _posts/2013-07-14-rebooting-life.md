@@ -45,7 +45,7 @@ Set into some kind baseline routine and have some goals that you want to pursue.
 ##Lessons learned when rebooting and on the sabbatical (so far)
 
 ###Get rid of stuff, stop trading comfort for happiness
-I had way too much stuff to keep up with... I sold it, donated it, or threw it away... and it's the best feeling in the world. Gaming consoles from the past 3 generations, massive desktop computer with dual screens, nice speakers, home entertainment system, big (1400 sqft) apartment (we moved into a one bed room), tech gadgets, oversized furniture, cable tv with 300+ channels, XBOX360, PS3, Wii, games, games and more games, steam account for more games. All. Gone.
+I had way too much stuff to keep up with... I sold it, donated it, or threw it away... and it's the best feeling in the world. Gaming consoles from the past 3 generations, massive desktop computer with dual screens, nice speakers, home entertainment system (we got rid of all the surround sound gadgets and bluray player, but kept the TV), big apartment (we moved into a one bed room), tech gadgets, oversized furniture (large living room set replaced with a sofa and love seat, massive bedroom set replaced with a bed and dresser), cable tv with 300+ channels (replaced with Apple TV), XBOX360, PS3, Wii, games, games and more games, steam account for more games. All. Gone.
 
 ###You'll miss some of the things you gave up
 When you put all your time into 2 or 3 things you're really passionate about, you miss out on the 15 - 20 things that interested you. I miss gaming, watching marathons of old TV shows, watching the NBA (cable is good for a few things), and many other things.
