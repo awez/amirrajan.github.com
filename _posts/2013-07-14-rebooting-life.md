@@ -25,7 +25,7 @@ As for what I own (or maybe more accurately what owns me):
 - A membership to a crossfit gym.
 - A small desk with a comfortable chair to work on.
 
-Edit: Just to make sure things don't get blown out of proportion. Just because I sold all of _my_ worldy possesions doesn't mean I'd impose that kind of life onto my wife. We _do_ have a sofa set in the living room, a bed with dresser, and a 46 inch flat screen hooked up to Apple TV.
+Edit: Just to make sure things don't get blown out of proportion. Just because I sold all of _my_ worldy possesions doesn't mean I'd impose that kind of lifestyle onto my wife. We _do_ have a sofa set in the living room, a bed with dresser, and a 46 inch flat screen hooked up to Apple TV.
 
 ###Goals
 Set into some kind baseline routine and have some goals that you want to pursue. Here are some of mine:
