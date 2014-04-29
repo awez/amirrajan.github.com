@@ -1089,7 +1089,7 @@ Every day has been a bit stressful. Which app will take me out of the top spot?
 
 7. Blek: This game, just yesterday, jumped _13_ spots in one day to claim #2. It's built by an indie dev too. I know he is going through the same thing I've been going through. A mix of hope and stress. He is eyeing how quickly he gets new reviews, he probably wakes up in the middle of the night to see if he's over taken A Dark Room... just like I wake up to see if I'm still #1.
 
-Now, all I can do is survive till Tuesday. Tuesday, is a magic day. It's the day where the media takes notice of the top apps in the App Store (whether they want to acknowledge A Dark Room or not). This however doesn't cause any kind of spike in downloads. But it's nice seeing what the internet has to say about A Dark Room every time it survives another week. By far, the best unsolicited article was published by [The Knox Student](http://www.theknoxstudent.com/news/2014/04/17/procrastination-station-mobile-gaming-for-hipsters/).
+Now, all I can do is survive till Tuesday. Tuesday, is a magical day. It's the day where the media takes notice of the top apps in the App Store (whether they want to acknowledge A Dark Room or not). This however doesn't cause any kind of spike in downloads. But it's nice seeing what the internet has to say about A Dark Room every time it survives another week. By far, the best unsolicited article was published by [The Knox Student](http://www.theknoxstudent.com/news/2014/04/17/procrastination-station-mobile-gaming-for-hipsters/).
 
 All I can do now is wait for the "new normal". That moment where I get used to this unfamiliar terrain, and I can finally get a decent night's sleep.
 
