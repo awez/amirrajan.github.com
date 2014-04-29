@@ -1093,7 +1093,7 @@ Now, all I can do is survive till Tuesday. Tuesday, is a magical day. It's the d
 
 All I can do now is wait for the "new normal". That moment where I get used to this unfamiliar terrain, and I can finally get a decent night's sleep.
 
-This is the best way I can describe what I'm feeling right now: I've bought a lottery ticket, and the lottery commission has revealed 5 of the 6 numbers. And so far, I've gotten those 5 numbers right. I know I've got at least the winnings for those 5 numbers in the bag. But now I'm waiting for the 6th number... that jackpot number that changes your life forever. The lottery commission hasn't revealed the 6th number yet, they haven't even told me when they'll show the 6th number. So I'm stuck in this weird limbo, where others see success and all I can do is temper expectations, be "responsible", and move forward as if that 6th number will be wrong.... still number 1, just checked...
+This is the best way I can describe what I'm feeling right now: I've bought a lottery ticket, and the lottery commission has revealed 5 of the 6 numbers. And so far, I've gotten those 5 numbers right. I know I've got at least the winnings for those 5 numbers in the bag. But now I'm waiting for the 6th number... that jackpot number that changes your life forever. The lottery commission hasn't revealed the 6th number yet, they haven't even told me when they'll show the 6th number. So I'm stuck in this weird limbo, where others see success and all I can do is temper expectations, be "responsible", and move forward as if that 6th number will be wrong.... still number 1, just checked.
 
 <hr />
 
