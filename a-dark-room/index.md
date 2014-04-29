@@ -171,6 +171,7 @@ I want to make sure I've logged everything that's happened around the growth and
 - [Apr 4, 2014: The Fall From the #1 Spot in the UK App Store. Here Are the Final Numbers](#topappday5)
 - [Apr 9, 2014: #1 RPG, #5 Game, #10 App, in the US](#topofus) 
 - [Apr 15, 2014: #1 in the App Store](#number1us)
+- [Apr 29, 2014: Waiting for the New Normal](#newnormal)
 
 <a id="pickingdevenvironment"> </a>
 
@@ -1055,6 +1056,44 @@ In the UK, A Dark Room is currently ranked #12. It _seems_ that the game has fin
 I'll of course continue to post new observations as soon as I have more data. Also, there is going to be another _unique_ update to the game that may cause another viral out break (probably not, but I can hope).
 
 tl;dr; I won't be able to retire on the revenue A Dark Room is generating (not by a _long_ shot), but it'll definitely extend my sabbatical.
+
+<a id="newnormal"> </a>
+
+**Apr 29, 2014: Waiting for the New Normal** <a href="#newnormal"><small>permalink</small></a>
+
+A Dark Room has been #1 in the App Store for 17 days now. During that 17 day period, the game has gotten 241,494 downloads. Every trend and projection I've made against what I saw in the UK has been broken:
+
+1. In the UK, it took 3 days to make it to the #1 spot overall, from the #1 RPG spot. In the US, this took 7 _long_ days.
+
+2. In the UK, A Dark Room was taken out of the #1 spot by an Apple Editor's Choice pick (Monument Valley). In the US, A Dark Room has survived _two_ Editor's Choice picks (Hitman GO and Leo's Fortune).
+
+3. In the UK, the reviews had a ratio of 3 positive reviews for every 1 negative. The negative reviews called the game a scam and claimed that all the other reviews were bought by me. In the US, the reviews have a ratio of 9 positive reviews for every 1 negative review. There are some that state the game is a scam, but most of the critical reviews in the US are valid (they found the game boring, over hyped, incomplete, etc).
+
+4. In the UK, A Dark Room stayed at the #1 spot for 6 days. I thought to myself "Okay, it took twice as long to get to #1 in the US, I can expect to stay at #1 twice as long." A Dark Room is going on to the 18th day now.
+
+5. In the UK, A Dark Room's downloads dropped 20% day over day after the initial days at #1. In the US, the downloads are _level_ and spiked _again_ on 4/20 and 4/27. None of this makes sense.
+
+Every day has been a bit stressful. Which app will take me out of the top spot?
+
+1. Goat Rampage: A game "inspired" by the viral hit Goat Simulator. How the heck is A Dark Room going to survive a popular meme? For four days, I kept a close eye on this game, waiting for it to swap places with me and take the #1 spot. It didn't.
+
+2. Hitman GO: When this was featured by Apple, I thought I was done. Here is a game built by a powerhouse, Square Enix. What chance does A Dark Room have against that kind of shop? A Dark Room survived.
+
+3. The Amazing Spider 2: This game was wire to wire with Hitman GO, climbing up the ranks. Two threats at the same time. A Dark Room survived.
+
+4. Heads Up!: On April 22nd, Ellen Degeneres plays Heads Up! on her talk show. The game shoots up to #2. How the hell will A Dark Room survive a game that has _celebrity sponsorship_? It did.
+
+5. Wayward Souls: A rouge-like RPG with a cult following. So incredibly awesome that it's available on iOS. "If Wayward Souls takes out ADR, I'm okay with that. That will be an honorable defeat," I said to myself. But it fell down the ranks too.
+
+6. Leo's Fortune: Apple stops promoting Hitman GO and picks Leo's Fortune. Another beautiful game that showcases the "beauty of iOS". I watch it climb day after day. And then it drops too.
+
+7. Blek: This game, just yesterday, jumped _13_ spots in one day to claim #2. It's built by an indie dev too. I know he is going through the same thing I've been going through. A mix of hope and stress. He is eyeing how quickly he gets new reviews, he probably wakes up in the middle of the night to see if he's over taken A Dark Room... just like I wake up to see if I'm still #1.
+
+Now, all I can do is survive till Tuesday. Tuesday, is a magic day. It's the day where the media takes notice of the top apps in the App Store (whether they want to acknowledge A Dark Room or not). This however doesn't cause any kind of spike in downloads. But it's nice seeing what the internet has to say about A Dark Room every time it survives another week. By far, the best unsolicited article was published by [The Knox Student](http://www.theknoxstudent.com/news/2014/04/17/procrastination-station-mobile-gaming-for-hipsters/).
+
+All I can do now is wait for the "new normal". That moment where I get used to this unfamiliar terrain, and I can finally get a decent night's sleep.
+
+This is the best way I can describe what I'm feeling right now: I've bought a lottery ticket, and the lottery commission has revealed 5 of the 6 numbers. And so far, I've gotten those 5 numbers right. I know I've got at least the winnings for those 5 numbers in the bag. But now I'm waiting for the 6th number... that jackpot number that changes your life forever. The lottery commission hasn't revealed the 6th number yet, they haven't even told me when they'll show the 6th number. So I'm stuck in this weird limbo, where others see success and all I can do is temper expectations, be "responsible", and move forward as if that 6th number will be wrong.... still number 1, just checked...
 
 <hr />
 
