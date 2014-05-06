@@ -1102,7 +1102,7 @@ This is the best way I can describe what I'm feeling right now: I've bought a lo
 
 It finally happened. On April 30th, around 5pm, A Dark Room lost the #1 spot in the US App Store to Blek. I knew ADR would lose the spot at some point, but its still hard to describe what I felt when that happened.
 
-I refresh the App Store list on my iPhone and see the two mostly black icons still holding the number one and number two spot (A Dark Room and Blek). It takes a split second to realize that the #1 spot isn't A Dark Room anymore. I feel defeated and relieved. The climax of this story has passed, I am finally into the falling action and dénouement.
+I refresh the App Store list on my iPhone and see the two mostly-black icons still holding the number one and number two spot (A Dark Room and Blek). It takes a split second to realize that the #1 spot isn't A Dark Room anymore. I feel defeated and relieved. The climax of this story has passed. I am finally into the falling action and dénouement.
 
 During this time period, A Dark Room received quite a bit of news coverage:
 
@@ -1110,7 +1110,7 @@ During this time period, A Dark Room received quite a bit of news coverage:
 - A write up on [Huffington Post](http://www.huffingtonpost.com/2014/05/01/a-dark-room-iphone-game_n_5241335.html), which reaches _millions_ (even Ellen DeGeneres follows them on Twitter).
 - A write up on Medium by [Barrett Sheridan](https://medium.com/@bsheridan), formerly a tech editor at Bloomberg Businessweek.
 - An interview with DFW CBS 11... I was on local TV! But I don't have cable/bunny ears, so I couldn't watch it #sadpanda.
-- A article/interview for the Dallas Morning News.
+- An article/interview for the Dallas Morning News.
 - That plus a few small independent blogs wrote about the game.
 
 All this, and A Dark Room _still_ fell from #1. It's, in fact, struggling to keep the #6 spot now. US downloads have dropped 80% from the weeks before. On the bright side, being out of the top spot gave me the window to push out a crucial release of the game. The reviews will reset, but it's (now) worth the risk. 
