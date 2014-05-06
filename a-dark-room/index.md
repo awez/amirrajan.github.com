@@ -172,6 +172,7 @@ I want to make sure I've logged everything that's happened around the growth and
 - [Apr 9, 2014: #1 RPG, #5 Game, #10 App, in the US](#topofus) 
 - [Apr 15, 2014: #1 in the App Store](#number1us)
 - [Apr 29, 2014: Waiting for the New Normal](#newnormal)
+- [May 6, 2014: The Fall from the US Top Spot](#thefall)
 
 <a id="pickingdevenvironment"> </a>
 
@@ -1081,7 +1082,7 @@ Every day has been a bit stressful. Which app will take me out of the top spot?
 
 3. The Amazing Spider 2: This game was wire to wire with Hitman GO, climbing up the ranks. Two threats at the same time. A Dark Room survived.
 
-4. Heads Up!: On April 22nd, Ellen Degeneres plays Heads Up! on her talk show. The game shoots up to #2. How the hell will A Dark Room survive a game that has _celebrity sponsorship_? It did.
+4. Heads Up!: On April 22nd, Ellen DeGeneres plays Heads Up! on her talk show. The game shoots up to #2. How the hell will A Dark Room survive a game that has _celebrity sponsorship_? It did.
 
 5. Wayward Souls: A rouge-like RPG with a cult following. So incredibly awesome that it's available on iOS. "If Wayward Souls takes out ADR, I'm okay with that. That will be an honorable defeat," I said to myself. But it fell down the ranks too.
 
@@ -1094,6 +1095,42 @@ Now, all I can do is survive till Tuesday. Tuesday, is a magical day. It's the d
 All I can do now is wait for the "new normal". That moment where I get used to this unfamiliar terrain, and I can finally get a decent night's sleep.
 
 This is the best way I can describe what I'm feeling right now: I've bought a lottery ticket, and the lottery commission has revealed 5 of the 6 numbers. And so far, I've gotten those 5 numbers right. I know I've got at least the winnings for those 5 numbers in the bag. But now I'm waiting for the 6th number... that jackpot number that changes your life forever. The lottery commission hasn't revealed the 6th number yet, they haven't even told me when they'll show the 6th number. So I'm stuck in this weird limbo, where others see success and all I can do is temper expectations, be "responsible", and move forward as if that 6th number will be wrong.... still number 1, just checked.
+
+<a id="thefall"> </a>
+
+**May 6, 2014: The Fall from the US Top Spot** <a href="#thefall"><small>permalink</small></a>
+
+It finally happened. On April 30th, around 5pm, A Dark Room lost the #1 spot in the US App Store to Blek. I knew ADR would lose the spot at some point, but its still hard to describe what I felt when that happened.
+
+I refresh the App Store list on my iPhone and see the two mostly black icons still holding the number one and number two spot (A Dark Room and Blek). It takes a split second to realize that the #1 spot isn't A Dark Room anymore. I feel defeated and relieved. The climax of this story has passed, I am finally into the falling action and dénouement.
+
+During this time period, A Dark Room received quite a bit of news coverage:
+
+- Not [one](http://www.cultofmac.com/277035/dark-room-iphone-top-paid-game/), but [two](http://www.cultofmac.com/277118/dark-room-lights-app-store-big-heart-open-world/) write ups on The Cult of Mac, an online publication that reaches _millions_.
+- A write up on [Huffington Post](http://www.huffingtonpost.com/2014/05/01/a-dark-room-iphone-game_n_5241335.html), which reaches _millions_ (even Ellen DeGeneres follows them on Twitter).
+- A write up on Medium by [Barrett Sheridan](https://medium.com/@bsheridan), formerly a tech editor at Bloomberg Businessweek.
+- An interview with DFW CBS 11... I was on local TV! But I don't have cable/bunny ears, so I couldn't watch it #sadpanda.
+- A article/interview for the Dallas Morning News.
+- That plus a few small independent blogs wrote about the game.
+
+All this, and A Dark Room _still_ fell from #1. It's, in fact, struggling to keep the #6 spot now. US downloads have dropped 80% from the weeks before. On the bright side, being out of the top spot gave me the window to push out a crucial release of the game. The reviews will reset, but it's (now) worth the risk. 
+
+In other news, on Apr 29th, ADR hit the #1 spot in both Australia and Singapore.
+
+- In Singapore, ADR got 161 downloads at the top spot and fell soon after.
+- It took only a day to get there after becoming #1 under RPGs.
+- In Austrialia, ADR got 1300 downloads, but _rose_ for another 3 days, before starting its plummet.
+- It took 7 days to get to the top after being #1 under RPGs.
+- Reviews have been mostly positive in both countries.
+
+With regards to reviews, I still wonder why the app [was received so negatively in the UK](#topappday2). Here are my two working theories:
+
+- Smaller markets are more susceptible to scam apps. It's much easier for an app to quickly move to a high spot with a hundred or so paid for reviews.
+- Reviews are ordered based on number of stars and length. The top reviews _set the tone_ for the rest of the reviews. I think we are subconsciously influenced by the "top" reviews. If a long, critical/angry 1-star review is posted (and the velocity for new reviews is low), then that "top" negative review will influence every person that tries out your app. In the case of the UK, a couple of reviews were long and extremely negative, calling the game a scam. And they stayed at the "top of the list" for a long, long time.
+
+The stress I've continued to feel is this lack of consistency. No market is the same, download numbers are a constant roller coaster (the game spiked moderately in the UK again yesterday), human behavior isn't predictable, and media impact is hard to correlate. All in all the App Store feels impossible to rationalize.
+
+With regards to the new release. There is a "secret" that I added, which is only available to those that have beaten the game. We'll see what kind of impact it has to downloads and review velocity. I expect review conversion rates to _significantly_ increase for those that have beaten the game. Regardless... I feel that A Dark Room's time at #1 has passed, and I won't see that spot again.
 
 <hr />
 
