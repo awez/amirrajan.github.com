@@ -1,0 +1,76 @@
+==================================================================
+https://keybase.io/amirrajan
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://amirrajan.net
+  * I am amirrajan (https://keybase.io/amirrajan) on keybase.
+  * I have a public key with fingerprint 8FA4 ABD0 205D 8D25 9968  B351 BFF8 BFD1 3CC1 47F7
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.3.2"
+        },
+        "key": {
+            "fingerprint": "8fa4abd0205d8d259968b351bff8bfd13cc147f7",
+            "host": "keybase.io",
+            "key_id": "BFF8BFD13CC147F7",
+            "uid": "7c0f7ce9a42442da5042826e87c4e800",
+            "username": "amirrajan"
+        },
+        "merkle_root": {
+            "ctime": 1399855680,
+            "hash": "39b66817c7cbdfcabf683b6bac772167fb087f9fcf154e9d8774a471078a965a622ea2c0184361645dce6e0b6c1ac812381acc8ba8f90c9259abc33ea3247279",
+            "seqno": 7053
+        },
+        "service": {
+            "hostname": "amirrajan.net",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1399856688,
+    "expire_in": 157680000,
+    "prev": "88621761dd89a2502e15ab0f03a8c38fcfedb0370de7aa893fda7f7503075a69",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
+
+owFdkm1sFEUcxq8thaIxUWqTmhCtmxg0HJeZndmZ2dIYLVBfqjSiMamtXmZmZ3pL
+r7vn7rVQy5V+MBhIUCmJQSUpSNrKB4EPTSQFIQYCVkmQoJBoYvAlviJRibERNc40
+NQHny87s/OaZ//P859VbajLVVcdnj59ref+hP6o++kFknizdCYYcEQeDTvOQI4uh
+isp2FvE+5TQ7vWpQ8FTlwrgpigOVW582zTNZZ0AlaRhHhgI5lHOdStbi9rAOox6V
+lJLQajlMc8xFAFzgBSxwPd8nTCAPCq2Z0AFEUkJMNTWShTgt33CrM6eZDwPzt7Wt
+jbW2rYZo1SrDt1m+f26DSqCpVD7HLsZuwD2AXeYSxajEigFgwVQl85Z4X5gkfD2P
+bMF9KuktqnwSx3OuZTm0DES+zzyPMGBK4mnBnEK+IIRBKqkUgZZcaMKQIIJLSl1I
+qBaAUe1rqaGHlR8wSjHHFALKuE88TlxXcVcCyDAikGAvkIooIIiEXDLoIma+kgnO
+tA+kb1LiQiKkOHIxdalvPKTq+Sh2minwUMWukoFQKlu1Te3/5nKRsj0qJXE5lnHR
+bBXK5VKz9VweLFl0gxL5d+ZV8iKMAtO067sKDXpDHsY/yzpqYylMVD60hEdNRGbY
+e9SAbTUjLqQEBgHzuesBV0GPC6AB4kwiZtJRgQCIgkBRzpmPdMBN5z2AADUZXecS
+mzp5j5FMw56Il/sT5VS2Vi1dkKmqziysrbbPNnPT4lv/e8v3La7LnHxxW6Xpt2u5
+hSc6vnuuBp9qX/7GL+1Dm/bU6tUF1v3ubOapzQ9vvOfKpe1b6yrFpoaPP8RdJzqW
+H+jbdfXvt8KVtSu3fDX16QMfnJzVZ88sO/b79q/P3tY7UQOTJ6amd16t39F9+LXW
+idEXxo+BN7/tPPD92Mjw5nxXS92+jhnyT3q6a2n9sjuyhx7de/PRR2YaH8+Od/76
+3mf9059Mr12yf83LM68ffeyL5E/mv92yYPz8/VcKK/5qmBi+F88e2XfwFB090rhl
+bEX9jzsvLpnctrtjateinPel983gpmvd/qXaljXp5c6xM5ONk+tuH352xysju5/e
+80z75ZG7Oy9sOP3Sg+v2wp9+Lu4fvavh838B
+=ji7r
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/amirrajan
+
+==================================================================
