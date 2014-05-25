@@ -91,6 +91,7 @@ I want to make sure I've logged everything that's happened around the growth and
 - [Apr 15, 2014: #1 in the App Store](#number1us)
 - [Apr 29, 2014: Waiting for the New Normal](#newnormal)
 - [May 6, 2014: The Fall from the US Top Spot](#thefall)
+- [May 28, 2014: A Dark Room's Second Wind](#secondwind)
 
 <a id="pickingdevenvironment"> </a>
 
@@ -1050,7 +1051,106 @@ The stress I've continued to feel is this lack of consistency. No market is the 
 
 With regards to the new release. There is a "secret" that I added, which is only available to those that have beaten the game. We'll see what kind of impact it has to downloads and review velocity. I expect review conversion rates to _significantly_ increase for those that have beaten the game. Regardless... I feel that A Dark Room's time at #1 has passed, and I won't see that spot again.
 
-<hr />
+<a id="secondwind"> </a>
+
+**May 28, 2014: A Dark Room's Second Wind** <a href="#secondwind"><small>permalink</small></a>
+
+Twenty two days ago, A Dark Room fell from the #1 spot. It gave me the opportunity to release an updated version of the game at the risk ADR's average rating and having its glowing reviews archived (again).
+
+The new release of the game was an attempt to deepen the connection we had with the current fan base (a successful attempt it would seem). If you've beaten the game at least once, a section to the game would be unlocked where you can listen to developer commentary directly from me and Michael.
+
+I had started working on this commentary back in March. [Around this time](#mysterysolved) it didn't look like ADR was gaining any ground, and I was entertaining the idea of making ADR free, but providing the developer commentary as an In App Purchase. I was nearing the release of the IAP, but ADR suddenly [went viral in the UK](#minecraft). Given the risk involved with resetting reviews, I decided to hold off on the release. When the App made it to the [#1 spot in the US](#number1us), Michael and I decided to release the commentary as a free update to the game as soon as ADR falls from its lofty spot (which took 18 freaking days). 
+
+ADR fell. I published that same day. By the time the new release hit the App Store (it took 7 days it to get approved an published), ADR's rank had fallen to the #7 spot over all. The next day, the game fell another spot. But then, two days after the relase (9 days after falling from #1)... ADR stopped falling. It gained one rank day after day. By May 13th (14 days after [the fall](#thefall)), A Dark Room was "stuck" at #2.
+
+**Blek's smart move.**
+
+Blek, the #1 game in the App Store did something brilliant. About 4 days into their #1 streak, they dropped the price for their game to $0.99. [I did something similar](#pricedrop) back when I was struggling to stay relevent in the RPG category. Imagine what kind of increase Blek saw when they dropped the price of their game price by _66%_. From what I've observed, a drop in the price leads to a inversley proporational increase in downloads (with the added benefit of being able to say "I'm running a sale"). This little manuver solidified Blek's #1 spot for _24 days_.... until A Dark Room took it back ;-)
+
+So many variables were at play during this 24 day rise back to the top. I've done my best to summarize what all occurred. Any conclusions I draw are pretty speculative given that time and time again my predictions are proven wrong (I probably shouldn't complain too much being back at number #1 though :-P).
+
+**Review velocity and quality.**
+
+Here are the ratings breakdowns along with "quailty" (average number of words).
+
+From Apr 8th to May 6th (version 1.5 without developer commentary), ADR received the following review breakdown:
+
+- 5 stars: 3,710 ~82%
+- 4 stars: 301 ~6%
+- 3 stars: 107 ~2%
+- 2 stars: 81 ~2%
+- 1 stars: 345 ~8%
+- Average Rank: 2.44
+- Total reviews: 4,544
+- Reviews per day: ~162
+- Converstion Rate: 1.47%
+- Average Review Length: 31 words
+
+From May 7th to May 25th (version 1.6, with developer commentary), ADR received the following review breakdown:
+
+- 5 stars: 1,613 ~87%
+- 4 stars: 72 ~4%
+- 3 stars: 24 ~1%
+- 2 stars: 33 ~1%
+- 1 stars: 95 ~5%
+- Average Rank: 3.60
+- Total reviews: 1,837
+- Average reviews per day: ~102
+- Converstion Rate: 1.61%
+- Average Review Length: 38 words
+
+It _does_ seem that the developer commentary helped give a little more reason to give a 5 star review (but not by much).
+
+**Number of downloads before hitting #1.**
+
+It took a much longer time to get back to #1 from similiar "low" ranks. It took fewer average downloads, but a longer period of time. 
+
+Number of downloads from the #15 spot to the #1 spot on version 1.5:
+
+- 4/08: 2,153
+- 4/09: 4,310
+- 4/10: 6,152
+- 4/11: 7,669 (placed #2, day before #1)
+- Average: 5,071
+- Total: 20,284
+
+Number of downloads from the #7 spot to the #1 spot on version 1.6:
+
+- 5/07: 2,820
+- 5/08: 2,531
+- 5/09: 3,074
+- 5/10: 3,528
+- 5/11: 4,135
+- 5/12: 4,878
+- 5/13: 6,659
+- 5/14: 6,164
+- 5/15: 6,271
+- 5/16: 6,300
+- 5/17: 6,052
+- 5/18: 5,690 (placed #2 in the US, #1 in Canada!)
+- 5/19: 4,313
+- 5/20: 4,845
+- 5/21: 5,462 (day before #1 in the US)
+- Average: 4,848
+- Total: 72,722
+
+**Relative performance of others in the App Store.**
+
+Heads Up! briefly knocked Bleck out of its #1 spot (for a few hours), but soon fell back to #2 (and then #3). On the 14th, Ellen DeGeneres [posted a Heads Up! session with Emily Blunt](http://www.ellentv.com/videos/0-vrobj813/), which may have contributed to its very brief bump. But that's how Heads Up! rolls. It's an entertaining, casual, celebrity backed game. And because of this, it's held a top 10 spot _since May of 2013_.
+
+Minecraft is Minecraft. This game is an "expensive" premium app with a review velocity of _300+ a day_. I think it's found a happy balance between rank and price. It's held a top 10 spot _since July of 2013_.
+
+Plauge Inc. has had a volatile existance. It's rank has flucutated in the top 20 _since May of 2012_. But that's _two years_ of pretty decent daily revenue.
+
+Blek did an awesome job with timing the sale, making it really hard to take back #1. They _did_ eventually change the price back to $2.99 (which may have contributed to their fall). I have no idea what kind of elasticity exists with regards to high ranking apps. My only assumption is that they probably felt that net revenue at a lower rank/higher price was better than net revenue at a higher rank/lower price.
+
+Michael and I have wondered what would happen if we increased the price of ADR, but have decided against it. Other games have precidence accross platforms, are celebrity backed, and have been around a long time. They show everything they have to offer and ask for a fair price up front. ADR has no official media coverage, shows nothing in the description, and asks for $0.99.
+
+At this point, ADR remains a premium, free to play, mind blowing experience. It's hard to predict what outcome we never went viral in the UK and (in turn) made ADR free with an optional IAP... the world may never know.
+
+**tl;dr;** The v1.6 update didn't seem to have a noticeable effect on ADR's rise back to the top. Given the relative life of these other apps in the top spots, it really is too soon to tell how ADR will peform in the long run. One things for sure, this roller coaster isn't over yet.
+
+<hr /> <!-- put next entry above this line -->
 
 <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css"/>
 
