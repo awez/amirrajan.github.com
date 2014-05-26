@@ -1155,7 +1155,7 @@ To summarize my summary:
 - There's an incredibly complex symbiotic relationship with other ranked apps.
 - It's too soon to tell how ADR will perform in the long run.
 
-One thing's for sure, this roller coaster isn't over yet. Oh look... we're back at number 2... Blek dropped their price back to $0.99. Oh look... estimated federal taxes are due next month... time to visit with my CPA again. Oh look! [Ruboto](http://ruboto.org/)! Oh look... [ADR scam apps](http://www.windowsphone.com/en-us/store/app/a-dark-room-game/a7fd3901-7020-4cb8-93b4-fdf3974dd205)... `(╯°□°）╯︵ ┻━┻`
+One thing's for sure, this roller coaster isn't over yet. Oh look... we're back at #2... Blek dropped their price back to $0.99. Oh look... estimated federal taxes are due next month... time to visit with my CPA again. Oh look! [Ruboto](http://ruboto.org/)! Oh look... [ADR scam apps](http://www.windowsphone.com/en-us/store/app/a-dark-room-game/a7fd3901-7020-4cb8-93b4-fdf3974dd205)... `(╯°□°）╯︵ ┻━┻`
 
 <hr /> <!-- put next entry above this line -->
 
