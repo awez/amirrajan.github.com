@@ -1102,7 +1102,7 @@ From May 7th to May 25th (version 1.6, with developer commentary), ADR received 
 
 It _does_ seem that the developer commentary helped give a little more reason to give a 5 star review (but not by much). Outside of that, it doesn't look like the new release significantly impacted ADR's rise.
 
-_Variable 2: Number of downloads before hitting #1_
+_Variable 3: Number of downloads before hitting #1_
 
 It took a much longer time to get back to #1 from similar "low" ranks. It took fewer average downloads, but a longer period of time. 
 
