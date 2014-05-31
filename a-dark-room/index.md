@@ -91,7 +91,7 @@ I want to make sure I've logged everything that's happened around the growth and
 - [Apr 15, 2014: #1 in the App Store](#number1us)
 - [Apr 29, 2014: Waiting for the New Normal](#newnormal)
 - [May 6, 2014: The Fall from the US Top Spot](#thefall)
-- [May 28, 2014: A Dark Room's Second Wind](#secondwind)
+- [May 26, 2014: A Dark Room's Second Wind](#secondwind)
 
 <a id="pickingdevenvironment"> </a>
 
@@ -1053,7 +1053,7 @@ With regards to the new release. There is a "secret" that I added, which is only
 
 <a id="secondwind"> </a>
 
-**May 28, 2014: A Dark Room's Second Wind** <a href="#secondwind"><small>permalink</small></a>
+**May 26, 2014: A Dark Room's Second Wind** <a href="#secondwind"><small>permalink</small></a>
 
 Twenty four days ago, A Dark Room fell from the #1 spot. This fall gave me the opportunity to release an updated version of the game. With the release, ADR lost its average rating, and all of its glowing reviews got archived.
 
