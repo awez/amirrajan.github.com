@@ -92,6 +92,8 @@ I want to make sure I've logged everything that's happened around the growth and
 - [Apr 29, 2014: Waiting for the New Normal](#newnormal)
 - [May 6, 2014: The Fall from the US Top Spot](#thefall)
 - [May 26, 2014: A Dark Room's Second Wind](#secondwind)
+- [May 26, 2014: A Dark Room's Second Wind](#secondwind)
+- [Jun 20, 2014: Taxes, Negative Reviews, Clones, and Open Source](#grrr)
 
 <a id="pickingdevenvironment"> </a>
 
@@ -798,6 +800,8 @@ Downloads have dropped 10% from D-day (March 30th). This was surprising given th
 
 The gains in the UK App Store don't seem to be influencing US sales. It may be too early to say this, but that's what I've seen so far.
 
+<a id="empathy"> </a>
+
 Another observation (and I think this is unique to the game), is there is now a higher number of 1-star reviews. For the past two days, A Dark Room has received 59 5-star reviews and 38 1-star reviews.
 
 If you've played the game, you know that the first part of the game has a slow reveal, and opens up "phase 2" only after you've bought the compass. I'm trying to put myself in the shoes of those that are in the UK. Here is a game... and it's the top app in the App Store. There is only one screen shot, a vague description and many of the review say the same thing:
@@ -1156,6 +1160,94 @@ To summarize my summary:
 - It's too soon to tell how ADR will perform in the long run.
 
 One thing's for sure, this roller coaster isn't over yet. Oh look... we're back at #2... Blek dropped their price back to $0.99. Oh look... estimated federal taxes are due next month... time to visit with my CPA again. Oh look! [Ruboto](http://ruboto.org/)! Oh look... [ADR scam apps](http://www.windowsphone.com/en-us/store/app/a-dark-room-game/a7fd3901-7020-4cb8-93b4-fdf3974dd205)... `(╯°□°）╯︵ ┻━┻`
+
+<a id="grrr"> </a>
+
+**Jun 20, 2014: Taxes, Negative Reviews, Clones, and Open Source** <a href="#grrr"><small>permalink</small></a>
+
+Alrighty, this one has been on my mind for a while. It's going to be difficult to excersize empathy and be tactful within this post, but I'll try. Let's get started.
+
+_Taxes_
+
+There's no escaping it, you have to pay taxes. ADR is subject to income taxes. Period. No way around it. And given that App Store revenue is considered self employment income, I get hit with an additional 15% self employment tax, all of which has to be paid quarterly. Paying estimated taxes in itself has its challenges given the volatility of the App Store revenue. I don't want to get penalized for underpaying, but at the same time, I don't what to give the government an interest free loan either. June 15th, I wrote a check to the IRS for $60,000. Based on projections of this depreciating asset, I'll have to pay $30,000 quarterly. Hopefully the annual amortization is accurate, and I end up owing a penalty free amount at the end of the year.
+
+So... after Apple's 30% take, royalties of 50% (no complaints here, ADR iOS wouldn't exist if it weren't for Michael's permission), and then a 45% hit in income taxes, I net 19.5 _cents_ on every download. YTD downloads are ~635,000. No way in hell we'll get that many downloads H2.
+
+The terrifying part is that very few apps see even a fraction of this success. So think twice before selling almost everything you own, taking a year long learning sabbatical, and spending months porting a minimal text based RPG to mobile... you may be better off building apps after hours, or charging high dollar hourly rates to build an app for some company.
+
+_Negative Reviews_
+
+Just as death and taxes are inevitable, so are negative reviews for A Dark Room. I've been keeping a collection of [heart warming positive reviews here](http://adarkroomios.com/reviews.html), I hope you find them a great read. Let's enumerate the categories of negative reviews.
+
+The _Honest, Critical_ Review:
+
+A number of reviews in the App Store fall into this category. They are fair, well written, and simply didn't like what they bought. They spent the time to share their thoughts and warn others.
+
+>Not That Brilliant... (1 star): The novelty of this game wears down almost immediately after the first time around. The whole point of this I suppose is to make us introspective and question particular things in the universe. But as much as this game would like you to think, you're not really in control. The fate of the game has pretty much been decided and no matter what you do there are pre ordained responses that characters like 'the builder' will have no matter what. I found that incredibly annoying.I guess it got the message through to me, but I don't think of this game as very deep or thought-provoking. Give me Angry Birds any day and I'll ponder the higher meaning of destroying smiling green pigs while actually believing that my 1 dollar wasn't for naught.
+
+The _It's a Scam_ Review:
+
+[I've talked about this before (and exercised large amount of empathy when doing so)](#empathy), so let me be a little mean. Here's the review: 
+
+>Absolute scam!! Manipulated reviews!! (1 star):	It's a text based game. That's ALL you get. Nothing like any review said how fancy and interesting the game play is. I suspect all the reviews are done by the developer himself using auto generated review. It is done by developer by purchasing the game himself through hundreds, if not thousands iTunes account, then give good rating over a period of time.
+
+And here's my response: 
+
+>Dear reviewer, you're an idiot.
+
+The _I didn't get my money's worth_ Review:
+
+I live in a world where we carry $600 super computers in our pockets. We pay $15 for a two hour movie leaving satisfied, but paying $0.99 for _only_ two hours of entertainment is considered a rip off.
+
+>Not worth the .99 (1 star): I beat the game in 2 hours, and the game doesn't do anything to reward you for winning. I like the game but it's missing depth and replay value.
+
+The _Ransom_ Review:
+
+The App Store is actually a great way to get feedback on what's broken. Pay attention to these "ransom" reviews. Because they'll give you insight on what needs to be fixed. 
+
+>Magnificent (3 stars): Game but the thieves take too long	Great game, i read your post about the making of the game and I am very sorry about making a 3 star review, but I spent more than 30 minutes with the thieves. I hope they'll go away soon, and the second they do ill rate it 5 stars. Thank you.
+
+In this case though, [I've already nerfed the thieves once](#blindversionreleased), I'm not doing it again.
+
+The _Just Plain Mean_ Review:
+
+Welp. They are just mean. Really mean. No other way to describe them.
+
+>What is this? (2 stars) - Before I bought this I was unsure so I looked at the reviews. They were all glowing which intrigued me, so I downloaded.. Played for about 2 minutes then deleted it! Absolute load of rubbish, it's sort of like sims but with no graphics, like a weird text version. Just utter nonsense how it has so many good reviews! If it was between watching a blind man trying dismantle a computer and playing this came I know which one I'd get bored of first!
+
+The _Leg Sweeper_ Review:
+
+These reviews are simply there to bring you down. They want so badly to explain the success of something they don't see as "good". Belittling me, and others that have reviewed the game. These are by far the most poisonous reviews. They bring me down and bring down every other person who played and enjoyed the game.
+
+>Garbage (1 star) - It's so nice to have this hive-mind community full of hipsters and morons raving about the worst goddamn games. Same thing happened with Angry Birds and Flappy Birds. You people are disgusting. Horrible unwashed masses of brainless consumers. Hey morons, take a step back and really consider the piece of crap you rated 5 stars. No, really, just take a moment.
+
+I have no words for this person. Here's another:
+
+>Snake Oil (1 star) -	A cynical/realist lawyer's perspective..Finished the entire game, thoroughly, discovering all the secrets. Listened to the end commentary.  Only did so because I was promised an emotional experience, which is something no game has really done for me since, oh, Final Fantasy 10 or so.  Here, there was none to be had. This is just a 1980's, pre-Final Fantasy text-based RPG with some Friedrich Nietzche quotes thrown in. The plot twist toward the end of the game is trite and unmoving for anyone who has ever played a few video games or watched a few sci-fi movies.So why has this game blown up with so many gushing reviews? At the end of the game, the two developers left 20 minutes of commentary, in which they talk about their emotional and philosophical struggle creating the game, Friedrich Nietszche (who really has nothing to do with the game), and how the game changed the lives of blind people. Then they ask that you leave a review. Well, here's my review. Don't be fooled...
+
+Here's my reply, again with a lack of empathy: 
+
+>How do you explain v1.5's 18 day streak at #1? There wasn't any developer commentary in that one asking people to review ADR. Lawyered.
+
+Here are the YTD numbers for 1 star reviews:
+
+- United Kingdom: 191 of 1081 (18%)
+- Canada: 68 of 767 (9%)
+- Singapore: 4 of 46 (9%)
+- Australia: 51 of 605 (8%)
+- United States: 557 of 8730 (6%)
+
+Lesson learned. Don't release text based adventures to the UK. I've become numb to the words "rubbish", "bore", "scam/fake reviews", and "dreadful" because of them.
+
+_Clones and the Spirit of Open Source_
+
+Micheal released ADR under MPL. And what do some do? They take what Micheal built, wrap it in a browser control. They add advertisements at the bottom of the screen, and deploy it to the App Stores/Google Play as a free app. We've requested take downs for some of these apps. And they simply give us the finger by using the MPL as their defence.
+
+It's frustrating, not that these apps exist, _but that these bottom feeding apps are being created by developers who went onto Github and cloned Michael's repo._ Michael said it best:
+
+>I open-sourced A Dark Room exactly because I wanted people to be able to learn from it, and use it as a starting point for their own projects. That said, I'll admit to being a little disheartened that people are taking advantage of the brand that I've built to make a quick buck.
+
+What these devs are doing is legal (outside of potential common law trademark violations, but that'll be a whole-nother entry). Morally, however, this goes against the grain of what open source is all about. And that, is truely heart breaking.
 
 <hr /> <!-- put next entry above this line -->
 
