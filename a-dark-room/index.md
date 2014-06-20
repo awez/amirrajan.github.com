@@ -711,7 +711,7 @@ I woke up this morning. Awake, head throbbing, vision blurry ;-). Checked my app
 
 For the past two days, A Dark Room has gotten ~200 downloads. I haven't done any recent marketing of the game to result in that kind of spike. True, the game made it into the top 10 spot a couple of days ago... but I didn't experience this kind of spike the last time it was there.
 
-The only thing I can think of was that the web version of the game got 1000+ upvotes in an AskReddit thread: [Reddit, what is a fun webgame I can sink a lot of time into?](http://www.reddit.com/r/AskReddit/comments/20al3n/reddit_what_is_a_fun_webgame_i_can_sink_a_lot_of/cg1cxfy). Micheal mentioned that there was also an iOS version of the game within the thread comments... I still don't think it could have such an impact given that the [comment was buried way way down in the post](http://www.reddit.com/r/AskReddit/comments/20al3n/reddit_what_is_a_fun_webgame_i_can_sink_a_lot_of/cg1s9ho). Maybe it did... I have no idea. 
+The only thing I can think of was that the web version of the game got 1000+ upvotes in an AskReddit thread: [Reddit, what is a fun webgame I can sink a lot of time into?](http://www.reddit.com/r/AskReddit/comments/20al3n/reddit_what_is_a_fun_webgame_i_can_sink_a_lot_of/cg1cxfy). Michael mentioned that there was also an iOS version of the game within the thread comments... I still don't think it could have such an impact given that the [comment was buried way way down in the post](http://www.reddit.com/r/AskReddit/comments/20al3n/reddit_what_is_a_fun_webgame_i_can_sink_a_lot_of/cg1s9ho). Maybe it did... I have no idea. 
 
 Also. This dev blog was linked to in the following newsletters (I received emails and tweets from a couple of readers): [RubyMotion Dispatch](http://rubymotiondispatch.com/) and [TapFame's](https://tapfame.com/) Newsletter. Again, I don't think that such a spike could come from these distributions (I may be wrong).
 
@@ -1241,7 +1241,7 @@ Lesson learned. Don't release text based adventures to the UK. I've become numb 
 
 _Clones and the Spirit of Open Source_
 
-Micheal released ADR under MPL. And what do some do? They take what Micheal built, wrap it in a browser control. They add advertisements at the bottom of the screen, and deploy it to the App Stores/Google Play as a free app. We've requested take downs for some of these apps. And they simply give us the finger by using the MPL as their defence.
+Michael released ADR under MPL. And what do some do? They take what Michael built, wrap it in a browser control. They add advertisements at the bottom of the screen, and deploy it to the App Stores/Google Play as a free app. We've requested take downs for some of these apps. And they simply give us the finger by using the MPL as their defence.
 
 It's frustrating, not that these apps exist, _but that these bottom feeding apps are being created by developers who went onto Github and cloned Michael's repo._ Michael said it best:
 
