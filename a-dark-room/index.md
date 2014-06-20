@@ -1247,7 +1247,7 @@ It's frustrating, not that these apps exist, _but that these bottom feeding apps
 
 >I open-sourced A Dark Room exactly because I wanted people to be able to learn from it, and use it as a starting point for their own projects. That said, I'll admit to being a little disheartened that people are taking advantage of the brand that I've built to make a quick buck.
 
-What these devs are doing is legal (outside of potential common law trademark violations, but that'll be a whole-nother entry). Morally, however, this goes against the grain of what open source is all about. And that, is truely heart breaking.
+What these devs are doing is legal (outside of potential common law trademark violations, but that'll be a whole-nother entry). Morally, however, this goes against the grain of what open source is all about. And that, is truly heart breaking.
 
 <hr /> <!-- put next entry above this line -->
 
