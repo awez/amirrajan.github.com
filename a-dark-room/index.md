@@ -1237,7 +1237,7 @@ Here are the YTD numbers for 1 star reviews:
 - Australia: 51 of 605 (8%)
 - United States: 557 of 8730 (6%)
 
-Lesson learned. Don't release text based adventures to the UK. I've become numb to the words "rubbish", "bore", "scam/fake reviews", and "dreadful" because of them.
+Lesson learned. Don't release text based adventures to the UK. I've become numb to the words "rubbish", "bore", "scam/fake reviews", and "dreadful" because of the UK.
 
 _Clones and the Spirit of Open Source_
 
