@@ -1165,7 +1165,7 @@ One thing's for sure, this roller coaster isn't over yet. Oh look... we're back 
 
 **Jun 20, 2014: Taxes, Negative Reviews, Clones, and Open Source** <a href="#grrr"><small>permalink</small></a>
 
-Alrighty, this one has been on my mind for a while. It's going to be difficult to excersize empathy and be tactful within this post, but I'll try. Let's get started.
+Alrighty, this one has been on my mind for a while. It's going to be difficult to exercise empathy and be tactful within this post, but I'll try. Let's get started.
 
 _Taxes_
 
