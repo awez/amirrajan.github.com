@@ -1243,7 +1243,7 @@ _Clones and the Spirit of Open Source_
 
 Michael released ADR under MPL. And what do some do? They take what Michael built, wrap it in a browser control. They add advertisements at the bottom of the screen, and deploy it to the App Stores/Google Play as a free app. We've requested take downs for some of these apps. And they simply give us the finger by using the MPL as their defence.
 
-It's frustrating, not that these apps exist, _but that these bottom feeding apps are being created by developers who went onto Github and cloned Michael's repo._ Michael said it best:
+It's frustrating, not that these apps exist, _but that these bottom feeding apps are being created by developers who went onto GitHub and cloned Michael's repo._ Michael said it best:
 
 >I open-sourced A Dark Room exactly because I wanted people to be able to learn from it, and use it as a starting point for their own projects. That said, I'll admit to being a little disheartened that people are taking advantage of the brand that I've built to make a quick buck.
 
