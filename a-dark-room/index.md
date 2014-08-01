@@ -92,7 +92,6 @@ I want to make sure I've logged everything that's happened around the growth and
 - [Apr 29, 2014: Waiting for the New Normal](#newnormal)
 - [May 6, 2014: The Fall from the US Top Spot](#thefall)
 - [May 26, 2014: A Dark Room's Second Wind](#secondwind)
-- [May 26, 2014: A Dark Room's Second Wind](#secondwind)
 - [Jun 20, 2014: Taxes, Negative Reviews, Clones, and Open Source](#grrr)
 
 <a id="pickingdevenvironment"> </a>
