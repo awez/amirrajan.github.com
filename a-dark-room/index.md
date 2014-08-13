@@ -93,6 +93,7 @@ I want to make sure I've logged everything that's happened around the growth and
 - [May 6, 2014: The Fall from the US Top Spot](#thefall)
 - [May 26, 2014: A Dark Room's Second Wind](#secondwind)
 - [Jun 20, 2014: Taxes, Negative Reviews, Clones, and Open Source](#grrr)
+- [Aug 11, 2014: One Million Downloads in Seven Days](#million)
 
 <a id="pickingdevenvironment"> </a>
 
@@ -1247,6 +1248,54 @@ It's frustrating, not that these apps exist, _but that these bottom feeding apps
 >I open-sourced A Dark Room exactly because I wanted people to be able to learn from it, and use it as a starting point for their own projects. That said, I'll admit to being a little disheartened that people are taking advantage of the brand that I've built to make a quick buck.
 
 What these devs are doing is legal (outside of potential common law trademark violations, but that'll be a whole-nother entry). Morally, however, this goes against the grain of what open source is all about. And that, is truly heart breaking.
+
+<a id="million"> </a>
+
+**Aug 11, 2014: One Million Downloads in Seven Days** <a href="#million"><small>permalink</small></a>
+
+It's been over a month since I've posted. I've slowly watched the rank and downloads of A Dark Room fall day over day. I thought there was a point where ADR's daily downloads would level out, but there really wasn't. By the end of July, A Dark Room was bringing in approximately 200 downloads a day. This is a level I haven't seen since [February where I did a 50% off sale](#pricedrop). Isn't that insane? A game that took the #1 spot for 18 days straight was now averaging downloads as if it were a game that just hit the App Store. I guess this shows again that you can't count on a consistent income from the App Store.
+
+One thing was different however with these downloads. I was slowly increasing the price of ADR to $3.99. At this point, it was safe to assume that the game wasn't being "sold" by its overall game ranking (which was barely in the top 100), and most downloads (if not all) were coming from the fact that ADR was one of the top 5 RPG's. Here are some download numbers at each price point. You'll notice that there is _very little_ inelasticity in price (even for top ranking apps).
+
+[ Date ] | [ Downloads ] | [ Price Point ] | [ Revenue\* ] | [ RPG Rank ] |
+:------- | ------------: | --------------: | ----------:   | -----------: |
+7/14     |           756 |            0.99 |         756   |            1 |
+7/15     |           713 |            0.99 |         713   |            1 |
+7/16     |           648 |            0.99 |         648   |            2 |
+7/17     |           503 |            1.99 |       1,006   |            2 | 
+7/18     |           339 |            1.99 |         678   |            2 |
+7/19     |           373 |            1.99 |         746   |            2 |
+7/20     |           432 |            1.99 |         864   |            2 |
+7/21     |           321 |            1.99 |         642   |            2 |
+7/22     |           246 |            1.99 |         492   |            2 |
+7/23     |           241 |            1.99 |         482   |            3 |
+7/24     |           230 |            1.99 |         460   |            3 |
+7/25     |           221 |            1.99 |         442   |            3 |
+7/26     |           195 |            2.99 |         585   |            3 |
+7/27     |           275 |            2.99 |         825   |            4 |
+7/28     |           237 |            2.99 |         711   |            4 |
+7/29     |           142 |            3.99 |         568   |            4 |
+7/30     |           145 |            3.99 |         580   |            6 |
+
+_\*Revenue before Apple's cut and before taxes rape us (made the math easier)_
+
+You'll notice that while revenue stayed about level, my rank dropped. This is in line with what I've seen in the past (download count is king). So here I am sitting at the #6 spot, exactly [where I was five months ago before the game ever went viral](#top6). Looking through my dev logs, [I decided to do exactly what I did back then](#freeagain): I made the game free to bring in "new blood".
+
+Then, the impossible happened. On day one of being free, ADR received 36,831 downloads. Day two, A Dark Room sky rocketed to 111,209 downloads. In 48 hours, ADR went from being ranked as the 329th app overall to the 32th. I decided to see how far ADR could go. On the third day ADR had passed Candy Crush, Clash of Clans, Kim Kardashian, and pretty much everything else to land the #5 spot overall. By the 7th day, A Dark Room was the #3 app in the App Store, out ranked by the Facebook Messaging App (which everyone was forced to download), and Crazy Taxi (which was being promoted by Apple at the time). Here are the download numbers for those 7 days:
+
+- 8/1: 36,831 (went free mid day)
+- 8/2: 111,209
+- 8/3: 203,882
+- 8/4: 223,006
+- 8/5: 213,379
+- 8/6: 187,014
+- 8/7: 43,307 (flipped back to paid mid day)
+- Total: 1,018,628
+- Total Reviews: Jumped from 7,800 to 11,914 (4,114 reviews)
+
+As far as media coverage, Pocket Tactics, 148Apps, and Touch Arcade wrote about this sale. Extra Credits was kind enough to tweet about it too (they rock). It's hard to say how much of an impact they really had to the download numbers given that [media coverage in the past really hasn't helped ADR](#zoe) (but I may be wrong).
+
+Now the big question, what happened to sales when I flipped it back to paid? Well... I'm still collecting data. Will post again soon ;-)
 
 <hr /> <!-- put next entry above this line -->
 
