@@ -94,6 +94,7 @@ I want to make sure I've logged everything that's happened around the growth and
 - [May 26, 2014: A Dark Room's Second Wind](#secondwind)
 - [Jun 20, 2014: Taxes, Negative Reviews, Clones, and Open Source](#grrr)
 - [Aug 11, 2014: One Million Downloads in Seven Days](#million)
+- [Aug 20, 2014: What if ADR Was Written Using Cordova and Was Ad Based?](#alternateuniverse)
 
 <a id="pickingdevenvironment"> </a>
 
@@ -1296,6 +1297,88 @@ Then, the impossible happened. On day one of being free, ADR received 36,831 dow
 As far as media coverage, Pocket Tactics, 148Apps, and Touch Arcade wrote about this sale. Extra Credits was kind enough to tweet about it too (they rock). It's hard to say how much of an impact they really had to the download numbers given that [media coverage in the past really hasn't helped ADR](#zoe) (but I may be wrong).
 
 Now the big question, what happened to sales when I flipped it back to paid? Well... I'm still collecting data. Will post again soon ;-)
+
+<a id="alternateuniverse"> </a>
+
+**Aug 20, 2014: What if ADR Was Written Using Cordova and Was Ad Based?** <a href="#alternateuniverse"><small>permalink</small></a>
+
+It's something I've always wondered. What kind of fate would A Dark Room have had if I took the original web version, made it mobile friendly, wrapped it using PhoneGap, and added ads? What problems would I have come across? What kind of revenue would I have experienced. Well great news, one of my colleagues happens to be _god like_ with JavaScript and has recently released a puzzle game written in PhoneGap. I asked him to do a guest entry about his experience and what kind of ad revenue he's bringing in. Here it is!
+
+_About Casey Foster_
+
+During the day I am a web developer. I'm a core contributor on [Backbone](https://github.com/jashkenas/backbone) and more recently a huge fan of Facebook's [React](https://github.com/facebook/react). I use those tools daily to build and improve user interfaces at [OrgSync](http://www.orgsync.com). But while I love what I do at work, I've always had a passion for games and an itch to build and release a game of my own as a mobile app.
+
+A couple years ago I first heard about [Cordova](http://cordova.apache.org) / [PhoneGap](http://phonegap.com) and I just about cried I was so happy at the thought of not having to first learn Objective-C and Java, and then write the same game twice in separate languages to release on iOS and Android. Even better, the only thing I had to learn was a language I was already pretty adept at, JavaScript, and a bit of HTML and CSS. Say what you will about JS, but it's ubiquitous and definitely has, as Crockford would say, its good parts.
+
+_Then I tried using Cordova_
+
+The problem I found back then was that Cordova was just too young. The project was evolving rapidly and the documentation always seemed like it was lagging. At the time, the preferred method of using Cordova was downloading a zip file with the Cordova libraries for iOS, Android, etc. and then creating an Xcode project, Android/Eclipse project, etc. and manually linking those libraries to their respective projects.
+
+This was probably a less frustrating task for iOS or Android developers, but not being a traditional iOS or Android developer, I was faced with many hurdles in this approach. I repeatedly ran into a plethora of build problems and error messages I wasn't prepared to debug. At that time, Cordova was not the solution I had hoped for and I wasn't willing to fight the framework until it cooperated.
+
+I kept an eye on Cordova after that, but without a solid app idea I didn't have a reason to try it out again.
+
+Then [2048](http://gabrielecirulli.github.io/2048/) came out and swept across the internet. It inspired me to create a puzzle game and with inspiration of other awesome puzzle games like [Trainyard](http://trainyard.ca), Gunoki was born.
+
+> Fun Fact: The original name for Gunoki was Colorflick, but that name was already taken in the App Store. The second attempt at a name was Colorcraze, which was available in the App Store, but not in Google Play, so that was out.  After staring into space and churning through possible combinations of English words for what felt like days, I decided to take the make-up-your-own-word route. Gunoki was suggested by my wife and is derived from the names of our two dogs Gunner and Loki.
+
+_PhoneGap Build_
+
+Since JS, CSS, and HTML were still my weapons of choice for app development, I continued to have my mind set on Cordova. Given my previous frustrations with Cordova, I decided to give [PhoneGap Build](http://build.phonegap.com) (cordova app building as a service) a try. The goal of PhoneGap Build is to allow developers to upload their app assets (JS, CSS, HTML, images, etc.) and let their service run each platforms respective build process. The shared (and platform-specific) settings for each build are stored in a special `config.xml` file. This means you can define the name, description, bundle identifier, etc. of your app in one place and have it set in the correct spot for each platform automatically. After each build completes, the developer is given links to the final `.ipa`, `.apk`, etc. files that can be used for development or distribution. Even better, PhoneGap Build also has a sweet API that allows this whole processes to be handled programmatically.
+
+Oh yea, and it's free (for one private project and infinite open source projects).
+
+Being a big fan of automation (`make` can do wonders), I wrote a task to compile my game assets with [cogs](https://github.com/caseywebdev/cogs), zip and upload the assets to PhoneGap Build, download the finished `.ipa`, and then upload that to [TestFlight](https://testflightapp.com) so my testers and I could try it out.
+
+I also have to highlight a huge advantage to building apps with Cordova is that you can test in the browser, no compilation necessary. This allows for a very fast development cycle since you're just a page refresh away from seeing your latest changes. This doesn't mean device/emulator testing isn't still crucial, but it does help.
+
+PhoneGap Build worked great for me, but eventually I hit one of its limitations that I could not work around. PhoneGap Build allows developers to register plugins. Plugins create a bridge between platform-specific code and unify it with a single JavaScript API. One of the plugins I needed was for [AdMob](http://admob.com), but PhoneGap Build's policy only allows plugins that are 100% open source.  Unfortunately, parts of the AdMob SDK are shipped as a binary, which makes a plugin wrapping that SDK disqualified for use on PhoneGap Build.
+
+This was where I parted ways with PhoneGap Build. It was time to figure out how to build these `.ipa` and `.apk` files locally on my machine.
+
+_The New and Improved Cordova_
+
+I was pleased to find that since the last time I used Cordova they had created an [npm](https://www.npmjs.org) package to distribute their new [CLI](https://cordova.apache.org/docs/en/3.5.0/guide_cli_index.md.html). After looking over the updated documentation, it appeared the entire process had been drastically simplified.  In fact, it had reached the point where there was no need to even open Xcode or the Android IDE and complete the entire build process with command line tools.
+
+Heading back to my handy dandy `Makefile`, I added tasks to create the Cordova project, install my plugins, and build both debug and release versions of my app, all with the command line. This experience was much better than the one I had initially with Cordova. With the exception of me needing to update my provision profiles and certificates, the builds that the cordova command line interface output worked great.
+
+One gripe I've had is that some of the properties I've added in `config.xml` seem to be ignored, at least in Cordova 3.5.0. For example, there is a property called `orientation` that accepts `portrait`, `landscape`, or `default` (both).  This is great in theory, except that this value never seemed to be respected in my builds and I ended up writing a script to manually edit the `.plist` for my Xcode project.
+
+Other than the `config.xml` quirks, I've found Cordova to be a great tool for web developers to create *native* apps. JavaScript performance on the latest mobile operating systems is always improving and I believe it is a great option for apps that don't necessarily need top performance to succeed.
+
+_The Numbers_
+
+As of writing this, Gunoki has been available in the App Store and Google Play Store for about a week. Since Amir has been so transparent with his numbers, it seems only fitting to do the same (albeit these numbers are much smaller!).
+
+Gunoki's first week numbers:
+
+[ Platform ] | [ Downloads ] | [ Impressions ] | [ Clicks ] | [ Revenue ] |
+:----------- | ------------: | --------------: | ---------: | ----------: |
+iOS          | 444           | 7,877           |     111    | 15.34       |
+Android      | 22            | 781             |       8    | 0.38        |
+Total        | 466           | 8,658           |     119    | 15.72       |
+
+If you're interested in playing it, [Gunoki for iOS](https://itunes.apple.com/us/app/gunoki/id905840087) and [Gunoki for Android](https://play.google.com/store/apps/details?id=com.coderiety.gunoki) are both free to download. Enjoy!
+
+_So What About A Dark Room, Amir?_
+
+There was definitely a part of me that considered making the original web version mobile friendly, but [I originally chose to go native for the experience](#pickingdevenvironment). As for cross platform support, I lucked out with Ruboto and the eventual release of RubyMotion 3 (details on that will be another entry).
+
+Now to answer the big question: What would ADR have made if it were free and ad based? I've already proven that [A Dark Room can be a top free app](#million). I also have a [time frame for retaining a top spot](#newnormal). And now I have some ad revenue numbers (thank you Casey). _So here is a really, really rough estimate of what ADR could have made:_
+
+- Casey's super addicting puzzle app (which you should download by the way), has a 25% click through rate (444 downloads divided by 111 clicks).
+- Each click got him $0.13 (111 clicks divided by $15.34 in revenue).
+- You get _zero_ dollars for impressions.
+
+So now let's apply that to A Dark Room's numbers.
+
+- At its peak, A Dark Room received 223,000 free downloads in one day.
+- During the peak in the paid section, A Dark Room received 20,000 downloads in one day.
+- That's 10x the number of downloads in the free section versus paid.
+- ADR's total paid downloads to date is 747,000 with a gross revenue of $522,900.
+- If ADR were free, the ad revenue would be $242,775 (747,000 downloads, multipled by a factor of 10, multipled by 28% clicks, multiplied by $0.13 per click).
+
+So, the good news is A Dark Room _was_ better off being a paid app. This also shows that the real money isn't in ads. It looks like all the top grossing apps make their money off of In-App Purchases. Welp. There you have it :-)
 
 <hr /> <!-- put next entry above this line -->
 
