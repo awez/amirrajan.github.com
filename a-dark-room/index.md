@@ -1358,7 +1358,7 @@ iOS          | 444           | 7,877           |     111    | 15.34       |
 Android      | 22            | 781             |       8    | 0.38        |
 Total        | 466           | 8,658           |     119    | 15.72       |
 
-If you're interested in playing it, [Gunoki for iOS](https://itunes.apple.com/us/app/gunoki/id905840087) and [Gunoki for Android](https://play.google.com/store/apps/details?id=com.coderiety.gunoki) are both free to download. Enjoy!
+If you're interested in playing it, **[Gunoki for iOS](https://itunes.apple.com/us/app/gunoki/id905840087)** and **[Gunoki for Android](https://play.google.com/store/apps/details?id=com.coderiety.gunoki)** are both free to download. Enjoy!
 
 _So What About A Dark Room, Amir?_
 
@@ -1366,7 +1366,7 @@ There was definitely a part of me that considered making the original web versio
 
 Now to answer the big question: What would ADR have made if it were free and ad based? I've already proven that [A Dark Room can be a top free app](#million). I also have a [time frame for retaining a top spot](#newnormal). And now I have some ad revenue numbers (thank you Casey). _So here is a really, really rough estimate of what ADR could have made:_
 
-- Casey's super addicting puzzle app (which you should download by the way), has a 25% click through rate (444 downloads divided by 111 clicks).
+- Casey's super addicting puzzle game (_which you should download by the way_), has a 25% click through rate (444 downloads divided by 111 clicks).
 - Each click got him $0.13 (111 clicks divided by $15.34 in revenue).
 - You get _zero_ dollars for impressions.
 
@@ -1376,7 +1376,7 @@ So now let's apply that to A Dark Room's numbers.
 - During the peak in the paid section, A Dark Room received 20,000 downloads in one day.
 - That's 10x the number of downloads in the free section versus paid.
 - ADR's total paid downloads to date is 747,000 with a gross revenue of $522,900.
-- If ADR were free, the ad revenue would be $242,775 (747,000 downloads, multipled by a factor of 10, multipled by 28% clicks, multiplied by $0.13 per click).
+- If ADR were free, the ad revenue would be $242,775 (747,000 downloads, multiplied by a factor of 10, multiplied by 28% clicks, multiplied by $0.13 per click).
 
 So, the good news is A Dark Room _was_ better off being a paid app. This also shows that the real money isn't in ads. It looks like all the top grossing apps make their money off of In-App Purchases. Welp. There you have it :-)
 
