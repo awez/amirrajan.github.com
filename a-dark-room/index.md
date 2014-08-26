@@ -1278,7 +1278,7 @@ One thing was different however with these downloads. I was slowly increasing th
 7/29     |           142 |            3.99 |         568   |            4 |
 7/30     |           145 |            3.99 |         580   |            6 |
 
-_\*Revenue before Apple's cut and before taxes rape us (made the math easier)_
+_\*Revenue before Apple's cut and before taxes take out a huge chunk of the earnings (made the math easier)_
 
 You'll notice that while revenue stayed about level, my rank dropped. This is in line with what I've seen in the past (download count is king). So here I am sitting at the #6 spot, exactly [where I was five months ago before the game ever went viral](#top6). Looking through my dev logs, [I decided to do exactly what I did back then](#freeagain): I made the game free to bring in "new blood".
 
