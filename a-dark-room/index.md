@@ -95,7 +95,7 @@ I want to make sure I've logged everything that's happened around the growth and
 - [Jun 20, 2014: Taxes, Negative Reviews, Clones, and Open Source](#grrr)
 - [Aug 11, 2014: One Million Downloads in Seven Days](#million)
 - [Aug 20, 2014: What if ADR Was Written Using Cordova and Was Ad Based?](#alternateuniverse)
-- [Sep 27, 2014: After 1 Million Free Downloads, What Happend to Paid Sales?](#afteronemillion)
+- [Sep 27, 2014: After 1 Million Free Downloads, What Happened to Paid Sales?](#afteronemillion)
 
 <a id="pickingdevenvironment"> </a>
 
@@ -1383,7 +1383,7 @@ So, the good news is A Dark Room _was_ better off being a paid app. This also sh
 
 <a id="afteronemillion"> </a>
 
-**Sep 27, 2014: After 1 Million Free Downloads, What Happend to Paid Sales?** <a href="#afteronemillion"><small>permalink</small></a>
+**Sep 27, 2014: After 1 Million Free Downloads, What Happened to Paid Sales?** <a href="#afteronemillion"><small>permalink</small></a>
 
 Back in the beginning of August. [I made A Dark Room free for a week](#million). During that time period, ADR became the #3 App Overall in the free category. The only two apps that were ahead of ADR were the Facebook Messaging App, and Crazy Taxi (which was being featured by Apple). It's an incredible feeling to out rank the likes of Candy Crush, Kim Kardashian, and Clash of Clans. For that brief seven day period, ADR proved that a small game with heart can out rank games specifically engineered for IAP's.
 
