@@ -95,6 +95,7 @@ I want to make sure I've logged everything that's happened around the growth and
 - [Jun 20, 2014: Taxes, Negative Reviews, Clones, and Open Source](#grrr)
 - [Aug 11, 2014: One Million Downloads in Seven Days](#million)
 - [Aug 20, 2014: What if ADR Was Written Using Cordova and Was Ad Based?](#alternateuniverse)
+- [Sep 27, 2014: After 1 Million Free Downloads, What Happend to Paid Sales?](#afteronemillion)
 
 <a id="pickingdevenvironment"> </a>
 
