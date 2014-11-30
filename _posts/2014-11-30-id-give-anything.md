@@ -37,6 +37,6 @@ She gives the invoice to human resources, and receives her check shortly after. 
 
 Her roommate, as always, turns to her and says, "I'd give anything to play like you."
 
-With always yields the same, smiling response.
+Which always yields the same, smiling response.
 
 "No, you wouldn't."
