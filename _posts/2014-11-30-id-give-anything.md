@@ -7,7 +7,7 @@ tags : [story]
 
 She walks onto the small wooden stage, violin in hand. Not a walk of confidence, but of humility. Her steps echo through the auditorium, crisp and hollow. 
 
-"Another poorly constructed hall," she says to herself, as she thinks back to her high school orchestra playing at the Meyerson Symphony Center.
+"Another poorly constructed hall," she says to herself, as she thinks back to her high school orchestra playing at the Meyerson.
 
 She still remembers her teacher give his "wait for it" smirk. She remembers him telling everyone to play C Major 7. She still remembers the pure joy she felt as the sound from every instrument filled the air, merging with one another as they bounced off the walls, and making its way back to the stage seconds later, carrying a life changing message: "This is what you created."
 
