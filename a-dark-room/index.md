@@ -96,6 +96,7 @@ I want to make sure I've logged everything that's happened around the growth and
 - [Aug 11, 2014: One Million Downloads in Seven Days](#million)
 - [Aug 20, 2014: What if ADR Was Written Using Cordova and Was Ad Based?](#alternateuniverse)
 - [Sep 27, 2014: After 1 Million Free Downloads, What Happened to Paid Sales?](#afteronemillion)
+- [Dec 7, 2014: The Ensign and One Year of ADR](#oneyear)
 
 <a id="pickingdevenvironment"> </a>
 
@@ -1412,6 +1413,81 @@ Now what? Well. There are plenty of things I still want to talk about:
 
 Until next time, take care... Oh, by the way. If you are a student in middle or high school, Michael and I would love to speak at your school about game development and coding (either over G+ or in person if your school is close to Ottawa, Canada or Dallas, TX). So don't hesitate to reach out to us if you're class room is interested.
 
+<a id="oneyear"> </a>
+
+**Dec 7, 2014: The Ensign and One Year of ADR** <a href="#oneyear"><small>permalink</small></a>
+
+October was a quiet month. Nothing really changed with regards to download rates or rankings. [I took some time to reflect](http://amirrajan.net/rant/2014/11/30/id-give-anything/), knowing that ADR's one year anniversary was coming up. Has it really been a year since [one of the worst days of my life](#worstdayofmylife)? What did I really accomplish since [I decided to sell most of my worldly possesions and re-focus](http://amirrajan.net/meta/2014/03/16/rebooting-life-part-2/)? I'll have a Rebooting Life Part 3 blog entry coming soon to explore that. For now, let's talk about the prequel and what YTD earnings are for ADR.
+
+_The Ensign_
+
+A Dark Room's prequel (The Ensign) was released at the end of August. I wanted to make a brutally difficult [Soulsian Adventure](http://killscreendaily.com/articles/ensign/). I absolutely loved working on it. I stayed up the first night, burning the midnight oil. I simply couldn't sleep while there was this itch to scratch.
+
+Given the following ADR had, I was able to actually get some beta testers to play the work in progress. It really helped to have others try the game out, give me feedback, and find spelling and grammar errors.
+
+I released the game in August when I felt like _most_ of it was complete. I knew the game had some rough edges, and there were still story elements I wanted to expand on (that plus a nasty bug I have yet to track down). I took the same approach with releasing A Dark Room. It wasn't 100% done. iPad support wasn't there, some of the balancing and pacing wasn't perfect, and [story line progression left a few people stuck](#slaves2). But I released. A part of me was glad I took this approach, and the other part feels it was a mistake.
+
+The first version of The Ensign received relatively lukewarm reviews from both [Kaijupop](http://kaijupop.com/2014/08/ios-quick-vid-ensign/) and [Touch Arcade](http://toucharcade.com/2014/08/22/the-ensign-review/). The Ensign was something I created on my own (the brilliant Michael Townsend was busy with [Gridland](http://gridland.doublespeakgames.com/)), so I was definitely struggling with imposter syndrome when those reviews came out.
+
+**I really believe that game development is becoming more iterative. With digital media, it's incredibly easy for developers to fix problems and incorporate feedback. Given this, the current approach editors take to reviewing games is broken. While the game can improve, pivot, and grow, the lukewarm reviews are solidified in stone, rarely to be revisited.** I completely agree with Kaijupop and Touch Arcade, the _first_ version of The Ensign was not that great, but the _fourth_ version released over another _two_ months is consistently getting 5 star reviews. Here in lies my mistake, when you are a nobody like I was when I built ADR, it wasn't a big deal to iterate "live". But when you have a successful game out there, you're in the crosshairs, and have to execute _flawlessly_ (which is impossible).
+
+That being said, when I released The Ensign, Apple featured it in their _Best New Games_, and _What We're Playing_ syndications. This led to The Ensign becoming the #8 game overall and pushed A Dark Room to the #7 spot. At first, I thought that download rates dictated if you were to be featured in _Best New Games_. **I thought it was an automated, software controlled syndication. Turns out it (probably) isn't.** There were two games that were also featured, and  sandwiched The Ensign in rankings. _The Firm_ sold for $0.99 and was ranked as the #1 game, and _PAC-MAN Friends_ selling for $2.99 was ranked #15 (The Ensign was #8 and sold for $0.99). For about a week, all three games were on the _Best New Games_ featured list. After that week, The Ensign was _removed_, but the other two games were still featured. I have no idea why this was done given that even the first version of The Ensign had higher ratings than the other two games (and was sandwiched in rankings... see now I want to have a yummy sammich).
+
+I'm working on one more prequel. At one point, I wanted to just release a free blank app with an audio file stating my intent with the "pre-prequel". It would get a place holder out there, direct some App Store traffic to A Dark Room, and give me the opportunity to _iterate_ publicly on it. I don't think I'm brave enough to do that though. So for now, I'm operating under the unrealistic expectation of a flawless game being released, day one. That's all I have with regards to The Ensign, now lets talk about A Dark Room.
+
+_A Dark Room After One Year_
+
+Here is the (approximate) YTD revenue for A Dark Room, an app that took the #1 spot across the United States, United Kingdom, Australia, Germany, Canada, and Singapore.
+
+[ Month ]    | [ Paid Downloads ] | [ Free Downloads ] | [ Apple Check ] |
+:----------- | -----------------: | -----------------: | --------------: |
+Nov 2013     | 403                |                    |           555   |
+Dec 2013     | 698                |                    |           943   |
+Jan 2014     | 986                |                    |         1,320   |
+Feb 2014     | 2,288              | 8,612              |         1,760   |
+Mar 2014     | 15,428             | 15,172             |        11,600   |
+Apr 2014     | 305,000            |                    |       214,000   |
+May 2014     | 237,000            |                    |       166,000   |
+Jun 2014     | 101,000            |                    |        70,700   |
+Jul 2014     | 29,526             | 5,110              |        22,200   |
+Aug 2014     | 38,304             | 1,021,660          |        28,800   |
+Sep 2014     | 28,400             |                    |        19,900   |
+Oct 2014     | 14,900             |                    |        10,100   |
+Nov 2014     | 5,040              | 134,959            |         3,790   |
+
+The November 2014 paid downloads is not a typo. I made a mistake by making the game $1.99 again, and it destroyed our ranking in the RPG section. Lesson learned. I also made the game free for the first week of November in celebration of the one year anniversary (which I was happy to do, but that didn't help our rank either).
+
+Total downloads (free and paid) is 1.96 million with a gross revenue of $553,000 (Apple has already taken it's 30% cut before issuing the checks). I started work on the app at the end of June. Here is the 16 month breakdown (4 months of development with no cash flow, and 12 months of income):
+
+[ Month ]                                                 | [ Amount ] |
+:-------------------------------------------------------- | ---------: |
+Gross income (less Apple's share)                         |   553,000  |
+My half of ADR (I happily give Michael his share)         |   276,500  |
+33% income tax                                            |    91,245  |
+12% self employment tax                                   |    33,120  |
+Net                                                       |   152,135  |
+Net per month (16 months from development to today)       |     9,508  |
+Hourly (40 hrs, 48 weeks) doing ADR "full time"           |        59  |
+Net hourly rate when I actually was working full time     |        51  |
+16 month difference between ADR and 9-5                   |    14,280  |
+Self employed medical insurance (wife was 1099 too)       |    10,880  |
+*Grand total for making a #1 App*                         |    *3,400* |
+
+There you go. You can either go to school, graduate from college, and (over a 7 year period) earn a pretty much guaranteed income. Or you can _try_ to team up with a friend, make a #1 app, and end up a _whopping_ $3,400 ahead (with no guarantee of future income)... I'm telling you now, ADR's success is a complete utter fluke, don't expect this for your app.
+
+But, what have I learned about myself? I've learned that I have grit. I've done interviews with companies and they usually are unimpressed with my algorithmic/code related problem solving skills. But I have an endless reserve of sheer determination, intuition about software development, and the ability to _lead_... all of which is impossible to show in a couple of phone interviews and a one hour pairing session. I've learned that even though I can be _happy_, I will never, ever be _content_ (more on that in my Rebooting Life Part 3 entry).
+
+As for what I've learned about the App Store... not a god damn thing. I still don't understand how [A Dark Room went viral in the UK](#minecraft). I don't understand how it became the [#1 app in the US](#number1us). I still don't understand how [A Dark Room got 1 million downloads when it went free](#million) (especially since I made it free again in the first week of November 2014, and didn't see that kind of download rate). I don't understand why A Dark Room is going viral _again_ in the UK _right now_ (yes, it's getting [one star reviews again](#topappday2)).
+
+_What's Next_
+
+This will be my last post here (unless something really amazing happens). Subscribing below will be for my main blog. As for what's next, I plan to do live coding sessions on Twitch TV and hopefully help aspiring game developers get started and grow.
+
+**[Xodiak Dojo - Game Dev from Beginner to "Pro"](http://www.twitch.tv/xodiak_)**
+
+If you're new to development and want to see what it's all about... if you're young and need guidance in coding, college, and career... then [subscribe to XD (Xodiak Dojo)](http://www.twitch.tv/xodiak_). I'm going to take a shot at making a self sustaining mentorship program centered around live coding sessions, community, and the love of creating something from nothing. May the fire burn brightly for you. May it keep you warm.
+
+  
 <hr /> <!-- put next entry above this line -->
 
 <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css"/>
@@ -1419,15 +1495,11 @@ Until next time, take care... Oh, by the way. If you are a student in middle or 
 <div id="mc_embed_signup">
   <form action="http://amirrajan.us8.list-manage.com/subscribe/post?u=61936e0179df5da623ee7cdb7&amp;id=f44fb947df"
       method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="novalidate">
-    <label for="mce-EMAIL">Subscribe: A Dark Room's journey to a top spot in the App Store</label>
+    <label for="mce-EMAIL">Subscribe to Amir Rajan's Blog</label>
 
-    <div>Subscribe and you'll get emails with my log updates. There is an incredible amount of information with regards to:</div>
+    <div>Subscribe to get high signal, low noise entries with regards to software development, doing what you love, and never being content with where you are.</div>
 
-    <ul>
-    <li>How the App Store works, what influences app rankings</li>
-    <li>How media coverage and app ranking impact downloads</li>
-    <li>Revenue information, review stats, new developments</li>
-    </ul>
+    <div><br/></div>
 
     <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required="required" />
     <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" /> <small>powered by MailChimp</small></div>
