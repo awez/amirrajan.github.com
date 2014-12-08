@@ -87,7 +87,7 @@ I want to make sure I've logged everything that's happened around the growth and
 - [Apr 1, 2014: Day Two, at the Number One Spot, in the UK App Store](#topappday2)
 - [Apr 2, 2014: Day Three, at the Number One Spot, in the UK App Store](#topappday3)
 - [Apr 4, 2014: The Fall From the #1 Spot in the UK App Store. Here Are the Final Numbers](#topappday5)
-- [Apr 9, 2014: #1 RPG, #5 Game, #10 App, in the US](#topofus) 
+- [Apr 9, 2014: #1 RPG, #5 Game, #10 App, in the US](#topofus)
 - [Apr 15, 2014: #1 in the App Store](#number1us)
 - [Apr 29, 2014: Waiting for the New Normal](#newnormal)
 - [May 6, 2014: The Fall from the US Top Spot](#thefall)
@@ -160,7 +160,7 @@ I don't know what it was about these Nietzsche quotes. I think it was my first a
 
 >a dictator divides mankind into two classes: tools and enemies.
 
-To help again with pacing, I decided to add "flashes of events" that would show up when the player gathered wood. It added just enough of a draw to keep going though the first part. The first message read: 
+To help again with pacing, I decided to add "flashes of events" that would show up when the player gathered wood. It added just enough of a draw to keep going though the first part. The first message read:
 
 >hope she's okay, have to keep the fire going.
 
@@ -184,7 +184,7 @@ But at this point I just had some (for lack of a better term) "resentment" with 
 
 Development on A Dark Room started to slow down a bit (I hit a bit of a low point in motivation). Combat was working at a cursory level... mostly just animations. The battle sequence was pretty much a real time game with a timer running at 10 frames per second... I was making a real time game using Cocoa controls as opposed to sprites and a canvas... kind of felt weird about that. But it worked.
 
-5 days on and off to work through the loot screen (the screen that came up after you won a battle). Pixel pushing labels and buttons. At this point I dread any kind of UI work in iOS. 
+5 days on and off to work through the loot screen (the screen that came up after you won a battle). Pixel pushing labels and buttons. At this point I dread any kind of UI work in iOS.
 
 <a id="abetterdeveloper2"> </a>
 
@@ -208,7 +208,7 @@ I did my very first presentation on NodeJS. It was a quasi workshop that went th
 
 **Sep 19, 2013: .Net OSS is DOA** <a href="#dotnetossdoa"><small>permalink</small></a>
 
-Development of the game continues. Play testing and tweaking the Dusty Path. I was just a grumpy person this month in general with all the annoying pixel pushing. I spent some time reflecting on all the different things I've done on my sabbatical. A Dark Room had been my primary "work" throughout this time. But I continued to spend time working with other stacks. 
+Development of the game continues. Play testing and tweaking the Dusty Path. I was just a grumpy person this month in general with all the annoying pixel pushing. I spent some time reflecting on all the different things I've done on my sabbatical. A Dark Room had been my primary "work" throughout this time. But I continued to spend time working with other stacks.
 
 Another internal struggle with .Net development. I've tried to have discourse on Twitter with a number of .Net devs. I built a Twitter mashup to help me manage that discourse because I was having so many conversations at once. At this point I've learned (or at least gotten better) at objectively analyzing risk and reward. Using NodeJS and Ruby Motion, I have now have a better understanding of what OSS _really_ looks like. So I put another blog post up: [.Net OSS is DOA](http://amirrajan.net/meta/2013/09/19/perception-is-reality-dot-net-oss/). This one got some attention. I wanted to (again) help developers break down barriers and see that all the "answers" don't exist in any single stack.
 
@@ -226,7 +226,7 @@ Another heated debate on Twitter. This time with regards to test driven developm
 
 All of September went to the Dusty Path (and being a grumpy developer). I made sure all the different city and town events showed up. I made sure the workshop items and workers unlocked correctly. I made sure map state rolled back if the player dies.
 
-I chatted with Michael about this. How the hell he managed to test all this... He did what I did, just grinded through it. I spent 2 days creating an automated test suite. It tested all the different random paths the events could take. Glad I did that. Even with all the manual testing, I still had a number of bugs. 
+I chatted with Michael about this. How the hell he managed to test all this... He did what I did, just grinded through it. I spent 2 days creating an automated test suite. It tested all the different random paths the events could take. Glad I did that. Even with all the manual testing, I still had a number of bugs.
 
 <a id="ihatemichael"> </a>
 
@@ -360,7 +360,7 @@ What do I do? I played through the game hundreds of times. Meticulously place ev
 
 **Nov 26, 2013: Game Back Story, an Apology, and a Post to Hacker News** <a href="#hackernews"><small>permalink</small></a>
 
-I updated the support page for A Dark Room to include some back story. The name of the section is "A letter to the fans of A Dark Room" (near the top). I posted this entry on Hacker News and reddit.com/r/incremental_games to see if it would generate some interest. Again, I ended up hoping against all hope that enough people on Hacker News would remember the "Minimal Text Adventure" and show some love. It didn't happen. The response I got on Reddit was a bit better. I got quite a few kind words, which helped heal the wounds of my first one star review. The next morning, because of the post to Reddit, the game downloads spiked to 27 downloads. 
+I updated the support page for A Dark Room to include some back story. The name of the section is "A letter to the fans of A Dark Room" (near the top). I posted this entry on Hacker News and reddit.com/r/incremental_games to see if it would generate some interest. Again, I ended up hoping against all hope that enough people on Hacker News would remember the "Minimal Text Adventure" and show some love. It didn't happen. The response I got on Reddit was a bit better. I got quite a few kind words, which helped heal the wounds of my first one star review. The next morning, because of the post to Reddit, the game downloads spiked to 27 downloads.
 
 <a id="adrreview"> </a>
 
@@ -446,19 +446,19 @@ I worked through the holidays to get the accessible version of A Dark Room compl
 
 Given the accessibility updates and the recent media coverage for A Dark Room, I changed the App Store description too:
 
->Awake. Head throbbing. Vision blurry. 
+>Awake. Head throbbing. Vision blurry.
 
->An unforgettable journey that starts small and slowly becomes much, much, more. Uncover the secrets of A Dark Room. Come light the fire. 
+>An unforgettable journey that starts small and slowly becomes much, much, more. Uncover the secrets of A Dark Room. Come light the fire.
 
->100% accessible and playable via VoiceOver. 
+>100% accessible and playable via VoiceOver.
 
->Awards and Recognition: 
+>Awards and Recognition:
 
->Paste Magazine, Maddy Myers: Top 20 Indie Games of 2013 
+>Paste Magazine, Maddy Myers: Top 20 Indie Games of 2013
 
->Giant Bomb, Zoe Quinn: Top 10 Games of 2013 
+>Giant Bomb, Zoe Quinn: Top 10 Games of 2013
 
->Giant Bomb, Cara Eillison: Top 10 Games of 2013 (honorable mention) 
+>Giant Bomb, Cara Eillison: Top 10 Games of 2013 (honorable mention)
 
 I also nerfed thieves a little bit... you're welcome blewis1234 ;-)
 
@@ -514,7 +514,7 @@ Downloads spiked to 50 during the contest period. I'm burning through my promo c
 
 I took Apple Vis' idea and gave away 20 promo codes across two separate contests at Touch Arcade. The interactions I had with the fans (old and new) was great. A lot kind words and genuine support.
 
-The downloads for the last four days of January stayed at a steady 40. 
+The downloads for the last four days of January stayed at a steady 40.
 
 <a id="secondcheck"> </a>
 
@@ -534,9 +534,9 @@ The second check comes in. The grand totals for the month of December:
 
 So a bit of background about the iOS version and its ending game sequence. The starship represents the end of the game. It is only unlocked once you've progressed far enough in the storyline. If a player avoids storyline progression, they are effectively stuck, and can't complete the game. The villagers turning into slaves leaves another person in this stuck state.
 
-Here is a part of the email that was sent to me: 
+Here is a part of the email that was sent to me:
 
->Also I would like to mention that I liked this game until I found out I was getting screwed over.  I am playing it on an iPhone 4.  Just hoping you guys can fix this before a flood of unhappy folks come by and take your stars down a notch. And no I haven't rated your game because I am not the vengeful type.  Video games are hard to make and it seems you put a lot of effort into this. I am sending you screenshots of my game. 
+>Also I would like to mention that I liked this game until I found out I was getting screwed over.  I am playing it on an iPhone 4.  Just hoping you guys can fix this before a flood of unhappy folks come by and take your stars down a notch. And no I haven't rated your game because I am not the vengeful type.  Video games are hard to make and it seems you put a lot of effort into this. I am sending you screenshots of my game.
 
 The player was kind enough to include screenshots of his current game. I didn't need to look (but I did anyways). He stopped progressing the storyline... Here is what I wrote back:
 
@@ -572,7 +572,7 @@ I was down to my last 15 codes. I reached out to Cara Ellison on Twitter about g
 
 I'm getting more cautions at this point (I'm down to 9 codes). I'm scouring Twitter for connections... people to reach out to... people that may respond. @Kotaku follows only 41 people and is followed by over three hundred thousand. It looks like the people Kotaku is following is fairly exclusive.
 
-There were two people on this list that I had hopes would respond: Leigh Alexander (@leighalexander) and Brandon Boyer (@brandonnn). Both had a large number of followers and (based on their profiles) are receptive to indie developers. Brandon Boyer and Cara Ellison follow each other. Leigh Alexander (someone I've interacted with before) and Maddy Myers follow each other.... is this borderline stalking? ... XD 
+There were two people on this list that I had hopes would respond: Leigh Alexander (@leighalexander) and Brandon Boyer (@brandonnn). Both had a large number of followers and (based on their profiles) are receptive to indie developers. Brandon Boyer and Cara Ellison follow each other. Leigh Alexander (someone I've interacted with before) and Maddy Myers follow each other.... is this borderline stalking? ... XD
 
 I end up emailing Brandon Boyer. I tried not to send him a wall of text (it happened anyways). But Brandon replied after a few days (yay!). I sent over a promo code. Now I just have to wait T_T.
 
@@ -714,7 +714,7 @@ I woke up this morning. Awake, head throbbing, vision blurry ;-). Checked my app
 
 For the past two days, A Dark Room has gotten ~200 downloads. I haven't done any recent marketing of the game to result in that kind of spike. True, the game made it into the top 10 spot a couple of days ago... but I didn't experience this kind of spike the last time it was there.
 
-The only thing I can think of was that the web version of the game got 1000+ upvotes in an AskReddit thread: [Reddit, what is a fun webgame I can sink a lot of time into?](http://www.reddit.com/r/AskReddit/comments/20al3n/reddit_what_is_a_fun_webgame_i_can_sink_a_lot_of/cg1cxfy). Michael mentioned that there was also an iOS version of the game within the thread comments... I still don't think it could have such an impact given that the [comment was buried way way down in the post](http://www.reddit.com/r/AskReddit/comments/20al3n/reddit_what_is_a_fun_webgame_i_can_sink_a_lot_of/cg1s9ho). Maybe it did... I have no idea. 
+The only thing I can think of was that the web version of the game got 1000+ upvotes in an AskReddit thread: [Reddit, what is a fun webgame I can sink a lot of time into?](http://www.reddit.com/r/AskReddit/comments/20al3n/reddit_what_is_a_fun_webgame_i_can_sink_a_lot_of/cg1cxfy). Michael mentioned that there was also an iOS version of the game within the thread comments... I still don't think it could have such an impact given that the [comment was buried way way down in the post](http://www.reddit.com/r/AskReddit/comments/20al3n/reddit_what_is_a_fun_webgame_i_can_sink_a_lot_of/cg1s9ho). Maybe it did... I have no idea.
 
 Also. This dev blog was linked to in the following newsletters (I received emails and tweets from a couple of readers): [RubyMotion Dispatch](http://rubymotiondispatch.com/) and [TapFame's](https://tapfame.com/) Newsletter. Again, I don't think that such a spike could come from these distributions (I may be wrong).
 
@@ -843,7 +843,7 @@ No, adding another screen shot or more details about the game won't help. One, b
 
 At this point, all I can do is wait. It takes anywhere from 3 hours to 3 days to beat the game and get a "review me" button presented to you. I have to put _my_ trust in the player, and hope that they take the time to review the game, and show that A Dark Room really is something brilliant and unique.
 
-As a consolation, I've got some chuckles out of the reviews, specifically this one: 
+As a consolation, I've got some chuckles out of the reviews, specifically this one:
 
 >**Avoid** - To summarise, I would actually rather be in a dark room, with nothing else is in it, until my untimely death before playing this app again. The endless time that is spent tapping could be spent building a time machine that would take you back to the time you pressed 'install' just so you can slap yourself in the face. Take your 70p and go purchase a lettuce and tap that, it would be more productive... And at the end you have a lettuce.
 
@@ -861,7 +861,7 @@ The reviews have a definite pattern. You either _love_ the game or _hate_ it. He
 - 4-star: 3
 - 3-star: 0
 - 2-star: 1
-- 1-star: 26 
+- 1-star: 26
 
 The reactions in the reviews continue to be visceral. Here are a couple:
 
@@ -873,7 +873,7 @@ One person from the UK actually "called @ADarkRoomiOS out" on Twitter. Against m
 
 >her - @ADarkRoomiOS what a con! Waste of money, I wish I could warn others the reviews are fake.
 
->me - I'm truly sorry you feel conned. More info about the game here, please take a moment to read if you can: http://amirrajan.net/a-dark-room/ 
+>me - I'm truly sorry you feel conned. More info about the game here, please take a moment to read if you can: http://amirrajan.net/a-dark-room/
 
 >me - did you get a chance to read the development log I had put up with regards to A Dark Room and my sabbatical?
 
@@ -956,7 +956,7 @@ Outside of impacts associated with being #1 in the UK. The following _may_ have 
 
 As soon as A Dark Room hit the #1 spot in the UK I reposted what I wrote here on /r/gamedev: [What happens when your iOS game goes viral and becomes the #1 app in the UK App Store](http://www.reddit.com/r/gamedev/comments/220quk/what_happens_when_your_ios_game_goes_viral_and/). The post received 200 up votes, and there were many good conversations to be had.
 
-Out of sheer luck. A Reddit user asked the following question on /r/askreddit, which Michael ended up responding to: [Has anyone here ever built a $20 or $40 desktop application, or $0.99 to $5 mobile app, and made real money from it?](http://www.reddit.com/r/AskReddit/comments/227qln/has_anyone_here_ever_built_a_20_or_40_desktop/cgk7rhp). The question received 1159 upvotes, and Michael's response was the top comment. 
+Out of sheer luck. A Reddit user asked the following question on /r/askreddit, which Michael ended up responding to: [Has anyone here ever built a $20 or $40 desktop application, or $0.99 to $5 mobile app, and made real money from it?](http://www.reddit.com/r/AskReddit/comments/227qln/has_anyone_here_ever_built_a_20_or_40_desktop/cgk7rhp). The question received 1159 upvotes, and Michael's response was the top comment.
 
 Around this same time, a review site, that I reached out to a couple weeks ago, gave A Dark Room 3 stars (the review said mostly good things about the game, so put your torches and pitchforks down): [148Apps - A Dark Room Review](http://www.148apps.com/reviews/dark-room-review/)
 
@@ -1039,7 +1039,7 @@ During this time period, A Dark Room received quite a bit of news coverage:
 - An article/interview for the Dallas Morning News.
 - That plus a few small independent blogs wrote about the game.
 
-All this, and A Dark Room _still_ fell from #1. It's, in fact, struggling to keep the #6 spot now. US downloads have dropped 80% from the weeks before. On the bright side, being out of the top spot gave me the window to push out a crucial release of the game. The reviews will reset, but it's (now) worth the risk. 
+All this, and A Dark Room _still_ fell from #1. It's, in fact, struggling to keep the #6 spot now. US downloads have dropped 80% from the weeks before. On the bright side, being out of the top spot gave me the window to push out a crucial release of the game. The reviews will reset, but it's (now) worth the risk.
 
 In other news, on Apr 29th, ADR hit the #1 spot in both Australia and Singapore.
 
@@ -1111,7 +1111,7 @@ It _does_ seem that the developer commentary helped give a little more reason to
 
 _Variable 3: Number of downloads before hitting #1_
 
-It took a much longer time to get back to #1 from similar "low" ranks. It took fewer average downloads, but a longer period of time. 
+It took a much longer time to get back to #1 from similar "low" ranks. It took fewer average downloads, but a longer period of time.
 
 Number of downloads from the #15 spot to the #1 spot on version 1.5:
 
@@ -1190,11 +1190,11 @@ A number of reviews in the App Store fall into this category. They are fair, wel
 
 The _It's a Scam_ Review:
 
-[I've talked about this before (and exercised large amount of empathy when doing so)](#empathy), so let me be a little mean. Here's the review: 
+[I've talked about this before (and exercised large amount of empathy when doing so)](#empathy), so let me be a little mean. Here's the review:
 
 >Absolute scam!! Manipulated reviews!! (1 star):	It's a text based game. That's ALL you get. Nothing like any review said how fancy and interesting the game play is. I suspect all the reviews are done by the developer himself using auto generated review. It is done by developer by purchasing the game himself through hundreds, if not thousands iTunes account, then give good rating over a period of time.
 
-And here's my response: 
+And here's my response:
 
 >Dear reviewer, you're an idiot.
 
@@ -1206,7 +1206,7 @@ I live in a world where we carry $600 super computers in our pockets. We pay $15
 
 The _Ransom_ Review:
 
-The App Store is actually a great way to get feedback on what's broken. Pay attention to these "ransom" reviews. Because they'll give you insight on what needs to be fixed. 
+The App Store is actually a great way to get feedback on what's broken. Pay attention to these "ransom" reviews. Because they'll give you insight on what needs to be fixed.
 
 >Magnificent (3 stars): Game but the thieves take too long	Great game, i read your post about the making of the game and I am very sorry about making a 3 star review, but I spent more than 30 minutes with the thieves. I hope they'll go away soon, and the second they do ill rate it 5 stars. Thank you.
 
@@ -1228,7 +1228,7 @@ I have no words for this person. Here's another:
 
 >Snake Oil (1 star) -	A cynical/realist lawyer's perspective..Finished the entire game, thoroughly, discovering all the secrets. Listened to the end commentary.  Only did so because I was promised an emotional experience, which is something no game has really done for me since, oh, Final Fantasy 10 or so.  Here, there was none to be had. This is just a 1980's, pre-Final Fantasy text-based RPG with some Friedrich Nietzche quotes thrown in. The plot twist toward the end of the game is trite and unmoving for anyone who has ever played a few video games or watched a few sci-fi movies.So why has this game blown up with so many gushing reviews? At the end of the game, the two developers left 20 minutes of commentary, in which they talk about their emotional and philosophical struggle creating the game, Friedrich Nietszche (who really has nothing to do with the game), and how the game changed the lives of blind people. Then they ask that you leave a review. Well, here's my review. Don't be fooled...
 
-Here's my reply, again with a lack of empathy: 
+Here's my reply, again with a lack of empathy:
 
 >How do you explain v1.5's 18 day streak at #1? There wasn't any developer commentary in that one asking people to review ADR. Lawyered.
 
@@ -1265,7 +1265,7 @@ One thing was different however with these downloads. I was slowly increasing th
 7/14     |           756 |            0.99 |         756   |            1 |
 7/15     |           713 |            0.99 |         713   |            1 |
 7/16     |           648 |            0.99 |         648   |            2 |
-7/17     |           503 |            1.99 |       1,006   |            2 | 
+7/17     |           503 |            1.99 |       1,006   |            2 |
 7/18     |           339 |            1.99 |         678   |            2 |
 7/19     |           373 |            1.99 |         746   |            2 |
 7/20     |           432 |            1.99 |         864   |            2 |
@@ -1388,7 +1388,7 @@ So, the good news is A Dark Room _was_ better off being a paid app. This also sh
 
 Back in the beginning of August. [I made A Dark Room free for a week](#million). During that time period, ADR became the #3 App Overall in the free category. The only two apps that were ahead of ADR were the Facebook Messaging App, and Crazy Taxi (which was being featured by Apple). It's an incredible feeling to out rank the likes of Candy Crush, Kim Kardashian, and Clash of Clans. For that brief seven day period, ADR proved that a small game with heart can out rank games specifically engineered for IAP's.
 
-After that seven day period, I made ADR a $0.99 app again. True, we didn't make any money during that seven day period, but maybe the _1 million_ new people that downloaded the game would carry over to paid downloads in some way. Here are the results after 45 days of watching the numbers and comparing it to the averages from before the "free week":  
+After that seven day period, I made ADR a $0.99 app again. True, we didn't make any money during that seven day period, but maybe the _1 million_ new people that downloaded the game would carry over to paid downloads in some way. Here are the results after 45 days of watching the numbers and comparing it to the averages from before the "free week":
 
 - When ADR went free, we got coverage from Extra Credits, 148 Apps, Reddit (r/AppHookup), and Pocket Tactics.
 - ADR was priced at $3.99 before I made it free (this was on purpose so that sale syndication sites would see a more drastic drop).
@@ -1483,11 +1483,11 @@ _What's Next_
 
 This will be my last post here (unless something really amazing happens). Subscribing below will be for my main blog. As for what's next, I plan to do live coding sessions on Twitch TV and hopefully help aspiring game developers get started and grow.
 
-**[Xodiak Dojo - Game Dev from Beginner to "Pro"](http://www.twitch.tv/xodiak_)**
+**[Code Dojo - Game Dev from Beginner to "Pro"](http://www.twitch.tv/xodiak_)**
 
-If you're new to development and want to see what it's all about... if you're young and need guidance in coding, college, and career... then [subscribe to XD (Xodiak Dojo)](http://www.twitch.tv/xodiak_). I'm going to take a shot at making a self sustaining mentorship program centered around live coding sessions, community, and the love of creating something from nothing. May the fire burn brightly for you. May it keep you warm.
+If you're new to development and want to see what it's all about... if you're young and need guidance in coding, college, and career... then [subscribe to CD (Code Dojo)](http://www.twitch.tv/xodiak_). I'm going to take a shot at making a self sustaining mentorship program centered around live coding sessions, community, and the love of creating something from nothing. May the fire burn brightly for you. May it keep you warm.
 
-  
+
 <hr /> <!-- put next entry above this line -->
 
 <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css"/>
@@ -1508,5 +1508,3 @@ If you're new to development and want to see what it's all about... if you're yo
 
 <script src="/assets/themes/jquery.js"> </script>
 <script src="/assets/themes/rank.js"> </script>
-
-
