@@ -1,16 +1,18 @@
 .liberty {
   border: solid 1px #E0E0E0;
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   margin: 3px;
   border-radius: 25px;
   float: left;
 }
 
 body {
-  width: 1010px;
-  margin-left: auto;
-  margin-right: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
 }
 
 .star-point {
