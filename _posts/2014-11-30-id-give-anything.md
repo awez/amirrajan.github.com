@@ -5,7 +5,13 @@ layout: post
 tags : [story]
 ---
 
-She walks onto the small wooden stage, violin in hand. Not a walk of confidence, but of humility. Her steps echo through the auditorium, crisp and hollow. 
+With the coming of the new year, I want to share a short story I wrote. I've been on a sabbatical for the past 15 months and I've found one of the most precious resources we overlook: time.
+
+Figure out what's meaningful to you, and put all your effort into making time to pursue it. Here is the short story, hope you enjoy.
+
+<hr/>
+
+She walks onto the small wooden stage, violin in hand. Not a walk of confidence, but of humility. Her steps echo through the auditorium, crisp and hollow.
 
 "Another poorly constructed hall," she says to herself, as she thinks back to her high school orchestra playing at the Meyerson.
 
@@ -27,7 +33,7 @@ With her fingers and bowing on auto pilot, she counts all the ill fitting dress 
 
 "So let me make sure I understand this. When a male of your species enters this building, he is required to stuff his upper garment into his pants, and tie a piece of cloth around his neck? And females have to do what?!"
 
-The companies never noticed that she wore the same light gray cardigan, gray dress, light gray belt, and gray heels to every event. It was the only business casual attire she owned. Hair was easy, just tie it up in a nice tight bun. It looked elegant. She'd have her roommate apply her makeup. She'd skip polishing her nails though. They were always filed well past her callused fingertips. 
+The companies never noticed that she wore the same light gray cardigan, gray dress, light gray belt, and gray heels to every event. It was the only business casual attire she owned. Hair was easy, just tie it up in a nice tight bun. It looked elegant. She'd have her roommate apply her makeup. She'd skip polishing her nails though. They were always filed well past her callused fingertips.
 
 Only a few more minutes to go. This is when she'd always play one of the pieces she composed. Her focus changes. Her eyes piercingly look down the neck and finger board. She listens to her own heartbeat - her living metronome - trying desperately to feel each phase of the heart's cardiac cycle. Rosin dust lifts violently off the strings as she begins to play, she breaths it in.
 
