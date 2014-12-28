@@ -18,11 +18,6 @@ I'm just a guy trying to figure out why in the world I have a such a passion for
   <br/><br/>
   <span style="color: #767676; font-size: 12px">Official release of A Dark Room on iOS</span>
 </div>
-<div style="line-height: 15px; padding-bottom: 10px"><br/>
-  <a href="{{ BASE_PATH }}/12k-lines-of-RM">12,000 Lines of RubyMotion</a>
-  <br/><br/>
-  <span style="color: #767676; font-size: 12px">A presentation about A Dark Room and using RubyMotion</span>
-</div>
 
 ##Posts
 
@@ -50,4 +45,3 @@ I'm just a guy trying to figure out why in the world I have a such a passion for
     <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" /> <small>powered by MailChimp</small></div>
   </form>
 </div>
-
