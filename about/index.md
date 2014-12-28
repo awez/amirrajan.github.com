@@ -6,9 +6,18 @@ group: navigation
 ---
 {% include JB/setup %}
 
-The 10k foot view. Feel free to contact me.
+The 10k foot view. I'm an independent consultant and an exceptional developer. Feel free to contact me.
+
+What to hire me for:
+
+- Mentoring your team and helping them get up to speed with new technologies.
+- When you just need an _exceptional_, full stack developer (dev ops, back end, front end, mobile).
+- Speaking / Training on Software Architecture, Testing, and the Software Development Process.
+
+I charge a standard rate of $150 an hour.
 
 ##Contact
+
 - email: ar@amirrajan.net
 - twitter: [@amirrajan](http://twitter.com/amirrajan)
 - [curriculum vitae](http://careers.stackoverflow.com/amirrajan)
@@ -57,6 +66,9 @@ The 10k foot view. Feel free to contact me.
 
 
 ##Presentations and Podcasts
+- Hanselminutes podcast: What's it like to have the #1 App (Oct 2014)
+- Dallas Techfest 2014: Making it to the #1 spot in the App Store (Oct 2014)
+- .Net Rocks podcast: Getting to the Top of the App Store (May 2014)
 - Dallas Ruby Brigade: 12,000 Lines of RubyMotion (March 2013)
 - Dallas.node Meetup: Nodekick! Building a real time game with NodeJS (November 2013)
 - Dallas.node Meetup: Hands on NodeJS. From localhost to Cloud! (October 2013)
