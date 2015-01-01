@@ -22,7 +22,7 @@ Others are taking the time to respond to what I've written. Happy to see convers
 
 <hr />
 
-**[Reality is an illusion – .NET OSS is hard](http://blog.markrendle.net/2013/09/26/reality-is-an-illusion-net-oss-is-hard/) by [Mark Rendle
+**[Reality is an illusion – .NET OSS is hard](http://blog.markrendle.net/reality-is-an-illusion-net-oss-is-hard/) by [Mark Rendle
 @markrendle](https://twitter.com/markrendle)**
 
 <hr />
@@ -55,7 +55,7 @@ A lot of good comments have been posted. Here are a few them. For the full spect
 
 <hr/>
 
->it sounds like you’re not arguing for OSS, but arguing against the manner in which enterprises assess risk 
+>it sounds like you’re not arguing for OSS, but arguing against the manner in which enterprises assess risk
 
 [source](https://twitter.com/jbogard/status/381091906702565376)
 
@@ -67,7 +67,7 @@ A lot of good comments have been posted. Here are a few them. For the full spect
 
 <hr/>
 
->Solve a specific problem and people will use it.  Asking an enterprise to buy a philosophy is another story 
+>Solve a specific problem and people will use it.  Asking an enterprise to buy a philosophy is another story
 
 [source](https://twitter.com/darrel_miller/status/381090756397522945)
 
@@ -142,4 +142,3 @@ A lot of good comments have been posted. Here are a few them. For the full spect
 >Disclosure: I express my own opinion which might be different from that of my employer, Microsoft.
 
 [source](http://www.reddit.com/r/programming/comments/1mskjc/ask_proggit_is_my_perception_of_net_oss_accurate/ccc8rt3)
-
