@@ -5,7 +5,7 @@ layout: post
 tags : [story]
 ---
 
-With the coming of the new year, I want to share a short story I wrote. I've been on a sabbatical for the past 15 months and I've found one of the most precious resources we overlook: time.
+With the coming of the new year, I want to share a short story I wrote. I've been on a [sabbatical](http://amirrajan.net/meta/2013/07/14/rebooting-life-part-2/) for the past 15 months and I've found one of the most precious resources we overlook: time.
 
 Figure out what's meaningful to you, and put all your effort into making time to pursue it. Here is the short story, hope you enjoy.
 
