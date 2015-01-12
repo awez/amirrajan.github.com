@@ -7,7 +7,7 @@ group: navigation
 
 Watch me live on Twitch TV: [Code Dojo - Game Dev from Novice to Pro](http://www.twitch.tv/xodiak_)
 
-<iframe src="http://www.twitch.tv/xodiak_/embed" frameborder="0" scrolling="no" height="378" width="620"></iframe><a href="http://www.twitch.tv/xodiak_?tt_medium=live_embed&tt_content=text_link" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px;text-decoration:underline;">Watch live video from xodiak_ on www.twitch.tv</a>
+<iframe src="http://www.twitch.tv/xodiak_/embed" frameborder="0" scrolling="no" height="378" width="620"></iframe>
 
 [**Subscribe to Code Dojo's mailing list for game dev tutorials and upcoming Twitch schedule.**](http://eepurl.com/baghfv)
 
