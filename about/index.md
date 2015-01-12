@@ -66,6 +66,8 @@ I charge a standard rate of $150 an hour (corp to corp).
 
 
 ##Presentations and Podcasts
+- Entreprogrammers with John Sonmez, Derick Bailey, and Josh Earl: A Dark Room iOS QnA/Retrospective (Jan 2015)
+- Get Up and Code with John Sonmez: Developer Mental Health (Jan 2015)
 - Hanselminutes podcast: What's it like to have the #1 App (Oct 2014)
 - Dallas Techfest 2014: Making it to the #1 spot in the App Store (Oct 2014)
 - .Net Rocks podcast: Getting to the Top of the App Store (May 2014)
