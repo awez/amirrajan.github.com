@@ -5,13 +5,15 @@ header: Screencasts
 group: navigation
 ---
 
-Hope you like the videos. Tips welcome. Think of it as buying me lunch for having conversations about the craft you care about. [Subscribe to the channel for updates](https://vimeo.com/channels/659338).
-
 Watch me live on Twitch TV: [Code Dojo - Game Dev from Novice to Pro](http://www.twitch.tv/xodiak_)
 
 <iframe src="http://www.twitch.tv/xodiak_/embed" frameborder="0" scrolling="no" height="378" width="620"></iframe><a href="http://www.twitch.tv/xodiak_?tt_medium=live_embed&tt_content=text_link" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px;text-decoration:underline;">Watch live video from xodiak_ on www.twitch.tv</a>
 
-Note: I've decided to put a hold on the screencasting. It was fun for a while, but my motivation started to wane a bit. The last thing I want is to deliver something I'm not motivated in doing. The last part of my Rest Api's Getting Started will not be recorded, but the commits have been made [(you can walk through the code and see the progresson, starting with this commit).](https://github.com/amirrajan/rest-tictactoe/commit/ff9c3f2be54010411bb180fa499b7d4569ca76f7)
+[**Subscribe to Code Dojo's mailing list for game dev tutorials and upcoming Twitch schedule.**](http://eepurl.com/baghfv)
+
+<hr />
+
+Note: I've decided to put a hold on the vimeo screencasting. It was fun for a while, but my motivation started to wane a bit. The last thing I want is to deliver something I'm not motivated in doing. The last part of my Rest Api's Getting Started will not be recorded, but the commits have been made [(you can walk through the code and see the progresson, starting with this commit).](https://github.com/amirrajan/rest-tictactoe/commit/ff9c3f2be54010411bb180fa499b7d4569ca76f7)
 
 ##[Setting up a simple code kata project for NodeJS](https://vimeo.com/84082218)
 
