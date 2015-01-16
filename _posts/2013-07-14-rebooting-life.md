@@ -78,3 +78,5 @@ My passion is coding, learning, building creative stuff, and mastery. It's been 
 
 ###You can do it too
 You don't have to quit your job (especially if you love what you do). But, think about what you actually are passionate about. Think deeply about it. Find those few things (and relationships) and get rid of the rest. Just start by getting rid of something, one thing (lots of things), anything. Open your junk closet and set a match to it (figuratively speaking). How did it feel? Now get rid of bigger things and spend more time on what matters.
+
+Next Up: [**Rebooting Life Part 2**](http://amirrajan.net/meta/2014/03/16/rebooting-life-part-2/)
