@@ -1088,7 +1088,7 @@ From Apr 8th to May 6th (version 1.5 without developer commentary), ADR received
 - 3 stars: 107 ~2%
 - 2 stars: 81 ~2%
 - 1 stars: 345 ~8%
-- Average Rank: 2.44
+- Average Rank (not to be confused with rating): 2.44
 - Total reviews: 4,544
 - Reviews per day: ~162
 - Conversion Rate: 1.47%
@@ -1101,7 +1101,7 @@ From May 7th to May 25th (version 1.6, with developer commentary), ADR received 
 - 3 stars: 24 ~1%
 - 2 stars: 33 ~1%
 - 1 stars: 95 ~5%
-- Average Rank: 3.60
+- Average Rank (not to be confused with rating): 3.60
 - Total reviews: 1,837
 - Average reviews per day: ~102
 - Conversion Rate: 1.61%
