@@ -21,7 +21,7 @@ There is a word on Urban Dictionary called _sonder_ that I came across today. He
 <a class="wordwrap" href="http://www.dictionaryofobscuresorrows.com/">http://www.dictionaryofobscuresorrows.com/</a></p>
 </blockquote>
 
-And here's a video about _sonder_ too
+And here's a video about [_sonder_](http://www.dictionaryofobscuresorrows.com/post/100998510905/you-are-the-main-character-the-protagonist-the) too
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/g0xIXghxyUk" frameborder="0" allowfullscreen="allowfullscreen">sonder</iframe>
 
