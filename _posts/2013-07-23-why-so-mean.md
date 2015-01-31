@@ -14,7 +14,7 @@ Four years ago, I attended an Open Spaces "conference" where [Scott Hanselman fa
 ##That person you're talking to is a human being
 Regardless of race, religion, gender, sexual preference or any other delineating factor you can think of. First and foremost, the person you are talking to is a human being. It's obvious, but we (I) forget it at times. So. To my future self. Remember that. And stop being so mean.
 
-There is a word on Urban Dictionary called _sonder_ that I came across today. Here is the definition: 
+There is a word on Urban Dictionary called _sonder_ that I came across today. Here is the definition:
 
 <blockquote>
 <p>sonder - n. the realization that each random passerby is <em>living a life as vivid and complex as your own</em>
@@ -32,12 +32,13 @@ I've seen it time and time again. No matter the mistake. No matter the action. T
 
 ##Apologize in person, individually, and only if you mean it
 When you mess up (yes... _when_), and offend someone(s). If at all possible, deliver apologies in person:
+
 - Not over email
 - Not in a tweet (sometimes that's harder)
 - Not in an anonymous blog post
 - But in person
 - One on one
-- If you need to apologize to a group, go to each person individually 
+- If you need to apologize to a group, go to each person individually
 - Apologize _only_ if you _really_ mean it
 - You don't have to buy a gift or give a card, just mean it
 - Expect _nothing_ in return, if the person is nice, he may say "I'm sorry too"
@@ -61,7 +62,7 @@ If you're on the receiving end, try to remember that too (it may not be related 
 Don't sweat the small stuff. Here's a story from my past.
 At one of my previous jobs, a new support person just started and became the next door cube neighbor of me and another dev. Being the nice people we are, we went and said hello:
 
-Us: "Hey there! Welcome to the team." 
+Us: "Hey there! Welcome to the team."
 
 /give introductions
 
@@ -83,7 +84,7 @@ Don't be that guy that corrects everyone. Make sure your corrections count for s
 So you really laid into someone? How did it feel? I know it feels good to let off some steam... show 'em who's boss. But you may have destroyed a relationship there. The "relief" you feel isn't worth it. So please. Just empathize with your colleagues.
 
 ##Just fix the build
-The build breaks. Some dev checks in a bad change, makes a lot of tests fail and doesn't care. You get latest, now your build is broken too. Just fix it. Don't throw a temper tantrum. Don't whip out your nerf gun and try to get a head shot. Just fix the code and fix the build. If you need help, call the guy who broke it over and see if he can help fix it. I know it derails what you were doing...just count to 42 and take care of it. It's water under the bridge :-). 
+The build breaks. Some dev checks in a bad change, makes a lot of tests fail and doesn't care. You get latest, now your build is broken too. Just fix it. Don't throw a temper tantrum. Don't whip out your nerf gun and try to get a head shot. Just fix the code and fix the build. If you need help, call the guy who broke it over and see if he can help fix it. I know it derails what you were doing...just count to 42 and take care of it. It's water under the bridge :-).
 
 ##Shit code will be written, others will touch your code
 You've wrote some immaculate code. Then _that hack job that screws everything up all the time_ gets a hold of it and butchers it. Tears it apart. Adds a cyclomatic complexity of 40 to part of it and checks it in. It's okay. Just breathe. One thing I've found is that, if the majority of the dev team is competent, the code that just got butchered will improve. Every time that part of the code base is visited, each developer will do their small part of ironing things out. At least it helps me sleep at night believing this...who am I kidding...get the torches and pitch forks!!!!
@@ -100,6 +101,7 @@ Some people get put off by personality surveys. It's crazy to think that you kno
 
 ###The "get to the point" personality
 I'd like to say these guys are natural born leaders (and kind of mean be nature). Here are some defining traits:
+
 - Their emails are usually short
 - They don't really give out a lot of pleasantries such as "how was your weekend?"
 - They are quick to make decisions, sometimes poor ones
@@ -117,10 +119,11 @@ Please keep in mind that they aren't trying to be mean. It's just their personal
 
 ###The "show me the data" personality
 These guys are really analytical. Extremely thorough:
+
 - They need data, lots of it
 - Supporting evidence is really important
 - It takes time for them to make decisions
-- Very, very detail oriented, meticulous 
+- Very, very detail oriented, meticulous
 - Delay on making decisions until all scenarios are accounted for
 
 Staying nice tips:
@@ -132,6 +135,7 @@ Staying nice tips:
 
 ###The "team player" personality
 Some of the nicest people I've worked with fall into this category, these guys are naturals when it comes to being nice:
+
 - They'll take one for the team
 - They'll take on tasks that will help the team as a whole
 - Easy going, and nice
@@ -148,6 +152,7 @@ Staying nice tips:
 
 ###The "motivator" personality
 These guys will give energy to the team. They're the ones that'll wish everyone "happy _Monday_" :-)
+
 - If you want an idea sold, this is your guy
 - Helps team morale
 - Great facilitators for meetings
@@ -163,4 +168,3 @@ Whether you perscribe to personality categorizations or not, just be genuine. Do
 
 ##Guilty
 I've been mean in the past, present, and will be mean in the future. I really do try to reflect on those situations. Sometimes I fail miserably at it (especially on twitter). And if I do offend you, please know that it wasn't intentional (maybe), and kindly refer me to this blog post.
-
