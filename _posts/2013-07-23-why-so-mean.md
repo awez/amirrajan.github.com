@@ -18,7 +18,7 @@ There is a word on Urban Dictionary called _sonder_ that I came across today. He
 
 <blockquote>
 <p>sonder - n. the realization that each random passerby is <em>living a life as vivid and complex as your own</em>
-<a class="wordwrap" href="http://www.dictionaryofobscuresorrows.com/">http://www.dictionaryofobscuresorrows.com/</a></p>
+<a class="wordwrap" href="http://www.dictionaryofobscuresorrows.com/post/100998510905/you-are-the-main-character-the-protagonist-the">dictionaryofobscuresorrows.com</a></p>
 </blockquote>
 
 And here's a video about [_sonder_](http://www.dictionaryofobscuresorrows.com/post/100998510905/you-are-the-main-character-the-protagonist-the) too
