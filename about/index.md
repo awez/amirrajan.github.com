@@ -66,6 +66,7 @@ I charge a standard rate of $150 an hour (corp to corp).
 
 
 ##Presentations and Podcasts
+- Kovai Tech-a-thon: Keynote Presentation - Meaningful Work (Jan 2015)
 - Entreprogrammers with John Sonmez, Derick Bailey, and Josh Earl: A Dark Room iOS QnA/Retrospective (Jan 2015)
 - Get Up and Code with John Sonmez: Developer Mental Health (Jan 2015)
 - Hanselminutes podcast: What's it like to have the #1 App (Oct 2014)
