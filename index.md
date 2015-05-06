@@ -25,7 +25,7 @@ I try to better the software development craft by [**presenting**](/about/), [**
 
 {% for post in site.posts %}
   <div style="line-height: 13px; padding-bottom: 10px">
-    <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a><br/>
+    <a style="display: block; margin-bottom: 5px;" href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
     <span style="color: #767676; font-size: 12px">{{ post.date | date_to_string }}</span>
   </div>
 {% endfor %}
