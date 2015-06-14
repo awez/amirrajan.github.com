@@ -1481,12 +1481,7 @@ As for what I've learned about the App Store... not a god damn thing. I still do
 
 _What's Next_
 
-This will be my last post here (unless something really amazing happens). Subscribing below will be for my main blog. As for what's next, I plan to do live coding sessions on Twitch TV and hopefully help aspiring game developers get started and grow.
-
-**[Code Dojo - Game Dev from Beginner to "Pro"](http://www.twitch.tv/xodiak_)**
-
-If you're new to development and want to see what it's all about... if you're young and need guidance in coding, college, and career... then [subscribe to CD (Code Dojo)](http://www.twitch.tv/xodiak_). I'm going to take a shot at making a self sustaining mentorship program centered around live coding sessions, community, and the love of creating something from nothing. May the fire burn brightly for you. May it keep you warm.
-
+This will be my last post here (unless something really amazing happens). I want nothing more than to be able to create worlds you can escape to. I don't think I'll stop building games anytime soon... nor will I stop writing and blogging. Subscribing below will be for my main blog. May the fire burn brightly for you. May it keep you warm.
 
 <hr /> <!-- put next entry above this line -->
 
