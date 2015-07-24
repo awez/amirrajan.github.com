@@ -6,7 +6,7 @@ title:
 
 I'm a ronin <a href="http://www.paulgraham.com/hp.html">hacker</a>, and an indie <a href="https://itunes.apple.com/us/artist/amirali-rajan/id736683064">game developer</a>.<br />
 
-I try to better the software development craft by [**presenting**](/about/), [**blogging**]({{ HOME_PATH }}), [**contributing to open source**](http://github.com/amirrajan), [**tweeting**](http://twitter.com/amirrajan), and [**live streaming**](/screencasts/).
+I try to better the software development craft by [**presenting**](/about/), [**blogging**]({{ HOME_PATH }}), [**contributing to open source**](http://github.com/amirrajan), [**tweeting**](http://twitter.com/amirrajan), and [**screencasts**](/screencasts/).
 
 ##Notables
 
