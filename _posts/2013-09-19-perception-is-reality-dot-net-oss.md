@@ -40,12 +40,13 @@ Here are some examples.
 
 ##Nancy and Service Stack
 
-Nancy and ServiceStack are web frameworks, but it directly competed with ASP.NET MVC. Two years later, ASP.NET WebApi came out and well...
+Nancy and ServiceStack are web frameworks, but they directly competed with ASP.NET MVC. Two years later, ASP.NET WebApi came out and well...
 
+>@TheCodeJunkie
 >@xpaulbettsx @gblock we've promoted Nancy for 2½ years and Web API had more users after 1 week =)
->https://twitter.com/TheCodeJunkie/status/319321977259184128
+[source](https://twitter.com/TheCodeJunkie/status/319321977259184128)
 
-ServiceStack had it's first commit in December of 2008. Nancy had their first commit in April of 2009. And ASP.NET WebApi came out in March of _2012_.
+ServiceStack had its first commit in December of 2008. Nancy had their first commit in April of 2009. And ASP.NET WebApi came out in March of _2012_.
 
 What happend during 3 years where ServiceStack and Nancy were the _superior_ options for REST Api's? Well. Developers fought ASP.NET MVC to make it return and bind to JSON payloads correctly (or worse yet, WCF REST).
 
