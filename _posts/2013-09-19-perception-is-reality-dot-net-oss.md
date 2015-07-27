@@ -27,15 +27,61 @@ Others are taking the time to respond to what I've written. Happy to see convers
 
 <hr />
 
-##A timeline that shows how long mainstream (corporate) .Net devs wait
+##Here's the Problem
 
-I'm hoping the following timeline illustrates how long mainstream .Net devs wait to take advantage of a new framework _and to get some conversations going_. **It doesn't have to be this way**. We don't have to wait for Microsoft to endorse or build a clone of a popular framework. There are developers out there that have already done a lot of the heavy lifting. Support _them_. Give _them_ feedback, contribute to _their_ solutions, raise awareness. Don't just sit there and wait for Microsoft.
+.Net has a culture of being a walled garden, but in the most posioness way. It's an ecosystem where only frameworks built my Microsoft can succeed.
 
-###This link will take you to the [full-screen version of the timeline](http://tinyurl.com/lbgqdej).
+It simply comes down to this: You lose if you propose an idea that directly competes with Microsoft's ideas, or (worse) a framework that competes with the one of Microsoft's frameworks.
 
-<iframe src="http://tinyurl.com/mpu4tbv" width="600" height="600" frameborder="0">perception is reality</iframe>
+A lot of great frameworks/ideas come out in other ecosystems. Developers in their respective walled gardens clone these good ideas and bring them over.
+But in the .Net ecosystem, these new ideas have a small chance of succeeding for one unfortunate reason: it isn't built by Microsoft.
 
-It _doesn't_ have to be this way.
+Here are some examples.
+
+##Nancy and Service Stack
+
+Nancy and ServiceStack are web frameworks, but it directly competed with ASP.NET MVC. Two years later, ASP.NET WebApi came out and well...
+
+>@xpaulbettsx @gblock we've promoted Nancy for 2½ years and Web API had more users after 1 week =)
+>https://twitter.com/TheCodeJunkie/status/319321977259184128
+
+ServiceStack had it's first commit in December of 2008. Nancy had their first commit in April of 2009. And ASP.NET WebApi came out in March of _2012_.
+
+What happend during 3 years where ServiceStack and Nancy were the _superior_ options for REST Api's? Well. Developers fought ASP.NET MVC to make it return and bind to JSON payloads correctly (or worse yet, WCF REST).
+
+Other communities don't have this problem. Here are some reimplementations of Sinatra on other stacks:
+
+- Slim (PHP) had its first commit in September of 2010.
+- Frank (F#) had its first commit in August of 2010.
+- Express (NodeJS) had its first commit in June of 2009.
+- Nancy (C#) had its first commit in April 2009.
+
+But mainstream .Net sat on the sidelines until Web API.
+
+##Sass and Less
+
+CSS transpilers (things that made CSS easier to work with), started gaining adoption in other ecosystems. The first commits to Compass were in August of 2008. It took an out of process CLI
+approach to creating CSS from Compass specifications. The .Net ecosystem didn't take advantage of this approach until it was integrated in to Visual Studio via Web Workbench in 2011. But
+that's the wall garden that is .Net. If it isn't built by Microsoft and doesn't have Visual Studio integration, then it's a non-starter.
+
+##Testing Frameworks
+
+Lambda based testing frameworks was another interesting approach to composing test structures. Before these frameworks, the assumption was that the smallest assertable code block was a
+class method. Lambda based testing frameworks changed that notion.
+
+- Jasmine (JavaScript) Nov 2008
+- RSpec (Ruby) Jun 2009
+- NSpec (C#) Feb 2011
+- Mocha (JavaScript) Aug 2011
+- FunSpec (Scala) 2013
+
+To this day, mainstream .Net devs will dismiss anything that isn't class and method based (MSTest, NUnit, XUnit). Adoption only has a chance if it's made my Microsoft and integrated into Visual Studio.
+That's the status quo.
+
+There are other examples. Everything from bundling/minification, build, to deployment. Other ecosystems are moving forward on all these fronts and mainstream .Net sits on their hands waiting
+for a handful of developers at Microsoft to release their version. And whatever that version ends up being will be late to the game and subpar.
+
+It _doesn't_ have to be this way. But everything is stacked up against those developers that want good things to come to .Net sooner.
 
 ##Notable Comments
 
