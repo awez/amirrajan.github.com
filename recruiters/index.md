@@ -8,7 +8,7 @@ group: navigation
 
 Hey there!
 
-If I replied with a with a link to this page, it means that you sent me a message (most likely an email) with regards to employement.
+If I replied with a link to this page, it means that you sent me a message (most likely an email) with regards to employement.
 
 The message you sent me was probably missing things from the checklist below.
 
