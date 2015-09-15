@@ -11,7 +11,7 @@ I prefer not to write blog post showing coding samples. They tend to go stale an
 If you want to learn NodeJS, the resources below will help you.
 
 
-##List of NodeJS sample apps. 
+##List of NodeJS sample apps.
 
 These apps are ordered by complexity/difficulty.
 

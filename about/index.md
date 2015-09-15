@@ -61,11 +61,13 @@ I charge a standard rate of $150 an hour (corp to corp).
 - [NodeKick, a real-time fighting game](https://github.com/amirrajan/nodekick) <small>(JavaScript, NodeJS)</small>
 - [NodeJS Against Humanity, a clone of Cards Against Humanity](https://github.com/amirrajan/nodejs-against-humanity) <small>(JavaScript, NodeJS)</small>
 - [A Dark Room for iOS](https://itunes.apple.com/us/app/a-dark-room/id736683061) <small>(RubyMotion, ObjectiveC)</small>
-- [NodeJS Against Humanity, a clone of Cards Against Humanity](https://github.com/amirrajan/nodejs-against-humanity) <small>(NodeJS)</small>
 - [Here is a list of nuget packages](http://www.nuget.org/profiles/amirrajan/)
 
 
 ##Presentations and Podcasts
+- That Conference: Making it to the #1 Spot in the App Store (August 2015)
+- Inspect 2015: Making it as an Indie Game Developer (July 2015)
+- Inspect 2015: Doing Meaningful Work (July 2015)
 - Dallas Functional Meetup: Taking the Red Pill with ClojureScript (April 2015)
 - Dot Net Fringe: Dynamic C#, Ruby Style (May 2015)
 - Kovai Tech-a-thon: Keynote Presentation - Meaningful Work (Jan 2015)
