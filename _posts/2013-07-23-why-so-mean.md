@@ -1,5 +1,5 @@
 ---
-title: Why So Mean
+title: Don't Be Mean
 category: meta
 layout: post
 tags : [meta]
@@ -23,7 +23,7 @@ There is a word on Urban Dictionary called _sonder_ that I came across today. He
 
 And here's a video about [_sonder_](http://www.dictionaryofobscuresorrows.com/post/100998510905/you-are-the-main-character-the-protagonist-the) too
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/g0xIXghxyUk" frameborder="0" allowfullscreen="allowfullscreen">sonder</iframe>
+<iframe width="560" height="315" src="//www.youtube.com/embed/AkoML0_FiV4" frameborder="0" allowfullscreen="allowfullscreen">sonder</iframe>
 
 Point made hopefully.
 
