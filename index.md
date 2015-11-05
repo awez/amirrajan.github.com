@@ -4,24 +4,27 @@ title:
 ---
 {% include JB/setup %}
 
-I'm a ronin <a href="http://www.paulgraham.com/hp.html">hacker</a>, and an indie <a href="https://itunes.apple.com/us/artist/amirali-rajan/id736683064">game developer</a>.<br />
+I'm a ronin <a href="http://www.paulgraham.com/hp.html">hacker</a>, and an <a href="https://itunes.apple.com/us/artist/amirali-rajan/id736683064">indie game developer</a>.<br />
 
 I try to better the software development craft by [**presenting**](/about/), [**blogging**]({{ HOME_PATH }}), [**contributing to open source**](http://github.com/amirrajan), [**tweeting**](http://twitter.com/amirrajan), and [**screencasts**](/screencasts/).
 
 ##Notables
+---
+
+<div style="line-height: 15px; padding-bottom: 10px">
+  <a href="{{ BASE_PATH }}/a-dark-room">A Dark Room for iOS</a>
+  <br style="padding: 5px"/>
+  <span style="color: #767676; font-size: 12px">Official release of A Dark Room on iOS</span>
+</div>
 
 <div style="line-height: 15px; padding-bottom: 10px">
   <a href="{{ BASE_PATH }}/nodejs-by-example">NodeJS by Example</a>
   <br style="padding: 5px"/>
   <span style="color: #767676; font-size: 12px">A list of NodeJS apps I've built to help you get started with the platform</span>
 </div>
-<div style="line-height: 15px; padding-bottom: 10px"><br/>
-  <a href="{{ BASE_PATH }}/a-dark-room">A Dark Room for iOS</a>
-  <br style="padding: 5px"/>
-  <span style="color: #767676; font-size: 12px">Official release of A Dark Room on iOS</span>
-</div>
 
 ##Posts
+---
 
 {% for post in site.posts %}
   <div style="line-height: 13px; padding-bottom: 10px">
