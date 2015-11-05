@@ -1,5 +1,6 @@
 <div class="page-header">
   <h1>{{ page.title }}</h1>
+  <hr/>
 </div>
 
 <div class="row">
@@ -38,19 +39,7 @@
         <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" /> <small>powered by MailChimp</small></div>
       </form>
     </div>
-    {% include JB/comments %}
   </div>
-
-  <div class="span3">
-    <h4>Published</h4>
-    <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
-
-  {% unless page.tags == empty %}
-    <h4>Tags</h4>
-    <ul class="tag_box">
-    {% assign tags_list = page.tags %}
-    {% include JB/tags_list %}
-    </ul>
-  {% endunless %}
-  </div>
+  <hr/>
+  <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
 </div>

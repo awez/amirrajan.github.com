@@ -14,7 +14,7 @@ What to hire me for:
 - When you just need an _exceptional_, full stack developer (dev ops, back end, front end, mobile).
 - Speaking / Training on Software Architecture, Testing, and the Software Development Process.
 
-I charge a standard rate of $150 an hour (corp to corp).
+I charge a standard rate of $150 an hour (corp to corp or W2 hourly).
 
 ##Contact
 
@@ -65,6 +65,7 @@ I charge a standard rate of $150 an hour (corp to corp).
 
 
 ##Presentations and Podcasts
+- .Net Unboxed: Thinking Outside the Box with Dynamic C# (October 2015)
 - That Conference: Making it to the #1 Spot in the App Store (August 2015)
 - Inspect 2015: Making it as an Indie Game Developer (July 2015)
 - Inspect 2015: Doing Meaningful Work (July 2015)
