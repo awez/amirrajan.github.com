@@ -238,7 +238,7 @@ It took an email every week for nearly four months, before they responded
 and assigned me someone (even with a #1 app in the app store). It took
 (and still takes) consistent coresspondance with my contact to keep me on his radar.
 
-Keeping was was (at particullarly difficult points in my life) my _rage_ in check, took
+Keeping was (at particullarly difficult points in my life) my anger in check, took
 an immense amount of work too.
 
 ###Life goes on
