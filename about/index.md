@@ -66,6 +66,7 @@ I charge a standard rate of $150 an hour (corp to corp or W2 hourly).
 
 ##Presentations and Podcasts
 - .Net Unboxed: Thinking Outside the Box with Dynamic C# (October 2015)
+- University of Texas - Dallas: Design Concepts in Game Development (September 2015)
 - That Conference: Making it to the #1 Spot in the App Store (August 2015)
 - Inspect 2015: Making it as an Indie Game Developer (July 2015)
 - Inspect 2015: Doing Meaningful Work (July 2015)

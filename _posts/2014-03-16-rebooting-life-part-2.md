@@ -34,7 +34,7 @@ I want to talk about my successes first. What in the world have I been doing for
 
 Michael Townsend created a minimalist web based idle game called A Dark Room. I _built_ it for iOS. As of today, A Dark Room iOS ranks 11th in the RPG Category and is ranked as the 174th game overall (out of the 180,000+ games in the App Store).
 
-The word "built" is a loaded word. I didn't just port a game to iOS. I translated it to a mobile medium. I added my own artistic spin to the game. I wrote about it. I presented about it. I marketed it. I pushed it to a top spot in the App Store (at one point it was ranked #6 in the RPG Category). 
+The word "built" is a loaded word. I didn't just port a game to iOS. I translated it to a mobile medium. I added my own artistic spin to the game. I wrote about it. I presented about it. I marketed it. I pushed it to a top spot in the App Store (at one point it was ranked #6 in the RPG Category).
 
 Most importantly, I found that the saying "if you build it, they will come" is _completely, utterly false_. _Building_ something takes an _immense_ amount of work. Reflecting back, this is quite an accomplishment. Wouldn't have existed without Michael's initial work of course :-).
 
@@ -99,7 +99,7 @@ I've also discovered a site called [Patreon](http://www.patreon.com/). The site 
 
 ##Failures
 
-Now for the failures. That's how you learn, right? All the failures have a common theme. What I've learned so far with setting goals (and failing): 
+Now for the failures. That's how you learn, right? All the failures have a common theme. What I've learned so far with setting goals (and failing):
 
 - You have to have a genuine _interest in starting_.
 - You have to _enjoy the journey_ in achieving it.
@@ -117,7 +117,7 @@ Progress was made, but I didn't feel like pushing it to the App Store, or paying
 
 I wanted to converse with developers (specifically experts). I wanted to talk about the craft. Soak up wisdom and hopefully give some in return. That is not what I got. I just a lot of "strong opinions, strongly held" (myself included). I didn't feel like I made any progress. It took away from what was really valuable, helping developers who _wanted to and were open to_ learning something outside their comfort zone.
 
-The end goal of "impacting a peer" didn't happen in any substantial way. So I'm not going to try to reach out to experts anymore, because the already know everything there is to know about software (apparently). 
+The end goal of "impacting a peer" didn't happen in any substantial way. So I'm not going to try to reach out to experts anymore, because they already know everything there is to know about software (apparently).
 
 Outside of the persona I place in marketing slicks, I honestly feel that I'm just a practitioner of software, sharing the experiences I have. I no longer have an interest in debating with, or reaching out to, those who feel they've got it all figured out.
 
@@ -149,7 +149,7 @@ I still need to delve into functional programming (F#, Haskell, Elixir) . I stil
 
 Here is a nice little story to end with. It's about a boy who wanted to become a great martial artist. A monk of the Shaolin Temple.
 
->He was ordered by the chief instructor to carry a large wooden pail down the mountainside to a stream, fill it with water, and bring it back up to the temple. 
+>He was ordered by the chief instructor to carry a large wooden pail down the mountainside to a stream, fill it with water, and bring it back up to the temple.
 
 >"Good," said the instructor. "Now stand beside the bucket and with your palm slap the surface of the water. Repeat that until there is no water left." The boy again did as instructed.
 
