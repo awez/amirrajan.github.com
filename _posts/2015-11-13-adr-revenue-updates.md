@@ -148,3 +148,6 @@ I think it's too early to tell at this point (especially since I have many many
 opportunities to get this app featured). With regards to getting assigned a direct
 Apple contact, I'll be doing a detailed entry about what I went through
 (and what I learned) soon.
+
+[Here's a link to all my games](https://itunes.apple.com/us/artist/amirali-rajan/id736683064), just in case you want to support me (or to say
+thank you for this data).
