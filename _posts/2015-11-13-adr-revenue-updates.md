@@ -1,5 +1,5 @@
 ---
-title: Revenue Updates for A Dark Room and Company
+title: Revenue Updates for A Dark Room et al
 category: app-dev
 layout: post
 tags : [marketing]
