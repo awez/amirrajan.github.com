@@ -142,7 +142,7 @@ Oct 2015     |    844             |   209              |           582   |
 Gross income (less Apple's share)                         |     5,569  |
 33% income tax                                            |     1,837  |
 12% self employment tax                                   |       668  |
-Net                                                       |     8,074  |
+Net                                                       |     3,064  |
 
 A Noble Circle is a new game I'm working on. I took a different approach
 with this game, being that I released a _barely_ playable version for free.
