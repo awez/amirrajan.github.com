@@ -11,7 +11,8 @@ format](https://github.com/amirrajan/amirrajan.github.com/tree/master/adr-sales)
 along with a summary (approximate). If you want to crunch these numbers and
 possibly share any insight you find, that'd be wonderful.
 
-##A Dark Room Year 1:
+##A Dark Room Year 1
+<hr />
 
 These numbers are from [last year's developer logs](http://amirrajan.net/a-dark-room/#oneyear):
 
@@ -41,7 +42,8 @@ Net                                                       |  152,135   |
 A Dark Room went viral in UK and US. It was the #1 premium, "free to play app" in the
 US for 18 days straight (with no feature/marketing from Apple).
 
-##A Dark Room Year 2:
+##A Dark Room Year 2
+<hr />
 
 [ Month ]    | [ Paid Downloads ] | [ Free Downloads ] | [ Apple Check ] |
 :----------- | -----------------: | -----------------: | --------------: |
@@ -66,18 +68,19 @@ My half of ADR (I happily give Michael his share)         |    72,135  |
 12% self employment tax                                   |     8,656  |
 Net                                                       |    39,675  |
 
-I took up contract work becuase of the volatility of the App Store
+I took up contract work because of the volatility of the App Store
 (which is why my income tax is still at 33%).
 
-Interestingly (and again for reasons unkown), A Dark Room went viral in
-the UK Dec 2014. The experience and length of the viriality was
+Interestingly (and again for reasons unknown), A Dark Room went viral in
+the UK Dec 2014. The experience and length of the virility was
 similar to [last time](http://amirrajan.net/a-dark-room/#minecraft),
 but didn't have the long running side effect of going viral in the US.
 
 Originally, I figured that ADR being #1 in the UK somehow triggered its
 rise to the #1 spot in the US. Turns out that's not the case.
 
-##The Ensign Year 1:
+##The Ensign Year 1
+<hr />
 
 Around August of 2014, I released a prequel to A Dark Room called The Ensign.
 I loved traversing the dusty path, and wanted an extremely difficult,
@@ -110,10 +113,11 @@ Gross income (less Apple's share)                         |    54,115  |
 Net                                                       |    29,765  |
 
 The prequel is doing alright. It did extremely well the first month
-(it was featured by Apple... unsolisited). I expect The Ensign sales to stay
+(it was featured by Apple... unsolicited). I expect The Ensign sales to stay
 at ~25% of A Dark Room sales.
 
-##A Noble Cirlce Year 1 (so far):
+##A Noble Circle Year 1 (so far)
+<hr />
 
 [ Month ]    | [ Paid Downloads ] | [ Free Downloads ] | [ Apple Check ] |
 :----------- | -----------------: | -----------------: | --------------: |
@@ -140,10 +144,10 @@ pay app, and am _still_ working on it. The reviews are still very supportive,
 and are happy with the purchase (even though it's an unfinished product).
 
 There was a significant spike in September because Apple featured me under
-Best New Game Updates. It took a ton of work to build that releationship with
+Best New Game Updates. It took a ton of work to build that relationship with
 Apple (and get this feature). Of course, the number dropped right afterwards.
 
-It remains to be seen if A Noble Circle will be as successfull as ADR or TE, but
+It remains to be seen if A Noble Circle will be as successful as ADR or TE, but
 I think it's too early to tell at this point (especially since I have many many
 opportunities to get this app featured). With regards to getting assigned a direct
 Apple contact, I'll be doing a detailed entry about what I went through
