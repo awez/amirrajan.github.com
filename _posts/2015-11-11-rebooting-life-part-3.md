@@ -200,7 +200,8 @@ community, which is a more generalized (dare I use the buzz word "product based"
 community. They use whatever tech works. Everything from Twine to Unity. Anything that'll
 help them get their creative thoughts in a medium that can be shared with others.
 
-So most of the time I just keep my technical "expertise" to myself. And just say "Iono, I'm just a game developer,"... at least I try to :-D
+So most of the time I just keep my technical "expertise" to myself.
+And just say "Iono, I'm just a game developer,"... at least I try to :-D
 
 ###Rebooting was more of a re-format
 
