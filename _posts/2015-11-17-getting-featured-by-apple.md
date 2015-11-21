@@ -299,12 +299,10 @@ promoting your games will help you regardless of whether Apple features you or n
 
 If you don't ask, people who download your games won't review them. So find the _perfect_ time to
 request a review. Don't nag them five minutes into your game. See how I did it in A Dark Room, The
-Ensign, and A Noble Circle. Geometry Dash does a phenominal job of timing the review request too.
+Ensign, and A Noble Circle. Geometry Dash does a phenomenal job of timing the review request too.
 Desert Golf does some cute things with sharing accomplishments too.
 
 ##Be Persistent
 
 It's hard work guys. There's no lifehack for this. You just have be consistent
-and persistent. **Again, please support me by [buying my games](https://itunes.apple.com/us/artist/amirali-rajan/id736683064).
-There's nothing more I want than to be able to build games full time. I can't do it
-without your help/support.**
+and persistent.
