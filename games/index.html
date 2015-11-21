@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html class="no-skrollr">
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+	<title>Classic parallax page</title>
+
+	<style type="text/css">
+    html, body {
+        width:100%;
+        height:100%;
+        padding:0;
+        margin:0;
+        overflow-x:hidden;
+        font-family: 'HelveticaNeue-Light', 'Helvetica Neue', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+    }
+
+    #content {
+        width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        padding-top: 50px;
+        height: 100%;
+    }
+
+    .skrollable {
+        position: fixed;
+        z-index: 100;
+    }
+
+    .skrollr-mobile .skrollable {
+        position: absolute;
+    }
+
+    .skrollable .skrollable {
+        position: absolute;
+    }
+
+    .skrollable .skrollable .skrollable {
+        position: static;
+    }
+
+    .hint {
+        width: 20px;
+        border: solid 1px silver;
+        padding-left: 16px;
+        padding-right: 8px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-left: 140px;
+        border-radius: 25px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="content">
+    <div data-0="opacity:1;top: 30%;"
+         data-1000="opacity:0;top: 0%">
+      Hey there,
+
+        <div class="hint" style="margin-top: 40px;">↓</div>
+        <div style="margin-top: 10px; margin-left: 110px">(scroll down)</div>
+    </div>
+
+
+    <div data-2000="opacity:0;top: 90%;"
+         data-3000="opacity:1;top: 30%;"
+         data-5000="opacity:0;top: 10%;">
+      My name is Amir...
+    </div>
+
+    <div data-6000="opacity:0;top: 90%;"
+         data-7000="opacity:1;top: 30%;"
+         data-9000="opacity:0;top: 10%;">
+      and I'm an indie game developer.
+    </div>
+
+  </div>
+
+  <script type="text/javascript" src="/assets/skrollr.min.js"></script>
+	<script type="text/javascript">
+	skrollr.init({
+		smoothScrolling: true,
+		mobileDeceleration: 0.004
+	});
+	</script>
+</body>
+
+</html>
