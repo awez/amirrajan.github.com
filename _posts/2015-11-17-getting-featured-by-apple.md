@@ -6,7 +6,7 @@ tags : [appstore]
 ---
 
 ##tl;dr;
-_Getting featured my Apple is incredibly difficult. Their criteria is
+_Getting featured by Apple is incredibly difficult. Their criteria is
 completely subjective. Large AAA companies are favored over all. If
 you're an indie developer, it's unlikely you'll get featured._
 
@@ -201,9 +201,9 @@ Body:
 
     Price: $0.99
 
-    App Preview: [the answer to this better by yes]
+    App Preview: [the answer to this better be yes]
 
-    Game Center: [the answer to this better by yes]
+    Game Center: [the answer to this better be yes]
 
     Game Controller Support: [yes/no]
 
@@ -290,7 +290,7 @@ app bundles is a great way to get your other games noticed. But the download of 
 to the individual rank of each game. So if you get a feature, you want to make sure app bundles don't
 dilute your downloads for the specific game that was featured (lots of downloads means higher ranks).
 
-##Cross Promote You Games
+##Cross Promote Your Games
 
 Have _tasteful_ interstitials to your other games (hell, Apple even encourages this). Cross
 promoting your games will help you regardless of whether Apple features you or not. So do it :-)
@@ -302,7 +302,7 @@ request a review. Don't nag them five minutes into your game. See how I did it i
 Ensign, and A Noble Circle. Geometry Dash does a phenominal job of timing the review request too.
 Desert Golf does some cute things with sharing accomplishments too.
 
-##Be Presistent
+##Be Persistent
 
 It's hard work guys. There's no lifehack for this. You just have be consistent
 and persistent. **Again, please support me by [buying my games](https://itunes.apple.com/us/artist/amirali-rajan/id736683064).
