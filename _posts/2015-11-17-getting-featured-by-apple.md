@@ -20,7 +20,7 @@ this game has accomplished.
 - \#1 game in the US for 18 days straight (20 days overall).
 - 26,859 ratings of which 23,833 are 5-stars (4.73 average rating).
 - Publications in [Huffington Post](http://www.huffingtonpost.com/2014/05/01/a-dark-room-iphone-game_n_5241335.html), [Slate](http://www.slate.com/blogs/future_tense/2014/05/21/a_dark_room_the_cormac_mccarthy_of_text_based_iphone_games.html), and [The New Yorker](http://www.newyorker.com/tech/elements/a-dark-room-the-best-selling-game-that-no-one-can-explain).
-- Richard Garriott (creator of Ultima Online) talks about [A Dark Room]() on [Axe of the Blood God]()
+- Richard Garriott (creator of Ultima Online) talks about [A Dark Room](/assets/images/a-dark-room-richard-garriott.mp3) on [Axe of the Blood God](https://soundcloud.com/usgamernet/axe-of-the-blood-god-episode-2)
 - Reviewed on [Touch Arcade](http://toucharcade.com/2014/06/03/a-dark-room-review/) (4 stars) and [Cult of Mac](http://www.cultofmac.com/277118/dark-room-lights-app-store-big-heart-open-world/) (5 stars)
 
 **Even with all of these accomplishments. Getting _any_ of my games featured is an uphill battle. You
