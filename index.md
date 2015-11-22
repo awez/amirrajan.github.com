@@ -4,7 +4,7 @@ title:
 ---
 {% include JB/setup %}
 
-I'm a ronin <a href="http://www.paulgraham.com/hp.html">hacker</a>, and an <a href="https://itunes.apple.com/us/artist/amirali-rajan/id736683064">indie game developer</a>.<br />
+I'm a ronin <a href="http://www.paulgraham.com/hp.html">hacker</a>, and an <a href="http://amirrajan.net/games/">indie game developer</a>.<br />
 
 I try to better the software development craft by [**presenting**](/about/), [**blogging**]({{ HOME_PATH }}), [**contributing to open source**](http://github.com/amirrajan), [**tweeting**](http://twitter.com/amirrajan), and [**screencasts**](/screencasts/).
 
