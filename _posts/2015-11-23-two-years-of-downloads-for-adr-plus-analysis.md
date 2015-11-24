@@ -99,7 +99,7 @@ Zero under the rank columns means "not ranked".
 14-01-14    |   26               |  19                    |   74           |  924       |  0
 15-01-14    |   13               |  10                    |   81           |  917       |  0
 16-01-14    |   37               |  25                    |   50           |  597       |  0
-**[@RobertAshley Tweets about](http://amirrajan.net/a-dark-room/#18kpeople)** |||||
+**[@RobertAshley Tweets about ADR](http://amirrajan.net/a-dark-room/#18kpeople)** |||||
 17-01-14    |   32               |  24                    |   62           |  680       |  0
 18-01-14    |   15               |  9                     |   154          |  1450      |  0
 19-01-14    |   25               |  20                    |   88           |  1113      |  0
