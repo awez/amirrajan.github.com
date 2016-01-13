@@ -1,6 +1,6 @@
 ---
 title: Getting Featured by Apple
-category: meta
+category: appstore
 layout: post
 tags : [appstore]
 ---

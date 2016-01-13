@@ -1,6 +1,6 @@
 ---
 title: Two Years of Download for ADR Plus Analysis
-category: meta
+category: appstore
 layout: post
 tags : [appstore]
 ---
