@@ -240,6 +240,11 @@ you have to worry about creating a free version. No cloner would take the time
 to make Monument Valley. But Threes unfortunately got cloned pretty quickly. So
 be conscious of this dynamic and plan accordingly.
 
+It's also worth noting that the App Store customer base is simply divided. There are those
+that buy games and those that don't. It doesn't seem like they cross over much. [See ADR's
+moving average after 1 Million free downloads](http://amirrajan.net/a-dark-room/#afteronemillion). So it may be beneficial to provide both
+versions if that's something that your game can work with.
+
 ##Have An Identity
 
 You will (hopefully, eventually) find your style. I know exactly what kind
