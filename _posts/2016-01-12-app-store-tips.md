@@ -1,5 +1,5 @@
 ---
-title: Big Bad List of Tips From Making a Number One App
+title: Lessons Learned From Making a Number One Game
 category: appstore
 layout: post
 tags : [appstore]
