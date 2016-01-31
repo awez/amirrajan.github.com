@@ -71,20 +71,23 @@ results for applying the formula.
 
 ###Projected vs Actual
 
-A Dark Room review count: 27,745)<br/>
-Projected max downloads (27k * 150): 4.5 million<br/>
-Projected min downloads (27k * 50): 1.3 million<br/>
-Actual downloads world wide: 2.48 million<br/>
+A Dark Room review count: 27,745
 
-The Ensign review count: 844<br/>
-Projected max downloads (844 * 150): 126,600<br/>
-Projected min downloads (844 * 50): 42,200<br/>
-Actual downloads world wide: 131,000<br/>
+- Projected max downloads (27k * 150): 4.5 million
+- Projected min downloads (27k * 50): 1.3 million
+- Actual downloads world wide: 2.48 million
 
-A Noble Circle - Prologue: 177<br />
-Projected max downloads (177 * 150): 26,550<br />
-Projected min downloads (177 * 150): 8,850<br />
-Actual downloads world wide: 11,500<br />
+The Ensign review count: 844
+
+- Projected max downloads (844 * 150): 126,600
+- Projected min downloads (844 * 50): 42,200
+- Actual downloads world wide: 131,000
+
+A Noble Circle - Prologue: 177
+
+- Projected max downloads (177 * 150): 26,550
+- Projected min downloads (177 * 150): 8,850
+- Actual downloads world wide: 11,500
 
 I want to include the results for A Noble Circle. But this game has an
 abnormally high review conversion rate. Usually review conversion
@@ -92,9 +95,10 @@ rates are abysmal. It hovers around 0.5% to 3% (which is why the
 download multiplier is so high).
 
 A Noble Circle review count: 1,238<br/>
-Projected max downloads: 180,000<br/>
-Projected min downloads: 61,900<br/>
-Actual downloads world wide: 24,000<br/>
+
+- Projected max downloads: 180,000
+- Projected min downloads: 61,900
+- Actual downloads world wide: 24,000
 
 ###Applying the Formula
 
@@ -102,17 +106,19 @@ So now that we know "the review formula", let's take a look at
 _3D Fashion Girl Mall Runner Game By Awesome_ and _Frozen Princess Run
 3D Infinite Runner Game for Kids_.
 
-Fashion Girl review count: 842<br />
-Projected max downloads (842 * 150): 126,300<br />
-Projected min downloads (842 * 50): 42,100<br />
+Fashion Girl review count: 842
 
-Frozen Princess review count: 2,088<br />
-Projected max downloads (842 * 150): 313,200<br />
-Projected min downloads (842 * 50): 104,400<br />
+- Projected max downloads (842 * 150): 126,300
+- Projected min downloads (842 * 50): 42,100
+
+Frozen Princess review count: 2,088
+
+- Projected max downloads (842 * 150): 313,200
+- Projected min downloads (842 * 50): 104,400
 
 For these two apps, I'd guess the actual download numbers are closer
 to the lower one. Both these games probably have high review
-conversion rates because of their sleazy tactics for getting reviews
+conversion rates because of their sleazy tactics for getting reviews.
 
 A note to the developer of these two games: Apple will take your
 apps down if you get caught doing this bullshit. You and I both know
