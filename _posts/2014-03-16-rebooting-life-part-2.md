@@ -11,7 +11,7 @@ _It's been 10 months since I went on a sabbatical. I'm still enjoying it (though
 
 ## Background ##
 
-I'm assuming you've read [Rebooting Life (Part 1)](http://amirrajan.net/meta/2013/07/14/rebooting-life/). If you haven't, here were the goals I set out to accomplish during my sabbatical.
+I'm assuming you've read [Rebooting Life (Part 1)](http://amirrajan.net/meta/2013/07/14/rebooting-life). If you haven't, here were the goals I set out to accomplish during my sabbatical.
 
 - Build iOS based applications (client/server).
 - Build a freaking game.
@@ -43,7 +43,7 @@ Most importantly, I found that the saying "if you build it, they will come" is _
 
 ## Present about software, contribute to open source ##
 
-Check and check. I've given eight presentations in the last ten months. On topics that I care about. I've created a number of [open source reference implementations for NodeJS](http://amirrajan.net/nodejs-by-example/), which will continue to grow. I've continued to help developers break down barriers and learn new things. I still want to make a contribution to a large open source project. Haven't "unlocked that achievement" yet.
+Check and check. I've given eight presentations in the last ten months. On topics that I care about. I've created a number of [open source reference implementations for NodeJS](http://amirrajan.net/nodejs-by-example), which will continue to grow. I've continued to help developers break down barriers and learn new things. I still want to make a contribution to a large open source project. Haven't "unlocked that achievement" yet.
 
 ## Build my development chops on stacks other than .Net ##
 

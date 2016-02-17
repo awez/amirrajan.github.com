@@ -911,7 +911,7 @@ Zero under the rank columns means "not ranked".
 08-11-15    |   226              |  171                   |   12           |  122       |  234
 09-11-15    |   188              |  138                   |   10           |  107       |  225
 10-11-15    |   161              |  122                   |   7            |  96        |  200
-**[Wrote about my sabbatical](http://amirrajan.net/meta/2015/11/11/rebooting-life-part-3/)** |||||
+**[Wrote about my sabbatical](http://amirrajan.net/meta/2015/11/11/rebooting-life-part-3)** |||||
 11-11-15    |   164              |  121                   |   7            |  104       |  225
 12-11-15    |   173              |  137                   |   11           |  116       |  261
 13-11-15    |   172              |  136                   |   11           |  109       |  209

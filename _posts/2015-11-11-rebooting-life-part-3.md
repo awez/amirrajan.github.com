@@ -7,14 +7,14 @@ tags : [meta, passion]
 
 ## tl;dr; ##
 
-_It's been 20 months since [my last entry](http://amirrajan.net/meta/2014/03/16/rebooting-life-part-2/).
+_It's been 20 months since [my last entry](http://amirrajan.net/meta/2014/03/16/rebooting-life-part-2).
 I'm no longer on a sabbatical I guess. I'm an indie game developer now. I have "stuff" again.
 This entire post is a #humblebrag._
 
 ## Background ##
 
-I'm assuming you've read [Rebooting Life (Part 1)](http://amirrajan.net/meta/2013/07/14/rebooting-life/)
-and [Rebooting Life (Part 2)](http://amirrajan.net/meta/2014/03/16/rebooting-life-part-2/).
+I'm assuming you've read [Rebooting Life (Part 1)](http://amirrajan.net/meta/2013/07/14/rebooting-life)
+and [Rebooting Life (Part 2)](http://amirrajan.net/meta/2014/03/16/rebooting-life-part-2).
 If you haven't, here were the goals I set out to accomplish during my sabbatical.
 
 - Build iOS based applications (client/server).
