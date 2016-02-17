@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Recruiters
-header: Recruiters
+title: A Message to Recruiters That Probably Won't Read
+header: A Message to Recruiters That Probably Won't Read
 group: navigation
 ---
 {% include JB/setup %}
