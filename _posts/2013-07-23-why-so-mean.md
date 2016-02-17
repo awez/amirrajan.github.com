@@ -5,13 +5,16 @@ layout: post
 tags : [meta]
 ---
 
-##tl;dr;
+## tl;dr; ##
+
 _Be nice. Code friendly. Remember that every person you interact with is a living, breathing human being._
 
-##Some Background, Open Spaces 2009
+## Some Background, Open Spaces 2009 ##
+
 Four years ago, I attended an Open Spaces "conference" where [Scott Hanselman facilitated a session called Why So Mean](http://www.hanselman.com/blog/ThisDevelopersLife104BeingMean.aspx). The session was about why developers are so mean to each other and new comers to the field. I was 25 and barely 2 years out of college, and I couldn't believe I was about to spend the rest of my life in this kind of environment (thanks for the heads up Scott). I've been on the giving and receiving end of "being mean". Here are a few things I've learned.
 
-##That person you're talking to is a human being
+## That person you're talking to is a human being ##
+
 Regardless of race, religion, gender, sexual preference or any other delineating factor you can think of. First and foremost, the person you are talking to is a human being. It's obvious, but we (I) forget it at times. So. To my future self. Remember that. And stop being so mean.
 
 There is a word on Urban Dictionary called _sonder_ that I came across today. Here is the definition:
@@ -27,10 +30,12 @@ And here's a video about [_sonder_](http://www.dictionaryofobscuresorrows.com/po
 
 Point made hopefully.
 
-##Each person will feel what they did was justified
+## Each person will feel what they did was justified ##
+
 I've seen it time and time again. No matter the mistake. No matter the action. The person who made the asinine mistake will place blame somewhere else. And the person who did the malicious deed will somehow justify it. It's hard to accept, and there are definitely those that will own up to it after some time. But our knee jerk (human) response is to the former. So when shit hits the fan when that developer deletes a weeks worth of production data... remember this, and avoid ripping into him. Because it won't benefit anyone.
 
-##Apologize in person, individually, and only if you mean it
+## Apologize in person, individually, and only if you mean it ##
+
 When you mess up (yes... _when_), and offend someone(s). If at all possible, deliver apologies in person:
 
 - Not over email
@@ -51,14 +56,16 @@ And on the receiving end of the apology (also helps if you don't receive one)
 - If you're really pissed off, write a hand written letter _outside of work_. Write down all your qualms, and at the end write "but it's okay, it's water under the bridge now", and then shred it.
 - Say "I'm sorry too" (and be genuine about it).
 
-##Empathy
+## Empathy ##
+
 Anger inducing things at work will happen. And when it does, count to 42 (at least that's what I have count to). Put yourself in the other persons shoes. That other guy (no matter how incompetent you think he is), is a human, and a team mate (unfortunately). You may find that you would have done the exact same thing (or something just as stupid).
 
 Have you actively tried to get someone fired for one reason or another? I've been there... I look back and wish I took even a split second to think about whether it was worth it. Remember, _that guy_ may have a family. He may be going through a tough week, month, even year. Is whatever he did really worth putting him out on the street?
 
 If you're on the receiving end, try to remember that too (it may not be related to anything at work).
 
-##Stop correcting people
+## Stop correcting people ##
+
 Don't sweat the small stuff. Here's a story from my past.
 At one of my previous jobs, a new support person just started and became the next door cube neighbor of me and another dev. Being the nice people we are, we went and said hello:
 
@@ -80,26 +87,32 @@ _You have two options at this point. Do you correct her (and embarrass her for n
 
 Don't be that guy that corrects everyone. Make sure your corrections count for something.
 
-##Berating someone will just lead to them resenting you
+## Berating someone will just lead to them resenting you ##
+
 So you really laid into someone? How did it feel? I know it feels good to let off some steam... show 'em who's boss. But you may have destroyed a relationship there. The "relief" you feel isn't worth it. So please. Just empathize with your colleagues.
 
-##Just fix the build
+## Just fix the build ##
+
 The build breaks. Some dev checks in a bad change, makes a lot of tests fail and doesn't care. You get latest, now your build is broken too. Just fix it. Don't throw a temper tantrum. Don't whip out your nerf gun and try to get a head shot. Just fix the code and fix the build. If you need help, call the guy who broke it over and see if he can help fix it. I know it derails what you were doing...just count to 42 and take care of it. It's water under the bridge :-).
 
-##Shit code will be written, others will touch your code
+## Shit code will be written, others will touch your code ##
+
 You've wrote some immaculate code. Then _that hack job that screws everything up all the time_ gets a hold of it and butchers it. Tears it apart. Adds a cyclomatic complexity of 40 to part of it and checks it in. It's okay. Just breathe. One thing I've found is that, if the majority of the dev team is competent, the code that just got butchered will improve. Every time that part of the code base is visited, each developer will do their small part of ironing things out. At least it helps me sleep at night believing this...who am I kidding...get the torches and pitch forks!!!!
 
 This is definitely one of the hardest things for me.
 
-##Be humble
+## Be humble ##
+
 There will always be something you can learn from someone else. It may be about development, or it may be about the intricacies of carving wood. There will be something. So err on the side of humility (another note to my future self). One thing I've learned (the hard way) through my career as a consultant is that you'll be dropped into hostile environments at times. And the absolute worst thing you could do is "show them how it's done". Get along with the team mates.
 
 Your past experience matters, and I know you want your expertise to be acknowledged and respected. But that's already happened... _that's why they hired you/brought you in_. So join the team, keep your ears open and take the role of a student. Learn as much as you possibly can from your _peers_.
 
-##Play nice with others, personality patterns I've seen
+## Play nice with others, personality patterns I've seen ##
+
 Some people get put off by personality surveys. It's crazy to think that you know everything about _me_ from a stupid questionnaire. _But_ through my experience, I _have_ seen a number of personality patterns. Here are the ones that have really stood out to me. It may help you get along better with people if you're generally aware of these types of things and will help you avoid coming off as mean when you didn't intend to. Here are a list of the personalities, pros, cons, general observations.
 
-###The "get to the point" personality
+### The "get to the point" personality ###
+
 I'd like to say these guys are natural born leaders (and kind of mean be nature). Here are some defining traits:
 
 - Their emails are usually short
@@ -117,7 +130,8 @@ Please keep in mind that they aren't trying to be mean. It's just their personal
 - Don't be offended if they interrupt you mid sentence
 - Don't be afraid to interrupt them
 
-###The "show me the data" personality
+### The "show me the data" personality ###
+
 These guys are really analytical. Extremely thorough:
 
 - They need data, lots of it
@@ -133,7 +147,8 @@ Staying nice tips:
 - Be very clear about everything in general
 - Listen, they have a lot of good things to say
 
-###The "team player" personality
+### The "team player" personality ###
+
 Some of the nicest people I've worked with fall into this category, these guys are naturals when it comes to being nice:
 
 - They'll take one for the team
@@ -150,7 +165,8 @@ Staying nice tips:
 - Don't interrupt them when they're speaking
 - Ask them directly about their opinions, give them the opportunity to speak
 
-###The "motivator" personality
+### The "motivator" personality ###
+
 These guys will give energy to the team. They're the ones that'll wish everyone "happy _Monday_" :-)
 
 - If you want an idea sold, this is your guy
@@ -166,5 +182,6 @@ Staying nice tips:
 
 Whether you perscribe to personality categorizations or not, just be genuine. Don't try to manipulate people.
 
-##Guilty
+## Guilty ##
+
 I've been mean in the past, present, and will be mean in the future. I really do try to reflect on those situations. Sometimes I fail miserably at it (especially on twitter). And if I do offend you, please know that it wasn't intentional (maybe), and kindly refer me to this blog post.

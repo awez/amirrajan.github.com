@@ -45,9 +45,8 @@ Microsoft in this context means:
 - Current employees of Microsoft
 - Former employees of Microsoft
 
-###Reflecting...
+### Reflecting... ###
 
 Not even three years ago (2010), **I would have signed this manifesto**. Reflect on this and ask yourself if you (or the company you work for) would sign this, and whether you'd consider it as career limiting...I think it is...
 
 This is **not** meant to paint Microsoft in dark colors. This is about how **you** the developer evaluates and adopts new frameworks, languages and paradigms. (thank you Marcus for your comments)
-

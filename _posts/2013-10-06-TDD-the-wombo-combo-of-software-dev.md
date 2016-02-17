@@ -5,11 +5,11 @@ layout: post
 tags : [testing]
 ---
 
-##tl;dr;
+## tl;dr; ##
 
 _Test Driven Development (TDD) is difficult to get good at, [here is a good way to get started](#getstarted). What makes things worse is that there is so much fervor around this technique. Newcomers may be immediately turned off by practitioners. At the end of the day, **it’s a two way street**. If you want to get better at TDD, you have to look past heated, seemingly ridiculous debates between practitioners and... **practice. Just like we do**. As practitioners, we need to continue to have the debates, but do a better job of generating artifacts (blog entries, gists, screen casts), and understand that **we don't have it all figured out**._
 
-#The WOMBO COMBO!!!!
+# The WOMBO COMBO!!!! #
 
 If you're a gamer, you may have heard of _Super Smash Brothers Melee_. This game was played competitively. National tournaments. Professional sponsorships. Cash prizes. In other words, **it was a big deal**.
 
@@ -36,11 +36,11 @@ Now that the stage is set. Watch the video with the following points in mind:
 
 <br/>
 
-#Reflect. Do you want to get better?
+# Reflect. Do you want to get better? #
 
 Reflect on your experience with test driven development. Where do you exist on the spectrum?
 
-#Perspective. TDD is nice, but not necessary.
+# Perspective. TDD is nice, but not necessary. #
 
 At the risk of categorizing based on past experiences, many developers are in this category. And as far as your perception of TDD is concerned, you are _absolutely right_. You can develop at a professional level, write good, high quality code without doing TDD.
 
@@ -50,7 +50,7 @@ For those that have this opinion: Do not discourage others that want to learn TD
 
 For TDD practitioners: you need to be okay with devs that hold the opposing perspective. If you're new to TDD, get better through **independent practice** before attempting anything on production code. **Do not impose testing on your peers** (if everyone isn't on board, do not incorporate it into continuous integration). And when one of the tests fails because of _their_ check-in, _you_ need to fix it. Because it's what _you_ value.
 
-#Perspective. You are a practitioner of TDD, and so am I.
+# Perspective. You are a practitioner of TDD, and so am I. #
 
 We compete. We measure and size each other up. We debate. Loudly. With fervor. All in the spirit of improving and pushing each other to the next level. Sometimes (unfortunately), cutting each other down.
 
@@ -68,7 +68,7 @@ For the practitioners butting heads: **Document what you talk about**. Write a b
 
 TDD, BDD (testing in general) is a constantly changing area. **You're doing yourself a disservice if you think you've got it all figured out.**
 
-#Perspective. I've never attempted TDD or have only tried it a little bit.
+# Perspective. I've never attempted TDD or have only tried it a little bit. #
 
 Practice. A lot. A whole lot. It's a long, long road to get extremely good at TDD. Frankly (for me), it's well worth the effort.
 
@@ -80,21 +80,21 @@ For TDD practitioners: keep your ego in check. Especially when talking to someon
 
 <div id="getstarted"></div>
 
-#How to get started with TDD
+# How to get started with TDD #
 
 Start with code katas (a cool way of saying coding problems).
 
 Here is one.
 
-####Prime Factors Kata
+#### Prime Factors Kata ####
 
 This kata is designed to help you get used to doing test driven development.
 
-####Explanation
+#### Explanation ####
 
 Write a method that takes in an integer and returns all prime factors for that number. For example, passing in the number 4 would return a list containing 2,2. Notice I said method...don't go creating a complicated class or project structure. Just create a test fixture and put a method right in there ;-).
 
-####Goals
+#### Goals ####
 
 Start with the simplest implementation possible. Don't try to find a solution all at once. This kata will help you create the muscle memory to start with the most naive solution first. In fact, I'm recommending you write your tests in this order (again, only write enough code to make each test pass):
 
@@ -108,15 +108,15 @@ Start with the simplest implementation possible. Don't try to find a solution al
 - primes for 9, returns 3,3
 - primes for 2147483647, returns 2147483647
 
-####En-passe
+#### En-passe ####
 
 With this kata, you'll also learn the concept of an en-passe. Were there instances in this kata where your algorithm had to completely change? Your implementation should evolve as make more tests pass...if you find that your implementation changes drastically with each new test, repeat the kata until it evolves smoothly.
 
-####Get Up and Running. Fast.
+#### Get Up and Running. Fast. ####
 
 This was the first kata I tackled, and did it many many times. Every time you do this kata, think about how long it takes you to get your first failing test going (i.e. setting up the project/sln/folder structure and getting your test runner to execute the first failing test). Work at getting that first failing test up and running quickly.
 
-####The Kata in Action
+#### The Kata in Action ####
 
 Here is the Prime Factors Kata _performed_ by Uncle Bob. This performance was scripted. A lot of work was put into developing the code in such a way where each change was **incremental and fluid**.
 
@@ -128,7 +128,7 @@ Very subtle, **yet powerful** changes are made around minutes 3:30, 5:40, 6:28, 
 
 <p><a href="http://vimeo.com/7762511">Prime Factors Kata in Ruby, Flower Duet, Lakme'</a> from <a href="http://vimeo.com/user947916">unclebob</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
-###Other Katas to Try
+### Other Katas to Try ###
 
 Once you have done the Prime Factors Kata many, many, many times.
 
@@ -138,6 +138,6 @@ Try these katas:
 - [Mancala](https://gist.github.com/amirrajan/2153731)
 - [Gilded Rose](https://github.com/NotMyself/GildedRose)
 
-###Here to Help
+### Here to Help ###
 
 And feel free to reach out to me on [twitter (@amirrajan)](https://twitter.com/amirrajan), I'd be happy to help you get started.

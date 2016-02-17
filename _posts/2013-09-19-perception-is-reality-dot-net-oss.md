@@ -5,10 +5,11 @@ layout: post
 tags : [oss]
 ---
 
-##tl;dr;
+## tl;dr; ##
+
 _Microsoft is trying to change the mainstream (corporate) .Net culture. They are genuinely trying to promote open source software, without bias. And I can't thank people at Microsoft (like Glenn Block, Scott Hanselman, and Jon Galloway) enough for busting their asses trying to push open source initiatives. Unfortunately, a culture has built up that (so far) doesn't look like it's changed. The general stigma  (in large corporate environments) is still: "if it isn't made or endorsed by Microsoft, we won't use it."_
 
-##Blog Responses
+## Blog Responses ##
 
 Others are taking the time to respond to what I've written. Happy to see conversations happening (if you have a response, let me know via email/twitter and I'll link to it):
 
@@ -27,7 +28,7 @@ Others are taking the time to respond to what I've written. Happy to see convers
 
 <hr />
 
-##Here's the Problem
+## Here's the Problem ##
 
 .Net has a culture of being a walled garden, but in the most posioness way. It's an ecosystem where only frameworks built my Microsoft can succeed.
 
@@ -38,7 +39,7 @@ But in the .Net ecosystem, these new ideas have a small chance of succeeding for
 
 Here are some examples.
 
-##Nancy and Service Stack
+## Nancy and Service Stack ##
 
 Nancy and ServiceStack are web frameworks, but they directly competed with ASP.NET MVC. Two years later, ASP.NET WebApi came out and well...
 
@@ -59,13 +60,13 @@ Other communities don't have this problem. Here are some reimplementations of Si
 
 But mainstream .Net sat on the sidelines until Web API.
 
-##Sass and Less
+## Sass and Less ##
 
 CSS transpilers (things that made CSS easier to work with), started gaining adoption in other ecosystems. The first commits to Compass were in August of 2008. It took an out of process CLI
 approach to creating CSS from Compass specifications. The .Net ecosystem didn't take advantage of this approach until it was integrated in to Visual Studio via Web Workbench in 2011. But
 that's the wall garden that is .Net. If it isn't built by Microsoft and doesn't have Visual Studio integration, then it's a non-starter.
 
-##Testing Frameworks
+## Testing Frameworks ##
 
 Lambda based testing frameworks was another interesting approach to composing test structures. Before these frameworks, the assumption was that the smallest assertable code block was a
 class method. Lambda based testing frameworks changed that notion.
@@ -84,7 +85,7 @@ for a handful of developers at Microsoft to release their version. And whatever 
 
 It _doesn't_ have to be this way. But everything is stacked up against those developers that want good things to come to .Net sooner.
 
-##Notable Comments
+## Notable Comments ##
 
 A lot of good comments have been posted. Here are a few them. For the full spectrum of comments you can follow these threads: [my original tweet](https://twitter.com/amirrajan/status/381068801061568512), [this offshoot](https://twitter.com/jbogard/status/381091906702565376), [another offshoot](https://twitter.com/AquaBirdConsult/status/381070709554184192), [this retweet](https://twitter.com/randompunter/status/381378264142716928), and [reddit](http://www.reddit.com/r/programming/comments/1mskjc/ask_proggit_is_my_perception_of_net_oss_accurate/).
 

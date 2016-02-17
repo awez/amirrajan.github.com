@@ -5,12 +5,13 @@ layout: post
 tags : [meta, passion]
 ---
 
-##tl;dr;
+## tl;dr; ##
+
 _It's been 20 months since [my last entry](http://amirrajan.net/meta/2014/03/16/rebooting-life-part-2/).
 I'm no longer on a sabbatical I guess. I'm an indie game developer now. I have "stuff" again.
 This entire post is a #humblebrag._
 
-##Background
+## Background ##
 
 I'm assuming you've read [Rebooting Life (Part 1)](http://amirrajan.net/meta/2013/07/14/rebooting-life/)
 and [Rebooting Life (Part 2)](http://amirrajan.net/meta/2014/03/16/rebooting-life-part-2/).
@@ -28,11 +29,11 @@ If you haven't, here were the goals I set out to accomplish during my sabbatical
 - Music, drawing, and artsy stuff.
 - Learn as much as I possibly can about software development (tools, frameworks, paradigms and the craft).
 
-##Successes
+## Successes ##
 
 <hr />
 
-##I built a freaking game that became the #1 app in the App Store
+## I built a freaking game that became the #1 app in the App Store ##
 
 When I last posted, [A Dark Room iOS was making a small amount of passive income.](http://amirrajan.net/a-dark-room/#rubybrigade)
 One month after that post, [A Dark Room went viral and became the #1 App in the US](http://amirrajan.net/a-dark-room/#number1us).
@@ -42,7 +43,7 @@ working on my third game called A Noble Circle. You can read about all that's ha
 more details. The short version is I'm nowhere near retiring to the Bahamas, but I've gained
 a decent amount of passive income (and a new identity).
 
-##Present about software, contribute to open source
+## Present about software, contribute to open source ##
 
 I've got some international presentations under my belt now. An am now presenting at game development
 conferences too (I've got a couple scheduled for next year). Once I got some notoriety
@@ -50,13 +51,13 @@ from building a #1 app, getting accepted to national, international, and univers
 became a lot easier (not surprisingly I guess). Open source development has taken a back
 seat to my game development (because that's what I see as meaningful work now).
 
-##Build my development chops on stacks other than .Net
+## Build my development chops on stacks other than .Net ##
 
 I don't even have a Windows partition anymore. I have a Parallels VM with an installation of Windows 10
 that's only booted to make sure the installation experience for NSpec and Oak are pleasant. All my
 development is done in terminal now (tmux and Emacs with Vim bindings... teriffying I know).
 
-##Music, Drawing, and Artsy Stuff
+## Music, Drawing, and Artsy Stuff ##
 
 More artwork yay!
 
@@ -130,13 +131,13 @@ More charcoal (work in progress):
 
 <a href="/assets/images/zelda-6.jpg" style="display: block;"><img src="/assets/images/zelda-6.jpg" style="border: solid 1px silver; padding: 3px; width: 300px" /></a>
 
-##Learn a functional programming languages
+## Learn a functional programming languages ##
 
 I know F# well enough to be danagerous now. At this point I see no reason in using C# anymore. I know
 Clojure/ClojureScript pretty well now too. Code haphazardly mutating data makes me weep. Have
 I mentioned I do NodeJS development full time now (cry)? I still have no idea what a monad is.
 
-##Have conversations with developers everywhere
+## Have conversations with developers everywhere ##
 
 There's only one way to succeed at this. Don't do it. What I wrote in my previous entry still stands:
 
@@ -148,15 +149,15 @@ There's only one way to succeed at this. Don't do it. What I wrote in my previou
 
 I _did_ participate in a mentorship program at a university. That was great. I enjoyed inspiring young developers/teaching them the ropes.
 
-##Get into better shape
+## Get into better shape ##
 
 Lost twenty pounds. I can sit in a squat for like a whole two minutes (it's a big deal I swear). Ten more pounds to go before I'm a lean, fast, 150 pound weakling.
 
-##What I learned
+## What I learned ##
 
 <hr />
 
-###Anxiety/Depression
+### Anxiety/Depression ##
 
 I put a short story in my last entry. Here it is again as a refresher:
 
@@ -203,7 +204,7 @@ help them get their creative thoughts in a medium that can be shared with others
 So most of the time I just keep my technical "expertise" to myself.
 And just say "Iono, I'm just a game developer,"... at least I try to :-D
 
-###Rebooting was more of a re-format
+### Rebooting was more of a re-format ##
 
 Welp. I have stuff again. A Dark Room helped me put a nice down payment on a house
 in the middle of nowhere. It should be paid off in the next six months. Thirty-two with a paid off
@@ -214,7 +215,7 @@ is I no longer have a mental attachment to these newly acquired possessions.
 It's just stuff. I can live without it (and I've done so). The emotional detachment
 from worldly things is really nice, hope I don't forget how it feels.
 
-###Empathy
+### Empathy ##
 
 Giving the other person the benefit of the doubt, never criticizing, being
 kind... all these things lead to better outcomes.
@@ -224,7 +225,7 @@ formed a model of what _they_ consider a valid existence. Take some
 time to try and understand that. It's really freaking hard, but I think it's
 worth the effort.
 
-###Grit
+### Grit ###
 
 It's an immense amount of hard work trying to "arrive" (whatever that means for you).
 
@@ -242,7 +243,7 @@ and assigned me someone (even with a #1 app in the app store). It took
 Keeping was (at particullarly difficult points in my life) my anger in check, took
 an immense amount of work too.
 
-###Life goes on
+### Life goes on ###
 
 You'd think accomplishing the things I've accomplished would satisfy my appetite. It didn't.
 I have six more games I need to get out of my head and into my hands. I'm working contract

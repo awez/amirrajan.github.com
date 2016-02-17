@@ -11,7 +11,7 @@ format](https://github.com/amirrajan/amirrajan.github.com/tree/master/adr-sales)
 along with a summary (approximate). If you want to crunch these numbers and
 possibly share any insight you find, that'd be wonderful.
 
-##A Dark Room Year 1
+## A Dark Room Year 1 ##
 <hr />
 
 These numbers are from [last year's developer logs](http://amirrajan.net/a-dark-room/#oneyear):
@@ -44,7 +44,7 @@ Net                                                       |  152,135   |
 A Dark Room went viral in UK and US. It was the #1 premium, "free to play app" in the
 US for 18 days straight (with no feature/marketing from Apple).
 
-##A Dark Room Year 2
+## A Dark Room Year 2 ##
 <hr />
 
 [ Month ]    | [ Paid Downloads ] | [ Free Downloads ] | [ Apple Check ] |
@@ -83,7 +83,7 @@ but didn't have the long running side effect of going viral in the US.
 Originally, I figured that ADR being #1 in the UK somehow triggered its
 rise to the #1 spot in the US. Turns out that's not the case.
 
-##The Ensign Year 1
+## The Ensign Year 1 ##
 <hr />
 
 Around August of 2014, I released a prequel to A Dark Room called The Ensign.
@@ -122,7 +122,7 @@ The prequel is doing alright. It did extremely well the first month
 (it was featured by Apple... unsolicited). I expect The Ensign sales to stay
 at ~25% of A Dark Room sales.
 
-##A Noble Circle Year 1 (so far)
+## A Noble Circle Year 1 (so far) ##
 <hr />
 
 [ Month ]    | [ Paid Downloads ] | [ Free Downloads ] | [ Apple Check ] |
