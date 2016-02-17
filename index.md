@@ -8,7 +8,7 @@ I'm a ronin <a href="http://www.paulgraham.com/hp.html" target="_blank">hacker</
 
 I try to better the software development craft by [**presenting**](/about/), [**blogging**]({{ HOME_PATH }}), [**contributing to open source**](http://github.com/amirrajan), [**tweeting**](http://twitter.com/amirrajan), and [**screencasts**](/screencasts/).
 
-##Notables
+Notables
 ---
 
 <div style="line-height: 15px; padding-bottom: 10px">
@@ -23,7 +23,7 @@ I try to better the software development craft by [**presenting**](/about/), [**
   <span style="color: #767676; font-size: 12px">A list of NodeJS apps I've built to help you get started with the platform</span>
 </div>
 
-##Posts
+Posts
 ---
 
 {% for post in site.posts %}
@@ -49,4 +49,9 @@ I try to better the software development craft by [**presenting**](/about/), [**
     <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required="required" />
     <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" /></div>
   </form>
+
 </div>
+
+<b>Surviving The App Store as an Indie Game Developer</b>
+
+I've spent the last three years fighting the uphill battle of getting noticed in the App Store. [I've decided to write some words about it in book format](http://leanpub.com/survivingtheappstore).
