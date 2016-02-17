@@ -8,8 +8,8 @@ I'm a ronin <a href="http://www.paulgraham.com/hp.html" target="_blank">hacker</
 
 I try to better the software development craft by [**presenting**](/about/), [**blogging**]({{ HOME_PATH }}), [**contributing to open source**](http://github.com/amirrajan), [**tweeting**](http://twitter.com/amirrajan), and [**screencasts**](/screencasts/).
 
-Notables
----
+<h2>Notables</h2>
+<hr />
 
 <div style="line-height: 15px; padding-bottom: 10px">
   <a href="{{ BASE_PATH }}/a-dark-room">A Dark Room for iOS</a>
@@ -23,8 +23,8 @@ Notables
   <span style="color: #767676; font-size: 12px">A list of NodeJS apps I've built to help you get started with the platform</span>
 </div>
 
-Posts
----
+<h2>Posts</h2>
+<hr />
 
 {% for post in site.posts %}
   <div style="line-height: 13px; padding-bottom: 10px">
