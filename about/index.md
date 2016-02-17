@@ -16,13 +16,13 @@ What to hire me for:
 
 I charge a standard rate of $150 an hour (corp to corp or W2 hourly).
 
-##Contact
+## Contact ##
 
 - email: ar@amirrajan.net
 - twitter: [@amirrajan](http://twitter.com/amirrajan)
 - [curriculum vitae](http://careers.stackoverflow.com/amirrajan)
 
-##Flare
+## Flare ##
 
 <div style="">
 
@@ -49,7 +49,8 @@ I charge a standard rate of $150 an hour (corp to corp or W2 hourly).
 <div style="clear: both;">&nbsp;</div>
 </div>
 
-##Projects and Open Source
+## Projects and Open Source ##
+
 - [My Github Page](http://github.com/amirrajan)
 - [NSpec, a context/spec testing framework](http://nspec.org) <small>(C#)</small>
 - [SpecWatchr, an auto test tool for .Net development](http://nspec.org/continuoustesting) <small>(ruby)</small>
@@ -64,7 +65,9 @@ I charge a standard rate of $150 an hour (corp to corp or W2 hourly).
 - [Here is a list of nuget packages](http://www.nuget.org/profiles/amirrajan/)
 
 
-##Presentations and Podcasts
+## Presentations and Podcasts ##
+
+- Pocket Gamers Connect: Making a #1 App: Lessons Learned (January 2015)
 - .Net Unboxed: Thinking Outside the Box with Dynamic C# (October 2015)
 - University of Texas - Dallas: Design Concepts in Game Development (September 2015)
 - That Conference: Making it to the #1 Spot in the App Store (August 2015)

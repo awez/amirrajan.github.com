@@ -6,7 +6,7 @@ title:
 
 I'm a ronin <a href="http://www.paulgraham.com/hp.html" target="_blank">hacker</a>, an <a href="http://amirrajan.net/games/" target="_blank">indie game developer</a>, and an <a href="http://leanpub.com/survivingtheappstore" target="_blank">author</a>.<br />
 
-I try to better the software development craft by [**presenting**](/about/), [**blogging**]({{ HOME_PATH }}), [**contributing to open source**](http://github.com/amirrajan), [**tweeting**](http://twitter.com/amirrajan), and [**screencasts**](/screencasts/).
+I try to better the software development craft by [**presenting**](/about/), [**blogging**]({{ HOME_PATH }}), [**contributing to open source**](http://github.com/amirrajan), and [**tweeting**](http://twitter.com/amirrajan).
 
 <h2>Notables</h2>
 <hr />
