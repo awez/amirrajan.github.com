@@ -5,8 +5,7 @@ layout: post
 tags : [appstore]
 ---
 
-tl;dr;
-----
+##tl;dr;##
 
 _These tips are for the one-man/two-man/three-man shops. If you have a
 team of people, then these things may not be applicable to you (in
