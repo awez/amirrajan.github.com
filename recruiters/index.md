@@ -27,8 +27,13 @@ Truly, I'm always looking for good recruiters to work with. This is just a quick
 from the ones that are genuinely interested in building a relationship with me.
 
 We both have our hands full with work, family, and life. Time is precious. Given this, I'm sure you can empathize with this next statement:
-_If I get another message from you that doesn't take into consideration the list above, I'll black list you and report you as spam/junk. Don't
-waste my time and I won't waste yours._
+
+_If you spent even a single minute searching online to see if I had a
+blog, you would have found this page, and may not have wasted your own
+time sending me one of your templated emails. If I get another message
+from you that doesn't take into consideration the list above, I'll
+just mark you as spam/junk. Don't waste my time and I won't waste
+yours._
 
 Sincerely,
 
