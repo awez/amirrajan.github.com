@@ -24,10 +24,10 @@ Please keep these things in mind before sending me future employment opportuniti
 
 Hope this list helps you out! I look forward to hearing about opportunities that _fit the criteria above_.
 
-Truly, I'm always looking for good recruiters to work with. This is just a quick way to separate the spammers
+Truly, **I'm always looking for good recruiters to work with**. This is just a quick way to separate the spammers
 from the ones that are genuinely interested in building a relationship with me.
 
-We both have our hands full with work, family, and life. Time is precious. Given this, I'm sure you can empathize with this next statement:
+We both have our hands full with work, family, and life. **Time is precious**. Given this, I'm sure you can empathize with this next statement:
 
 **If you would have spent even a single minute searching online to see if I had a
 blog, you would have found this page, and may not have wasted your own
