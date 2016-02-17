@@ -5,7 +5,7 @@ layout: post
 tags : [appstore]
 ---
 
-## tl;dr; $$
+## tl;dr; a ##
 
 _Climbing to the top was stupid hard (and a complete fluke).
 Rank is pretty much dictated by number of downloads.

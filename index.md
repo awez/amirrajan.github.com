@@ -52,6 +52,8 @@ I try to better the software development craft by [**presenting**](/about/), [**
 
 </div>
 
+<hr />
+
 <b>Surviving The App Store as an Indie Game Developer</b><br />
 
 I've spent the last three years fighting the uphill battle of getting noticed in the App Store. [I've decided to write some words about it in book format](http://leanpub.com/survivingtheappstore).
