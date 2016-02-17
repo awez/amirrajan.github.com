@@ -4,7 +4,7 @@ title:
 ---
 {% include JB/setup %}
 
-I'm a ronin <a href="http://www.paulgraham.com/hp.html">hacker</a>, and an <a href="http://amirrajan.net/games/">indie game developer</a>.<br />
+I'm a ronin <a href="http://www.paulgraham.com/hp.html" target="_blank">hacker</a>, an <a href="http://amirrajan.net/games/" target="_blank">indie game developer</a>, and an <a href="http://leanpub.com/survivingtheappstore" target="_blank">author</a>.<br />
 
 I try to better the software development craft by [**presenting**](/about/), [**blogging**]({{ HOME_PATH }}), [**contributing to open source**](http://github.com/amirrajan), [**tweeting**](http://twitter.com/amirrajan), and [**screencasts**](/screencasts/).
 
@@ -47,6 +47,6 @@ I try to better the software development craft by [**presenting**](/about/), [**
     <div><br/></div>
 
     <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required="required" />
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" /> <small>powered by MailChimp</small></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" /></div>
   </form>
 </div>
