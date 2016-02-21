@@ -1,7 +1,7 @@
 ---
 layout: page
-title: A Message to Recruiters That Probably Won't be Read
-header: A Message to Recruiters That Probably Won't be Read
+title: A Message to Recruiters
+header: A Message to Recruiters
 group: navigation
 ---
 {% include JB/setup %}
@@ -22,7 +22,7 @@ Please keep these things in mind before sending me future employment opportuniti
 - You can go [here](http://careers.stackoverflow.com/amirrajan) for my resume. Just print to PDF (much more portable than Word documents).
 - You are currently on my website. Feel free to visit the [About](/about) page for more information about who I am, and what expertise I can offer your company.
 
-Hope this list helps you out! I look forward to hearing about opportunities that _fit the criteria above_.
+Hope this list helps you out! I look forward to hearing about opportunities that fit the criteria above.
 
 Truly, **I'm always looking for good recruiters to work with**. This is just a quick way to separate the spammers
 from the ones that are genuinely interested in building a relationship.
