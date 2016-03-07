@@ -11,7 +11,7 @@ I prefer not to write blog post showing coding samples. They tend to go stale an
 If you want to learn NodeJS, the resources below will help you.
 
 
-##List of NodeJS sample apps.
+## List of NodeJS Sample Apps ##
 
 These apps are ordered by complexity/difficulty.
 
@@ -21,7 +21,7 @@ All have readmes that will guide you in building, running and deloying the apps.
 
 If you find a problem with any of these apps, open a GitHub issue. Or even better, send me a pull request with updates.
 
-##Word Finder
+## Word Finder ##
 
 Search the entire english dictionary for words that match a specfic pattern. Great little website that will "help" you in games such as Words with Friends.
 
@@ -31,7 +31,7 @@ Libraries used: express, ejs
 
 Source: [https://github.com/amirrajan/word-finder](https://github.com/amirrajan/word-finder)
 
-##Celebrity Chat
+## Celebrity Chat ##
 
 A simple chat app. Each person that comes to the page gets assigned the name of a celebrity. You can chat with each other. Role play. Keep it PG.
 
@@ -41,7 +41,7 @@ Libraries used: express, ejs, socket.io
 
 Source: [https://github.com/amirrajan/nodejs-chat](https://github.com/amirrajan/nodejs-chat)
 
-##Todo List
+## Todo List ##
 
 A todo list. Add, update items. Mark them as done.
 
@@ -51,7 +51,7 @@ Libraries used: express, ejs, redis
 
 Source: [https://github.com/amirrajan/nodejs-todo](https://github.com/amirrajan/nodejs-todo)
 
-##Pomodoro Text
+## Pomodoro Text ##
 
 A Pomodoro client with a text messaging interface. The Pomodoro Technique is used for time management.
 
@@ -61,7 +61,7 @@ Libraries used: express, ejs, redis, angularjs, twilio, underscore
 
 Source: [https://github.com/amirrajan/pomodoro-text](https://github.com/amirrajan/pomodoro-text)
 
-##Sortis - Twitter Mashup
+## Sortis - Twitter Mashup ##
 
 This app is a twitter client with a two phase authorization scheme (password and text). It allows you to search and add additional metadata to tweets. Read the readme for more information.
 
@@ -71,7 +71,7 @@ Libraries used: express, ejs, redis, angularjs, twilio, underscore, oauth, reque
 
 Source: [https://github.com/amirrajan/sortis](https://github.com/amirrajan/sortis)
 
-##Cards Against Humanities
+## Cards Against Humanities ##
 
 This is a port of the game Cards Against Humanities. It's released under Creative Commons Non-Commercial.
 
@@ -81,7 +81,7 @@ Libraries used: express, ejs, underscore, socket.io, jasmine-node
 
 Source: [https://github.com/amirrajan/nodejs-against-humanity](https://github.com/amirrajan/nodejs-against-humanity)
 
-##Nodekick
+## Nodekick ##
 
 This is a real time, multiplayer fighting game currently hosted [here](http://nodekick.jit.su) and [here](http://node-kick.herokuapp.com). This codebase is a cleaned up version of what our team built for Node Knockout 2013. Out of 385 teams, we placed 15th overall and 6th in the "fun/utility" category.
 
