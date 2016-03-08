@@ -83,9 +83,11 @@ Source: [https://github.com/amirrajan/nodejs-against-humanity](https://github.co
 
 ## Nodekick ##
 
-This is a real time, multiplayer fighting game currently hosted [here](http://nodekick.jit.su) and [here](http://node-kick.herokuapp.com). This codebase is a cleaned up version of what our team built for Node Knockout 2013. Out of 385 teams, we placed 15th overall and 6th in the "fun/utility" category.
+This is a real time, multiplayer fighting game currently hosted [here](http://node-kick.herokuapp.com). This codebase is a cleaned up version of what our team built for Node Knockout 2013. Out of 385 teams, we placed 15th overall and 6th in the "fun/utility" category.
 
-The app shows a non-trivial usage of <code>socket.io</code> and a HTML5 canvas framework called <code>pixijs</code>. The app shows how you can share common code on the server and client (in this case the physics engine). It also shows how you can use interpolation techniques to handle updates to clients for a game that runs at 60 frames per second. You'll also get some insight on how to create "good" NodeJS modules (when to use JavaScript in a class centric format vs a functional format). The commit history is fairly clean. Step through the commit history to see how the app evolved over time.
+The app shows a non-trivial usage of <code>socket.io</code> and a HTML5 canvas framework called <code>pixijs</code>. The app shows how you can share common code on the server and client (in this case the physics engine).
+It also shows how you can use interpolation techniques to handle updates to clients for a game that runs at 60 frames per second. You'll also get some insight on how to create "good" NodeJS modules (when to use JavaScript
+in a class centric format vs a functional format). The commit history is fairly clean. Step through the commit history to see how the app evolved over time.
 
 Libraries used: express, ejs, underscore, socket.io, jasmine-node, pixijs.
 
