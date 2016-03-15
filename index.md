@@ -4,7 +4,7 @@ title:
 ---
 {% include JB/setup %}
 
-I'm a ronin <a href="http://www.paulgraham.com/hp.html" target="_blank">hacker</a>, an <a href="http://amirrajan.net/games/" target="_blank">indie game developer</a>, and an <a href="http://leanpub.com/survivingtheappstore" target="_blank">author</a>.<br />
+I'm a ronin <a href="http://www.paulgraham.com/hp.html">hacker</a>, an <a href="http://amirrajan.net/games/">indie game developer</a>, and an <a href="http://leanpub.com/survivingtheappstore">author</a>.<br />
 
 I try to better the software development craft by [**presenting**](/about/), [**blogging**]({{ HOME_PATH }}), [**contributing to open source**](http://github.com/amirrajan), and [**tweeting**](http://twitter.com/amirrajan).
 
@@ -39,7 +39,7 @@ I try to better the software development craft by [**presenting**](/about/), [**
 
 <div id="mc_embed_signup">
   <form action="http://amirrajan.us8.list-manage.com/subscribe/post?u=61936e0179df5da623ee7cdb7&amp;id=f44fb947df"
-      method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="novalidate">
+      method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate="novalidate">
     <label for="mce-EMAIL">Subscribe to Amir Rajan's Blog</label>
 
     <div>Subscribe to get high signal, low noise entries with regards to software development, doing what you love, and never being content with where you are.</div>
