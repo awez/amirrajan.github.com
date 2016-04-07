@@ -86,7 +86,7 @@ The Ensign review count: 844
 A Noble Circle - Prologue: 177
 
 - Projected max downloads (177 * 150): 26,550
-- Projected min downloads (177 * 150): 8,850
+- Projected min downloads (177 * 50): 8,850
 - Actual downloads world wide: 11,500
 
 I want to include the results for A Noble Circle. But this game has an
