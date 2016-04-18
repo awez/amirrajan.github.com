@@ -8,7 +8,9 @@ group: navigation
 
 I want to make sure I've logged everything that's happened around the growth and popularity of A Dark Room. I hope that indie developers (or those that want to try to "make it" in the App Store) can benefit from these entries. Notable events are listed below along with any pertinent information about how it affected downloads, reviews, emotions, and anything else that influenced the success (or failure) of A Dark Room for iOS. **If you're looking for the offical website for ADR iOS, it's [here](http://adarkroomios.com).**
 
-<img src="https://s3.amazonaws.com/titlepages.leanpub.com/survivingtheappstore/hero?1460608926" style="margin-left: auto; margin-right: auto;" />
+<a href="http://leanpub.com/surivingtheappstore">
+  <img src="https://s3.amazonaws.com/titlepages.leanpub.com/survivingtheappstore/hero?1460608926" style="margin-left: auto; margin-right: auto; width: 50%" />
+</a>
 
 <div style="font-size: 28px; color: #C34A2C; font-weight: bold; line-height: 28px">Everything past this point contains spoilers. If you haven't played the game, and don't want the story spoiled. Stop reading now. No really, even the Table of Contents has spoilers. Don't say I didn't warn you.</div>
 
