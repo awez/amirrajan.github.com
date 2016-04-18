@@ -10,8 +10,6 @@ I want to make sure I've logged everything that's happened around the growth and
 
 <div style="margin-top: 20px; margin-bottom: 20px">
   <a href="http://leanpub.com/surivingtheappstore">
-    You Should Totally Buy This Book
-    <hr />
     <img src="https://s3.amazonaws.com/titlepages.leanpub.com/survivingtheappstore/hero?1460608926"
     style="padding: 3px; border: solid 1px silver; width: 50%; margin-left: auto; margin-right: auto;" />
   </a>
