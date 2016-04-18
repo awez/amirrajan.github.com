@@ -6,11 +6,14 @@ group: navigation
 ---
 {% include JB/setup %}
 
-I want to make sure I've logged everything that's happened around the growth and popularity of A Dark Room. I hope that indie developers (or those that want to try to "make it" in the App Store) can benefit from these entries. Notable events are listed below along with any pertinent information about how it affected downloads, reviews, emotions, and anything else that influenced the success (or failure) of A Dark Room for iOS. **If you're looking for the offical website for ADR iOS, it's [here](http://adarkroomios.com).**
+I want to make sure I've logged everything that's happened around the growth and popularity of A Dark Room. I hope that indie developers (or those that want to try to "make it" in the App Store) can benefit from these entries. Notable events are listed below along with any pertinent information about how it affected downloads, reviews, emotions, and anything else that influenced the success (or failure) of A Dark Room for iOS.
 
-<div style="width: 50%; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
+<div style="margin-top: 20px; margin-bottom: 20px">
   <a href="http://leanpub.com/surivingtheappstore">
-    <img src="https://s3.amazonaws.com/titlepages.leanpub.com/survivingtheappstore/hero?1460608926" style="padding: 3px; border: solid 1px silver; width: 50%;" />
+    You Should Totally Buy This Book
+    <hr />
+    <img src="https://s3.amazonaws.com/titlepages.leanpub.com/survivingtheappstore/hero?1460608926"
+    style="padding: 3px; border: solid 1px silver; width: 50%; margin-left: auto; margin-right: auto;" />
   </a>
 </div>
 
