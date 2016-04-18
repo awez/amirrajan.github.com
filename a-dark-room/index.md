@@ -9,7 +9,7 @@ group: navigation
 I want to make sure I've logged everything that's happened around the growth and popularity of A Dark Room. I hope that indie developers (or those that want to try to "make it" in the App Store) can benefit from these entries. Notable events are listed below along with any pertinent information about how it affected downloads, reviews, emotions, and anything else that influenced the success (or failure) of A Dark Room for iOS. **You should totally buy my book. It's got a lot more additional content that isn't covered in my blog or on this page.**
 
 <div style="margin-top: 20px; margin-bottom: 20px">
-  <a href="http://leanpub.com/surivingtheappstore">
+  <a href="http://leanpub.com/survivingtheappstore">
     <img src="https://s3.amazonaws.com/titlepages.leanpub.com/survivingtheappstore/hero?1460608926"
     style="padding: 3px; border: solid 1px silver; width: 50%; margin-left: auto; margin-right: auto; display: block;" />
   </a>
