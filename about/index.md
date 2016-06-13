@@ -8,13 +8,19 @@ group: navigation
 
 The 10k foot view. I'm an independent consultant and an exceptional developer. Feel free to contact me.
 
-What to hire me for:
+Generally, hire me for:
 
 - Mentoring your team and helping them get up to speed with new technologies.
 - When you just need an _exceptional_, full stack developer (devops, backend, frontend, mobile).
-- Speaking / Training on Software Architecture, Testing, and the Software Development Process.
+- Speaking / training on software architecture, testing, and the overall software development process.
 
-I charge a standard rate of $200 an hour (corp to corp or W2 hourly).
+Specifically, hire me for:
+
+- Authoring REST Apis in .NET, Ruby, and NodeJS.
+- Building well architected front ends in React.
+- Building iOS and Android applications.
+- Bootstrapping new projects with rock solid UI automation and unit test suites.
+- Exceptional cross disciplinary communication and technical skills.
 
 ## Contact ##
 
@@ -67,7 +73,12 @@ I charge a standard rate of $200 an hour (corp to corp or W2 hourly).
 
 ## Presentations and Podcasts ##
 
-- Pocket Gamers Connect: Making a #1 App: Lessons Learned (January 2015)
+- LeanPub Podcast: About my book Surviving the App Store (May 2016)
+- Away From the Keyboard Podcast: Being a Game Developer (May 2016)
+- iOS Remote Conference 2016: Building and Marketing iOS Apps (April 2016)
+- Irving iOS Jump Start: Building and Marketing iOS Apps (March 2016)
+- Dallas App Developers: Expert Panel (February 2016)
+- Pocket Gamers Connect: Making a #1 App: Lessons Learned (January 2016)
 - .Net Unboxed: Thinking Outside the Box with Dynamic C# (October 2015)
 - University of Texas - Dallas: Design Concepts in Game Development (September 2015)
 - That Conference: Making it to the #1 Spot in the App Store (August 2015)
