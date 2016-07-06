@@ -138,8 +138,11 @@ unique_months.each do |unique_month|
   ]
 end
 
+
 totals.each do |k, v|
-  v["michael's share"] = v["a-dark-room"][:total] * 0.5 + v["adr-bundle"][:total] * 0.25 + v["amirs-app"][:total] * 0.25
+  v["michael's share"] = (v["a-dark-room"] || {total: 0})[:total] * 0.5 +
+                         (v["adr-bundle"] || {total: 0})[:total] * 0.25 +
+                         (v["amirs-app"] || {total: 0})[:total] * 0.25
 end
 
 pp totals.map { |k, v| [k, v["michael's share"]] }.sort_by { |a| a[0][2..3] + a[0][0..1] }
