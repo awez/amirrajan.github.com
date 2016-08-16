@@ -147,6 +147,8 @@ end
 
 pp totals.map { |k, v| [k, v["michael's share"]] }.sort_by { |a| a[0][2..3] + a[0][0..1] }
 
+pp totals
+
 =begin
 Check for      Paid on      Amount     Calc Sales*    Calc Michael's    Actual Transfer    Transfered On
     04/15   06/04/2015    9,456.10        9489.54            3659.72           3,700.62       06/08/2015
