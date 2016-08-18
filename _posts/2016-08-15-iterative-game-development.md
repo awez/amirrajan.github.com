@@ -1,11 +1,11 @@
 ---
-title: Iterative Game Development - How I Made $12k off of an Unfinished Game
+title: Iterative Game Development - How I Made $12k off of an Unfinished Mobile Game
 category: appstore
 layout: post
 tags : [appstore]
 ---
 
-**tl;dr;**
+## tl;dr; ##
 
 I started working on a new game called
 [A Noble Circle](https://itunes.apple.com/us/app/a-noble-circle/id977865620)
@@ -22,9 +22,9 @@ weren't for the public feedback that people were giving me._ Your
 mileage may vary of course (this seems to be working for me on
 mobile).
 
-# Timeline
+# Timeline #
 
-## First Release
+## First Release ##
 
 First commit was on February 26, 2015. First release was on March
 30, 2015. That's _one month_ guys and gals. I just wanted to get
@@ -65,7 +65,7 @@ potentially get some impressions/downloads for paid games that I
 already have out there. Never underestimate the power of
 interstitials.
 
-## Second Release
+## Second Release ##
 
 Second release was April 5, 2015. _Six days_ after the first release.
 
@@ -81,7 +81,7 @@ usability change to tapping on the screen. Also, Instead of placeholder
 boxes for enemies, I now have geometric shapes that better depict the
 inhabitants of flatland. **I felt the sex scene was particularly funny.**
 
-## Third Release
+## Third Release ##
 
 Third release was on April 25, 2015 (less than a month from the last
 release). I was getting a bit of feedback via App Store reviews saying
@@ -109,7 +109,7 @@ getting invested in the story of the circle and my story as an
 indie game developer. With each update, I also tried to include
 more developer logs so that people would attempt to reach the end.
 
-## Fourth Release
+## Fourth Release ##
 
 Forth release was on May 10, 2015. There was a ton of refactoring I
 did underneath the scene, so storyline changes were small, but I added
@@ -137,7 +137,7 @@ things and keep the code from becoming a ball of mud. So even though
 the majority of this release was rewiring _the player still got new
 things (in this case a new musical score)._
 
-## Fifth Release
+## Fifth Release ##
 
 Fifth release was on May 26, 2015. An interesting outcome
 occurred with this "pressure" of release monthly. I had reviews talking
@@ -163,7 +163,7 @@ worth reiterating: _for this "public" development approach to work,
 every release has to have something visibly different. Something that
 gets the player to come back and check out what's changed._
 
-## Sixth Release
+## Sixth Release ##
 
 It was crunch time at work, so I couldn't develop for a long long
 while. This release came out August 30, 2015 (three months since the
@@ -205,7 +205,7 @@ and [this video](https://www.youtube.com/watch?v=MWBCGitjyCE) where I
 use an iPad Pro and Pencil (if you can shell out the $1,500 for the
 device and stylus, do it, it's totally worth it).
 
-## Seventh Release
+## Seventh Release ##
 
 The seventh release went out on September 28, 2015. People were
 _STILL_ complaining about the jump mechanic. So I added a tutorial
@@ -238,7 +238,7 @@ the 12 to 15 months of updates, Apple has featured A Noble Circle many
 many times (something I feel wouldn't have happened if I just released
 the game "once").
 
-## The Eight Release
+## The Eight Release ##
 
 The eight release came out on January 1, 2016. People were _STILL_
 complaining about the jump mechanic. So I made one final change to how
@@ -271,7 +271,7 @@ love my iPad Pro and Pencil).
 [This video shows the musicality of the game using the "final" engine with multijumps and constant circle movement](https://www.youtube.com/watch?v=NKJrsMqVugU)
 (before I added the sprites in).
 
-# More Takeaways
+## More Takeaways ##
 
 - Building the game in public let me feel good every time I did a release.
 - The pressure of adding "all the things" went away. I knew that I
@@ -294,7 +294,7 @@ love my iPad Pro and Pencil).
 - **It's better to have only 10 "day one" downloads of a game that you spent a
   month on, versus 10 "day one" downloads of a game that you spent a year on.**
 
-## Revenue and Download Numbers Life Time
+## Revenue and Download Numbers Life Time ##
 
 Revenue is after Apple's 30% cut.
 
