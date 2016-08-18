@@ -1,3 +1,10 @@
+---
+title: Iterative Game Development - How I Made $12k off of an Unfinished Game
+category: appstore
+layout: post
+tags : [appstore]
+---
+
 **tl;dr;**
 
 I started working on a new game called
