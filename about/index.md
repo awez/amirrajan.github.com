@@ -24,9 +24,9 @@ Specifically, hire me for:
 
 ## Contact ##
 
-- email: ar@amirrajan.net
+- email: ar@amirrajan.net (if you are a recruiter
 - twitter: [@amirrajan](http://twitter.com/amirrajan)
-- [curriculum vitae](http://careers.stackoverflow.com/amirrajan)
+- [curriculum vitae (resume)](http://careers.stackoverflow.com/amirrajan)
 
 ## Flare ##
 
@@ -73,6 +73,9 @@ Specifically, hire me for:
 
 ## Presentations and Podcasts ##
 
+- Dallas App Developers: Marketing Your Mobile Game on Reddit (August 2016)
+- Ruby Rogues Podcast: Game Development Using Ruby (August 2016)
+- iPhreaks Podcast: Surviving the App Store as an Indie Game Dev (July 2016)
 - LeanPub Podcast: About my book Surviving the App Store (May 2016)
 - Away From the Keyboard Podcast: Being a Game Developer (May 2016)
 - iOS Remote Conference 2016: Building and Marketing iOS Apps (April 2016)
