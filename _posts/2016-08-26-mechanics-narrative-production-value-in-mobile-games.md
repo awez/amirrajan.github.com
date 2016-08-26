@@ -9,16 +9,15 @@ tags : [appstore]
 
 I'll eventually evaluate these games.
 
-<img src="/assets/images/gs1.jpg" style="border: solid 1px silver; padding: 3px;" />
-<br />
-<img src="/assets/images/gs2.jpg" style="border: solid 1px silver; padding: 3px;" />
-<br />
-<img src="/assets/images/gs3.jpg" style="border: solid 1px silver; padding: 3px;" />
-<br />
-<img src="/assets/images/gs4.jpg" style="border: solid 1px silver; padding: 3px;" />
-<br />
-<img src="/assets/images/gs5.jpg" style="border: solid 1px silver; padding: 3px;" />
-<br />
-<img src="/assets/images/gs6.jpg" style="border: solid 1px silver; padding: 3px;" />
-<br />
-<img src="/assets/images/gs7.jpg" style="border: solid 1px silver; padding: 3px;" />
+<div style="margin-left: auto; margin-right: auto;">
+  <img src="/assets/images/gs1.png" style="border: solid 1px silver; padding: 3px; width: 45%;" />
+  <img src="/assets/images/gs2.png" style="border: solid 1px silver; padding: 3px; width: 45%;" />
+  <img src="/assets/images/gs3.png" style="border: solid 1px silver; padding: 3px; width: 45%;" />
+  <img src="/assets/images/gs4.png" style="border: solid 1px silver; padding: 3px; width: 45%;" />
+  <img src="/assets/images/gs5.png" style="border: solid 1px silver; padding: 3px; width: 45%;" />
+  <img src="/assets/images/gs6.png" style="border: solid 1px silver; padding: 3px; width: 45%;" />
+  <img src="/assets/images/gs7.png" style="border: solid 1px silver; padding: 3px; width: 45%;" />
+  <div>&nbsp; &nbsp;</div>
+</div>
+
+<br/>
